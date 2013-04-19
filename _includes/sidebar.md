@@ -1,2 +1,3 @@
-* Preface
+- Preface
 	- [Introduction](/)
+	- [License](/pages/license)
