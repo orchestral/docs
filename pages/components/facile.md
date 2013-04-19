@@ -32,6 +32,8 @@ To install through composer, simply put the following in your `composer.json` fi
     	"minimum-stability": "dev"
 	}
 
+### Configuration
+
 Next add the service provider in `app/config/app.php`.
 
 	'providers' => array(
