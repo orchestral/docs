@@ -1,7 +1,7 @@
 - Preface
-	- [Introduction](/)
-	- [License](/pages/license)
+    - [Introduction](/)
+    - [License](/pages/license)
 - Components
-	- [Facile](/pages/components/facile)
+    - [Facile](/pages/components/facile)
 
 &nbsp;
