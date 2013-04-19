@@ -2,4 +2,4 @@
 	- [Introduction](/)
 	- [License](/pages/license)
 - Components
-	- [Facile](/pages/facile)
+	- [Facile](/pages/components/facile)
