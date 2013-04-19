@@ -1,3 +1,5 @@
 - Preface
 	- [Introduction](/)
 	- [License](/pages/license)
+- Components
+	- [Facile](/pages/facile)
