@@ -21,7 +21,8 @@
 		</header>
 		<div role="main" class="main">
 			<aside class="sidebar">
-				
+				{% capture sidebar_content %}{% include sidebar.md %}{% endcapture %}
+				{{ sidebar_content|markdownify }}
 			</aside>
 			<section class="content">
 				{{ content }}
