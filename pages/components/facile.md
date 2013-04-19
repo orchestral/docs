@@ -26,11 +26,13 @@ Facile Component
 To install through composer, simply put the following in your `composer.json` file:
 
 	{
-    	"require": {
-    		"orchestra/facile": "dev-master"
-    	},
-    	"minimum-stability": "dev"
+		"require": {
+			"orchestra/facile": "dev-master"
+		},
+		"minimum-stability": "dev"
 	}
+
+> We will remove the `"minimum-stability": "dev"` once Laravel 4 Framework reach stable status, tentatively May 2013.
 
 ### Configuration
 
