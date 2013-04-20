@@ -22,3 +22,5 @@
   - Manager
   - Messages
   - [String Helper](/pages/components/support/str)
+- Widget
+  - [Overview](/pages/components/widget)
