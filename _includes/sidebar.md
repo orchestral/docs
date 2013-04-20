@@ -1,6 +1,9 @@
 - Preface
   - [Introduction](/)
   - [License](/pages/license)
+- Getting Started
+  - [Installation](/pages/installation)
+  - Helpers
 
 ### Components
 - [Facile](/pages/components/facile)
