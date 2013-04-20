@@ -28,6 +28,6 @@ Above code would return `http://yoursite.com/orchestra/users`, however if your O
 
 Return memory configuration associated to the request, helper alias to `Orchestra\Memory::get()`.
 
-	{{ memorize('site.name') }}
+	echo memorize('site.name');
 
 </article>
