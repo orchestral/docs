@@ -2,6 +2,7 @@
 layout: default
 title: Installation
 ---
+
 # Installation
 
 * [Install Composer](#install-composer)
