@@ -13,9 +13,9 @@ Widget Component
 
 Widget allow you to manage widgetize actions in Orchestra Platform. By default Orchestra Platform provides the following widgets:
 
-* Menu - Manage menu in Orchestra Platform
-* Pane - Manage dashboard items in Orchestra Platform
-* Placeholder - Manage sidebar widgets in Orchestra Platform.
+* **Menu** to manage menu.
+* **Pane** to manage dashboard items.
+* **Placeholder** to manage sidebar widgets.
 
 </article>
 
