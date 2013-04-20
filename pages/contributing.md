@@ -1,3 +1,8 @@
+---
+layout: default
+title: Contributing To Orchestra Platform
+---
+
 # Contributing To Orchestra Platform
 
 * [Introduction](#introduction)
