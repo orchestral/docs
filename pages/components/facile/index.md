@@ -5,7 +5,12 @@ title: Facile Component
 
 Facile Component
 ==============
- 
+
+* [Introduction](#introduction)
+* [Installation](#installation)
+* [Configuration](#configuration)
+
+<article id="introduction">
 `Orchestra\Facile` simplify the need to create API based response in your Laravel 4 application, with just the following code you are able to return multi format Response, either it be HTML (using `View`), json or etc.
 
 	Route::get('users{format}', function ($format = '.html')
@@ -21,6 +26,9 @@ Facile Component
 
 	})->where('format', '\.?(json|html)?');
 
+</article>
+
+<article id="installation">
 ## Installation
 
 To install through composer, simply put the following in your `composer.json` file:
@@ -34,7 +42,10 @@ To install through composer, simply put the following in your `composer.json` fi
 
 > We will remove the `"minimum-stability": "dev"` once Laravel 4 Framework reach stable status, tentatively May 2013.
 
-### Configuration
+</article>
+
+<article id="configuration">
+## Configuration
 
 Next add the service provider in `app/config/app.php`.
 
@@ -53,3 +64,5 @@ You might want to add `Orchestra\Support\Facades\Facile` to class aliases in `ap
 
 		'Facile' => 'Orchestra\Support\Facades\Facile',
 	),
+
+<article>
