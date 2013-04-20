@@ -11,5 +11,3 @@
 - Support
   - [Overview](/pages/components/support)
   - [String Helper](/pages/components/support/str)
-
-&nbsp;
