@@ -68,4 +68,7 @@ Need to get rid of an item? No problem. Just mention the name of the item to the
 
 	$memory->forget('site.author');
 
+	// or you can also use
+	Orchestra\Memory::forget('site.author');
+
 </article>
