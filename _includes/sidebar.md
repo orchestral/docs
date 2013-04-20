@@ -8,7 +8,13 @@
   - [Helpers](/pages/helpers)
 
 ### Components
-- [Facile](/pages/components/facile)
+- Facile
+  - [Overview](/pages/components/facile)
+  - Usage
+  - Template
 - Support
   - [Overview](/pages/components/support)
+  - Decorator
+  - Manager
+  - Messages
   - [String Helper](/pages/components/support/str)
