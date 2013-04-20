@@ -14,6 +14,7 @@
   - Template
 - Memory
   - [Overview](/pages/components/memory)
+  - [Usage](/pages/components/usage)
 - Support
   - [Overview](/pages/components/support)
   - Decorator
