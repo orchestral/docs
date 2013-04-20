@@ -31,3 +31,13 @@ Next add the service provider in `app/config/app.php`.
 		
 		'Orchestra\Support\SupportServiceProvider',
 	),
+
+`Orchestra\Support` also include a few facade which is used directly:
+
+	'aliases' => array(
+	
+		// ...
+
+		'Orchestra\Decorator' => 'Orchestra\Support\Facades\Decorator',
+		'Orchestra\Messages'  => 'Orchestra\Support\Facades\Messages',
+	),
