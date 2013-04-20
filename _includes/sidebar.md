@@ -9,6 +9,8 @@
   - [Helpers](/pages/helpers)
 
 ### Components
+- Auth
+  - [Overview](/pages/components/auth)
 - Facile
   - [Overview](/pages/components/facile)
   - Usage
