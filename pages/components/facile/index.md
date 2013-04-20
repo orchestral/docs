@@ -6,7 +6,6 @@ title: Facile Component
 Facile Component
 ==============
 
-* [Introduction](#introduction)
 * [Installation](#installation)
 * [Configuration](#configuration)
 
@@ -65,4 +64,4 @@ You might want to add `Orchestra\Support\Facades\Facile` to class aliases in `ap
 		'Facile' => 'Orchestra\Support\Facades\Facile',
 	),
 
-<article>
+</article>

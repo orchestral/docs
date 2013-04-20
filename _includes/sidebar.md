@@ -12,6 +12,8 @@
   - [Overview](/pages/components/facile)
   - Usage
   - Template
+- Memory
+  - [Overview](/pages/components/memory)
 - Support
   - [Overview](/pages/components/support)
   - Decorator
