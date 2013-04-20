@@ -12,7 +12,7 @@
 - Facile
   - [Overview](/pages/components/facile)
   - Usage
-  - Template
+  - [Template](/pages/components/facile/templating)
 - Memory
   - [Overview](/pages/components/memory)
   - [Usage](/pages/components/memory/usage)
