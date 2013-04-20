@@ -29,12 +29,21 @@ To install through composer, simply put the following in your `composer.json` fi
 
 > We will remove the `"minimum-stability": "dev"` once Laravel 4 Framework reach stable status, tentatively May 2013.
 
+<div class="migrate">
 ### Migrations
 
 Before we can start using `Orchestra\Memory`, please run the following:
 
 	$ php artisan migrate --packages=orchestra/memory
+</div>
 
+<div class="config-publish">
+### Publish Configuration
+
+Optionally, you can also publish the configuration file if there any requirement to change the default:
+
+	$ php artisan config:publish --packages=orchestra/memory
+</div>
 </article>
 
 <article id="configuration">
