@@ -10,6 +10,7 @@ Using Memory
 * [Storing Items](#storing-items)
 * [Retrieving Items](#retrieving-items)
 * [Removing Items](#removing-items)
+* [Extending Memory](#extending)
 
 <article id="create-instance">
 ## Creating Instance
@@ -70,5 +71,25 @@ Need to get rid of an item? No problem. Just mention the name of the item to the
 
 	// or you can also use
 	Orchestra\Memory::forget('site.author');
+
+</article>
+
+<article id="extending">
+## Extending Memory
+
+There might be requirement that a different type of storage engine would be use for memory instance, you can extending it by adding your own driver.
+
+	class ExampleDriver extends Orchestra\Memory\Drivers\Driver {
+
+		// Add your implementation
+	}
+
+	Orchestra\Memory::extend('example', function ($app, $name)
+	{
+		return new ExampleDriver($app, $name);
+	});
+
+	// Now you can use it as
+	$example = Orchestra\Memory::make('example.default');
 
 </article>
