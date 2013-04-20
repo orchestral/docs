@@ -10,6 +10,7 @@ Memory Component
 * [Configuration](#configuration)
 
 <article id="introduction">
+
 `Orchestra\Memory` handles runtime configuration either using 'in memory' Runtime or database using Cache, Fluent Query Builder or Eloquent ORM.
 
 </article>

@@ -10,6 +10,7 @@ Facile Component
 * [Configuration](#configuration)
 
 <article id="introduction">
+
 `Orchestra\Facile` simplify the need to create API based response in your Laravel 4 application, with just the following code you are able to return multi format Response, either it be HTML (using `View`), json or etc.
 
 	Route::get('users{format}', function ($format = '.html')

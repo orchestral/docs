@@ -5,9 +5,17 @@ title: Support Component
 
 Support Component
 ==============
- 
+
+* [Installation](#installation)
+* [Configuration](#configuration)
+
+<article id="introduction">
+
 `Orchestra\Support` is basically a basic set of class required by Orchestra Platform. The idea behind it is similar to what is `Illuminate\Support` to Laravel 4 Framework.
 
+</article>
+
+<article id="installation">
 ## Installation
 
 To install through composer, simply put the following in your `composer.json` file:
@@ -21,6 +29,9 @@ To install through composer, simply put the following in your `composer.json` fi
 
 > We will remove the `"minimum-stability": "dev"` once Laravel 4 Framework reach stable status, tentatively May 2013.
 
+</article>
+
+<article id="configuration">
 ### Configuration
 
 Next add the service provider in `app/config/app.php`.
@@ -41,3 +52,5 @@ Next add the service provider in `app/config/app.php`.
 		'Orchestra\Decorator' => 'Orchestra\Support\Facades\Decorator',
 		'Orchestra\Messages'  => 'Orchestra\Support\Facades\Messages',
 	),
+
+</article>
