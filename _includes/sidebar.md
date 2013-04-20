@@ -1,6 +1,7 @@
 - Preface
   - [Introduction](/)
   - [Change Logs](/pages/changes)
+  - [Contributing](pages/contributing)
   - [License](/pages/license)
 - Getting Started
   - [Installation](/pages/installation)
