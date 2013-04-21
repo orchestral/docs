@@ -36,7 +36,7 @@ To install through composer, simply put the following in your `composer.json` fi
 </article>
 
 <article id="configuration">
-### Configuration
+## Configuration
 
 Next add the service provider in `app/config/app.php`.
 
