@@ -1,9 +1,9 @@
 ---
 layout: default
-title: Widget Component
+title: Auth Component
 ---
 
-Widget Component
+Auth Component
 ==============
 
 * [Installation](#installation)
