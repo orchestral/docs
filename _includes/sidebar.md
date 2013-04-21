@@ -11,6 +11,7 @@
 ### Components
 - Auth
   - [Overview](/pages/components/auth)
+  - [Usage](/pages/components/auth/usage)
 - Facile
   - [Overview](/pages/components/facile)
   - Usage
