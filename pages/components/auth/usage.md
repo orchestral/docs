@@ -9,6 +9,12 @@ Using Auth
 * [Retrieving Roles](#retrieving-roles)
 * [Has A Role](#check-role)
 
+<article id="introduction">
+
+Essentially, the Auth class offered by Laravel 4 is already good enough for normal usage. Orchestra Platform only extends the default operation and allow a user to be link with one or many roles.
+
+</article> 
+
 <article id="retrieving-roles">
 ## Retrieving Roles
 
