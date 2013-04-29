@@ -7,8 +7,18 @@ title: Helpers
 
 Orchestra Platform includes a set of helpers function to help solves some of the frequent problem while developing on Laravel.
 
+* [orchestra()](#orchestra)
 * [handles()](#handles)
 * [memorize()](#memorize)
+
+<article id="orchestra">
+## orchestra()
+
+Return orchestra.app instance.
+
+	echo orchestra()->memory()->get('site.name');
+
+</article>
 
 <article id="handles">
 ## handles()
