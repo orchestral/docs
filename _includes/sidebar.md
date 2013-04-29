@@ -21,6 +21,8 @@
 - Memory
   - [Overview](/pages/components/memory)
   - [Usage](/pages/components/memory/usage)
+- Resources
+  - [Overview](/pages/components/resources)
 - Support
   - [Overview](/pages/components/support)
   - Decorator

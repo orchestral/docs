@@ -1,9 +1,9 @@
 ---
 layout: default
-title: Extension Component
+title: Resources Component
 ---
 
-Extension Component
+Resources Component
 ==============
 
 * [Installation](#installation)
@@ -11,7 +11,7 @@ Extension Component
 
 <article id="introduction">
 
-`Orchestra\Extension` allows components or packages to be added dynamically to Orchestra Platform without the hassle of modifying the configuration.
+`Orchestra\Resources` is an adhoc routing manager that allow extension developer to add CRUD interface without touching Orchestra Platform.
 
 </article>
 
@@ -22,21 +22,12 @@ To install through composer, simply put the following in your `composer.json` fi
 
 	{
 		"require": {
-			"orchestra/extension": "2.0.*"
+			"orchestra/resources": "2.0.*"
 		},
 		"minimum-stability": "dev"
 	}
 
 > We will remove the `"minimum-stability": "dev"` once Laravel 4 Framework reach stable status, tentatively May 2013.
-
-<a id="migrate"></a>
-### Migrations
-
-Before we can start using `Orchestra\Extension`, please run the following:
-
-	$ php artisan migrate --packages=orchestra/memory
-
-</article>
 
 <article id="configuration">
 ## Configuration
@@ -47,9 +38,7 @@ Next add the service provider in `app/config/app.php`.
 		
 		// ...
 		
-		'Orchestra\Extension\ExtensionServiceProvider',
-		'Orchestra\Memory\MemoryServiceProvider',
-		'Orchestra\Extension\PublisherServiceProvider',
+		'Orchestra\Resources\ResourcesServiceProvider',
 	),
 
 You might want to add following facades to class aliases in `app/config/app.php`:
@@ -58,8 +47,7 @@ You might want to add following facades to class aliases in `app/config/app.php`
 
 		// ...
 		
-		'Orchestra\Extension' => 'Orchestra\Support\Facades\Extension',
-		'Orchestra\Memory'    => 'Orchestra\Support\Facades\Memory',
+		'Orchestra\Resources' => 'Orchestra\Support\Facades\Resources',
 	),
 
 </article>
