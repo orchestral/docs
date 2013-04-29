@@ -17,7 +17,7 @@ title: Change Logs
   * Add support for extension to register service provider using `orchestra.json`.
   * Simplify the registration of service provider by utilizing `Illuminate\Foundation\Application::register()` method.
 * **Facile**
-  * Migrate Orchestra\Facile from Orchestra Platform 1.2.
+  * Migrate `Orchestra\Facile` from Orchestra Platform 1.2.
 * **Html**
   * Migrate `Orchestra\Html`, `Orchestra\Form` and `Orchestra\Table` from Orchestra Platform 1.2.
   * `Orchestra\Table` would automatically paginate result via `$table->with($model)`, disable it via `$table->with($model, false);`.
@@ -43,4 +43,5 @@ title: Change Logs
   * Migrate `Orchestra\Widget` from Orchestra Platform 1.
   * Change the way `Orchestra\Widget\Nesty` handle positional insert; `before` to `<`, `after` to `>` and `child-of` to `^`. 
   * Implements `ArrayIterator`, eliminate the requirement to use `$widget->getItems()`.
+
 </article>
