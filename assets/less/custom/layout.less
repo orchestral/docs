@@ -123,6 +123,14 @@ a
 |--------------------------------------------------------------------------
 */
 
+.code() {
+	background-color:#eee;
+	padding:0.2em 0.5em;
+	font-family: Monaco, Consolas, "Lucida Console", monospace;
+	font-size:0.8em;
+	.box-shadow(2px 2px 0 rgba(0,0,0,0.1));
+}
+
 .content
 {
 	h1:first-child
@@ -139,12 +147,12 @@ a
 
 		code
 		{
-			background-color:#eee;
-			padding:0.2em 0.5em;
-			font-family: Monaco, Consolas, "Lucida Console", monospace;
-			font-size:0.8em;
-			.box-shadow(2px 2px 0 rgba(0,0,0,0.1));
+			.code();
 		}
+	}
+
+	li > code {
+		.code();
 	}
 
 	blockquote
