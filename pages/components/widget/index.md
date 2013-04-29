@@ -26,7 +26,7 @@ To install through composer, simply put the following in your `composer.json` fi
 
 	{
 		"require": {
-			"orchestra/widget": "dev-master"
+			"orchestra/widget": "2.0.*"
 		},
 		"minimum-stability": "dev"
 	}
@@ -45,6 +45,7 @@ Next add the service provider in `app/config/app.php`.
 		// ...
 		
 		'Orchestra\Widget\WidgetServiceProvider',
+		'Orchestra\Widget\PackageServiceProvider',
 	),
 
 You might want to add `Orchestra\Support\Facades\Widget` to class aliases in `app/config/app.php`:

@@ -22,7 +22,7 @@ To install through composer, simply put the following in your `composer.json` fi
 
 	{
 		"require": {
-			"orchestra/auth": "dev-master"
+			"orchestra/auth": "2.0.*"
 		},
 		"minimum-stability": "dev"
 	}
@@ -46,8 +46,9 @@ Next add the service provider in `app/config/app.php`.
 	'providers' => array(
 		
 		// ...
-		# Remove 'Illuminate\Auth\AuthServiceProvider',
+		# Remove 'Illuminate\Auth\AuthServiceProvider' with 'Orchestra\Auth\AuthServiceProvider',
 		'Orchestra\Auth\AuthServiceProvider',
+		'Orchestra\Auth\PackageServiceProvider',
 	),
 
 > `Orchestra\Auth\AuthServiceProvider` should replace `Illuminate\Auth\AuthServiceProvider`.

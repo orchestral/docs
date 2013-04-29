@@ -22,7 +22,7 @@ To install through composer, simply put the following in your `composer.json` fi
 
 	{
 		"require": {
-			"orchestra/support": "dev-master"
+			"orchestra/support": "2.0.*"
 		},
 		"minimum-stability": "dev"
 	}
@@ -40,7 +40,8 @@ Next add the service provider in `app/config/app.php`.
 		
 		// ...
 		
-		'Orchestra\Support\SupportServiceProvider',
+		'Orchestra\Support\DecoratorServiceProvider',
+		'Orchestra\Support\MessagesServiceProvider',
 	),
 
 `Orchestra\Support` also include a few facade which is used directly:

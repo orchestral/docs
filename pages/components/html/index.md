@@ -22,7 +22,7 @@ To install through composer, simply put the following in your `composer.json` fi
 
 	{
 		"require": {
-			"orchestra/html": "dev-master"
+			"orchestra/html": "2.0.*"
 		},
 		"minimum-stability": "dev"
 	}
@@ -37,8 +37,10 @@ Next add the service provider in `app/config/app.php`.
 	'providers' => array(
 		
 		// ...
-		# Remove 'Illuminate\Html\HtmlServiceProvider',
+		# Replace 'Illuminate\Html\HtmlServiceProvider' with 'Orchestra\Html\HtmlServiceProvider',
 		'Orchestra\Html\HtmlServiceProvider',
+		'Orchestra\Html\PackageServiceProvider',
+
 	),
 
 > `Orchestra\Html\HtmlServiceProvider` should replace `Illuminate\Html\HtmlServiceProvider`.
