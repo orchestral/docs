@@ -12,6 +12,8 @@
 - Auth
   - [Overview](/pages/components/auth)
   - [Usage](/pages/components/auth/usage)
+- Extension
+  - [Overview](/pages/components/extension)
 - Facile
   - [Overview](/pages/components/facile)
   - Usage
