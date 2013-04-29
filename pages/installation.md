@@ -21,6 +21,16 @@ Orchestra Platform utilizes [Composer](http://getcomposer.org/) to manage its de
 
 Once Composer is installed, download the [latest version](https://github.com/orchestral/platform/archive/illuminate.zip) of the Orchestra Platform and extract its contents into a directory on your server. Next, in the root of your Orchestra Platform application, run the `php composer.phar install` command to install all dependencies. This process requires Git to be installed on the server to successfully complete the installation.
 
+	$ php composer.phar install
+
+> The installation process would automatically publish `orchestra/foundation` asset to your public path.
+
+Once Laravel 4 and Orchestra Platform is properly download and install, we need to setup the database and create the application basic schema (including administrator user). 
+
+1. Open `app/config/database.php` and configure your database connection.
+2. Browse to the installation page, for example `http://yoursite.com/admin` and follow the installation process.
+3. And... you're done.
+
 </article>
 
 <article id="requirement">
