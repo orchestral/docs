@@ -30,6 +30,7 @@ With the introduction of Composer, we are now free to organize the code into sma
 * [Orchestra\Foundation](https://github.com/orchestral/foundation)
 * [Orchestra\Html](https://github.com/orchestral/html)
 * [Orchestra\Memory](https://github.com/orchestral/memory)
+* [Orchestra\Resources](https://github.com/orchestral/resources)
 * [Orchestra\Support](https://github.com/orchestral/support)
 * [Orchestra\Widget](https://github.com/orchestral/widget)
 
