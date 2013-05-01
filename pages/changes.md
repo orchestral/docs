@@ -11,9 +11,9 @@ title: Change Logs
 * Migrate from version 1.2 to support Laravel 4.
 * **Auth**
   * Migrate `Orchestra\Auth` from Orchestra Platform 1.2.
-  * Move event `orchestra.auth: roles` to `Orchestra\Auth`. This would might it incompatible with any auth driver which is not based on `Eloquent`.
+  * Move event `orchestra.auth: roles` to `Orchestra\Auth`. *Note that this would make it incompatible with any auth driver which is not based on `Eloquent`.*
 * **Extension**
-  * Migrate `Orchestra\Extension` from Orchestra Platform 1.
+  * Migrate `Orchestra\Extension` from Orchestra Platform 1.2.
   * Add support for extension to register service provider using `orchestra.json`.
   * Simplify the registration of service provider by utilizing `Illuminate\Foundation\Application::register()` method.
 * **Facile**
@@ -30,6 +30,8 @@ title: Change Logs
   * Validations now using services, based on `Orchestra\Support\Validator`.
   * Menu are now using `Orchestra\Services\Event\AdminMenuHandler`.
   * `Orchestra\Mail` are now utilising Laravel 4 `Mail` class, `Orchestra\Mail::send()` would choose either to use basic send or queue based on Orchestra Platform setting.
+  * Fixes bad references to `Orchestra\Support\Str` on `Orchestra\Routing\ForgotController` and `Orchestra\Routing\RegisterController`.
+  * Update to Twitter Bootstrap 3.
 * **Resources**
   * Migrate `Orchestra\Resources` from Orchestra Platform 1.2.
   * Add `Orchestra\Resources\Dispatcher` and `Orchestra\Resources\Response` to isolate class responsibility.
@@ -40,9 +42,11 @@ title: Change Logs
   * Split service provider to `Orchestra\Support\DecoratorServiceProvider` and `Orchestra\Support\MessagesServiceProvider`.
   * `Orchestra\Support\Messages` now use `Session::put()` instead of `Session::flash()`.
   * Add `Orchestra\Support\Validator` to manage validation using class.
+  * Add `Orchestra\Support\Nesty` from `Orchestra\Widget` so it can be reusable in any other component.
 * **Widget**
-  * Migrate `Orchestra\Widget` from Orchestra Platform 1.
-  * Change the way `Orchestra\Widget\Nesty` handle positional insert; `before` to `<`, `after` to `>` and `child-of` to `^`. 
+  * Migrate `Orchestra\Widget` from Orchestra Platform 1.2.
+  * Change the way `Orchestra\Widget` handle positional insert; `before` to `<`, `after` to `>` and `child-of` to `^`. 
   * Implements `ArrayIterator`, eliminate the requirement to use `$widget->getItems()`.
+  * Move `Orchestra\Widget\Nesty` to `Orchestra\Support\Nesty`.
 
 </article>
