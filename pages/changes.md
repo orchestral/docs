@@ -12,6 +12,8 @@ title: Change Logs
 * **Auth**
   * Migrate `Orchestra\Auth` from Orchestra Platform 1.2.
   * Move event `orchestra.auth: roles` to `Orchestra\Auth`. *Note that this would make it incompatible with any auth driver which is not based on `Eloquent`.*
+  * Add `auth.attempt` event listener during `Auth::attempt()` call, this would allow user to create throttle option for user login.
+  * Deprecate `orchestra.auth: login` and `orchestra.auth: logout`, use `auth.login` and `auth.logout` event instead.
 * **Extension**
   * Migrate `Orchestra\Extension` from Orchestra Platform 1.2.
   * Add support for extension to register service provider using `orchestra.json`.
