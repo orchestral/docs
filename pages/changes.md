@@ -9,15 +9,17 @@ title: Change Logs
 ### Version 2.0.0
 
 * Migrate from version 1.2 to support Laravel 4.
+* Upgrade to Twitter Bootstrap 3.
 * **Auth**
   * Migrate `Orchestra\Auth` from Orchestra Platform 1.2.
   * Move event `orchestra.auth: roles` to `Orchestra\Auth`. *Note that this would make it incompatible with any auth driver which is not based on `Eloquent`.*
-  * Add `auth.attempt` event listener during `Auth::attempt()` call, this would allow user to create throttle option for user login.
   * Deprecate `orchestra.auth: login` and `orchestra.auth: logout`, use `auth.login` and `auth.logout` event instead.
+  * Add command line utility via `Orchestra\Auth\Console\AuthCommand`.
 * **Extension**
   * Migrate `Orchestra\Extension` from Orchestra Platform 1.2.
   * Add support for extension to register service provider using `orchestra.json`.
   * Simplify the registration of service provider by utilizing `Illuminate\Foundation\Application::register()` method.
+  * Add command line utility via `Orchestra\Extension\Console\ExtensionCommand`.
 * **Facile**
   * Migrate `Orchestra\Facile` from Orchestra Platform 1.2.
 * **Html**
@@ -45,6 +47,7 @@ title: Change Logs
   * `Orchestra\Support\Messages` now use `Session::put()` instead of `Session::flash()`.
   * Add `Orchestra\Support\Validator` to manage validation using class.
   * Add `Orchestra\Support\Nesty` from `Orchestra\Widget` so it can be reusable in any other component.
+  * Deprecate and remove `Orchestra\Support\Messages::shutdown()` method, use `Orchestra\Support\Messages::save()` instead.
 * **Widget**
   * Migrate `Orchestra\Widget` from Orchestra Platform 1.2.
   * Change the way `Orchestra\Widget` handle positional insert; `before` to `<`, `after` to `>` and `child-of` to `^`. 
