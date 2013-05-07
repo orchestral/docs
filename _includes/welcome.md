@@ -11,7 +11,7 @@ Provide a solid base off of which to build your new web applications. It's not a
 ## What Makes Orchestra Platform Different?
 
 * **Laravel Framework 4** is simply a great framework to work with.
-* **Extensions** are a much needed improvement to bundle implementation in Laravel. With one click activation and upgrade (migration and publish).
+* **Extensions** are a much needed improvement to package implementation in Laravel. With one click activation and upgrade (migration and publish).
 * **Database Based Configuration** for any extensions are a solid replacement of file based configuration, stop telling your non-technical client to edit PHP file for any simple configuration changes. 
 * **Resources** lets you build HMVC implementation on top of Orchestra Platform. Hook your backend application to Orchestra with just simple API. 
 * **ACL and User Management** are repetitive modules, lets stop reinventing the wheel and let Orchestra Platform do its magic. If you need something more advanced, there are more than 20 events that you can hook into your own implementation without overwriting Orchestra Platform core file.
@@ -32,6 +32,7 @@ With the introduction of Composer, we are now free to organize the code into sma
 * [Orchestra\Memory](https://github.com/orchestral/memory)
 * [Orchestra\Resources](https://github.com/orchestral/resources)
 * [Orchestra\Support](https://github.com/orchestral/support)
+* [Orchestra\View](https://github.com/orchestral/view)
 * [Orchestra\Widget](https://github.com/orchestral/widget)
 
 </article>

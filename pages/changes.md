@@ -15,11 +15,15 @@ title: Change Logs
   * Move event `orchestra.auth: roles` to `Orchestra\Auth`. *Note that this would make it incompatible with any auth driver which is not based on `Eloquent`.*
   * Deprecate `orchestra.auth: login` and `orchestra.auth: logout`, use `auth.login` and `auth.logout` event instead.
   * Add command line utility via `Orchestra\Auth\Console\AuthCommand`.
+  * Add soft deletes to migration schema.
 * **Extension**
   * Migrate `Orchestra\Extension` from Orchestra Platform 1.2.
   * Add support for extension to register service provider using `orchestra.json`.
   * Simplify the registration of service provider by utilizing `Illuminate\Foundation\Application::register()` method.
   * Add command line utility via `Orchestra\Extension\Console\ExtensionCommand`.
+  * Add `Orchestra\Extension::route()` method to handle extension routing.
+  * Allow Extensions not to be started when in safe mode, using `Session::get('orchestra-safemode')`.
+  * Add `Orchestra\Extension::setMemoryProvider()` and `Orchestra\Extension::getMemoryProvider()` helpers.
 * **Facile**
   * Migrate `Orchestra\Facile` from Orchestra Platform 1.2.
 * **Html**
@@ -36,6 +40,10 @@ title: Change Logs
   * `Orchestra\Mail` are now utilising Laravel 4 `Mail` class, `Orchestra\Mail::send()` would choose either to use basic send or queue based on Orchestra Platform setting.
   * Fixes bad references to `Orchestra\Support\Str` on `Orchestra\Routing\ForgotController` and `Orchestra\Routing\RegisterController`.
   * Update to Twitter Bootstrap 3.
+* **Memory**
+  * Migrate `Orchestra\Memory` from Orchestra Platform 1.2.
+  * Rename `Orchestra\Memory::shutdown()` to `Orchestra\Memory::finish()`.
+  * Add `Orchestra\Memory::makeOrFallback()` for easy usage to switch to `Orchestra\Memory\Drivers\Runtime` when database connection is not correct.
 * **Resources**
   * Migrate `Orchestra\Resources` from Orchestra Platform 1.2.
   * Add `Orchestra\Resources\Dispatcher` and `Orchestra\Resources\Response` to isolate class responsibility.
@@ -47,7 +55,7 @@ title: Change Logs
   * `Orchestra\Support\Messages` now use `Session::put()` instead of `Session::flash()`.
   * Add `Orchestra\Support\Validator` to manage validation using class.
   * Add `Orchestra\Support\Nesty` from `Orchestra\Widget` so it can be reusable in any other component.
-  * Deprecate and remove `Orchestra\Support\Messages::shutdown()` method, use `Orchestra\Support\Messages::save()` instead.
+  * Deprecate and remove `Orchestra\Messages::shutdown()` method, use `Orchestra\Messages::save()` instead.
 * **Widget**
   * Migrate `Orchestra\Widget` from Orchestra Platform 1.2.
   * Change the way `Orchestra\Widget` handle positional insert; `before` to `<`, `after` to `>` and `child-of` to `^`. 
