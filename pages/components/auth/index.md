@@ -29,13 +29,6 @@ To install through composer, simply put the following in your `composer.json` fi
 
 > We will remove the `"minimum-stability": "dev"` once Laravel 4 Framework reach stable status, tentatively May 2013.
 
-<a id="migrate"></a>
-### Migrations
-
-Before we can start using `Orchestra\Auth`, please run the following:
-
-	$ php artisan migrate --packages=orchestra/auth
-
 </article>
 
 <article id="configuration">
@@ -48,7 +41,6 @@ Next add the service provider in `app/config/app.php`.
 		// ...
 		# Remove 'Illuminate\Auth\AuthServiceProvider' with 'Orchestra\Auth\AuthServiceProvider',
 		'Orchestra\Auth\AuthServiceProvider',
-		'Orchestra\Auth\PackageServiceProvider',
 	),
 
 > `Orchestra\Auth\AuthServiceProvider` should replace `Illuminate\Auth\AuthServiceProvider`.
@@ -62,4 +54,12 @@ You might want to add `Orchestra\Support\Facades\Acl` to class aliases in `app/c
 		'Orchestra\Acl' => 'Orchestra\Support\Facades\Acl',
 	),
 
+<a id="migrate"></a>
+### Migrations
+
+Before we can start using `Orchestra\Auth`, please run the following:
+
+	$ php artisan orchestra:auth install
+
 </article>
+

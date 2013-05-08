@@ -25,7 +25,6 @@
   - [Overview](/pages/components/resources)
 - Support
   - [Overview](/pages/components/support)
-  - Decorator
   - Manager
   - Messages
   - [String Helper](/pages/components/support/str)
