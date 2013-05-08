@@ -24,6 +24,7 @@ title: Change Logs
   * Add `Orchestra\Extension::route()` method to handle extension routing.
   * Allow Extensions not to be started when in safe mode, using `Session::get('orchestra-safemode')`.
   * Add `Orchestra\Extension::setMemoryProvider()` and `Orchestra\Extension::getMemoryProvider()` helpers.
+  * `Orchestra\Extension\Dispatcher` only load packages `orchestra.php` only after all extension (and service providers) has been registered.
 * **Facile**
   * Migrate `Orchestra\Facile` from Orchestra Platform 1.2.
 * **Html**
@@ -56,6 +57,7 @@ title: Change Logs
   * Add `Orchestra\Support\Validator` to manage validation using class.
   * Add `Orchestra\Support\Nesty` from `Orchestra\Widget` so it can be reusable in any other component.
   * Deprecate and remove `Orchestra\Messages::shutdown()` method, use `Orchestra\Messages::save()` instead.
+  * Move `Orchestra\Support\Decorator` to `Orchestra\View\Decorator`.
 * **Widget**
   * Migrate `Orchestra\Widget` from Orchestra Platform 1.2.
   * Change the way `Orchestra\Widget` handle positional insert; `before` to `<`, `after` to `>` and `child-of` to `^`. 
