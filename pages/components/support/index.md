@@ -40,7 +40,6 @@ Next add the service provider in `app/config/app.php`.
 		
 		// ...
 		
-		'Orchestra\Support\DecoratorServiceProvider',
 		'Orchestra\Support\MessagesServiceProvider',
 	),
 
@@ -50,7 +49,6 @@ Next add the service provider in `app/config/app.php`.
 	
 		// ...
 
-		'Orchestra\Decorator' => 'Orchestra\Support\Facades\Decorator',
 		'Orchestra\Messages'  => 'Orchestra\Support\Facades\Messages',
 	),
 
