@@ -37,10 +37,9 @@ Next add the service provider in `app/config/app.php`.
 	'providers' => array(
 		
 		// ...
-		# Replace 'Illuminate\Html\HtmlServiceProvider' with 'Orchestra\Html\HtmlServiceProvider',
+		# Remove 'Illuminate\Html\HtmlServiceProvider' 
+		# and add 'Orchestra\Html\HtmlServiceProvider'
 		'Orchestra\Html\HtmlServiceProvider',
-		'Orchestra\Html\PackageServiceProvider',
-
 	),
 
 > `Orchestra\Html\HtmlServiceProvider` should replace `Illuminate\Html\HtmlServiceProvider`.
