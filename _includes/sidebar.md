@@ -32,7 +32,7 @@
 - Support
   - [Overview](/pages/components/support)
   - Manager
-  - Messages
+  - [Messages](/pages/components/support/messages)
   - [String Helper](/pages/components/support/str)
 - View
   - [Overview](/pages/components/view)
