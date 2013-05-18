@@ -10,6 +10,7 @@
   - [Helpers](/pages/helpers)
   - [Events](/pages/events)
   - [Troubleshooting](/pages/troubleshoot)
+  - [Facades](/pages/facades)
 
 ### Components
 - Auth
