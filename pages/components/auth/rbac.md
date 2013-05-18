@@ -1,0 +1,57 @@
+---
+layout: default
+title: Using Role Based Access Control
+---
+
+Using Role Based Access Control
+==============
+
+Orchestra Platform Role Based Access Control gives you the ability to create custom ACL metrics which is unique to each of your extensions. 
+
+In most other solutions, you are either restrict to file based configuration for ACL or only allow to define a single metric for your entire application. This simplicity would later become an issue depends on how many extensions do you have within your application.
+
+* [Creating a New ACL Instance](#creating)
+* [Verifying the ACL](#verifying)
+
+<article id="creating">
+## Creating a New ACL Instance
+
+	<?php
+	
+	// Imagine we have a foo extension.
+    Orchestra\Acl::make('foo')->attach(Orchestra\App::memory());
+
+Above configuration is all you need in your extension start file.
+
+> Using `attach()` allow the ACL to utilize `Orchestra\Memory` to store the metric so we don't have to define the ACL in every request.
+
+</article>
+
+<article id="verifying">
+## Verifying the ACL
+
+To verify the created ACL, you can use the following code.
+
+	$acl = Orchestra\Acl::make('foo');
+	
+	if ( ! $acl->can('manage foo')) 
+	{
+		return Redirect::to(
+			handles('orchestra/foundation::login')
+		);
+	}
+	
+Or you can create a route filter.
+
+	Route::filter('foo.manage', function ()
+	{
+		if ( ! Orchestra\Acl::make('foo')->can('manage foo'))
+		{
+			return Redirect::to(
+				handles('orchestra/foundation::login')
+			);
+		}
+	});
+
+</article>
+	
