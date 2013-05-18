@@ -36,5 +36,6 @@
   - [String Helper](/pages/components/support/str)
 - View
   - [Overview](/pages/components/view)
+  - [Usage](/pages/components/view/usage)
 - Widget
   - [Overview](/pages/components/widget)
