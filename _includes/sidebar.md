@@ -34,5 +34,7 @@
   - Manager
   - Messages
   - [String Helper](/pages/components/support/str)
+- View
+  - [Overview](/pages/components/view)
 - Widget
   - [Overview](/pages/components/widget)
