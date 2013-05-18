@@ -6,7 +6,39 @@ title: Using Extension
 Using Extension
 ==============
 
-An extension is a basically a package except that first it need to have a manifest file as similar as you would have `composer.json` for every package. The manifest file will be stored in `{package-name}/orchestra.json` (same level as `composer.json`), this tell Orchestra Platform to handle the package as an extension.
+
+An extension is a basically a package except that first it need to have a manifest file as similar as you would have `composer.json` for every package.
+
+* [Managing an Extension](#managing)
+* [Basic of an Extension](#basic)
+  * [Manifest File](#manifest-file)
+  * [Start File](#start-file)
+* [Configuring an Extension](#configuring)
+  * [Service Providers for Extension](#provide)
+  * [Handling a Route](#handles)
+  * [Disabling Configuration](#disable-configuration) 
+
+
+<article id="managing">
+## Managing an Extension
+
+Extensions will be manage by Orchestra Platform Administrator Interface. Login as an 
+administrator and go to **Extensions** on the top navigation.
+
+Few things to consider:
+
+* Only activated extensions will be run on runtime.
+* Orchestra Platform will start all service providers listed by the extension.
+
+</article>
+
+
+<article id="basic">
+## Basic of an Extension
+
+<a name="manifest-file"></a>
+### Manifest File
+The manifest file will be stored in `{package-name}/orchestra.json` (same level as `composer.json`), this tell Orchestra Platform to handle the package as an extension.
 
 	{
 		"name": "Robotix",
@@ -21,19 +53,12 @@ An extension is a basically a package except that first it need to have a manife
 		]
 	}
 
+<a name="start-file"></a>
+### Start File
 
-<article id="provide">
-## Service Providers for Extension
+Extension start file (optional) allow extension to run start script (as Laravel run bundles start.php file). The start file will be stored in `{package-name}/src/orchestra.php`. 
 
-Manifest file also allow extension to dynamically register service providers without having to change `app/config/app.php`. To tell Orchestra Platform to automatically run your service provider include the following:
-	
-	{
-		"provide" : [
-			"Robotix\\RobotixServiceProvider"
-		]
-	}
-	
-> You can add multiple service provider on a single extension.
+> What inside the file depends on how extension would interact with Orchestra Platform and this can be diverse depending on use cases.
 
 </article>
 
@@ -46,6 +71,20 @@ By default, administrator are able to configure any extension based on requireme
 ![Configuring an Extesion](/assets/img/extension.png)
 
 To configure an extension, the extension need to be activated. Once this is done, all extension that allow configuration can be configured. Simply click on the extension name to navigate to the configuration page.
+
+<a name="provide"></a>
+### Service Providers for Extension
+
+Manifest file also allow extension to dynamically register service providers without having to change `app/config/app.php`. To tell Orchestra Platform to automatically run your service provider include the following:
+	
+	{
+		"provide" : [
+			"Robotix\\RobotixServiceProvider"
+		]
+	}
+	
+> You can add multiple service provider on a single extension.
+
 <a name="handles"></a>
 ### Handling a Route
 
