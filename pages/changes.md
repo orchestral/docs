@@ -61,6 +61,7 @@ title: Change Logs
   * Dreprecate and remove `Orchestra\Messages::add()` method as `Illuminate\Support\MessageBag` already allow chaining.
 * **View**
   * Migrate `Orchestra\View` and `Orchestra\Theme` from Orchestra Platform 1.2.
+  * Deprecate and remove `Orchestra\Theme::map()` usage.
 * **Widget**
   * Migrate `Orchestra\Widget` from Orchestra Platform 1.2.
   * Change the way `Orchestra\Widget` handle positional insert; `before` to `<`, `after` to `>` and `child-of` to `^`. 
