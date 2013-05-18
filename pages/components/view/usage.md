@@ -8,7 +8,7 @@ Using Theme
 ==============
 
 * [Basic of Theme](#basic)
-
+* [Anatomy of Theme](#anatomy)
 
 <article id="basic">
 ## Basic of Theme
@@ -32,6 +32,18 @@ Each theme can have a manifest file, which provide Orchestra Platform the requir
 		"author": "Orchestra Platform",
 		"autoload": []
 	}
+
+</article>
+
+<article id="anatomy">
+## Anatomy of Theme
+
+The **application** views is accessible from the root path of your theme, while extensions/packages can be accessible from `packages/{package-name}` subfolder. So for example if your selected theme is `default`, and you plan to replace `home.index` and `acme/foo::home.index` view. Only the following file would be needed:
+
+* `public/themes/default/home/index.blade.php`
+* `public/themes/default/packages/acme/foo/home/index.blade.php`
+* `public/themes/default/theme.json`
+* `public/themes/default/screenshot.png`
 
 </article>
 

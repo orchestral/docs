@@ -57,7 +57,7 @@ The manifest file will be stored in `{package-name}/orchestra.json` (same level 
 <a name="start-file"></a>
 ### Start File
 
-Extension start file (optional) allow extension to run start script (as Laravel run bundles start.php file). The start file will be stored in `{package-name}/src/orchestra.php`. 
+Extension start file (optional) allow extension to run start script (as Laravel run application start.php file). The start file will be stored in `{package-name}/src/orchestra.php`. 
 
 > What inside the file depends on how extension would interact with Orchestra Platform and this can be diverse depending on use cases.
 
