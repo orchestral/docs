@@ -13,15 +13,15 @@
 ### Components
 - Auth
   - [Overview](/pages/components/auth)
-  - [Auth Usage](/pages/components/auth/usage)
-  - [ACL Usage](/pages/components/auth/rbac)
+  - [Usage](/pages/components/auth/usage)
 - Extension
   - [Overview](/pages/components/extension)
   - [Usage](/pages/components/extension/usage)
 - Facile
   - [Overview](/pages/components/facile)
-  - Usage
   - [Template](/pages/components/facile/templating)
+- HTML
+  - [Overview](/pages/components/html) 
 - Memory
   - [Overview](/pages/components/memory)
   - [Usage](/pages/components/memory/usage)
