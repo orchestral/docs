@@ -54,4 +54,47 @@ Or you can create a route filter.
 	});
 
 </article>
+
+<article id="migration-example">
+## Migration Example
+
+Since an ACL metric is defined for each extension, it is best to define ACL actions using a migration file.
+
+	<?php
 	
+	use Illuminate\Database\Migrations\Migration;
+
+	class FooDefineAcl extends Migration {
+		
+		/**
+	 	 * Run the migrations.
+	     *
+	 	 * @return void
+	 	 */
+		public function up()
+		{
+			$role = Orchestra\Model\Role::admin();
+			$acl  = Orchestra\Acl::make('foo');
+			
+			$actions = array(
+				'manage foobar',
+				'view foobar',
+			);
+
+			$acl->actions()->fill($actions);
+			$acl->roles()->add($role->name);
+			
+			$acl->allow($role->name, $actions);
+		}
+		
+		/**
+	 	 * Reverse the migrations.
+	     *
+	 	 * @return void
+	 	 */
+		public function down()
+		{
+			// nothing to do here.
+		}
+	
+	}
