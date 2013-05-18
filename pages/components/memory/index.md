@@ -44,15 +44,6 @@ Next add the service provider in `app/config/app.php`.
 		'Orchestra\Memory\MemoryServiceProvider',
 	),
 
-You might want to add `Orchestra\Support\Facades\Memory` to class aliases in `app/config/app.php`:
-
-	'aliases' => array(
-
-		// ...
-
-		'Orchestra\Memory' => 'Orchestra\Support\Facades\Memory',
-	),
-
 <a id="migrate"></a>
 ### Migrations
 

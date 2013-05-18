@@ -48,13 +48,4 @@ Next add the service provider in `app/config/app.php`.
 		'Orchestra\Widget\WidgetServiceProvider',
 	),
 
-You might want to add `Orchestra\Support\Facades\Widget` to class aliases in `app/config/app.php`:
-
-	'aliases' => array(
-	
-		// ...
-
-		'Orchestra\Widget' => 'Orchestra\Support\Facades\Widget',
-	),
-
 </article>

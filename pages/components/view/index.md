@@ -41,16 +41,8 @@ Next add the service provider in `app/config/app.php`.
 		
 		// ...
 		
+		'Orchestra\View\DecoratorServiceProvider',
 		'Orchestra\View\ViewServiceProvider',
-	),
-
-You might want to add `Orchestra\Support\Facades\Theme` facade to class aliases in `app/config/app.php`:
-
-	'aliases' => array(
-
-		// ...
-		
-		'Orchestra\Theme' => 'Orchestra\Support\Facades\Theme',
 	),
 
 </article>

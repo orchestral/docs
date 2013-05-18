@@ -46,16 +46,6 @@ Next add the service provider in `app/config/app.php`.
 		'Orchestra\Extension\PublisherServiceProvider',
 	),
 
-You might want to add following facades to class aliases in `app/config/app.php`:
-
-	'aliases' => array(
-
-		// ...
-		
-		'Orchestra\Extension' => 'Orchestra\Support\Facades\Extension',
-		'Orchestra\Memory'    => 'Orchestra\Support\Facades\Memory',
-	),
-
 <a id="migrate"></a>
 ### Migrations
 

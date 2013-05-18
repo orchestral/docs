@@ -44,13 +44,4 @@ Next add the service provider in `app/config/app.php`.
 		'Orchestra\Support\MessagesServiceProvider',
 	),
 
-`Orchestra\Support` also include a few facade which is used directly:
-
-	'aliases' => array(
-	
-		// ...
-
-		'Orchestra\Messages'  => 'Orchestra\Support\Facades\Messages',
-	),
-
 </article>

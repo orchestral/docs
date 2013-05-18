@@ -47,15 +47,6 @@ Next add the service provider in `app/config/app.php`.
 
 > `Orchestra\Auth\AuthServiceProvider` should replace `Illuminate\Auth\AuthServiceProvider`.
 
-You might want to add `Orchestra\Support\Facades\Acl` to class aliases in `app/config/app.php`:
-
-	'aliases' => array(
-
-		// ...
-
-		'Orchestra\Acl' => 'Orchestra\Support\Facades\Acl',
-	),
-
 <a id="migrate"></a>
 ### Migrations
 

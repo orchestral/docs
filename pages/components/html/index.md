@@ -45,15 +45,4 @@ Next add the service provider in `app/config/app.php`.
 
 > `Orchestra\Html\HtmlServiceProvider` should replace `Illuminate\Html\HtmlServiceProvider`.
 
-`Orchestra\Html` also include a few facade which is used directly:
-
-	'aliases' => array(
-
-		// ...
-
-		'Orchestra\Form'  => 'Orchestra\Support\Facades\Form',
-		'Orchestra\Table' => 'Orchestra\Support\Facades\Table',
-
-	),
-
 </article>

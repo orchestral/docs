@@ -42,13 +42,4 @@ Next add the service provider in `app/config/app.php`.
 		'Orchestra\Resources\ResourcesServiceProvider',
 	),
 
-You might want to add following facades to class aliases in `app/config/app.php`:
-
-	'aliases' => array(
-
-		// ...
-		
-		'Orchestra\Resources' => 'Orchestra\Support\Facades\Resources',
-	),
-
 </article>
