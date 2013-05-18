@@ -9,11 +9,13 @@
   - [Requirements](/pages/installation#requirement)
   - [Helpers](/pages/helpers)
   - [Events](/pages/events)
+  - [Troubleshooting](/pages/troubleshoot)
 
 ### Components
 - Auth
   - [Overview](/pages/components/auth)
-  - [Usage](/pages/components/auth/usage)
+  - [Auth Usage](/pages/components/auth/usage)
+  - [ACL Usage](/pages/components/auth/rbac)
 - Extension
   - [Overview](/pages/components/extension)
   - [Usage](/pages/components/extension/usage)
