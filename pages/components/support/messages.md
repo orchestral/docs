@@ -35,7 +35,7 @@ Here's an example how you can display the message:
 
 	if ($message instanceof Orchestra\Support\Messages)
 	{
-		foreach (array('error', 'info', 'success') as $key)
+		foreach (['error', 'info', 'success'] as $key)
 		{
 			if ($message->has($key))
 			{			
