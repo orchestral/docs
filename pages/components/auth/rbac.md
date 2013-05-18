@@ -18,10 +18,9 @@ In most other solutions, you are either restrict to file based configuration for
 
 	<?php
 	
-	// Imagine we have a foo extension.
-    Orchestra\Acl::make('foo')->attach(Orchestra\App::memory());
+    Orchestra\Acl::make('acme')->attach(Orchestra\App::memory());
 
-Above configuration is all you need in your extension start file.
+Imagine we have a **acme** extension, above configuration is all you need in your extension start file.
 
 > Using `attach()` allow the ACL to utilize `Orchestra\Memory` to store the metric so we don't have to define the ACL in every request.
 
@@ -32,9 +31,9 @@ Above configuration is all you need in your extension start file.
 
 To verify the created ACL, you can use the following code.
 
-	$acl = Orchestra\Acl::make('foo');
+	$acl = Orchestra\Acl::make('acme');
 	
-	if ( ! $acl->can('manage foo')) 
+	if ( ! $acl->can('manage acme')) 
 	{
 		return Redirect::to(
 			handles('orchestra/foundation::login')
@@ -45,7 +44,7 @@ Or you can create a route filter.
 
 	Route::filter('foo.manage', function ()
 	{
-		if ( ! Orchestra\Acl::make('foo')->can('manage foo'))
+		if ( ! Orchestra\Acl::make('acme')->can('manage acme'))
 		{
 			return Redirect::to(
 				handles('orchestra/foundation::login')
@@ -74,11 +73,11 @@ Since an ACL metric is defined for each extension, it is best to define ACL acti
 		public function up()
 		{
 			$role = Orchestra\Model\Role::admin();
-			$acl  = Orchestra\Acl::make('foo');
+			$acl  = Orchestra\Acl::make('acme');
 			
 			$actions = array(
-				'manage foobar',
-				'view foobar',
+				'manage acme',
+				'view acme',
 			);
 
 			$acl->actions()->fill($actions);
