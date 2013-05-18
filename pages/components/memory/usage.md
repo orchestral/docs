@@ -79,8 +79,8 @@ Need to get rid of an item? No problem. Just mention the name of the item to the
 
 There might be requirement that a different type of storage engine would be use for memory instance, you can extending it by adding your own driver.
 
-	class ExampleDriver extends Orchestra\Memory\Drivers\Driver {
-
+	class ExampleDriver extends Orchestra\Memory\Drivers\Driver 
+	{
 		// Add your implementation
 	}
 
