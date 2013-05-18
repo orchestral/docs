@@ -29,7 +29,7 @@ Retrieve user's roles is as simple as:
 
 To check if user has a role.
 
-	if (Auth::is(array('admin')))
+	if (Auth::is(['admin']))
 	{
 		echo "Is an admin";
 	}

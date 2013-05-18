@@ -10,8 +10,7 @@
 |--------------------------------------------------------------------------
 */
 
-body
-{
+body {
 	font-family:"HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 	font-weight:300;
 	font-size:14px;
@@ -23,20 +22,17 @@ body
 |--------------------------------------------------------------------------
 */
 
-header
-{
+header {
 	border-bottom:1px solid #eee;
 	margin-bottom:2em;
 }
 
-.content footer
-{
+.content footer {
 	border-top:1px solid #eee;
 	margin-top:2em;
 	padding-top:1em;
 
-	p
-	{
+	p {
 		font-size:0.7em;
 		color:#999;
 		margin:0.5em 0;
@@ -51,20 +47,17 @@ header
 |--------------------------------------------------------------------------
 */
 
-.wrapper
-{
+.wrapper {
 	width:840px;
 	margin:3em auto;
 }
 
-.sidebar
-{
+.sidebar {
 	width:220px;
 	float:left;
 }
 
-.content
-{
+.content {
 	width:580px;
 	float:right;
 }
@@ -75,18 +68,15 @@ header
 |--------------------------------------------------------------------------
 */
 
-a
-{
+a {
 	color:#349DC7;
 	text-decoration:none;
 
-	&:visited
-	{
+	&:visited {
 		color:#92A6AD;
 	}
 
-	&:hover
-	{
+	&:hover {
 		text-decoration:underline;
 		color:#66D0FA;
 	}
@@ -98,20 +88,17 @@ a
 |--------------------------------------------------------------------------
 */
 
-.sidebar>ul
-{
+.sidebar > ul {
 	list-style-type:none;
 	margin:0;
 	padding:0;
 
-	ul
-	{
+	ul {
 		list-style-type:none;
 		margin:1em 0;
 		padding:0 0 0 1.5em;
 
-		li
-		{
+		li {
 			margin:0.3em 0;
 		}
 	}
@@ -124,39 +111,35 @@ a
 */
 
 .code() {
-	background-color:#eee;
 	padding:0.2em 0.5em;
-	font-family: Monaco, Consolas, "Lucida Console", monospace;
-	font-size:0.8em;
-	.box-shadow(2px 2px 0 rgba(0,0,0,0.1));
+	font-family: Menlo, Monaco, Consolas, "Lucida Console", monospace;
+	font-size:0.9em;
 }
 
-.content
-{
-	h1:first-child
-	{
+.content {
+	h1:first-child {
 		line-height:1em;
 		margin:0 0 1em 0;
 	}
 
-	p
-	{
+	p {
 		line-height:1.6em;
 		color:#444;
 		margin:1.5em 0;
 
-		code
-		{
+		code {
+			background-color:#eee;
 			.code();
+			.box-shadow(2px 2px 0 rgba(0,0,0,0.1));
 		}
 	}
 
 	li > code {
+		color: #349DC7;
 		.code();
 	}
 
-	blockquote
-	{
+	blockquote {
 		display:block;
 		margin:2em auto;
 		padding:1em;
@@ -165,13 +148,11 @@ a
 		border:1px solid #A3B4BF;
 		.rounded(5px);
 
-		p
-		{
+		p {
 			color:#4D5A63;
 			margin:0;
 
-			code
-			{
+			code {
 				background-color:#A3B4BF;
 				color:#fff;
 				.box-shadow(2px 2px 0 #7D97A8);
@@ -179,30 +160,25 @@ a
 		}
 	}
 
-	table
-	{
+	table {
 		width:100%;
 
-		th, td
-		{
+		th, td {
 			padding:0.5em;
 			border:1px solid #666;
 			font-size:0.9em;
 		}
 
-		th
-		{
+		th {
 			background-color:#666;
 			color:#eee;
 			text-align:left;
 		}
 
-		td
-		{
+		td {
 			border:1px solid #666;
 
-			code
-			{
+			code {
 				font-size:0.8em;
 				display:block;
 				padding:0.5em 1em;
@@ -210,8 +186,7 @@ a
 			}
 		}
 
-		tr td:first-child
-		{
+		tr td:first-child {
 			background-color:#333;
 			color:#fff;
 		}
@@ -224,12 +199,11 @@ a
 |--------------------------------------------------------------------------
 */
 
-.prettyprint
-{
-	font-family: Monaco, Consolas, "Lucida Console", monospace;
+.prettyprint {
+	font-family: Menlo, Monaco, Consolas, "Lucida Console", monospace;
 	background-color:#333;
 	padding:1.5em;
-	font-size:0.75em;
+	font-size: 1.0em; 
 	border:0;
 	color:#e9e4e5;
 	line-height:1.9em;
@@ -247,7 +221,9 @@ a
 	.atv { color: #bcd42a }
 	.dec, .var { color: #606 }
 	.fun { color: red }
-	code { font-family: Monaco, Consolas, "Lucida Console", monospace; }
+	code { 
+		font-family: Menlo, Monaco, Consolas, "Lucida Console", monospace;
+	}
 }
 
 /*
@@ -256,8 +232,7 @@ a
 |--------------------------------------------------------------------------
 */
 
-.contribute
-{
+.contribute {
 	background-color:#F0F7FA;
 	border:1px solid #C4E7F5;
 	padding:1em;

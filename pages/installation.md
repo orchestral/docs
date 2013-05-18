@@ -25,7 +25,10 @@ Once Composer is installed, download the [latest version](https://github.com/orc
 
 > The installation process would automatically publish `orchestra/foundation` asset to your public path.
 
-Once Laravel 4 and Orchestra Platform is properly download and install, we need to setup the database and create the application basic schema (including administrator user). 
+<a name="setup"></a>
+### Setup
+
+Once Laravel 4 and Orchestra Platform is properly downloaded and installed, we need to setup the database and create the application basic schema (including administrator user). 
 
 1. Open `app/config/database.php` and configure your database connection.
 2. Browse to the installation page, for example `http://yoursite.com/admin` and follow the installation process.

@@ -58,6 +58,9 @@ title: Change Logs
   * Add `Orchestra\Support\Nesty` from `Orchestra\Widget` so it can be reusable in any other component.
   * Deprecate and remove `Orchestra\Messages::shutdown()` method, use `Orchestra\Messages::save()` instead.
   * Move `Orchestra\Support\Decorator` to `Orchestra\View\Decorator`.
+  * Dreprecate and remove `Orchestra\Messages::add()` method as `Illuminate\Support\MessageBag` already allow chaining.
+* **View**
+  * Migrate `Orchestra\View` and `Orchestra\Theme` from Orchestra Platform 1.2.
 * **Widget**
   * Migrate `Orchestra\Widget` from Orchestra Platform 1.2.
   * Change the way `Orchestra\Widget` handle positional insert; `before` to `<`, `after` to `>` and `child-of` to `^`. 

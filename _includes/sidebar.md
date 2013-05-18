@@ -6,7 +6,9 @@
   - [License](/pages/license)
 - Getting Started
   - [Installation](/pages/installation)
+  - [Requirements](/pages/installation#requirement)
   - [Helpers](/pages/helpers)
+  - [Events](/pages/events)
 
 ### Components
 - Auth
@@ -14,6 +16,7 @@
   - [Usage](/pages/components/auth/usage)
 - Extension
   - [Overview](/pages/components/extension)
+  - [Manifest](/pages/components/extension/manifest)
 - Facile
   - [Overview](/pages/components/facile)
   - Usage
