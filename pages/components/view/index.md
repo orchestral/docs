@@ -1,6 +1,7 @@
 ---
 layout: default
 title: View Component
+
 ---
 
 View Component

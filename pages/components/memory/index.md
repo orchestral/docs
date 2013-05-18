@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Memory Component
+
 ---
 
 Memory Component

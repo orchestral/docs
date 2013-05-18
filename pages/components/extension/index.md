@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Extension Component
+
 ---
 
 Extension Component

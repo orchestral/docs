@@ -1,6 +1,7 @@
 ---
 layout: default
 title: HTML Component
+
 ---
 
 HTML Component

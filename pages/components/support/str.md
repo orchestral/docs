@@ -1,6 +1,7 @@
 ---
 layout: default
 title: String Helper Class
+
 ---
 
 String Helper Class
