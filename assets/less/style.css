@@ -66,11 +66,11 @@ textarea{resize:vertical;}
 .clearfix:after{clear:both;}
 .clearfix{*zoom:1;}
 body{font-family:"HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;font-weight:300;font-size:14px;}
-header{border-bottom:1px solid #eee;margin-bottom:2em;}
+header{border-bottom:1px solid #eee;margin:0 1em 2em 1em;}
 .content footer{border-top:1px solid #eee;margin-top:2em;padding-top:1em;}.content footer p{font-size:0.7em;color:#999;margin:0.5em 0;line-height:1em;text-transform:uppercase;}
 .wrapper{width:840px;margin:3em auto;}
-.sidebar{width:220px;float:left;}
-.content{width:580px;float:right;}
+.sidebar{width:220px;float:left;margin-left:1em;}
+.content{width:580px;float:right;margin-right:1em;}
 a{color:#349DC7;text-decoration:none;}a:visited{color:#92A6AD;}
 a:hover{text-decoration:underline;color:#66D0FA;}
 .sidebar>ul{list-style-type:none;margin:0;padding:0;}.sidebar>ul ul{list-style-type:none;margin:1em 0;padding:0 0 0 1.5em;}.sidebar>ul ul li{margin:0.3em 0;}
