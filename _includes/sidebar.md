@@ -13,6 +13,8 @@
   - [Facades](/pages/facades)
 
 ### Components
+- Asset
+  - [Overview](/pages/components/asset)
 - Auth
   - [Overview](/pages/components/auth)
   - [Auth Usage](/pages/components/auth/usage)

@@ -24,6 +24,7 @@ Provide a solid base off of which to build your new web applications. It's not a
 
 With the introduction of Composer, we are now free to organize the code into smaller component where there would be use-case where you can use one or two Orchestra Platform components without everything else. At this moment we have organize the code into following components:
 
+* [Orchestra\Asset](https://github.com/orchestral/asset)
 * [Orchestra\Auth](https://github.com/orchestral/auth)
 * [Orchestra\Extension](https://github.com/orchestral/extension)
 * [Orchestra\Facile](https://github.com/orchestral/facile)

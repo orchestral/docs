@@ -11,6 +11,8 @@ title: Change Logs
 
 * Migrate from version 1.2 to support Laravel 4.
 * Upgrade to Twitter Bootstrap 3.
+* **Asset**
+  * Fork `Orchestra\Asset` from Laravel 3.
 * **Auth**
   * Migrate `Orchestra\Auth` from Orchestra Platform 1.2.
   * Move event `orchestra.auth: roles` to `Orchestra\Auth`. *Note that this would make it incompatible with any auth driver which is not based on `Eloquent`.*
@@ -60,9 +62,11 @@ title: Change Logs
   * Deprecate and remove `Orchestra\Messages::shutdown()` method, use `Orchestra\Messages::save()` instead.
   * Move `Orchestra\Support\Decorator` to `Orchestra\View\Decorator`.
   * Dreprecate and remove `Orchestra\Messages::add()` method as `Illuminate\Support\MessageBag` already allow chaining.
+  * Allow data bindings on `Orchestra\Support\Validator`.
 * **View**
   * Migrate `Orchestra\View` and `Orchestra\Theme` from Orchestra Platform 1.2.
   * Deprecate and remove `Orchestra\Theme::map()` usage.
+  * Allow queried view to be cache for subsequent call within the same request using `Orchestra\View\FileViewFinder`.
 * **Widget**
   * Migrate `Orchestra\Widget` from Orchestra Platform 1.2.
   * Change the way `Orchestra\Widget` handle positional insert; `before` to `<`, `after` to `>` and `child-of` to `^`. 
