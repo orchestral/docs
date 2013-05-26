@@ -15,6 +15,7 @@
 ### Components
 - Asset
   - [Overview](/pages/components/asset)
+  - [Usage](/pages/components/asset/usage)
 - Auth
   - [Overview](/pages/components/auth)
   - [Auth Usage](/pages/components/auth/usage)
