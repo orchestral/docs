@@ -44,5 +44,14 @@ Next add the service provider in `app/config/app.php`.
 		'Orchestra\Asset\AssetServiceProvider',
 	),
 
+You might want to add `Orchestra\Support\Facades\Asset` to class aliases in `app/config/app.php`:
+
+	'aliases' => array(
+
+		// ...
+
+		'Asset' => 'Orchestra\Support\Facades\Asset',
+	),
+
 </article>
 
