@@ -13,12 +13,14 @@ title: Change Logs
 * Upgrade to Twitter Bootstrap 3.
 * **Asset**
   * Fork `Orchestra\Asset` from Laravel 3.
+  * Allow last modified versioning to be added via `Orchestra\Asset\Container::addVersioning()` and reversal via `Orchestra\Asset\Container::removeVersioning()`.
 * **Auth**
   * Migrate `Orchestra\Auth` from Orchestra Platform 1.2.
   * Move event `orchestra.auth: roles` to `Orchestra\Auth`. *Note that this would make it incompatible with any auth driver which is not based on `Eloquent`.*
   * Deprecate `orchestra.auth: login` and `orchestra.auth: logout`, use `auth.login` and `auth.logout` event instead.
   * Add command line utility via `Orchestra\Auth\Console\AuthCommand`.
   * Add soft deletes to migration schema.
+  * Add password reminders migration from Laravel 4.
 * **Extension**
   * Migrate `Orchestra\Extension` from Orchestra Platform 1.2.
   * Add support for extension to register service provider using `orchestra.json`.
@@ -44,6 +46,8 @@ title: Change Logs
   * `Orchestra\Mail` are now utilising Laravel 4 `Mail` class, `Orchestra\Mail::send()` would choose either to use basic send or queue based on Orchestra Platform setting.
   * Fixes bad references to `Orchestra\Support\Str` on `Orchestra\Routing\ForgotController` and `Orchestra\Routing\RegisterController`.
   * Update to Twitter Bootstrap 3.
+  * Replace current implementation for reset password with Laravel 4, with some goodies from Orchestra Platform.
+  * Remove `Form::token()` as it's automatically added by `Form::open()`.
 * **Memory**
   * Migrate `Orchestra\Memory` from Orchestra Platform 1.2.
   * Rename `Orchestra\Memory::shutdown()` to `Orchestra\Memory::finish()`.
