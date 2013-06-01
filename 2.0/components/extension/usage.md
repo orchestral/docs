@@ -19,7 +19,6 @@ An extension is a basically a package except that first it need to have a manife
   * [Handling a Route](#handles)
   * [Disabling Configuration](#disable-configuration) 
 
-
 <article id="managing">
 ## Managing an Extension
 
@@ -69,7 +68,7 @@ Extension start file (optional) allow extension to run start script (as Laravel 
 
 By default, administrator are able to configure any extension based on requirement of the application including `handles` value using Orchestra Platform Administrator Interface. This allow non-technical administrator to take charge of the application without having to understand any of the code.
 
-![Configuring an Extesion](/assets/img/extension.png)
+![Configuring an Extesion](/docs/2.0/assets/extension.png)
 
 To configure an extension, the extension need to be activated. Once this is done, all extension that allow configuration can be configured. Simply click on the extension name to navigate to the configuration page.
 
