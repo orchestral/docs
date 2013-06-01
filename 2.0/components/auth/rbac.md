@@ -19,7 +19,7 @@ In most other solutions, you are either restrict to file based configuration for
 
 	<?php
 	
-    Orchestra\Acl::make('acme')->attach(Orchestra\App::memory());
+    Orchestra\Acl::make('acme')->attach(Orchestra\Memory::make());
 
 Imagine we have a **acme** extension, above configuration is all you need in your extension start file.
 
