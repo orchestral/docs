@@ -11,6 +11,10 @@ Using Resources
 
 `Orchestra\Resources` offer more control to developer to create application on top of Orchestra Platform Administrator Interface. The idea is to allow controllers to be map to specific URL in Orchestra Platform Administrator Interface.
 
+* [Adding a Resource](#adding)
+* [Adding a Child Resource](#adding-child)
+* [Returning Response from a Resource](#returning-response)
+
 </article>
 
 <article id="adding">
@@ -35,5 +39,27 @@ Name     | Usage
 name     | A name or title to refer to the resource.
 uses     | a path to controller, you can prefix with either `restful:` (default) or `resource:` to indicate how Orchestra Platform should handle the controller.
 visible  | Choose whether to include the resource to Orchestra Platform Administrator Interface menu.
+
+Orchestra Platform Administrator Interface now would display a new tab next to Extension, and you can now navigate to available resources.
+
+</article>
+
+<article id="adding-child">
+## Adding a Child Resource
+
+A single resource might require multiple actions (or controllers), we allow such feature to be used by assigning child resources.
+
+	$robots->pages = 'resource:Robotix\PagesController';
+	
+Nested resource controller is also supported:
+
+	$robots['pages.comments'] = 'resource:Robotix\Pages\CommentController';
+
+</article>
+
+<article id="returning-response">
+## Returning Response from a Resource
+
+Controllers mapped as Orchestra Platform Resources is no different from any other controller except the layout is using Orchestra Platform Administrator Interface. You can use `View`, `Response` and `Redirect` normally as you would without Orchestra Platform integration.
 
 </article>
