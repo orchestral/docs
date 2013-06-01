@@ -30,4 +30,10 @@ Normally we would identify an extension to a resource for ease of use, however O
 		));
 	});
 
+Name     | Usage
+:--------|:-------------------------------------------------------
+name     | A name or title to refer to the resource.
+uses     | a path to controller, you can prefix with either `restful:` (default) or `resource:` to indicate how Orchestra Platform should handle the controller.
+visible  | Choose whether to include the resource to Orchestra Platform Administrator Interface menu.
+
 </article>
