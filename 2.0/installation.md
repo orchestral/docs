@@ -26,6 +26,12 @@ Once Composer is installed, download the [latest version](https://github.com/orc
 
 > The installation process would automatically publish `orchestra/foundation` asset to your public path.
 
+### Installation using Composer
+
+You can install Orchestra Platform using Composer:
+
+	$ composer.phar create-project orchestra/platform
+
 ### Installation using GIT
 
 You can also choose to install Orchestra Platform using GIT:
