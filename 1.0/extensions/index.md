@@ -1,3 +1,9 @@
+---
+layout: docs1.0
+title: Extensions
+
+---
+
 # Extensions
 
 ## Table of Content
