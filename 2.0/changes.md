@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: docs2.0
 title: Change Logs
 
 ---
