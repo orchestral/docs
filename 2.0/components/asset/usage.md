@@ -11,6 +11,7 @@ Using Asset
 * [Dumping Assets](#dumping)
 * [Asset Dependencies](#dependencies)
 * [Asset Containers](#container)
+* [Asset Versioning](#versioning)
 
 <article id="registering">
 ## Registering Assets
@@ -69,4 +70,17 @@ Dumping that assets from a given container:
 
 	echo Asset::container('footer')->scripts();
 	
+</article>
+
+<article id="versioning">
+## Asset Versioning
+
+Another option to increase response time is by utilizing browser caching, while there few ways to do this we pick last modified time as our way to version the Asset.
+
+	Asset::container()->addVersioning();
+
+	// or possibility
+	Asset::addVersioning();
+
+> Note: this would only work with local asset.
 </article>
