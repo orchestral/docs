@@ -11,9 +11,20 @@ Orchestra Platform Role Based Access Control gives you the ability to create cus
 
 In most other solutions, you are either restrict to file based configuration for ACL or only allow to define a single metric for your entire application. This simplicity would later become an issue depends on how many extensions do you have within your application.
 
+* [Concept of RBAC](#concept)
 * [Creating a New ACL Instance](#creating)
 * [Verifying the ACL](#verifying)
 
+<article id="concept">
+## Concept of RBAC
+
+Name     | Description
+:--------|:-----------------------
+actions  | Actions is either route or activity that we as a user can do (or not do).
+roles    | Roles are user group that a user can belong to.
+acl      | Is a boolean mapping between actions and roles, which determine whether a role is allow to do an action.
+
+</article>
 <article id="creating">
 ## Creating a New ACL Instance
 
