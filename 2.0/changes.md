@@ -30,6 +30,7 @@ title: Change Logs
   * Allow Extensions not to be started when in safe mode, using `Session::get('orchestra-safemode')`.
   * Add `Orchestra\Extension::setMemoryProvider()` and `Orchestra\Extension::getMemoryProvider()` helpers.
   * `Orchestra\Extension\Dispatcher` only load packages `orchestra.php` only after all extension (and service providers) has been registered.
+  * Allow `Orchestra\Extension\Publisher\AssetManager` to publish asset for orchestra/foundation.
 * **Facile**
   * Migrate `Orchestra\Facile` from Orchestra Platform 1.2.
 * **Html**
@@ -48,6 +49,7 @@ title: Change Logs
   * Update to Twitter Bootstrap 3.
   * Replace current implementation for reset password with Laravel 4, with some goodies from Orchestra Platform.
   * Remove `Form::token()` as it's automatically added by `Form::open()`.
+  * Add support to use `sendmail` as e-mail transport.
 * **Memory**
   * Migrate `Orchestra\Memory` from Orchestra Platform 1.2.
   * Rename `Orchestra\Memory::shutdown()` to `Orchestra\Memory::finish()`.
