@@ -71,6 +71,7 @@ title: Change Logs
   * Dreprecate and remove `Orchestra\Messages::add()` method as `Illuminate\Support\MessageBag` already allow chaining.
   * Allow data bindings on `Orchestra\Support\Validator`.
   * Add `Orchestra\Support\Str::humanize()` to convert slug to normal string.
+  * Remove all static properties from `Orchestra\Support\Validator`.
 * **View**
   * Migrate `Orchestra\View` and `Orchestra\Theme` from Orchestra Platform 1.2.
   * Deprecate and remove `Orchestra\Theme::map()` usage.
