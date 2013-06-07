@@ -31,6 +31,7 @@ title: Change Logs
   * Add `Orchestra\Extension::setMemoryProvider()` and `Orchestra\Extension::getMemoryProvider()` helpers.
   * `Orchestra\Extension\Dispatcher` only load packages `orchestra.php` only after all extension (and service providers) has been registered.
   * Allow `Orchestra\Extension\Publisher\AssetManager` to publish asset for orchestra/foundation.
+  * Start Extension before running publish command when activating an extension.
 * **Facile**
   * Migrate `Orchestra\Facile` from Orchestra Platform 1.2.
 * **Html**
@@ -51,6 +52,7 @@ title: Change Logs
   * Remove `Form::token()` as it's automatically added by `Form::open()`.
   * Add support to use `sendmail` as e-mail transport.
   * Reduce usage of Blade syntax, since `{{` and `}}` can be customised by the user Orchestra Platform shouldn't depend on it.
+  * Fixed invalid generated URL to delete users.
 * **Memory**
   * Migrate `Orchestra\Memory` from Orchestra Platform 1.2.
   * Rename `Orchestra\Memory::shutdown()` to `Orchestra\Memory::finish()`.
