@@ -32,6 +32,7 @@ title: Change Logs
   * `Orchestra\Extension\Dispatcher` only load packages `orchestra.php` only after all extension (and service providers) has been registered.
   * Allow `Orchestra\Extension\Publisher\AssetManager` to publish asset for orchestra/foundation.
   * Start Extension before running publish command when activating an extension.
+  * Change `Orchestra\Extension\Dispatcher::start()` visibility to public.
 * **Facile**
   * Migrate `Orchestra\Facile` from Orchestra Platform 1.2.
 * **Html**
