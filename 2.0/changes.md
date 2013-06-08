@@ -63,6 +63,7 @@ title: Change Logs
   * Add `Orchestra\Resources\Dispatcher` and `Orchestra\Resources\Response` to isolate class responsibility.
   * Add support for Laravel 4 response system which include `Illuminate\Http\RedirectResponse`, `Illuminate\Http\JsonResponse` and `Illuminate\Http\Response`.
   * Add support to use `resource` controller instead of just `restful` controller.
+  * `Orchestra\Resources\Response` should respect non-html response instead of converting it to `text/html` content type.
 * **Support**
   * Migrate `Orchestra\Support` from Orchestra Platform 1.2.
   * Split service provider to `Orchestra\Support\DecoratorServiceProvider` and `Orchestra\Support\MessagesServiceProvider`.
