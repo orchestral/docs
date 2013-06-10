@@ -39,6 +39,7 @@ title: Change Logs
   * Migrate `Orchestra\Html`, `Orchestra\Form` and `Orchestra\Table` from Orchestra Platform 1.2.
   * `Orchestra\Table` would automatically paginate result via `$table->with($model)`, disable it via `$table->with($model, false);`.
   * `Orchestra\Form` add helper method to attach Eloquent using `$form->with($model);`.
+  * `Orchestra\Form::extend()` and `Orchestra\Table::extend()` should return self.
 * **Foundation**
   * Migrate `Orchestra\Foundation` from Orchestra Platform 1.2.
   * Convert `Orchestra\Core` to `Orchestra\App`.
@@ -54,6 +55,7 @@ title: Change Logs
   * Add support to use `sendmail` as e-mail transport.
   * Reduce usage of Blade syntax, since `{{` and `}}` can be customised by the user Orchestra Platform shouldn't depend on it.
   * Fixed invalid generated URL to delete users.
+  * Add `Orchestra\Testbench` package to help unit testing controllers.
 * **Memory**
   * Migrate `Orchestra\Memory` from Orchestra Platform 1.2.
   * Rename `Orchestra\Memory::shutdown()` to `Orchestra\Memory::finish()`.
