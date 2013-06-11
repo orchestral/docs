@@ -37,7 +37,7 @@ You can customize the HTML attibutes by adding third parameter.
 
 Mark a string to be excluded from being escaped.
 
-	echo HTML::link('foo', HTML::raw('<img src="foo.jpg">));
+	echo HTML::link('foo', HTML::raw('<img src="foo.jpg">'));
 	
 	// will output <a href="foo"><img src="foo.jpg"></a>
 </article>
