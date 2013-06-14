@@ -16,4 +16,6 @@ By default, `Orchestra\Extension` is configured to search for extension under th
 
 	App::make('orchestra.extension.finder')->addPath(base_path().'/modules/*/*/');
 
+> Be sure to add modules autoloading structure to `app`'s `composer.json`.
+
 </article>
