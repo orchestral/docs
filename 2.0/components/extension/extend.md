@@ -12,7 +12,13 @@ Extending Extension
 <article id="add-location">
 ## Add Extension Location
 
-By default, `Orchestra\Extension` is configured to search for extension under the following folders: `app`, `workbench/*/*` and `vendor/*/*` using `glob()` PHP function. If there a requirement to add non-distributed packages feel free to include your own structure, and include the path (preferably in `app/start/global.php`):
+By default, `Orchestra\Extension` is configured to search for extension under the following folders using `glob()` PHP function: 
+
+* `app`
+* `workbench/*/*`
+* `vendor/*/*`
+
+If there a requirement to add non-distributed packages feel free to include your own structure, and include the path (preferably in `app/start/global.php`):
 
 	App::make('orchestra.extension.finder')->addPath(base_path().'/modules/*/*/');
 
