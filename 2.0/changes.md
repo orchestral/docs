@@ -56,7 +56,7 @@ title: Change Logs
   * Replace current implementation for reset password with Laravel 4, with some goodies from Orchestra Platform.
   * Remove `Form::token()` as it's automatically added by `Form::open()`.
   * Add support to use `sendmail` as e-mail transport.
-  * Reduce usage of Blade syntax, since `{{` and `}}` can be customised by the user Orchestra Platform shouldn't depend on it.
+  * Reduce usage of Blade syntax, since `{` and `}` can be customised by the user Orchestra Platform shouldn't depend on it.
   * Fixed invalid generated URL to delete users.
   * Add `Orchestra\Testbench` package to help unit testing controllers.
   * Allow `handles('orchestra::/')` to alias `handles('orchestra/foundation::/')`.
