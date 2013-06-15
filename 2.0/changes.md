@@ -21,6 +21,8 @@ title: Change Logs
   * Add command line utility via `Orchestra\Auth\Console\AuthCommand`.
   * Add soft deletes to migration schema.
   * Add password reminders migration from Laravel 4.
+  * Fixed `Orchestra\Auth\Guard::is()` should accept array.
+  * Rename `Orchestra\Auth\Acl\Environment::shutdown()` to `Orchestra\Auth\Acl\Environment::finish()`.
 * **Extension**
   * Migrate `Orchestra\Extension` from Orchestra Platform 1.2.
   * Add support for extension to register service provider using `orchestra.json`.
@@ -33,6 +35,7 @@ title: Change Logs
   * Allow `Orchestra\Extension\Publisher\AssetManager` to publish asset for orchestra/foundation.
   * Start Extension before running publish command when activating an extension.
   * Change `Orchestra\Extension\Dispatcher::start()` visibility to public.
+  * Prevent reserved name to be used as extension name.
 * **Facile**
   * Migrate `Orchestra\Facile` from Orchestra Platform 1.2.
 * **Html**
