@@ -59,6 +59,7 @@ title: Change Logs
   * Reduce usage of Blade syntax, since `{{` and `}}` can be customised by the user Orchestra Platform shouldn't depend on it.
   * Fixed invalid generated URL to delete users.
   * Add `Orchestra\Testbench` package to help unit testing controllers.
+  * Allow `handles('orchestra::/')` to alias `handles('orchestra/foundation::/')`.
 * **Memory**
   * Migrate `Orchestra\Memory` from Orchestra Platform 1.2.
   * Rename `Orchestra\Memory::shutdown()` to `Orchestra\Memory::finish()`.
