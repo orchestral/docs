@@ -86,6 +86,7 @@ title: Change Logs
   * Migrate `Orchestra\View` and `Orchestra\Theme` from Orchestra Platform 1.2.
   * Deprecate and remove `Orchestra\Theme::map()` usage.
   * Allow queried view to be cache for subsequent call within the same request using `Orchestra\View\FileViewFinder`.
+  * Add `Orchestra\View\Theme\Finder` for theme management purpose.
 * **Widget**
   * Migrate `Orchestra\Widget` from Orchestra Platform 1.2.
   * Change the way `Orchestra\Widget` handle positional insert; `before` to `<`, `after` to `>` and `child-of` to `^`. 
