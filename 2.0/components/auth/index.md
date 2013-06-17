@@ -40,6 +40,7 @@ Next add the service provider in `app/config/app.php`.
 		// ...
 		# Remove 'Illuminate\Auth\AuthServiceProvider' 
 		# and add 'Orchestra\Auth\AuthServiceProvider'
+		
 		'Orchestra\Auth\AuthServiceProvider',
 		'Orchestra\Memory\MemoryServiceProvider',
 	),

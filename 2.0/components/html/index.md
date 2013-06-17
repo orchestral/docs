@@ -40,6 +40,7 @@ Next add the service provider in `app/config/app.php`.
 		// ...
 		# Remove 'Illuminate\Html\HtmlServiceProvider' 
 		# and add 'Orchestra\Html\HtmlServiceProvider'
+		
 		'Orchestra\Html\HtmlServiceProvider',
 	),
 
