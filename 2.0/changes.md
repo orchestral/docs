@@ -60,6 +60,7 @@ title: Change Logs
   * Fixed invalid generated URL to delete users.
   * Add `Orchestra\Testbench` package to help unit testing controllers.
   * Allow `handles('orchestra::/')` to alias `handles('orchestra/foundation::/')`.
+  * Add `resources('foo')` to alias `handles('orchestra/foundation::resources/foo')`.
 * **Memory**
   * Migrate `Orchestra\Memory` from Orchestra Platform 1.2.
   * Rename `Orchestra\Memory::shutdown()` to `Orchestra\Memory::finish()`.
