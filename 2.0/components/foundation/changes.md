@@ -14,6 +14,8 @@ title: Foundation Change Log
 ### Version 2.0.2
 
 * Fixed unable to use `"orchestra.saving: extension.{name}"` event.
+* Implement `"orchestra.validate: extension.{name}"` and `Orchestra\Services\Validation\Extension`.
+* Fixed regression bug with new implementation on `Orchestra\Support\Validator`.
 
 </article>
 
