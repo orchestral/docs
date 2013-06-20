@@ -13,6 +13,7 @@ title: Foundation Change Log
 ### Version 2.0.1
 
 * Tweak Users search form CSS to match Bootstrap 3.
+* Fixed a bug where Extension's handles configuration is not accessible.
 
 </article>
 
