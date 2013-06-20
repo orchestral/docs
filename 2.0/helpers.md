@@ -10,6 +10,7 @@ Orchestra Platform includes a set of helpers function to help solves some of the
 
 * [orchestra()](#orchestra)
 * [handles()](#handles)
+* [resources()](#resources)
 * [memorize()](#memorize)
 
 <article id="orchestra">
@@ -34,6 +35,18 @@ Return handles configuration for a package to generate a full URL.
 Above code would return `http://yoursite.com/orchestra/users`, however if your Orchestra Platform configuration is set to use admin as the bundle handles, the same code would then return `http:://yoursite.com/admin/users`.
 
 > During boot process, Orchestra Platform will automatically set handle for each packages, if specified in `orchestra.json` to `orchestra/extension::handles.vendor/package`, this can be modified from the extension configuration page.
+
+</article>
+
+<article id="resources">
+
+Return handles configuration for a resources to generate a full URL.
+
+	// To route for a resources you would normally write
+	echo handles('orchestra/foundation::resources/foo/create');
+
+	// this can be shortern to
+	echo resources('foo/create');
 
 </article>
 
