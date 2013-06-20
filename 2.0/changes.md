@@ -1,10 +1,10 @@
 ---
 layout: docs2.0
-title: Change Logs
+title: Change Log
 
 ---
 
-# Change Logs
+# Change Log
 
 <section id="v2.0">
 ## Version 2.0
