@@ -24,7 +24,7 @@ Return orchestra.app instance.
 <article id="handles">
 ## handles()
 
-Return handles configuration for a bundle to generate a full URL.
+Return handles configuration for a package to generate a full URL.
 
 	echo handles('orchestra/foundation::users');
 
