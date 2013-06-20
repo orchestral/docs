@@ -9,7 +9,15 @@ title: Foundation Change Log
 <section id="v2.0">
 ## Version 2.0
 
-<article id="v2.1.0">
+
+<article id="v2.0.2">
+### Version 2.0.2
+
+* Fixed unable to use `"orchestra.saving: extension.{name}"` event.
+
+</article>
+
+<article id="v2.0.1">
 ### Version 2.0.1
 
 * Tweak Users search form CSS to match Bootstrap 3.

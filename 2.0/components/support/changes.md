@@ -9,6 +9,13 @@ title: Support Change Log
 <section id="v2.0">
 ## Version 2.0
 
+<article id="v2.0.1">
+### Version 2.0.1
+
+* `Orchestra\Support\Validator::$rules` should utilize `Illuminate\Support\Fluent`.
+
+</article>
+
 <article id="v2.0.0">
 ### Version 2.0.0
 
