@@ -39,6 +39,7 @@ Above code would return `http://yoursite.com/orchestra/users`, however if your O
 </article>
 
 <article id="resources">
+## resources()
 
 Return handles configuration for a resources to generate a full URL.
 
