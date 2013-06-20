@@ -28,6 +28,9 @@ Return handles configuration for a bundle to generate a full URL.
 
 	echo handles('orchestra/foundation::users');
 
+	// you can also use `orchestra` as an alias to `orchestra/foundation`.
+	echo handles('orchestra::users');
+
 Above code would return `http://yoursite.com/orchestra/users`, however if your Orchestra Platform configuration is set to use admin as the bundle handles, the same code would then return `http:://yoursite.com/admin/users`.
 
 > During boot process, Orchestra Platform will automatically set handle for each packages, if specified in `orchestra.json` to `orchestra/extension::handles.vendor/package`, this can be modified from the extension configuration page.
