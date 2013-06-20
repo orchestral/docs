@@ -31,7 +31,7 @@ Once Composer is installed, download the [latest version](https://github.com/orc
 
 You can install Orchestra Platform using Composer:
 
-	$ composer.phar create-project orchestra/platform website v2.0.0-RC1
+	$ composer.phar create-project orchestra/platform website
 	
 ### Installation using GIT
 
@@ -39,7 +39,7 @@ You can also choose to install Orchestra Platform using GIT:
 
 	$ git clone -o orchestra git@github.com:orchestral/platform.git website
 	$ cd website
-	$ git checkout v2.0.0-RC1
+	$ git checkout v2.0.0
 
 This allow you to grab the latest update of Orchestra Platform app skeleton via the following command.
 
