@@ -9,6 +9,13 @@ title: Support Change Log
 <section id="v2.0">
 ## Version 2.0
 
+<article id="v2.0.2">
+### Version 2.0.2
+
+* `Orchestra\Support\Manager` shouldn't allow name with dotted.
+
+</article>
+
 <article id="v2.0.1">
 ### Version 2.0.1
 
