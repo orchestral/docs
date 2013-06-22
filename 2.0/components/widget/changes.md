@@ -9,8 +9,8 @@ title: Widget Change Log
 <section id="v2.0">
 ## Version 2.0
 
-<article id="v2.0.0">
-### Version 2.0.0
+<article id="v2.0.1">
+### Version 2.0.1
 
 * Update `Orchestra\Widget\WidgetManager` based on changes to [Orchestra\Support](/docs/2.0/components/support/changes#2.0.2)
 
