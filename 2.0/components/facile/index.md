@@ -37,8 +37,7 @@ To install through composer, simply put the following in your `composer.json` fi
 	{
 		"require": {
 			"orchestra/facile": "2.0.*"
-		},
-		"minimum-stability": "dev"
+		}
 	}
 
 </article>
