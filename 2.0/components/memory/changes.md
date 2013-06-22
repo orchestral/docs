@@ -9,6 +9,13 @@ title: Memory Change Log
 <section id="v2.0">
 ## Version 2.0
 
+<article id="v2.0.1">
+### Version 2.0.1
+
+* Minor docblock and code refactoring improvement.
+
+</article>
+
 <article id="v2.0.0">
 ### Version 2.0.0
 
