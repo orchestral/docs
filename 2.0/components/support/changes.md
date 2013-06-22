@@ -20,7 +20,7 @@ title: Support Change Log
 <article id="v2.0.2">
 ### Version 2.0.2
 
-* `Orchestra\Support\Manager` shouldn't allow name with dotted.
+* `Orchestra\Support\Manager` should be able to set blacklisted name, for example `Orchestra\Memory` shouldn't allow dotted.
 
 </article>
 
