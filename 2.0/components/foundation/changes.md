@@ -9,6 +9,13 @@ title: Foundation Change Log
 <section id="v2.0">
 ## Version 2.0
 
+<article id="v2.0.3">
+### Version 2.0.3
+
+* Add @placeholder("orchestra.resources: {name}").
+* Add data-id attributes to edit and delete link on users page.
+
+</article>
 
 <article id="v2.0.2">
 ### Version 2.0.2
