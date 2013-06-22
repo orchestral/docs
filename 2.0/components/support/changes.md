@@ -9,6 +9,14 @@ title: Support Change Log
 <section id="v2.0">
 ## Version 2.0
 
+<article id="v2.0.3">
+### Version 2.0.3
+
+* Allow `Orchestra\Support\Validator::on()` should accept additional parameters.
+* Add `Orchestra\Support\Validator::setRules()` to override rules, and set it as an instanceof `Illuminate\Support\Fluent`.
+
+</article>
+
 <article id="v2.0.2">
 ### Version 2.0.2
 
