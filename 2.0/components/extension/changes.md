@@ -9,6 +9,14 @@ title: Extension Change Log
 <section id="v2.0">
 ## Version 2.0
 
+<article id="v2.0.1">
+### Version 2.0.1
+
+* Add additional keyword to extension' reserved name.
+* Small docblock and code refactor improvement.
+
+</article>
+
 <article id="v2.0.0">
 ### Version 2.0.0
 
