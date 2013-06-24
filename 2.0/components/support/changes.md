@@ -9,6 +9,12 @@ title: Support Change Log
 <section id="v2.0">
 ## Version 2.0
 
+<article id="v2.0.4">
+
+* Refactor `Orchestra\Support\Validator` to minimize usage of `Illuminate\Support\Fluent`, this allow rules to be assigned as array and only pass as instance of Fluent during event (to allow pass by references).
+
+</article>
+
 <article id="v2.0.3">
 ### Version 2.0.3
 
