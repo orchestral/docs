@@ -9,6 +9,14 @@ title: Foundation Change Log
 <section id="v2.0">
 ## Version 2.0
 
+<article id="v2.0.4">
+### Version 2.0.4
+
+* Allow guest user to access resources if ACL permit.
+* Fixed CSS on User search form.
+
+</article>
+
 <article id="v2.0.3">
 ### Version 2.0.3
 
