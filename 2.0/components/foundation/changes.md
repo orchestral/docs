@@ -20,7 +20,7 @@ title: Foundation Change Log
 <article id="v2.0.3">
 ### Version 2.0.3
 
-* Add @placeholder("orchestra.resources: {name}").
+* Add `@placeholder("orchestra.resources: {name}")`.
 * Add data-id attributes to edit and delete link on users page.
 
 </article>
