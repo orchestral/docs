@@ -9,6 +9,13 @@ title: HTML Change Log
 <section id="v2.0">
 ## Version 2.0
 
+<article id="v2.0.1">
+### Version 2.0.1
+
+* `HTML::image()`, `HTML::link()`, `HTML::create()`, `HTML::ol()`, `HTML::ul()` and macro will utilize `HTML::raw()`.
+
+</article>
+
 <article id="v2.0.0">
 ### Version 2.0.0
 
