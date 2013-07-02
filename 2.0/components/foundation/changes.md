@@ -6,8 +6,27 @@ title: Foundation Change Log
 
 # Foundation Change Log
 
+<section id="v2.1">
+## Version 2.1
+
+<article id="v2.1.0">
+### Version 2.1.0 (In Development)
+
+* Allow Orchestra Platform Administrator Interface Menu event handler to be configurable.
+
+</article>
+
+</section>
+
 <section id="v2.0">
 ## Version 2.0
+
+<article id="v2.0.5">
+### Version 2.0.5 (In Development)
+
+* Move `Orchestra\Services` to `Orchestra\Foundation\Services`.
+* Move `Orchestra\Routing` to `Orchestra\Foundation\Routing`.
+* All classes are mapped using PSR-0.
 
 <article id="v2.0.4">
 ### Version 2.0.4
