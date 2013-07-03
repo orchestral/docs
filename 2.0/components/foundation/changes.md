@@ -22,11 +22,13 @@ title: Foundation Change Log
 ## Version 2.0
 
 <article id="v2.0.5">
-### Version 2.0.5 (In Development)
+### Version 2.0.5
 
 * Move `Orchestra\Services` to `Orchestra\Foundation\Services`.
 * Move `Orchestra\Routing` to `Orchestra\Foundation\Routing`.
 * All classes are mapped using PSR-0.
+* Improved default theme.
+* Fixed CSS styling on FTP publisher page.
 
 <article id="v2.0.4">
 ### Version 2.0.4
