@@ -21,6 +21,14 @@ title: Foundation Change Log
 <section id="v2.0">
 ## Version 2.0
 
+<article id="v2.0.6">
+### Version 2.0.6
+
+* Tweak Resources menu to be not shown when all resources are hidden.
+* Fixed unable to use Publisher FTP since `Illuminate\Filesystem\Filesystem::makeDirectory()` throws PHP error when creating directory failed.
+
+</article>
+
 <article id="v2.0.5">
 ### Version 2.0.5
 

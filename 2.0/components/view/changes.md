@@ -9,6 +9,13 @@ title: View Change Log
 <section id="v2.0">
 ## Version 2.0
 
+<article id="v2.0.1">
+### Version 2.0.1
+
+* Allow theme name to be reserved from theme.json, and introduce uid to store theme folder name as an alternative name.
+
+</article>
+
 <article id="v2.0.0">
 ### Version 2.0.0
 
