@@ -21,6 +21,16 @@ title: Foundation Change Log
 <section id="v2.0">
 ## Version 2.0
 
+<article id="v2.0.7">
+### Version 2.0.7
+
+* Allow `Orchestra\Foundation\Services\UserMetaRepository` to look for data from eloquent before resolving to default.
+* Fixed a bug where no roles is assigned to registered user.
+* Improved the base grid system to be more readable.
+* Multiple bugfixes to the UX and CSS.
+
+</article>
+
 <article id="v2.0.6">
 ### Version 2.0.6
 
