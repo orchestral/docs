@@ -9,6 +9,14 @@ title: View Change Log
 <section id="v2.0">
 ## Version 2.0
 
+<article id="v2.0.2">
+### Version 2.0.2
+
+* Fixed theme name detection for Windows environment.
+* Rename `Orchestra\View\Finder::getFilename` to `Orchestra\View\Finder:: parseThemeNameFromPath`.
+
+</article>
+
 <article id="v2.0.1">
 ### Version 2.0.1
 
