@@ -9,6 +9,13 @@ title: Extension Change Log
 <section id="v2.0">
 ## Version 2.0
 
+<article id="v2.0.3">
+### Version 2.0.3
+
+* Fixed extension name detection for Windows environment.
+
+</article>
+
 <article id="v2.0.2">
 ### Version 2.0.2
 
