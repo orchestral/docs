@@ -9,6 +9,13 @@ title: View Change Log
 <section id="v2.0">
 ## Version 2.0
 
+<article id="v2.0.3">
+### Version 2.0.3
+
+* Fixed can't inherit abstract function `Illuminate\Support\Contracts\RenderableInterface::render()` (previously declared abstract in `Orchestra\Html\AbstractableBuilder`).
+
+</article>
+
 <article id="v2.0.2">
 ### Version 2.0.2
 
