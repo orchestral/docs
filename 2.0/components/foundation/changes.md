@@ -21,6 +21,15 @@ title: Foundation Change Log
 <section id="v2.0">
 ## Version 2.0
 
+<article id="v2.0.8">
+### Version 2.0.8
+
+* Optimize use of `orchestra/foundation::layout.widgets.header` view.
+* Create table and form view for `Orchestra\Html\Table` and `Orchestra\Html\Form`.
+* Update Bootstrap 3 files.
+
+</article>
+
 <article id="v2.0.7">
 ### Version 2.0.7
 
