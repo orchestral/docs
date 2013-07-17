@@ -10,14 +10,14 @@ title: Resources Change Log
 ## Version 2.0
 
 <article id="v2.0.1">
-### Version 2.0.1
+### v2.0.1
 
 * `Orchestra\Resources` shouldn't accept "." or "/" as a name, child resource should accept ".".
 
 </article>
 
 <article id="v2.0.0">
-### Version 2.0.0
+### v2.0.0
 
 * Migrate `Orchestra\Resources` from Orchestra Platform 1.2.
 * Add `Orchestra\Resources\Dispatcher` and `Orchestra\Resources\Response` to isolate class responsibility.

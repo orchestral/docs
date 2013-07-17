@@ -10,7 +10,7 @@ title: Auth Change Log
 ## Version 2.0
 
 <article id="v2.0.0">
-### Version 2.0.0
+### v2.0.0
 
 * Migrate `Orchestra\Auth` from Orchestra Platform 1.2.
 * Move event `orchestra.auth: roles` to `Orchestra\Auth`. *Note that this would make it incompatible with any auth driver which is not based on `Eloquent`.*

@@ -10,28 +10,28 @@ title: Extension Change Log
 ## Version 2.0
 
 <article id="v2.0.4">
-### Version 2.0.4@dev
+### v2.0.4@dev
 
 * Modify boot sequence for `Orchestra\Extension`, this would allow `Orchestra\Foundation\FoundationServiceProvider` to have priority during boot.
 
 </article>
 
 <article id="v2.0.3">
-### Version 2.0.3
+### v2.0.3
 
 * Fixed extension name detection for Windows environment.
 
 </article>
 
 <article id="v2.0.2">
-### Version 2.0.2
+### v2.0.2
 
 * Add `Orchestra\Extension\Environment::isWritableWithAsset()` helper.
 
 </article>
 
 <article id="v2.0.1">
-### Version 2.0.1
+### v2.0.1
 
 * Add additional keyword to extension' reserved name.
 * Small docblock and code refactor improvement.
@@ -39,7 +39,7 @@ title: Extension Change Log
 </article>
 
 <article id="v2.0.0">
-### Version 2.0.0
+### v2.0.0
 
 * Migrate `Orchestra\Extension` from Orchestra Platform 1.2.
 * Add support for extension to register service provider using `orchestra.json`.

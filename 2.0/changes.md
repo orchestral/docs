@@ -10,14 +10,14 @@ title: Change Log
 ## Version 2.0
 
 <article id="v2.0.1">
-### Version 2.0.1
+### v2.0.1
 
 * Include [orchestra/control](https://github.com/orchestra/control).
 
 </article>
 
 <article id="v2.0.0">
-### Version 2.0.0
+### v2.0.0
 
 * Migrate from version 1.2 to support Laravel 4.
 * Upgrade to Twitter Bootstrap 3.

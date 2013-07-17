@@ -10,7 +10,7 @@ title: Foundation Change Log
 ## Version 2.1
 
 <article id="v2.1.0">
-### Version 2.1.0@dev
+### v2.1.0@dev
 
 * Allow Orchestra Platform Administrator Interface Menu event handler to be configurable.
 
@@ -22,7 +22,7 @@ title: Foundation Change Log
 ## Version 2.0
 
 <article id="v2.0.9">
-### Version 2.0.9@dev
+### v2.0.9@dev
 
 * Rename `Orchestra\Foundation\Site::localtime()` to `Orchestra\Foundation\Site::toLocalTime()`.
 * Fixed date is not appended when attaching role to a user, add `withTimestamps()` options to both `Orchestra\Model\User` and `Orchestra\Model\Role`.
@@ -32,7 +32,7 @@ title: Foundation Change Log
 </article>
 
 <article id="v2.0.8">
-### Version 2.0.8
+### v2.0.8
 
 * Optimize use of `orchestra/foundation::layout.widgets.header` view.
 * Create table and form view for `Orchestra\Html\Table` and `Orchestra\Html\Form`.
@@ -41,7 +41,7 @@ title: Foundation Change Log
 </article>
 
 <article id="v2.0.7">
-### Version 2.0.7
+### v2.0.7
 
 * Allow `Orchestra\Foundation\Services\UserMetaRepository` to look for data from eloquent before resolving to default.
 * Fixed a bug where no roles is assigned to registered user.
@@ -51,7 +51,7 @@ title: Foundation Change Log
 </article>
 
 <article id="v2.0.6">
-### Version 2.0.6
+### v2.0.6
 
 * Tweak Resources menu to be not shown when all resources are hidden.
 * Fixed unable to use Publisher FTP since `Illuminate\Filesystem\Filesystem::makeDirectory()` throws PHP error when creating directory failed.
@@ -59,7 +59,7 @@ title: Foundation Change Log
 </article>
 
 <article id="v2.0.5">
-### Version 2.0.5
+### v2.0.5
 
 * Move `Orchestra\Services` to `Orchestra\Foundation\Services`.
 * Move `Orchestra\Routing` to `Orchestra\Foundation\Routing`.
@@ -68,7 +68,7 @@ title: Foundation Change Log
 * Fixed CSS styling on FTP publisher page.
 
 <article id="v2.0.4">
-### Version 2.0.4
+### v2.0.4
 
 * Allow guest user to access resources if ACL permit.
 * Fixed CSS on User search form.
@@ -76,7 +76,7 @@ title: Foundation Change Log
 </article>
 
 <article id="v2.0.3">
-### Version 2.0.3
+### v2.0.3
 
 * Add `@placeholder("orchestra.resources: {name}")`.
 * Add data-id attributes to edit and delete link on users page.
@@ -84,7 +84,7 @@ title: Foundation Change Log
 </article>
 
 <article id="v2.0.2">
-### Version 2.0.2
+### v2.0.2
 
 * Fixed unable to use `"orchestra.saving: extension.{name}"` event.
 * Implement `"orchestra.validate: extension.{name}"` and `Orchestra\Services\Validation\Extension`.
@@ -93,7 +93,7 @@ title: Foundation Change Log
 </article>
 
 <article id="v2.0.1">
-### Version 2.0.1
+### v2.0.1
 
 * Tweak Users search form CSS to match Bootstrap 3.
 * Fixed a bug where Extension's handles configuration is not accessible.
@@ -101,7 +101,7 @@ title: Foundation Change Log
 </article>
 
 <article id="v2.0.0">
-### Version 2.0.0
+### v2.0.0
 
 * Migrate `Orchestra\Foundation` from Orchestra Platform 1.2.
 * Convert `Orchestra\Core` to `Orchestra\App`.

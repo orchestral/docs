@@ -10,14 +10,14 @@ title: Memory Change Log
 ## Version 2.0
 
 <article id="v2.0.1">
-### Version 2.0.1
+### v2.0.1
 
 * Minor docblock and code refactoring improvement.
 
 </article>
 
 <article id="v2.0.0">
-### Version 2.0.0
+### v2.0.0
 
 * Migrate `Orchestra\Memory` from Orchestra Platform 1.2.
 * Rename `Orchestra\Memory::shutdown()` to `Orchestra\Memory::finish()`.

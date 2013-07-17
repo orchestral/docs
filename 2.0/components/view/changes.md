@@ -10,14 +10,14 @@ title: View Change Log
 ## Version 2.0
 
 <article id="v2.0.3">
-### Version 2.0.3
+### v2.0.3
 
 * Fixed can't inherit abstract function `Illuminate\Support\Contracts\RenderableInterface::render()` (previously declared abstract in `Orchestra\Html\AbstractableBuilder`).
 
 </article>
 
 <article id="v2.0.2">
-### Version 2.0.2
+### v2.0.2
 
 * Fixed theme name detection for Windows environment.
 * Rename `Orchestra\View\Finder::getFilename` to `Orchestra\View\Finder:: parseThemeNameFromPath`.
@@ -25,14 +25,14 @@ title: View Change Log
 </article>
 
 <article id="v2.0.1">
-### Version 2.0.1
+### v2.0.1
 
 * Allow theme name to be reserved from theme.json, and introduce uid to store theme folder name as an alternative name.
 
 </article>
 
 <article id="v2.0.0">
-### Version 2.0.0
+### v2.0.0
 
 * Migrate `Orchestra\View` and `Orchestra\Theme` from Orchestra Platform 1.2.
 * Deprecate and remove `Orchestra\Theme::map()` usage.

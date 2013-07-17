@@ -10,14 +10,14 @@ title: Widget Change Log
 ## Version 2.0
 
 <article id="v2.0.1">
-### Version 2.0.1
+### v2.0.1
 
 * Update `Orchestra\Widget\WidgetManager` based on changes to [Orchestra\Support](/docs/2.0/components/support/changes#2.0.2)
 
 </article>
 
 <article id="v2.0.0">
-### Version 2.0.0
+### v2.0.0
 
 * Migrate `Orchestra\Widget` from Orchestra Platform 1.2.
 * Change the way `Orchestra\Widget` handle positional insert; `before` to `<`, `after` to `>` and `child-of` to `^`. 
