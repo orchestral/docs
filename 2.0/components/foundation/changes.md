@@ -22,7 +22,7 @@ title: Foundation Change Log
 ## Version 2.0
 
 <article id="v2.0.9">
-### v2.0.9@dev
+### v2.0.9
 
 * Rename `Orchestra\Foundation\Site::localtime()` to `Orchestra\Foundation\Site::toLocalTime()`.
 * Fixed date is not appended when attaching role to a user, add `withTimestamps()` options to both `Orchestra\Model\User` and `Orchestra\Model\Role`.

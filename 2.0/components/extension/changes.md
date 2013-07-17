@@ -10,7 +10,7 @@ title: Extension Change Log
 ## Version 2.0
 
 <article id="v2.0.4">
-### v2.0.4@dev
+### v2.0.4
 
 * Modify boot sequence for `Orchestra\Extension`, this would allow `Orchestra\Foundation\FoundationServiceProvider` to have priority during boot.
 
