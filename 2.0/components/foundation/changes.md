@@ -10,7 +10,7 @@ title: Foundation Change Log
 ## Version 2.1
 
 <article id="v2.1.0">
-### Version 2.1.0 (In Development)
+### Version 2.1.0@dev
 
 * Allow Orchestra Platform Administrator Interface Menu event handler to be configurable.
 
@@ -20,6 +20,16 @@ title: Foundation Change Log
 
 <section id="v2.0">
 ## Version 2.0
+
+<article id="v2.0.9">
+### Version 2.0.9@dev
+
+* Rename `Orchestra\Foundation\Site::localtime()` to `Orchestra\Foundation\Site::toLocalTime()`.
+* Fixed date is not appended when attaching role to a user, add `withTimestamps()` options to both `Orchestra\Model\User` and `Orchestra\Model\Role`.
+* Add `Orchestra\Foundation\Site::fromLocalTime()` to convert time from local to what set in `"app.timezone"` config.
+* Add `Orchestra\Foundation\Application::locate()` to return relative path to packages/app.
+
+</article>
 
 <article id="v2.0.8">
 ### Version 2.0.8
