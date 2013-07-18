@@ -21,6 +21,15 @@ title: Foundation Change Log
 <section id="v2.0">
 ## Version 2.0
 
+<article id="v2.0.10">
+### v2.0.10@dev
+
+* Update Bootstrap 3.
+* Remove requirement to use `Illuminate\Support\Fluent` on `Orchestra\Foundation\Services\Validation\UserAccount`.
+* Add client-side JavaScript event on each page load.
+
+</article>
+
 <article id="v2.0.9">
 ### v2.0.9
 
