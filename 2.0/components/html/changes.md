@@ -9,6 +9,20 @@ title: HTML Change Log
 <section id="v2.0">
 ## Version 2.0
 
+<article id="v2.0.4">
+### v2.0.4
+
+* Code improvements.
+
+</article>
+
+<article id="v2.0.3">
+### v2.0.3
+
+* Fixed can't inherit abstract function `Illuminate\Support\Contracts\RenderableInterface::render()` (previously declared abstract in `Orchestra\Html\AbstractableBuilder`).
+
+</article>
+
 <article id="v2.0.2">
 ### v2.0.2
 

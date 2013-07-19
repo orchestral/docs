@@ -9,6 +9,14 @@ title: Support Change Log
 <section id="v2.0">
 ## Version 2.0
 
+<article id="v2.0.6">
+### v2.0.6
+
+* Code improvements.
+* Add `Orchestra\Support\Ftp\RuntimeException::getParameters()`.
+
+</article>
+
 <article id="v2.0.5">
 ### v2.0.5
 

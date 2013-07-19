@@ -22,11 +22,13 @@ title: Foundation Change Log
 ## Version 2.0
 
 <article id="v2.0.10">
-### v2.0.10@dev
+### v2.0.10
 
 * Update Bootstrap 3.
 * Remove requirement to use `Illuminate\Support\Fluent` on `Orchestra\Foundation\Services\Validation\UserAccount`.
 * Add client-side JavaScript event on each page load.
+* Code improvements.
+* Fixed `mkdir(): Permission denied` on uploading extension asset using FTP Publisher.
 
 </article>
 

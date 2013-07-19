@@ -9,6 +9,13 @@ title: Extension Change Log
 <section id="v2.0">
 ## Version 2.0
 
+<article id="v2.0.5">
+### v2.0.5
+
+* Code improvements.
+
+</article>
+
 <article id="v2.0.4">
 ### v2.0.4
 

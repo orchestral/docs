@@ -21,6 +21,13 @@ title: Asset Change Log
 <section id="v2.0">
 ## Version 2.0
 
+<article id="v2.0.1">
+### v2.0.1
+
+* Code improvements.
+
+</article>
+
 <article id="v2.0.0">
 ### v2.0.0
 
