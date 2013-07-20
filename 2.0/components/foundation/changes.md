@@ -13,6 +13,7 @@ title: Foundation Change Log
 ### v2.1.0@dev
 
 * Allow Orchestra Platform Administrator Interface Menu event handler to be configurable.
+* Split `Orchestra\Foundation\Services\AdminMenuHandler@handle` to allow easier customization.
 
 </article>
 
@@ -28,7 +29,7 @@ title: Foundation Change Log
 * Remove requirement to use `Illuminate\Support\Fluent` on `Orchestra\Foundation\Services\Validation\UserAccount`.
 * Add client-side JavaScript event on each page load.
 * Code improvements.
-* Fixed `mkdir(): Permission denied` on uploading extension asset using FTP Publisher.
+* Fixed `mkdir(): Permission denied` while uploading extension asset using FTP Publisher.
 
 </article>
 
