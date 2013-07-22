@@ -9,6 +9,14 @@ title: Extension Change Log
 <section id="v2.0">
 ## Version 2.0
 
+<article id="v2.0.6">
+### v2.0.6
+
+* Allow extension path to be predefined from `orchestra.json`.
+* Add `"autoload"` and `"source-path"` options to `orchestra.json`.
+
+</article>
+
 <article id="v2.0.5">
 ### v2.0.5
 
