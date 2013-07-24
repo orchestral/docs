@@ -9,6 +9,17 @@ title: Extension Change Log
 <section id="v2.0">
 ## Version 2.0
 
+<article id="v2.0.7">
+### v2.0.7
+
+* Configuration cleanup on `Orchestra\Extension\Dispatcher`.
+* Update reserved extension name.
+* Add "source-path" to `Orchestra\Extension\Publisher\MigrateManager::extension()`, allow migration to be done on source-path folder.
+* Tweak extension dispatcher event on booting. The `orchestra.php` bootstrap file should be able to utilise event to hook with another extension, otherwise it best to use service provider.
+* Introduce `extension.booted: {name}` event.
+
+</article>
+
 <article id="v2.0.6">
 ### v2.0.6
 
