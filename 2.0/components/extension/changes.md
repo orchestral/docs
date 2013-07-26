@@ -9,6 +9,16 @@ title: Extension Change Log
 <section id="v2.0">
 ## Version 2.0
 
+<article id="v2.0.8">
+### v2.0.8
+
+* `"autoload"` config should first respect source-path folder, unless specified as full path.
+* Fixed regression bug where safe mode no longer work.
+* Deprecate `Orchestra\Extension\Environment::isActive()` and introduce `Orchestra\Extension\Environment::activated()`.
+* Run `Session::put()` only if there changes for `orchestra.safemode` value.
+
+</article>
+
 <article id="v2.0.7">
 ### v2.0.7
 
