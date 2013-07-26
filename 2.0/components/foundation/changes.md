@@ -14,6 +14,7 @@ title: Foundation Change Log
 
 * Allow Orchestra Platform Administrator Interface Menu event handler to be configurable.
 * Split `Orchestra\Foundation\Services\AdminMenuHandler@handle` to allow easier customization.
+* Replace deprecated call to Orchestra\Extension::isActive() and instead use `Orchestra\Extension::activated()`.
 
 </article>
 
