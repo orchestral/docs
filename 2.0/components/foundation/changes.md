@@ -22,6 +22,15 @@ title: Foundation Change Log
 <section id="v2.0">
 ## Version 2.0
 
+<article id="v2.0.11">
+### v2.0.11
+
+* Fixed typo to `Orchestra\Extension::isActive()`.
+* Add safe mode notification when running from safe mode.
+* Docblock improvement.
+
+</article>
+
 <article id="v2.0.10">
 ### v2.0.10
 
