@@ -13,7 +13,7 @@ title: Change Log
 ### v2.1.0@dev
 
 * Include [orchestra/control](https://github.com/orchestral/control).
-* Include [orchestra/story](https://github.com/orchestra;/story).
+* Include [orchestra/story](https://github.com/orchestral/story).
 
 </article>
 
