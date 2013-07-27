@@ -9,6 +9,14 @@ title: HTML Change Log
 <section id="v2.0">
 ## Version 2.0
 
+<article id="v2.0.5">
+### v2.0.5
+
+* Update Form configuration to match Orchestra Platform official grid CSS structure.
+* Include `.form-control` as default class attribute for Form builder.
+
+</article>
+
 <article id="v2.0.4">
 ### v2.0.4
 
