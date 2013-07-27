@@ -21,6 +21,13 @@ title: Extension Change Log
 <section id="v2.0">
 ## Version 2.0
 
+<article id="v2.0.9">
+### v2.0.9
+
+* Fixed a bug where registering `Orchestra\Acl` from within extension service provider fail as to attach to `Orchestra\Memory`.
+
+</article>
+
 <article id="v2.0.8">
 ### v2.0.8
 
