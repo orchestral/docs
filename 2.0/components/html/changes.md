@@ -6,6 +6,20 @@ title: HTML Change Log
 
 # HTML Change Log
 
+<section id="v2.1">
+## Version 2.1
+
+<article id="v2.1.0">
+### v2.1.0@dev
+
+* `HTML::image()`, `HTML::link()`, `HTML::create()`, `HTML::ol()`, `HTML::ul()` and macro will utilize `HTML::raw()`.
+* Update Form configuration to match Orchestra Platform official grid CSS structure.
+* Include `.form-control` as default class attribute for Form builder.
+
+</article>
+
+</section>
+
 <section id="v2.0">
 ## Version 2.0
 
