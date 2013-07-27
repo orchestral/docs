@@ -12,7 +12,16 @@ title: Extension Change Log
 <article id="v2.1.0">
 ### v2.1.0@dev
 
-* Remove deprecated `Orchestra\Extension\Environment::isActivated()` method.
+* Modify boot sequence for `Orchestra\Extension`, this would allow `Orchestra\Foundation\FoundationServiceProvider` to have priority during boot.
+* Allow extension path to be predefined from `orchestra.json`.
+* Add `"autoload"` and `"source-path"` options to `orchestra.json`.
+* Add `"source-path"` to `Orchestra\Extension\Publisher\MigrateManager::extension()`, allow migration to be done on source-path folder.
+* Tweak extension dispatcher event on booting. The `orchestra.php` bootstrap file should be able to utilise event to hook with another extension, otherwise it best to use service provider.
+* Introduce `extension.booted: {name}` event.
+* `"autoload"` config should first respect source-path folder, unless specified as full path.
+* Fixed regression bug where safe mode no longer work.
+* Deprecate and remove `Orchestra\Extension\Environment::isActive()` and introduce `Orchestra\Extension\Environment::activated()`.
+* Run `Session::put()` only if there changes for `orchestra.safemode` value.
 
 </article>
 
