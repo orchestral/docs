@@ -6,6 +6,19 @@ title: Change Log
 
 # Change Log
 
+<section id="v2.1">
+## Version 2.1
+
+<article id="v2.1.0">
+### v2.1.0@dev
+
+* Include [orchestra/control](https://github.com/orchestral/control).
+* Include [orchestra/story](https://github.com/orchestra;/story).
+
+</article>
+
+</section>
+
 <section id="v2.0">
 ## Version 2.0
 
