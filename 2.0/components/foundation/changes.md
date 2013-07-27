@@ -17,7 +17,7 @@ title: Foundation Change Log
 * Add safe mode notification when running from safe mode.
 * Allow Orchestra Platform Administrator Interface Menu event handler to be configurable.
 * Split `Orchestra\Foundation\Services\AdminMenuHandler@handle` to allow easier customization.
-* Replace deprecated call to Orchestra\Extension::isActive() and instead use `Orchestra\Extension::activated()`.
+* Replace deprecated call to `Orchestra\Extension::isActive()` and instead use `Orchestra\Extension::activated()`.
 * Create table and form view for `Orchestra\Html\Table` and `Orchestra\Html\Form`.
 * Rename `Orchestra\Foundation\Site::localtime()` to `Orchestra\Foundation\Site::toLocalTime()`.
 * Add `Orchestra\Foundation\Site::fromLocalTime()` to convert time from local to what set in `"app.timezone"` config.
