@@ -9,6 +9,7 @@ Using Theme
 
 * [Basic of Theme](#basic)
 * [Anatomy of Theme](#anatomy)
+* [Asset Routing](#asset)
 
 <article id="basic">
 ## Basic of Theme
@@ -30,7 +31,8 @@ Each theme can have a manifest file, which provide Orchestra Platform the requir
 		"name": "Default",
 		"description": "Default Theme for Orchestra Platform",
 		"author": "Orchestra Platform",
-		"autoload": []
+		"autoload": [
+		]
 	}
 
 #### Autoloading Theme Configuration
@@ -61,8 +63,10 @@ The **application** views is accessible from the root path of your theme, while 
 * `public/themes/default/theme.json`
 * `public/themes/default/screenshot.png`
 
-<a name="theme-asset"></a>
-### Routing to Theme Asset
+</article>
+
+<article name="asset"></a>
+## Asset Routing
 
 You are free to maintain where assets is located inside the theme folder as it is under public folder. To access the asset file, you can use the following snippet.
 
