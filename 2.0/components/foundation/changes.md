@@ -12,9 +12,17 @@ title: Foundation Change Log
 <article id="v2.1.0">
 ### v2.1.0@dev
 
+* Add `@placeholder("orchestra.resources: {name}")`.
+* Add client-side JavaScript event on each page load.
+* Add safe mode notification when running from safe mode.
 * Allow Orchestra Platform Administrator Interface Menu event handler to be configurable.
 * Split `Orchestra\Foundation\Services\AdminMenuHandler@handle` to allow easier customization.
 * Replace deprecated call to Orchestra\Extension::isActive() and instead use `Orchestra\Extension::activated()`.
+* Create table and form view for `Orchestra\Html\Table` and `Orchestra\Html\Form`.
+* Rename `Orchestra\Foundation\Site::localtime()` to `Orchestra\Foundation\Site::toLocalTime()`.
+* Add `Orchestra\Foundation\Site::fromLocalTime()` to convert time from local to what set in `"app.timezone"` config.
+* Add `Orchestra\Foundation\Application::locate()` to return relative path to packages/app.
+* Update to Twitter Bootstrap 3.0.0-RC1.
 
 </article>
 
