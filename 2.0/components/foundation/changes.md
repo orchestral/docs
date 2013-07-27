@@ -23,6 +23,14 @@ title: Foundation Change Log
 <section id="v2.0">
 ## Version 2.0
 
+<article id="v2.0.12">
+### v2.0.12
+
+* Update to Twitter Bootstrap 3.0.0-RC1.
+* Clean-up CSS, JavaScript as well as HTML to match Bootstrap 3.
+
+</article>
+
 <article id="v2.0.11">
 ### v2.0.11
 
