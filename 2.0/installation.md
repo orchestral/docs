@@ -39,7 +39,6 @@ You can also choose to install Orchestra Platform using GIT:
 
 	$ git clone -o orchestra git@github.com:orchestral/platform.git website
 	$ cd website
-	$ git checkout v2.0.0
 
 This allow you to grab the latest update of Orchestra Platform app skeleton via the following command.
 
