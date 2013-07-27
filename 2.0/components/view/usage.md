@@ -63,6 +63,8 @@ The **application** views is accessible from the root path of your theme, while 
 * `public/themes/default/theme.json`
 * `public/themes/default/screenshot.png`
 
+> As you can see, the file structure of the view follow closely cascading filesystem replacement structure used in many other framework.
+
 </article>
 
 <article name="asset"></a>
