@@ -6,6 +6,20 @@ title: Support Change Log
 
 # Support Change Log
 
+<section id="v2.1">
+## Version 2.1
+
+<article id="v2.1.0">
+### v2.1.0@dev
+
+* Allow `Orchestra\Support\Nesty` to prepend an item without knowing the current first item.
+* Add `Orchestra\Support\Messages::extend()` and tweak how Messages notification can be manipulated on current request.
+
+
+</article>
+
+</section>
+
 <section id="v2.0">
 ## Version 2.0
 
