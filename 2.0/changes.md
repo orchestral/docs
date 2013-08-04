@@ -22,6 +22,15 @@ title: Change Log
 <section id="v2.0">
 ## Version 2.0
 
+<article id="v2.0.2">
+### v2.0.2
+
+* Add expire option to reminder config.
+* Added array validation language lines.
+* Change minimum stability to RC.
+
+</article>
+
 <article id="v2.0.1">
 ### v2.0.1
 

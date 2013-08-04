@@ -9,6 +9,14 @@ title: Facile Change Log
 <section id="v2.0">
 ## Version 2.0
 
+<article id="v2.0.2">
+### v2.0.2
+
+* Check request header to detect allowed Content-Type instead of manually figuring out the format.
+* Fixed typehinting to Eloquent.
+
+</article>
+
 <article id="v2.0.1">
 ### v2.0.1
 

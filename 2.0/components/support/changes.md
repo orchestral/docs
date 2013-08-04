@@ -23,6 +23,13 @@ title: Support Change Log
 <section id="v2.0">
 ## Version 2.0
 
+<article id="v2.0.7">
+### v2.0.7
+
+* Add `Orchestra\Support\Messages::extend()` and tweak how Messages notification can be manipulated on current request.
+
+</article>
+
 <article id="v2.0.6">
 ### v2.0.6
 

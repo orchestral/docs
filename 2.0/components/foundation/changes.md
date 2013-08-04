@@ -23,6 +23,13 @@ title: Foundation Change Log
 * Add `Orchestra\Foundation\Site::fromLocalTime()` to convert time from local to what set in `"app.timezone"` config.
 * Add `Orchestra\Foundation\Application::locate()` to return relative path to packages/app.
 * Update to Twitter Bootstrap 3.0.0-RC1.
+* Replace call to `handles('orchestra/foundation::*')` to `handles('orchestra::*')`.
+* Small improvement to migration process during installation.
+* Add italian translation.
+* Revert alias and provides in `Orchestra\Foundation\Services\TestCase`.
+* Add `Orchestra\Foundation\Services\ApplicationTestCase`.
+* Add testcase for `Orchestra\Foundation\Routing\CredentialController`.
+* Fixed CSS issue on create/update User using Select2.
 
 </article>
 
@@ -30,6 +37,20 @@ title: Foundation Change Log
 
 <section id="v2.0">
 ## Version 2.0
+
+<article id="v2.0.13">
+### v2.0.13
+
+* Replace deprecated call to `Orchestra\Extension::isActive()` and instead use `Orchestra\Extension::activated()`.
+* Replace call to `handles('orchestra/foundation::*')` to `handles('orchestra::*')`.
+* Small improvement to migration process during installation.
+* Add italian translation.
+* Revert alias and provides in `Orchestra\Foundation\Services\TestCase`.
+* Add `Orchestra\Foundation\Services\ApplicationTestCase`.
+* Add testcase for `Orchestra\Foundation\Routing\CredentialController`.
+* Fixed CSS issue on create/update User using Select2.
+
+</article>
 
 <article id="v2.0.12">
 ### v2.0.12
