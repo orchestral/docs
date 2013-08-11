@@ -30,16 +30,16 @@ Provide a solid base off of which to build your new web applications. It's not a
 
 With the introduction of Composer, we are now free to organize the code into smaller component where there would be use-case where you can use one or two Orchestra Platform components without everything else. At this moment we have organize the code into following components:
 
-* [Orchestra\Asset](https://github.com/orchestral/asset)
-* [Orchestra\Auth](https://github.com/orchestral/auth)
-* [Orchestra\Extension](https://github.com/orchestral/extension)
-* [Orchestra\Facile](https://github.com/orchestral/facile)
-* [Orchestra\Foundation](https://github.com/orchestral/foundation)
-* [Orchestra\Html](https://github.com/orchestral/html)
-* [Orchestra\Memory](https://github.com/orchestral/memory)
-* [Orchestra\Resources](https://github.com/orchestral/resources)
-* [Orchestra\Support](https://github.com/orchestral/support)
-* [Orchestra\View](https://github.com/orchestral/view)
-* [Orchestra\Widget](https://github.com/orchestral/widget)
+* [Orchestra\Asset](/docs/2.0/components/asset)
+* [Orchestra\Auth](/docs/2.0/components/auth)
+* [Orchestra\Extension](/docs/2.0/components/extension)
+* [Orchestra\Facile](/docs/2.0/components/facile)
+* [Orchestra\Foundation](/docs/2.0/components/foundation)
+* [Orchestra\Html](/docs/2.0/components/html)
+* [Orchestra\Memory](/docs/2.0/components/memory)
+* [Orchestra\Resources](/docs/2.0/components/resources)
+* [Orchestra\Support](/docs/2.0/components/support)
+* [Orchestra\View](/docs/2.0/components/view)
+* [Orchestra\Widget](/docs/2.0/components/widget)
 
 </article>
