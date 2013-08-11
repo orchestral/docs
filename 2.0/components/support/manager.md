@@ -16,6 +16,8 @@ While in most cases you would not need to use multi-instance of the same driver 
 
 ### Example of Orchestra\Widget\WidgetManager
 
+With following `Orchestra\Widget\WidgetManager`, it's possible to have an instance of `Orchestra\Widget::make("menu.orchestra")` and `Orchestra\Widget::make("menu.app")` without a conflict.
+
 	<?php namespace Orchestra\Widget;
 
 	use InvalidArgumentException;
