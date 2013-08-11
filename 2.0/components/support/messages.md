@@ -7,7 +7,7 @@ title: Using Messages
 Using Messages
 ==============
 
-`Orchestra\Messages` utilize `Illuminate\Support\MessageBag` to bring notification support through-out Orchestra Platform.
+`Orchestra\Messages` utilize `Illuminate\Support\MessageBag` to bring notification support through-out Orchestra Platform (and Laravel 4).
 
 <article id="add-message">
 ## Adding a Message
