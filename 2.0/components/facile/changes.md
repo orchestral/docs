@@ -13,7 +13,7 @@ title: Facile Change Log
 ### v2.0.2
 
 * Check request header to detect allowed Content-Type instead of manually figuring out the format.
-* Fixed typehinting to Eloquent.
+* Fixed typehinting to `Eloquent`.
 
 </article>
 

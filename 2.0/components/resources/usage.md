@@ -24,14 +24,14 @@ Normally we would identify an extension to a resource for ease of use, however O
 
 	Event::listen('orchestra.started: admin', function ()
 	{
-		$robots = Orchestra\Resources::make('robotix', array(
+		$robots = Orchestra\Resources::make('robotix', [
 			'name'    => 'Robots.txt',
 			'uses'    => 'Robotix\ApiController',
 			'visible' => function ()
 			{
 				return (Orchestra\App::acl()->can('manage orchestra'));
 			},
-		));
+		]);
 	});
 
 Name     | Usage

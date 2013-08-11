@@ -27,7 +27,7 @@ title: View Change Log
 <article id="v2.0.1">
 ### v2.0.1
 
-* Allow theme name to be reserved from theme.json, and introduce uid to store theme folder name as an alternative name.
+* Allow theme name to be reserved from `theme.json`, and introduce uid to store theme folder name as an alternative name.
 
 </article>
 
