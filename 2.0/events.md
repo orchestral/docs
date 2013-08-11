@@ -28,7 +28,7 @@ Listed below are all the possible events that can be used with Orchestra Platfor
 	- orchestra.validate: extension.{name}
 	- orchestra.saving: extension.{name}
 	- orchestra.saved: extension.{name}
-* **Manage User**
+* **Manage Users**
 	- orchestra.list: users
 	- orchestra.form: users
 	- orchestra.validate: users
@@ -51,7 +51,7 @@ Listed below are all the possible events that can be used with Orchestra Platfor
 	- orchestra.updated: user.account
 	- orchestra.deleted: user.account
 	- orchestra.saved: user.account
-* **Setting**
+* **Settings**
 	- orchestra.form: settings
 	- orchestra.validate: settings
 	- orchestra.saved: settings
