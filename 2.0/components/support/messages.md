@@ -23,8 +23,20 @@ You can also chain messages:
 
 </article>
 
+<article id="extending">
+## Extending a Message to Current Response
+
+There might be situation where you need to extend a message to the current response instead of the following request. You can do this with:
+
+	Orchestra\Messages::extend(function ($message)
+	{
+		$message->add('info', 'Read-only mode');
+	});
+
+</article>
+
 <article id="display">
-## Displaying the Message
+## Displaying the Message in a View
 
 Here's an example how you can display the message:
 
