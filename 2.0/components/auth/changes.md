@@ -6,8 +6,29 @@ title: Auth Change Log
 
 # Auth Change Log
 
+<section id="v2.1">
+## Version 2.1
+
+<article id="v2.1.0">
+### v2.1.0@dev
+
+* Add `Orchestra\Auth\Acl\Fluent::attach()` and `Orchestra\Auth\Acl\Fluent::detach()` method.
+* Call `Illuminate\Auth\AuthServiceProvider::boot()` during booting.
+
+</article>
+
+</section>
+
 <section id="v2.0">
 ## Version 2.0
+
+<article id="v2.0.2">
+### v2.0.2
+
+* Add `Orchestra\Auth\Acl\Fluent::attach()` and `Orchestra\Auth\Acl\Fluent::detach()` method.
+* Call `Illuminate\Auth\AuthServiceProvider::boot()` during booting.
+
+</article>
 
 <article id="v2.0.1">
 ### v2.0.1
