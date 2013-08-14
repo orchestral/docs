@@ -30,6 +30,13 @@ title: Extension Change Log
 <section id="v2.0">
 ## Version 2.0
 
+<article id="v2.0.10">
+### v2.0.10
+
+* Fixed a possible bug when storing extension path meta in the database, especially if the installation is shared.
+
+</article>
+
 <article id="v2.0.9">
 ### v2.0.9
 

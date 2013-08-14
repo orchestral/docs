@@ -12,8 +12,8 @@ title: Change Log
 <article id="v2.1.0">
 ### v2.1.0@dev
 
-* Include [orchestra/control](https://github.com/orchestral/control).
-* Include [orchestra/story](https://github.com/orchestral/story).
+* Add [Control Extension](https://github.com/orchestral/control) for Orchestra Platform 2.
+* Add [Story CMS Extension](https://github.com/orchestral/story) for Orchestra Platform 2.
 
 </article>
 
@@ -23,9 +23,10 @@ title: Change Log
 ## Version 2.0
 
 <article id="v2.0.3">
-### v2.0.3@dev
+### v2.0.3
 
-* Tweak `.gitignore` and `composer.json`.
+* Add [Story CMS Extension](https://github.com/orchestral/story) for Orchestra Platform 2.
+* Package asset should be handled via artisan or ftp publishing. Ignore the files from committed to git.
 
 </article>
 
@@ -41,7 +42,7 @@ title: Change Log
 <article id="v2.0.1">
 ### v2.0.1
 
-* Include [orchestra/control](https://github.com/orchestra/control).
+* Add [Control Extension](https://github.com/orchestra/control) for Orchestra Platform 2.
 
 </article>
 

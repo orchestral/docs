@@ -38,6 +38,16 @@ title: Foundation Change Log
 <section id="v2.0">
 ## Version 2.0
 
+<article id="v2.0.14">
+### v2.0.14
+
+* Update Twitter Bootstrap 3.
+* Change footer to show "Powered by Orchestra Platform" instead of a copyright.
+* Tweak installation message on Auth usage.
+* Convert prefered function to use `Orchestra\Auth\Acl\Fluent::attach()` instead of `Orchestra\Auth\Acl\Fluent::fill()`.
+
+</article>
+
 <article id="v2.0.13">
 ### v2.0.13
 
