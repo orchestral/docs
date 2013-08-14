@@ -22,7 +22,6 @@ title: Foundation Change Log
 * Rename `Orchestra\Foundation\Site::localtime()` to `Orchestra\Foundation\Site::toLocalTime()`.
 * Add `Orchestra\Foundation\Site::fromLocalTime()` to convert time from local to what set in `"app.timezone"` config.
 * Add `Orchestra\Foundation\Application::locate()` to return relative path to packages/app.
-* Update to Twitter Bootstrap 3.0.0-RC1.
 * Replace call to `handles('orchestra/foundation::*')` to `handles('orchestra::*')`.
 * Small improvement to migration process during installation.
 * Add italian translation.
@@ -30,6 +29,8 @@ title: Foundation Change Log
 * Add `Orchestra\Foundation\Services\ApplicationTestCase`.
 * Add testcase for `Orchestra\Foundation\Routing\CredentialController`.
 * Fixed CSS issue on create/update User using Select2.
+* Add padding to `.navbar a-navbar.brand` CSS.
+* `Orchestra\Foundation\Reminders\PasswordBroker` should extends `Illuminate\Auth\Reminders\PasswordBroker`.
 
 </article>
 
@@ -37,6 +38,17 @@ title: Foundation Change Log
 
 <section id="v2.0">
 ## Version 2.0
+
+<article id="v2.0.15">
+### v2.0.15
+
+* Add padding to `.navbar a-navbar.brand` CSS.
+* Update Bootstrap 3.0-RC2.
+* `Orchestra\Foundation\Reminders\PasswordBroker` should extends `Illuminate\Auth\Reminders\PasswordBroker`.
+* Fixed CSS styling based on Bootstrap 3-RC2 changes.
+* Fixed inconsistent form styling on reset password page.
+
+</article>
 
 <article id="v2.0.14">
 ### v2.0.14
