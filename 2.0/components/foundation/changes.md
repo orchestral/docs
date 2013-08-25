@@ -31,6 +31,7 @@ title: Foundation Change Log
 * Fixed CSS issue on create/update User using Select2.
 * Add padding to `.navbar a-navbar.brand` CSS.
 * `Orchestra\Foundation\Reminders\PasswordBroker` should extends `Illuminate\Auth\Reminders\PasswordBroker`.
+* Add `orchestra/translation`.
 
 </article>
 
@@ -38,6 +39,21 @@ title: Foundation Change Log
 
 <section id="v2.0">
 ## Version 2.0
+
+<article id="v2.0.17">
+### v2.0.17
+
+* Add `orchestra/translation`.
+
+</article>
+
+<article id="v2.0.16">
+### v2.0.16
+
+* Update to Twitter Bootstrap v3.0.0.
+* Slightly improved Navbar Decorator.
+
+</article>
 
 <article id="v2.0.15">
 ### v2.0.15
