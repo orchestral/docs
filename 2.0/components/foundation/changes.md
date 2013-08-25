@@ -41,9 +41,11 @@ title: Foundation Change Log
 ## Version 2.0
 
 <article id="v2.0.17">
-### v2.0.17
+### v2.0.17@dev
 
 * Add `orchestra/translation`.
+* Improved asset management.
+* Deprecate and remove subMenu usage of navbar decorator.
 
 </article>
 
