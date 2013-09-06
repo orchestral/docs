@@ -9,6 +9,13 @@ title: Facile Change Log
 <section id="v2.0">
 ## Version 2.0
 
+<article id="v2.0.3">
+### v2.0.3
+
+* Fixed `Orchestra\Facile\FacileServiceProvider` causing an infinite loop while trying to register the deferred service.
+
+</article>
+
 <article id="v2.0.2">
 ### v2.0.2
 

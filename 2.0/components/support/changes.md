@@ -24,6 +24,14 @@ title: Support Change Log
 <section id="v2.0">
 ## Version 2.0
 
+<article id="v2.0.8">
+### v2.0.8
+
+* Add `Orchestra\Support\Str::searchable()` for better pattern matching.
+* Add Guardfile.
+
+</article>
+
 <article id="v2.0.7">
 ### v2.0.7
 

@@ -9,6 +9,17 @@ title: View Change Log
 <section id="v2.0">
 ## Version 2.0
 
+<article id="v2.0.4">
+### v2.0.4
+
+* When theme is swap, the previous selected theme path should completely remove view finder paths.
+* Add additional events:
+  - orchestra.theme.set: {name}
+  - orchestra.theme.unset: {name}
+  - orchestra.theme.boot: {name}
+
+</article>
+
 <article id="v2.0.3">
 ### v2.0.3
 

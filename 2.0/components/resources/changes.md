@@ -9,6 +9,14 @@ title: Resources Change Log
 <section id="v2.0">
 ## Version 2.0
 
+<article id="v2.0.3">
+### v2.0.3
+
+* Fixed nested resources controller doesn't return valid parameters.
+* Add Guardfile.
+
+</article>
+
 <article id="v2.0.2">
 ### v2.0.2
 

@@ -30,6 +30,12 @@ title: Extension Change Log
 <section id="v2.0">
 ## Version 2.0
 
+<article id="v2.0.11">
+### v2.0.11
+
+* Fixed possible issue with path resolver autoloading files for app.
+
+</article>
 <article id="v2.0.10">
 ### v2.0.10
 

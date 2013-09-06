@@ -12,26 +12,9 @@ title: Foundation Change Log
 <article id="v2.1.0">
 ### v2.1.0@dev
 
-* Add `@placeholder("orchestra.resources: {name}")`.
-* Add client-side JavaScript event on each page load.
-* Add safe mode notification when running from safe mode.
 * Allow Orchestra Platform Administrator Interface Menu event handler to be configurable.
 * Split `Orchestra\Foundation\Services\AdminMenuHandler@handle` to allow easier customization.
 * Replace deprecated call to `Orchestra\Extension::isActive()` and instead use `Orchestra\Extension::activated()`.
-* Create table and form view for `Orchestra\Html\Table` and `Orchestra\Html\Form`.
-* Rename `Orchestra\Foundation\Site::localtime()` to `Orchestra\Foundation\Site::toLocalTime()`.
-* Add `Orchestra\Foundation\Site::fromLocalTime()` to convert time from local to what set in `"app.timezone"` config.
-* Add `Orchestra\Foundation\Application::locate()` to return relative path to packages/app.
-* Replace call to `handles('orchestra/foundation::*')` to `handles('orchestra::*')`.
-* Small improvement to migration process during installation.
-* Add italian translation.
-* Revert alias and provides in `Orchestra\Foundation\Services\TestCase`.
-* Add `Orchestra\Foundation\Services\ApplicationTestCase`.
-* Add testcase for `Orchestra\Foundation\Routing\CredentialController`.
-* Fixed CSS issue on create/update User using Select2.
-* Add padding to `.navbar a-navbar.brand` CSS.
-* `Orchestra\Foundation\Reminders\PasswordBroker` should extends `Illuminate\Auth\Reminders\PasswordBroker`.
-* Add `orchestra/translation`.
 
 </article>
 
@@ -40,12 +23,26 @@ title: Foundation Change Log
 <section id="v2.0">
 ## Version 2.0
 
+<article id="v2.0.18">
+### v2.0.18
+
+* Rework on `Orchestra\Foundation\Mail` to handle inconsistency using both `Mail::queue()` and `Mail::send()`, add new `Orchestra\Mail::push()` option to allow sending based on configuration.
+* Both `Orchestra\Mail::send()` and `Orchestra\Mail::queue()` work as you would using `Mail` equivalent. 
+* Refactor `Orchestra\Foundation\Reminders\PasswordBroker` to force send email directly even if queue is enabled. This is a limitation with `Illuminate\Support\SerializeClosure` that does support use () to include Closure.
+* Fixed messages when registration email is sent using queue, instead of showing failed to send. 
+* Improve user searching with new `Orchestra\Support\Str::searchable()` API.
+
+</article>
+
 <article id="v2.0.17">
-### v2.0.17@dev
+### v2.0.17
 
 * Add `orchestra/translation`.
-* Improved asset management.
-* Deprecate and remove subMenu usage of navbar decorator.
+* Improved asset management especially for Twitter Bootstrap.
+* Deprecate and remove `subMenu` usage of Navbar Decorator.
+* Fixed request to `jquery.min.map` cause 500 errors.
+* Separate large view into partial especially on `extensions` and `resources` route for easier theming.
+* Fixed some regression bug.
 
 </article>
 
