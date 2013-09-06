@@ -22,6 +22,13 @@ title: Change Log
 <section id="v2.0">
 ## Version 2.0
 
+<article id="v2.0.4">
+### v2.0.4
+
+* Use `Orchestra\Translation\TranslationServiceProvider` instead of `Illuminate\Translation\TranslationServiceProvider`.
+
+</article>
+
 <article id="v2.0.3">
 ### v2.0.3
 
