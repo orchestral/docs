@@ -22,6 +22,10 @@ title: Extension Change Log
 * Fixed regression bug where safe mode no longer work.
 * Deprecate and remove `Orchestra\Extension\Environment::isActive()` and introduce `Orchestra\Extension\Environment::activated()`.
 * Run `Session::put()` only if there changes for `orchestra.safemode` value.
+* `Orchestra\Extension\Environment` should extends `Orchestra\Memory\Abstractable\Container`.
+* Tweak `php artisan orchestra:extension detect` response to show extension version.
+* Add `php artisan orchestra:extension update {name}` to run migration and asset publish from console.
+* Add ability for extension to handle domain prefix instead of just path prefix via `Orchestra\Extension\RouteGenerator`.
 
 </article>
 
@@ -29,6 +33,37 @@ title: Extension Change Log
 
 <section id="v2.0">
 ## Version 2.0
+
+<article id="v2.0.15">
+### v2.0.15
+
+* Fixed Class `Orchestra\Extension\Console\Str` not found, add use `Orchestra\Support\Str`.
+
+</article>
+
+<article id="v2.0.14">
+### v2.0.14
+
+* Add ability for extension to handle domain prefix instead of just path prefix via `Orchestra\Extension\RouteGenerator`.
+
+
+</article>
+<article id="v2.0.13">
+### v2.0.13
+
+* `Orchestra\Extension\Environment` should extends `Orchestra\Memory\Abstractable\Container`.
+* Multiple code refactors.
+
+</article>
+
+<article id="v2.0.12">
+### v2.0.12
+
+* Tweak `php artisan orchestra:extension detect` response to show extension version.
+* Add `php artisan orchestra:extension update {name}` to run migration and asset publish from console.
+
+
+</article>
 
 <article id="v2.0.11">
 ### v2.0.11
