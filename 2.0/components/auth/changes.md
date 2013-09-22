@@ -14,6 +14,7 @@ title: Auth Change Log
 
 * Add `Orchestra\Auth\Acl\Fluent::attach()` and `Orchestra\Auth\Acl\Fluent::detach()` method.
 * Call `Illuminate\Auth\AuthServiceProvider::boot()` during booting.
+* `Orchestra\Auth\Acl\Container` should extend `Orchestra\Memory\Abstractable\Container`.
 
 </article>
 
@@ -21,6 +22,20 @@ title: Auth Change Log
 
 <section id="v2.0">
 ## Version 2.0
+
+<article id="v2.0.4">
+### v2.0.4
+
+* `Orchestra\Auth\Acl\Container` should extend `Orchestra\Memory\Abstractable\Container`.
+
+</article>
+
+<article id="v2.0.3">
+### v2.0.3
+
+* Fixed a problem accessing `Auth::is()` when user is actually not logged in, and also append the default "Guest" role when accessing `Auth::roles()`.
+
+</article>
 
 <article id="v2.0.2">
 ### v2.0.2
