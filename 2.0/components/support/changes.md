@@ -15,7 +15,7 @@ title: Support Change Log
 * `Orchestra\Support\Manager` should be able to set blacklisted name, for example `Orchestra\Memory` shouldn't allow dotted.
 * Allow `Orchestra\Support\Nesty` to prepend an item without knowing the current first item.
 * Add `Orchestra\Support\Messages::extend()` and tweak how Messages notification can be manipulated on current request.
-
+* Add `Orchestra\Support\Nesty::is()` to return instance of `Illuminate\Support\Fluent` to allow further chaining of the instance.
 
 </article>
 
@@ -23,6 +23,13 @@ title: Support Change Log
 
 <section id="v2.0">
 ## Version 2.0
+
+<article id="v2.0.9">
+### v2.0.9
+
+* Add `Orchestra\Support\Nesty::is()` to return instance of `Illuminate\Support\Fluent` to allow further chaining of the instance.
+
+</article>
 
 <article id="v2.0.8">
 ### v2.0.8
