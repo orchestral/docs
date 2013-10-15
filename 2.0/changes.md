@@ -22,6 +22,15 @@ title: Change Log
 <section id="v2.0">
 ## Version 2.0
 
+<article id="v2.0.5">
+### v2.0.5
+
+* Declare `TestCase` as an abstract class.
+* Move minimum-stability to stable.
+* Add note about expiry time on reminders.
+
+</article>
+
 <article id="v2.0.4">
 ### v2.0.4
 
