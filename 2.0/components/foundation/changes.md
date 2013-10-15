@@ -36,6 +36,7 @@ Replace call to `handles('orchestra/foundation::*')` to `handles('orchestra::*')
 * Allow cancelling SMTP e-mail password after change password is clicked.
 * Allow Orchestra Platform route to make use of latest `Orchestra\Extension\RequestGenerator` feature allowing subdomain handling.
 * Predefined package path to avoid additional overhead to guest package path.
+* Only display resources in navigation menus if not hidden.
 
 </article>
 
