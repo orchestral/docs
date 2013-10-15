@@ -42,6 +42,9 @@
   - [Overview](/docs/2.0/components/memory)
   - [Usage](/docs/2.0/components/memory/usage)
   - [Change Log](/docs/2.0/components/memory/changes)
+- Model
+  - [Overview](/docs/2.0/components/model)
+  - [Change Log](/docs/2.0/components/model/changes)
 - Resources
   - [Overview](/docs/2.0/components/resources)
   - [Usage](/docs/2.0/components/resources/usage)
