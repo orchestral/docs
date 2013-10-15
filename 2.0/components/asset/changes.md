@@ -21,6 +21,13 @@ title: Asset Change Log
 <section id="v2.0">
 ## Version 2.0
 
+<article id="v2.0.2">
+### v2.0.2@dev
+
+* Reduce complexity of `Orchestra\Asset\Container::evaluateAsset()`.
+
+</article>
+
 <article id="v2.0.1">
 ### v2.0.1
 

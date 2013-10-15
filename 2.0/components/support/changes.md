@@ -24,6 +24,22 @@ title: Support Change Log
 <section id="v2.0">
 ## Version 2.0
 
+<article id="v2.0.11">
+### v2.0.11@dev
+
+* Simplify `Orchestra\Support\Nesty:: pickTraverseFromMatchedExpression()`.
+
+</article>
+
+<article id="v2.0.10">
+### v2.0.10
+
+* `Illuminate\Support\Str::title()` is implemented, remove duplicate method.
+* Add support to use `Orchestra\Support\Validator::extendScope()`, useful to have when need to deal with conditional rules <http://laravel.com/docs/validation#conditionally-adding-rules>.
+* Refactor `Orchestra\Support\Str::streamGetContents()`.
+
+</article>
+
 <article id="v2.0.9">
 ### v2.0.9
 

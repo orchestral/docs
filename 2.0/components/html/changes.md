@@ -13,8 +13,7 @@ title: HTML Change Log
 ### v2.1.0@dev
 
 * `HTML::image()`, `HTML::link()`, `HTML::create()`, `HTML::ol()`, `HTML::ul()` and macro will utilize `HTML::raw()`.
-* Update Form configuration to match Orchestra Platform official grid CSS structure.
-* Include `.form-control` as default class attribute for Form builder.
+* Predefined package path to avoid additional overhead to guest package path.
 
 </article>
 
@@ -22,6 +21,27 @@ title: HTML Change Log
 
 <section id="v2.0">
 ## Version 2.0
+
+<article id="v2.0.8">
+### v2.0.8@dev
+
+* Huge internal refactor to reduce code complexity, which would result to increase in performance.
+
+</article>
+
+<article id="v2.0.7">
+### v2.0.7
+
+* Directly inject `session.store` instance instead of `session` (Session Manager) instance based on upstream changes.
+
+</article>
+
+<article id="v2.0.6">
+### v2.0.6
+
+* Append `$grid` when rendering view for `Orchestra\Html\Table\TableBuider` and `Orchestra\Html\Form\FormBuilder`.
+
+</article>
 
 <article id="v2.0.5">
 ### v2.0.5

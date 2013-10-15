@@ -26,6 +26,7 @@ title: Extension Change Log
 * Tweak `php artisan orchestra:extension detect` response to show extension version.
 * Add `php artisan orchestra:extension update {name}` to run migration and asset publish from console.
 * Add ability for extension to handle domain prefix instead of just path prefix via `Orchestra\Extension\RouteGenerator`.
+* Predefined package path to avoid additional overhead to guest package path.
 
 </article>
 
@@ -33,6 +34,35 @@ title: Extension Change Log
 
 <section id="v2.0">
 ## Version 2.0
+
+<article id="v2.0.19">
+### v2.0.19@dev
+
+* Move commands to it's own service provider.
+
+</article>
+
+<article id="v2.0.18">
+### v2.0.18
+
+* Fixed issue where proper folder permission still resolved to require FTP publishing.
+* Re-enable command `php artisan orchestra:extension update {extension}`.
+
+</article>
+
+<article id="v2.0.17">
+### v2.0.17
+
+* Fixed inconsistent directory separator contain both \ and / in Windows environment. 
+
+</article>
+
+<article id="v2.0.16">
+### v2.0.16
+
+* Fixed `Orchestra\Extension\RouteGenerator` doesn't create proper domain and prefix setup in certain condition including localhost.
+
+</article>
 
 <article id="v2.0.15">
 ### v2.0.15

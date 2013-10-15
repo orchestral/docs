@@ -9,6 +9,20 @@ title: View Change Log
 <section id="v2.0">
 ## Version 2.0
 
+<article id="v2.0.6">
+### v2.0.6@dev
+
+* Allow finding theme with inconsistent directory separator.
+
+</article>
+
+<article id="v2.0.5">
+### v2.0.5
+
+* Cache found views has been added to `Illuminate\View\FileViewFinder`, removing duplicate code.
+
+</article>
+
 <article id="v2.0.4">
 ### v2.0.4
 

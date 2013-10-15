@@ -6,8 +6,26 @@ title: Resources Change Log
 
 # Resources Change Log
 
+<section id="v2.1">
+
+<article id="v2.1.0">
+### v2.1.0@dev
+
+* Update support for Laravel 4.1 controller dispatching.
+
+</article>
+
+</section>
+
 <section id="v2.0">
 ## Version 2.0
+
+<article id="v2.0.4">
+### v2.0.4@dev
+
+* Refactor `Orchestra\Resources\Response` and properly content as empty string shouldn't abort the app.
+
+</article>
 
 <article id="v2.0.3">
 ### v2.0.3

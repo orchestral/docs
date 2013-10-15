@@ -15,6 +15,7 @@ title: Auth Change Log
 * Add `Orchestra\Auth\Acl\Fluent::attach()` and `Orchestra\Auth\Acl\Fluent::detach()` method.
 * Call `Illuminate\Auth\AuthServiceProvider::boot()` during booting.
 * `Orchestra\Auth\Acl\Container` should extend `Orchestra\Memory\Abstractable\Container`.
+* Predefined package path to avoid additional overhead to guest package path.
 
 </article>
 
@@ -22,6 +23,25 @@ title: Auth Change Log
 
 <section id="v2.0">
 ## Version 2.0
+
+<article id="v2.0.6">
+### v2.0.6@dev
+
+* Replace `DateTime` with `Carbon` on basic roles seeding migration to avoid exception to be thrown when using `php artisan debug`.
+* Move commands to it's own service provider.
+* Internal refactor to reduce code complexity.
+
+</article>
+
+<article id="v2.0.5">
+### v2.0.5
+
+* Change `Orchestra\Auth\AuthManager::createDatabaseDriver()` visibility based on upstream changes.
+* Directly inject `session.store` instance instead of `session` (Session Manager) instance
+based on upstream changes.
+* Suggest orchestra/model.
+
+</article>
 
 <article id="v2.0.4">
 ### v2.0.4

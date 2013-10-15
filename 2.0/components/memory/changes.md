@@ -13,6 +13,7 @@ title: Memory Change Log
 ### v2.1.0@dev
 
 * Add `Orchestra\Memory\Abstractable\Container`.
+* Predefined package path to avoid additional overhead to guest package path.
 
 </article>
 
@@ -20,6 +21,13 @@ title: Memory Change Log
 
 <section id="v2.0">
 ## Version 2.0
+
+<article id="v2.0.4">
+### v2.0.4@dev
+
+* Move commands to it's own service provider.
+
+</article>
 
 <article id="v2.0.3">
 ### v2.0.3

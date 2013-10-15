@@ -35,6 +35,7 @@ Replace call to `handles('orchestra/foundation::*')` to `handles('orchestra::*')
 * Refactor presenters to use app container to allow IoC overwrite from application.
 * Allow cancelling SMTP e-mail password after change password is clicked.
 * Allow Orchestra Platform route to make use of latest `Orchestra\Extension\RequestGenerator` feature allowing subdomain handling.
+* Predefined package path to avoid additional overhead to guest package path.
 
 </article>
 
@@ -43,14 +44,28 @@ Replace call to `handles('orchestra/foundation::*')` to `handles('orchestra::*')
 <section id="v2.0">
 ## Version 2.0
 
+<article id="v2.0.21">
+### v2.0.21
+
+* Add `orchestra/foundation::layout.extra` layout view, to be used for registration, login and forgot password interface.
+* Cast possible integer to string on return `ID` from `User` model.
+* Improved pagination support by allowing `$perPage` value to be configurable from the model.
+* Use explicit Route method instead of `Route::controller()` to increase route resolving performance.
+* Move both presenter and validator instance dependencies inject to Controller construct method.
+* Move `Orchestra\Model` to it's own repository, this would allow it to be used with orchestra/auth on project without Orchestra Platform.
+* Multiple namespace refactors.
+
+</article>
+
 <article id="v2.0.20">
-### v2.0.20@dev
+### v2.0.20
 
 * Allow Orchestra Platform route to make use of latest `Orchestra\Extension\RequestGenerator` feature allowing subdomain handling.
 * Fixed `Orchestra\Mail` using queues doesn't respect configuration from `Orchestra\Memory`.
+* Update certain form missing `Input::old()` and `->withInput()` on failed form transaction.
 * Multiple code refactors.
-* Update assets
-  - underscore.js v1.5.2.
+* Update assets:
+  - underscore.js v1.5.2
   - jQuery v1.10.2
   - Modernizr v2.6.2
   - jQuery UI v1.10.3
