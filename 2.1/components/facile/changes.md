@@ -1,0 +1,32 @@
+Facile Change Log
+==============
+
+## Version 2.1
+
+### v2.1.0@dev
+
+* Update code to support `Illuminate\Support\Contracts\ArrayableInterface` support in `Illuminate\Pagination\Paginator` and refactor Facile to receive app instance.
+
+## Version 2.0
+
+### v2.0.4
+
+* Update code to support `Illuminate\Support\Contracts\ArrayableInterface` support in `Illuminate\Pagination\Paginator` and refactor Facile to receive app instance.
+* Multiple refactors.
+
+### v2.0.3
+
+* Fixed `Orchestra\Facile\FacileServiceProvider` causing an infinite loop while trying to register the deferred service.
+
+### v2.0.2
+
+* Check request header to detect allowed Content-Type instead of manually figuring out the format.
+* Fixed typehinting to `Eloquent`.
+
+### v2.0.1
+
+* Code improvements.
+
+### v2.0.0
+
+* Migrate `Orchestra\Facile` from Orchestra Platform 1.2.
