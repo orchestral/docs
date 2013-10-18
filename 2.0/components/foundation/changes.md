@@ -1,51 +1,13 @@
----
-layout: docs2.0
-title: Foundation Change Log
+Foundation Change Log
+==============
 
----
-
-# Foundation Change Log
-
-<section id="v2.1">
-## Version 2.1
-
-<article id="v2.1.0">
-### v2.1.0@dev
-
-* Allow Orchestra Platform Administrator Interface Menu event handler to be configurable.
-* Split `Orchestra\Foundation\Services\AdminMenuHandler@handle` to allow easier customization.
-* Replace deprecated call to `Orchestra\Extension::isActive()` and instead use `Orchestra\Extension::activated()`.
-* Implement `"orchestra.validate: extension.{name}"` and `Orchestra\Services\Validation\Extension`.
-* Add `@placeholder("orchestra.resources: {name}")`.
-* Add data-id attributes to edit and delete link on users page.
-* Allow guest user to access resources if ACL permit.
-* All classes are mapped using PSR-0.
-* Allow `Orchestra\Foundation\Services\UserMetaRepository` to look for data from eloquent before resolving to default.
-* Rename `Orchestra\Foundation\Site::localtime()` to `Orchestra\Foundation\Site::toLocalTime()`.
-* Add `Orchestra\Foundation\Site::fromLocalTime()` to convert time from local to what set in `"app.timezone"` config.
-* Add `Orchestra\Foundation\Application::locate()` to return relative path to packages/app.
-* Add client-side JavaScript event on each page load.
-* Add safe mode notification when running from safe mode.
-* Replace deprecated call to `Orchestra\Extension::isActive()` and instead use `Orchestra\Extension::activated()`.
-Replace call to `handles('orchestra/foundation::*')` to `handles('orchestra::*')`.
-* Add italian translation.
-* Convert prefered function to use `Orchestra\Auth\Acl\Fluent::attach()` instead of `Orchestra\Auth\Acl\Fluent::fill()`.
-* Add `orchestra/translation`.
-* Improve user searching with new `Orchestra\Support\Str::searchable()` API.
-* Refactor presenters to use app container to allow IoC overwrite from application.
-* Allow cancelling SMTP e-mail password after change password is clicked.
-* Allow Orchestra Platform route to make use of latest `Orchestra\Extension\RequestGenerator` feature allowing subdomain handling.
-* Predefined package path to avoid additional overhead to guest package path.
-* Only display resources in navigation menus if not hidden.
-
-</article>
-
-</section>
-
-<section id="v2.0">
 ## Version 2.0
 
-<article id="v2.0.21">
+### v2.0.22@dev
+
+* Fixed `Javie.Events` usage on triggering switcher event.
+* Manage Twitter Bootstrap using Composer.
+
 ### v2.0.21
 
 * Add `orchestra/foundation::layout.extra` layout view, to be used for registration, login and forgot password interface.
@@ -56,9 +18,6 @@ Replace call to `handles('orchestra/foundation::*')` to `handles('orchestra::*')
 * Move `Orchestra\Model` to it's own repository, this would allow it to be used with orchestra/auth on project without Orchestra Platform.
 * Multiple namespace refactors.
 
-</article>
-
-<article id="v2.0.20">
 ### v2.0.20
 
 * Allow Orchestra Platform route to make use of latest `Orchestra\Extension\RequestGenerator` feature allowing subdomain handling.
@@ -72,9 +31,6 @@ Replace call to `handles('orchestra/foundation::*')` to `handles('orchestra::*')
   - jQuery UI v1.10.3
   - Select2 v3.4.3
 
-</article>
-
-<article id="v2.0.19">
 ### v2.0.19
 
 * Re-enable reset password e-mail to be sent using configurable e-mail dispatcher (either direct send or queue).
@@ -86,9 +42,6 @@ Replace call to `handles('orchestra/foundation::*')` to `handles('orchestra::*')
 * Add missing successful reset password message.
 * Refactor presenters to use app container to allow IoC overwrite from application.
 
-</article>
-
-<article id="v2.0.18">
 ### v2.0.18
 
 * Rework on `Orchestra\Foundation\Mail` to handle inconsistency using both `Mail::queue()` and `Mail::send()`, add new `Orchestra\Mail::push()` option to allow sending based on configuration.
@@ -97,9 +50,6 @@ Replace call to `handles('orchestra/foundation::*')` to `handles('orchestra::*')
 * Fixed messages when registration email is sent using queue, instead of showing failed to send. 
 * Improve user searching with new `Orchestra\Support\Str::searchable()` API.
 
-</article>
-
-<article id="v2.0.17">
 ### v2.0.17
 
 * Add `orchestra/translation`.
@@ -109,17 +59,11 @@ Replace call to `handles('orchestra/foundation::*')` to `handles('orchestra::*')
 * Separate large view into partial especially on `extensions` and `resources` route for easier theming.
 * Fixed some regression bug.
 
-</article>
-
-<article id="v2.0.16">
 ### v2.0.16
 
 * Update to Twitter Bootstrap v3.0.0.
 * Slightly improved Navbar Decorator.
 
-</article>
-
-<article id="v2.0.15">
 ### v2.0.15
 
 * Add padding to `.navbar a-navbar.brand` CSS.
@@ -128,9 +72,6 @@ Replace call to `handles('orchestra/foundation::*')` to `handles('orchestra::*')
 * Fixed CSS styling based on Bootstrap 3-RC2 changes.
 * Fixed inconsistent form styling on reset password page.
 
-</article>
-
-<article id="v2.0.14">
 ### v2.0.14
 
 * Update Twitter Bootstrap 3.
@@ -138,9 +79,6 @@ Replace call to `handles('orchestra/foundation::*')` to `handles('orchestra::*')
 * Tweak installation message on Auth usage.
 * Convert prefered function to use `Orchestra\Auth\Acl\Fluent::attach()` instead of `Orchestra\Auth\Acl\Fluent::fill()`.
 
-</article>
-
-<article id="v2.0.13">
 ### v2.0.13
 
 * Replace deprecated call to `Orchestra\Extension::isActive()` and instead use `Orchestra\Extension::activated()`.
@@ -152,26 +90,17 @@ Replace call to `handles('orchestra/foundation::*')` to `handles('orchestra::*')
 * Add testcase for `Orchestra\Foundation\Routing\CredentialController`.
 * Fixed CSS issue on create/update User using Select2.
 
-</article>
-
-<article id="v2.0.12">
 ### v2.0.12
 
 * Update to Twitter Bootstrap 3.0.0-RC1.
 * Clean-up CSS, JavaScript as well as HTML to match Bootstrap 3.
 
-</article>
-
-<article id="v2.0.11">
 ### v2.0.11
 
 * Fixed typo to `Orchestra\Extension::isActive()`.
 * Add safe mode notification when running from safe mode.
 * Docblock improvement.
 
-</article>
-
-<article id="v2.0.10">
 ### v2.0.10
 
 * Update Bootstrap 3.
@@ -180,9 +109,6 @@ Replace call to `handles('orchestra/foundation::*')` to `handles('orchestra::*')
 * Code improvements.
 * Fixed `mkdir(): Permission denied` while uploading extension asset using FTP Publisher.
 
-</article>
-
-<article id="v2.0.9">
 ### v2.0.9
 
 * Rename `Orchestra\Foundation\Site::localtime()` to `Orchestra\Foundation\Site::toLocalTime()`.
@@ -190,18 +116,12 @@ Replace call to `handles('orchestra/foundation::*')` to `handles('orchestra::*')
 * Add `Orchestra\Foundation\Site::fromLocalTime()` to convert time from local to what set in `"app.timezone"` config.
 * Add `Orchestra\Foundation\Application::locate()` to return relative path to packages/app.
 
-</article>
-
-<article id="v2.0.8">
 ### v2.0.8
 
 * Optimize use of `orchestra/foundation::layout.widgets.header` view.
 * Create table and form view for `Orchestra\Html\Table` and `Orchestra\Html\Form`.
 * Update Bootstrap 3 files.
 
-</article>
-
-<article id="v2.0.7">
 ### v2.0.7
 
 * Allow `Orchestra\Foundation\Services\UserMetaRepository` to look for data from eloquent before resolving to default.
@@ -209,17 +129,11 @@ Replace call to `handles('orchestra/foundation::*')` to `handles('orchestra::*')
 * Improved the base grid system to be more readable.
 * Multiple bugfixes to the UX and CSS.
 
-</article>
-
-<article id="v2.0.6">
 ### v2.0.6
 
 * Tweak Resources menu to be not shown when all resources are hidden.
 * Fixed unable to use Publisher FTP since `Illuminate\Filesystem\Filesystem::makeDirectory()` throws PHP error when creating directory failed.
 
-</article>
-
-<article id="v2.0.5">
 ### v2.0.5
 
 * Move `Orchestra\Services` to `Orchestra\Foundation\Services`.
@@ -228,40 +142,27 @@ Replace call to `handles('orchestra/foundation::*')` to `handles('orchestra::*')
 * Improved default theme.
 * Fixed CSS styling on FTP publisher page.
 
-<article id="v2.0.4">
 ### v2.0.4
 
 * Allow guest user to access resources if ACL permit.
 * Fixed CSS on User search form.
 
-</article>
-
-<article id="v2.0.3">
 ### v2.0.3
 
 * Add `@placeholder("orchestra.resources: {name}")`.
 * Add data-id attributes to edit and delete link on users page.
 
-</article>
-
-<article id="v2.0.2">
 ### v2.0.2
 
 * Fixed unable to use `"orchestra.saving: extension.{name}"` event.
 * Implement `"orchestra.validate: extension.{name}"` and `Orchestra\Services\Validation\Extension`.
 * Fixed regression bug with new implementation on `Orchestra\Support\Validator`.
 
-</article>
-
-<article id="v2.0.1">
 ### v2.0.1
 
 * Tweak Users search form CSS to match Bootstrap 3.
 * Fixed a bug where Extension's handles configuration is not accessible.
 
-</article>
-
-<article id="v2.0.0">
 ### v2.0.0
 
 * Migrate `Orchestra\Foundation` from Orchestra Platform 1.2.
@@ -281,7 +182,3 @@ Replace call to `handles('orchestra/foundation::*')` to `handles('orchestra::*')
 * Add `Orchestra\Testbench` package to help unit testing controllers.
 * Allow `handles('orchestra::/')` to alias `handles('orchestra/foundation::/')`.
 * Add `resources('foo')` to alias `handles('orchestra/foundation::resources/foo')`.
-
-</article>
-
-</section>

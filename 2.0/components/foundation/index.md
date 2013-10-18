@@ -1,9 +1,12 @@
----
-layout: docs2.0
-title: Foundation Component
+Foundation Component
+==============
 
----
+`Orchestra\Foundation` is the core of Orchestra Platform.
 
-# Foundation Component
+## Installation
 
-`Orchestra\Foundation` is the core of Orchestra Platform, you are advised to used the official [installation process](/docs/2.0/installation).
+Orchestra Platform is easily install using [Composer](http://getcomposer.org).
+
+```bash
+composer create-project orchestra/platform website --prefer-dist
+```

@@ -1,92 +1,44 @@
----
-layout: docs2.0
-title: HTML Change Log
+HTML Change Log
+==============
 
----
-
-# HTML Change Log
-
-<section id="v2.1">
-## Version 2.1
-
-<article id="v2.1.0">
-### v2.1.0@dev
-
-* `HTML::image()`, `HTML::link()`, `HTML::create()`, `HTML::ol()`, `HTML::ul()` and macro will utilize `HTML::raw()`.
-* Predefined package path to avoid additional overhead to guest package path.
-
-</article>
-
-</section>
-
-<section id="v2.0">
 ## Version 2.0
 
-<article id="v2.0.8">
-### v2.0.8@dev
+### v2.0.8
 
 * Huge internal refactor to reduce code complexity, which would result to increase in performance.
 
-</article>
-
-<article id="v2.0.7">
 ### v2.0.7
 
 * Directly inject `session.store` instance instead of `session` (Session Manager) instance based on upstream changes.
 
-</article>
-
-<article id="v2.0.6">
 ### v2.0.6
 
 * Append `$grid` when rendering view for `Orchestra\Html\Table\TableBuider` and `Orchestra\Html\Form\FormBuilder`.
 
-</article>
-
-<article id="v2.0.5">
 ### v2.0.5
 
 * Update Form configuration to match Orchestra Platform official grid CSS structure.
 * Include `.form-control` as default class attribute for Form builder.
 
-</article>
-
-<article id="v2.0.4">
 ### v2.0.4
 
 * Code improvements.
 
-</article>
-
-<article id="v2.0.3">
 ### v2.0.3
 
 * Fixed can't inherit abstract function `Illuminate\Support\Contracts\RenderableInterface::render()` (previously declared abstract in `Orchestra\Html\AbstractableBuilder`).
 
-</article>
-
-<article id="v2.0.2">
 ### v2.0.2
 
 * Fixed `Orchestra\Html\HtmlBuilder::__call()` to only handle macros, this would avoid rare a bug where infinite loop was reported.
 
-</article>
-
-<article id="v2.0.1">
 ### v2.0.1
 
 * `HTML::image()`, `HTML::link()`, `HTML::create()`, `HTML::ol()`, `HTML::ul()` and macro will utilize `HTML::raw()`.
 
-</article>
-
-<article id="v2.0.0">
 ### v2.0.0
 
 * Migrate `Orchestra\Html`, `Orchestra\Form` and `Orchestra\Table` from Orchestra Platform 1.2.
 * `Orchestra\Table` would automatically paginate result via `$table->with($model)`, disable it via `$table->with($model, false);`.
 * `Orchestra\Form` add helper method to attach Eloquent using `$form->with($model);`.
 * `Orchestra\Form::extend()` and `Orchestra\Table::extend()` should return self.
-
-</article>
-
-</section>

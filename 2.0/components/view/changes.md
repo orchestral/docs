@@ -1,29 +1,16 @@
----
-layout: docs2.0
-title: View Change Log
+View Change Log
+==============
 
----
-
-# View Change Log
-
-<section id="v2.0">
 ## Version 2.0
 
-<article id="v2.0.6">
 ### v2.0.6@dev
 
 * Allow finding theme with inconsistent directory separator.
 
-</article>
-
-<article id="v2.0.5">
 ### v2.0.5
 
 * Cache found views has been added to `Illuminate\View\FileViewFinder`, removing duplicate code.
 
-</article>
-
-<article id="v2.0.4">
 ### v2.0.4
 
 * When theme is swap, the previous selected theme path should completely remove view finder paths.
@@ -32,31 +19,19 @@ title: View Change Log
   - orchestra.theme.unset: {name}
   - orchestra.theme.boot: {name}
 
-</article>
-
-<article id="v2.0.3">
 ### v2.0.3
 
 * Code improvements.
 
-</article>
-
-<article id="v2.0.2">
 ### v2.0.2
 
 * Fixed theme name detection for Windows environment.
 * Rename `Orchestra\View\Finder::getFilename` to `Orchestra\View\Finder:: parseThemeNameFromPath`.
 
-</article>
-
-<article id="v2.0.1">
 ### v2.0.1
 
 * Allow theme name to be reserved from `theme.json`, and introduce uid to store theme folder name as an alternative name.
 
-</article>
-
-<article id="v2.0.0">
 ### v2.0.0
 
 * Migrate `Orchestra\View` and `Orchestra\Theme` from Orchestra Platform 1.2.
@@ -64,7 +39,3 @@ title: View Change Log
 * Allow queried view to be cache for subsequent call within the same request using `Orchestra\View\FileViewFinder`.
 * Add `Orchestra\View\Theme\Finder` for theme management purpose.
 * `Orchestra\View\Theme\Manifest` should be able to return theme name.
-
-</article>
-
-</section>

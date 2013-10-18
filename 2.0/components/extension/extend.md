@@ -1,15 +1,8 @@
----
-layout: docs2.0
-title: Extending Extension
-
----
-
 Extending Extension
 ==============
 
-* [Add Extension Location](#add-location)
+* [Add Extension Location](#add-extension-location)
 
-<article id="add-location">
 ## Add Extension Location
 
 By default, `Orchestra\Extension` is configured to search for extension under the following folders using `glob()` PHP function: 
@@ -20,8 +13,8 @@ By default, `Orchestra\Extension` is configured to search for extension under th
 
 If there a requirement to add non-distributed packages feel free to include your own structure, and include the path (preferably in `app/start/global.php`):
 
-	App::make('orchestra.extension.finder')->addPath(base_path().'/modules/*/*/');
+```php
+App::make('orchestra.extension.finder')->addPath(base_path().'/modules/*/*/');
+```
 
 > Be sure to add modules autoloading structure to `app`'s `composer.json`.
-
-</article>
