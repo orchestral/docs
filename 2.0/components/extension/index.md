@@ -39,6 +39,8 @@ Next add the service provider in `app/config/app.php`.
 
 Before we can start using `Orchestra\Extension`, please run the following:
 
-	$ php artisan orchestra:extension install
+```bash
+php artisan orchestra:extension install
+```
 
 > The command utility is enabled via `Orchestra\Extension\CommandServiceProvider`.

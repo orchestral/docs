@@ -1,10 +1,5 @@
----
-layout: docs2.0
-title: Events
-
----
-
-# Events
+Events
+==============
 
 Orchestra Platform utilise `Event` class from Laravel to extends the functionality, without having to modify any of the code. 
 Listed below are all the possible events that can be used with Orchestra Platform.
