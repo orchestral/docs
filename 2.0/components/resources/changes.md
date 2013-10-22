@@ -3,9 +3,10 @@ Resources Change Log
 
 ## Version 2.0
 
-### v2.0.4@dev
+### v2.0.4
 
 * Refactor `Orchestra\Resources\Response` and properly content as empty string shouldn't abort the app.
+* Implement [PSR-2](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-2-coding-style-guide.md) coding standard.
 
 ### v2.0.3
 

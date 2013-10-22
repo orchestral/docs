@@ -1,7 +1,18 @@
 HTML Change Log
 ==============
 
+## Version 2.1
+
+### v2.1.0@dev
+
+* `HTML::image()`, `HTML::link()`, `HTML::create()`, `HTML::ol()`, `HTML::ul()` and macro will utilize `HTML::raw()`.
+* Predefined package path to avoid additional overhead to guest package path.
+
 ## Version 2.0
+
+### v2.0.9
+
+* Implement [PSR-2](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-2-coding-style-guide.md) coding standard.
 
 ### v2.0.8
 

@@ -13,7 +13,7 @@ To install through composer, simply put the following in your `composer.json` fi
 ```json
 {
 	"require": {
-		"orchestra/resources": "2.0.*"
+		"orchestra/resources": "2.1.*@dev"
 	}
 }
 ```

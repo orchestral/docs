@@ -9,6 +9,10 @@ Facile Change Log
 
 ## Version 2.0
 
+### v2.0.5
+
+* Implement [PSR-2](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-2-coding-style-guide.md) coding standard.
+
 ### v2.0.4
 
 * Update code to support `Illuminate\Support\Contracts\ArrayableInterface` support in `Illuminate\Pagination\Paginator` and refactor Facile to receive app instance.

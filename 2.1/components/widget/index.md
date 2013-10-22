@@ -17,7 +17,7 @@ To install through composer, simply put the following in your `composer.json` fi
 ```json
 {
 	"require": {
-		"orchestra/widget": "2.0.*"
+		"orchestra/widget": "2.1.*@dev"
 	}
 }
 ```

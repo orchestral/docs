@@ -10,7 +10,7 @@ An extension is a basically a package except that first it need to have a manife
 * [Configuring an Extension](#configuring-an-extension)
   * [Service Providers for Extension](#service-providers-for-extension)
   * [Handling a Route](#handling-a-route)
-  * [Disabling Configuration](#disabling-configuration) 
+  * [Disabling Configuration](#disabling-configuration)
 
 ## Managing an Extension
 
@@ -37,15 +37,12 @@ The manifest file will be stored in `{package-name}/orchestra.json` (same level 
 	},
 	"provide": [
 		"Robotix\\RobotixServiceProvider"
+	],
+	"autoload": [
+		"start.php"
 	]
 }
 ```
-
-### Start File
-
-Extension start file (optional) allow extension to run start script (as Laravel run application start.php file). The start file will be stored in `{package-name}/src/orchestra.php`. 
-
-> What inside the file depends on how extension would interact with Orchestra Platform and this can be diverse depending on use cases.
 
 ## Configuring an Extension
 
@@ -59,13 +56,33 @@ Manifest file also allow extension to dynamically register service providers wit
 
 ```json
 {
-	"provide" : [
+	"provide": [
 		"Robotix\\RobotixServiceProvider"
 	]
 }
 ```
-	
+
 > You can add multiple service provider on a single extension.
+
+### Autoloading File
+
+Apart from service providers, you can also set pre-define PHP file to be loaded when the extension is booted. These start files allows extension to any booting script required for the extension to work (as Laravel run application start.php file).
+
+```json
+{
+	"autoload": [
+		"start.php"
+	]
+}
+```
+
+In the above example, `{package-name}/src/start.php` will be loaded.
+
+> What inside the file depends on how extension would interact with Orchestra Platform and this can be diverse depending on use cases.
+
+#### Default Start File
+
+Other than specifying the autoload file, Extension would also load the default start file will be stored in `{package-name}/src/orchestra.php`.
 
 ### Handling a Route
 
@@ -74,7 +91,7 @@ Unliked basic packages for Laravel 4, end users doesn't have control to manage p
 ```json
 {
 	"config": {
-		"handles": "robotix"		
+		"handles": "robotix"
 	}
 }
 ```
