@@ -7,8 +7,13 @@ Memory Change Log
 
 * Add `Orchestra\Memory\Abstractable\Container`.
 * Predefined package path to avoid additional overhead to guest package path.
+* Rename command to `php artisan memory:migrate`.
 
 ## Version 2.0
+
+### v2.0.5@dev
+
+* Convert database schema to use `longText()` instead of `binary()`.
 
 ### v2.0.4
 

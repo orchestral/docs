@@ -16,10 +16,16 @@ Extension Change Log
 * Deprecate and remove `Orchestra\Extension\Environment::isActive()` and introduce `Orchestra\Extension\Environment::activated()`.
 * Run `Session::put()` only if there changes for `orchestra.safemode` value.
 * `Orchestra\Extension\Environment` should extends `Orchestra\Memory\Abstractable\Container`.
-* Tweak `php artisan orchestra:extension detect` response to show extension version.
-* Add `php artisan orchestra:extension update {name}` to run migration and asset publish from console.
 * Add ability for extension to handle domain prefix instead of just path prefix via `Orchestra\Extension\RouteGenerator`.
 * Predefined package path to avoid additional overhead to guest package path.
+* Allow wildcard `{{domain}}` for extension routing via `Orchestra\Extension\RouteGenerator`.
+* Restructure extensions console command to:
+  - `php artisan extension:activate {name}`
+  - `php artisan extension:deactivate {name}`
+  - `php artisan extension:detect`
+  - `php artisan extension:migrate`
+  - `php artisan extension:update {name}`
+* Tweak `php artisan extension:detect` response to show extension version.
 
 ## Version 2.0
 

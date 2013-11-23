@@ -1,6 +1,32 @@
 Extension Change Log
 ==============
 
+## Version 2.1
+
+### v2.1.0@dev
+
+* Modify boot sequence for `Orchestra\Extension`, this would allow `Orchestra\Foundation\FoundationServiceProvider` to have priority during boot.
+* Allow extension path to be predefined from `orchestra.json`.
+* Add `"autoload"` and `"source-path"` options to `orchestra.json`.
+* Add `"source-path"` to `Orchestra\Extension\Publisher\MigrateManager::extension()`, allow migration to be done on source-path folder.
+* Tweak extension dispatcher event on booting. The `orchestra.php` bootstrap file should be able to utilise event to hook with another extension, otherwise it best to use service provider.
+* Introduce `extension.booted: {name}` event.
+* `"autoload"` config should first respect source-path folder, unless specified as full path.
+* Fixed regression bug where safe mode no longer work.
+* Deprecate and remove `Orchestra\Extension\Environment::isActive()` and introduce `Orchestra\Extension\Environment::activated()`.
+* Run `Session::put()` only if there changes for `orchestra.safemode` value.
+* `Orchestra\Extension\Environment` should extends `Orchestra\Memory\Abstractable\Container`.
+* Add ability for extension to handle domain prefix instead of just path prefix via `Orchestra\Extension\RouteGenerator`.
+* Predefined package path to avoid additional overhead to guest package path.
+* Allow wildcard `{{domain}}` for extension routing via `Orchestra\Extension\RouteGenerator`.
+* Restructure extensions console command to:
+  - `php artisan extension:activate {name}`
+  - `php artisan extension:deactivate {name}`
+  - `php artisan extension:detect`
+  - `php artisan extension:migrate`
+  - `php artisan extension:update {name}`
+* Tweak `php artisan extension:detect` response to show extension version.
+
 ## Version 2.0
 
 ### v2.0.19
