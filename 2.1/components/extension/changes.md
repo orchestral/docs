@@ -29,6 +29,12 @@ Extension Change Log
 
 ## Version 2.0
 
+### v2.0.20
+
+* Improved dependency injection for `Orchestra\Extension\RouteGenerator`.
+* `Orchestra\Extension\Environment::activate()` and `Orchestra\Extension\Environment::deactivate()` now return boolean.
+* Removed alias generation from service provider.
+
 ### v2.0.19
 
 * Move commands to it's own service provider.

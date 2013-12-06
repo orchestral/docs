@@ -3,10 +3,15 @@ Foundation Change Log
 
 ## Version 2.0
 
-### v2.0.23@dev
+### v2.0.23
 
-* Update Twitter Bootstrap v3.0.1.
+* Automatically login the user after resetting the password.
+* Refactor call to `Orchestra\Extension\RouteGenerator` based on changes to orchestra/extension component.
+* Completely remove `Orchestra\Foundation\Services` namespace.
+* Move welcome message to `orchestra/foundation::dashboard._welcome` partial.
 * Add `orchestra/optimize`.
+* Add `orchestra/debug`.
+* Update Twitter Bootstrap v3.0.2.
 
 ### v2.0.22
 

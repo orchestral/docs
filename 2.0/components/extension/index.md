@@ -13,7 +13,7 @@ To install through composer, simply put the following in your `composer.json` fi
 ```json
 {
 	"require": {
-		"orchestra/extension": "2.1.*@dev"
+		"orchestra/extension": "2.0.*"
 	}
 }
 ```
@@ -24,9 +24,9 @@ Next add the service provider in `app/config/app.php`.
 
 ```php
 'providers' => array(
-
+	
 	// ...
-
+	
 	'Orchestra\Extension\ExtensionServiceProvider',
 	'Orchestra\Memory\MemoryServiceProvider',
 	'Orchestra\Extension\PublisherServiceProvider',
@@ -40,7 +40,7 @@ Next add the service provider in `app/config/app.php`.
 Before we can start using `Orchestra\Extension`, please run the following:
 
 ```bash
-php artisan extension:migrate
+php artisan orchestra:extension install
 ```
 
 > The command utility is enabled via `Orchestra\Extension\CommandServiceProvider`.

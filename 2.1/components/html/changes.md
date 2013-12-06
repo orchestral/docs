@@ -7,8 +7,19 @@ HTML Change Log
 
 * `HTML::image()`, `HTML::link()`, `HTML::create()`, `HTML::ol()`, `HTML::ul()` and macro will utilize `HTML::raw()`.
 * Predefined package path to avoid additional overhead to guest package path.
+* Add `Orchestra\Html\Form\Grid::resource()` and `Orchestra\Html\Form\Grid::setup()` to simplify some code generation via `Orchestra\Html\Form\PresenterInterface` contract.
 
 ## Version 2.0
+
+### v2.0.10
+
+* Allow creation of `Form::button` from Form Builder.
+* Add additional to array convertion as `Orchestra\Html\Table\Grid::with()` should be able to take any time of:
+  - Array
+  - `Illuminate\Support\Contracts\ArrayableInterface`
+  - `Illuminate\Pagination\Paginator` instance
+  - Database Query Builder (Fluent and Eloquent)
+* `Orchestra\Html\Table\Grid::with()` to convert array to `Illuminate\Support\Fluent` to provide an object-like usage.
 
 ### v2.0.9
 
