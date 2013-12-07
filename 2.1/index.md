@@ -1,10 +1,12 @@
 ---
-title: Orchestra Platform
+title: Introduction
 ---
+
+## What is Orchestra Platform? {#what}
 
 Provide a solid base off of which to build your new web applications. It's not a CMS. Instead, it's a springboard to build off of with many of the tools you wish you had on projects but never took the time to build.
 
-## What Makes Orchestra Platform Different? {#what}
+## What Makes Orchestra Platform Different? {#what-different}
 
 * **Laravel Framework 4** is simply a great framework to work with.
 * **Extensions** are a much needed improvement to package implementation in Laravel. With one click activation and upgrade (migration and publish).
