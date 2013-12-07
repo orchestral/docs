@@ -25,6 +25,7 @@ Few things to consider:
 ## Basic of an Extension {#basic-of-an-extension}
 
 ### Manifest File {#manifest-file}
+
 The manifest file will be stored in `{package-name}/orchestra.json` (same level as `composer.json`), this tell Orchestra Platform to handle the package as an extension.
 
 	{
@@ -59,7 +60,7 @@ Manifest file also allow extension to dynamically register service providers wit
 		]
 	}
 
-> You can add multiple service provider on a single extension.
+> You can add multiple service provider on a single extension but do avoid using `$this->app->booting()` inside the service providers as this would be ignored.
 
 ### Autoloading Files {#autoloading-files}
 
