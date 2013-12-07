@@ -37,7 +37,6 @@ This allow you to grab the latest update of Orchestra Platform app skeleton via 
 	git fetch orchestra
 	git merge --squash -m "Update Orchestra Platform" orchestra/master
 
-
 ## Setup Orchestra Platform {#setup-orchestra-platform}
 
 Once Laravel 4 and Orchestra Platform is properly downloaded and installed, we need to setup the database and create the application basic schema (including administrator user).

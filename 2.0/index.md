@@ -19,6 +19,7 @@ With the introduction of Composer, we are now free to organize the code into sma
 
 * Orchestra\Asset
 * Orchestra\Auth
+* Orchestra\Debug
 * Orchestra\Extension
 * Orchestra\Facile
 * Orchestra\Foundation
@@ -27,6 +28,7 @@ With the introduction of Composer, we are now free to organize the code into sma
 * Orchestra\Model
 * Orchestra\Resources
 * Orchestra\Support
+* Orchestra\Testbench
 * Orchestra\Translation
 * Orchestra\View
 * Orchestra\Widget

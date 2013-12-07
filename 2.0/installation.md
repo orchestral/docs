@@ -29,16 +29,13 @@ You can install Orchestra Platform using Composer:
 
 You can also choose to install Orchestra Platform using GIT:
 
-
 	git clone -o orchestra -b 2.0 git@github.com:orchestral/platform.git website
 	cd website
 
 This allow you to grab the latest update of Orchestra Platform app skeleton via the following command.
 
-
 	git fetch orchestra
 	git merge --squash -m "Update Orchestra Platform" orchestra/2.0
-
 
 ## Setup Orchestra Platform {#setup-orchestra-platform}
 

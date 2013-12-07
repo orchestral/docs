@@ -28,5 +28,3 @@ Orchestra Platform follows the [PSR-0](https://github.com/php-fig/fig-standards/
 * Namespace declarations should be on the same line as `<?php`.
 * Preferable to use `and` and `or` instead of `&&` or `||`.
 * Interface names are suffixed with `Interface (FooInterface)`.
-
-</article>

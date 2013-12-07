@@ -10,7 +10,6 @@ Integration with `Orchestra\Memory` would allow a persistent storage of ACL metr
 
 	Orchestra\Acl::make('acme')->attach(Orchestra\Memory::make());
 
-
 > Using `attach()` allow the ACL to utilize `Orchestra\Memory` to store the metric so we don't have to define the ACL in every request.
 
 ## Migration Example

@@ -11,7 +11,6 @@ title: Asset Component
 
 To install through composer, simply put the following in your `composer.json` file:
 
-
 	{
 		"require": {
 			"orchestra/asset": "2.0.*"
