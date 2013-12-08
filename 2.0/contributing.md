@@ -11,7 +11,7 @@ title: Contributing To Orchestra Platform
 
 Orchestra Platform is free, open-source software, meaning anyone can contribute to its development and progress. Orchestra Platform source code is currently hosted on [Github](https://github.com), which provides an easy method for forking the project and merging your contributions.
 
-## Pull Requests {#introduction}
+## Pull Requests {#pull-request}
 
 The pull request process differs for new features and bugs. Before sending a pull request for a new feature, you should first create an issue with `[Proposal]` in the title. The proposal should describe the new feature, as well as implementation ideas. The proposal will then be reviewed and either approved or denied. Once a proposal is approved, a pull request may be created implementing the new feature. Pull requests which do not follow this guideline will be closed immediately.
 
