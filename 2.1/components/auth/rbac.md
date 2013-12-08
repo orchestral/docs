@@ -32,21 +32,14 @@ To verify the created ACL, you can use the following code.
 
 	$acl = Orchestra\Acl::make('acme');
 
-	if ( ! $acl->can('manage acme'))
-	{
-		return Redirect::to(
-			handles('orchestra/foundation::login')
-		);
+	if (! $acl->can('manage acme')) {
+		return Redirect::to(handles('orchestra::login'));
 	}
 
 Or you can create a route filter.
 
-	Route::filter('foo.manage', function ()
-	{
-		if ( ! Orchestra\Acl::make('acme')->can('manage acme'))
-		{
-			return Redirect::to(
-				handles('orchestra/foundation::login')
-			);
+	Route::filter('foo.manage', function () {
+		if (! Orchestra\Acl::make('acme')->can('manage acme')) {
+			return Redirect::to(handles('orchestra::login'));
 		}
 	});
