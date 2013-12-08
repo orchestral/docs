@@ -1,5 +1,6 @@
 ---
 title: License
+
 ---
 
 Orchestra Platform is license under MIT License.

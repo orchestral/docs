@@ -1,5 +1,6 @@
 ---
 title: Contributing To Orchestra Platform
+
 ---
 
 * [Introduction](#introduction)
@@ -15,7 +16,13 @@ Orchestra Platform is free, open-source software, meaning anyone can contribute 
 
 The pull request process differs for new features and bugs. Before sending a pull request for a new feature, you should first create an issue with `[Proposal]` in the title. The proposal should describe the new feature, as well as implementation ideas. The proposal will then be reviewed and either approved or denied. Once a proposal is approved, a pull request may be created implementing the new feature. Pull requests which do not follow this guideline will be closed immediately.
 
+### Pull requests for bugfixes
+
 Pull requests for bugs may be sent without creating any proposal issue. If you believe that you know of a solution for a bug that has been filed on Github, please leave a comment detailing your proposed fix.
+
+### Unit test
+
+A pull request or bugfixes **should** include relevant test cases to ensure that Orchestra Platform work as expected and avoid regression bug is produced in the future.
 
 ## Feature Requests {#feature-requests}
 

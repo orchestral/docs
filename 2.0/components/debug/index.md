@@ -1,10 +1,15 @@
 ---
-title: Artisan Debug Profiler for Laravel 4
+title: Artisan Debug Profiler
+
 ---
 
 `Orchestra\Debug` is commandline profiling package for Laravel 4, It was based from Laravel 4.1 commandline profiling tool which was merged with `php artisan tail`.
 
-## Quick Installation {#installation}
+* [Installation](#installation)
+* [Configuration](#configuration)
+* [Enabling Profiler](#enabling-profiler)
+
+## Installation {#installation}
 
 To install through composer, simply put the following in your `composer.json` file:
 
@@ -14,7 +19,7 @@ To install through composer, simply put the following in your `composer.json` fi
 		}
 	}
 
-### Registering the Package
+## Configuration {#configuration}
 
 Next add the following service provider in `app/config/app.php`.
 
@@ -26,8 +31,6 @@ Next add the following service provider in `app/config/app.php`.
 
 		'Orchestra\Debug\CommandServiceProvider',
 	),
-
-### Adding an Alias
 
 You could also create an alias for `Orchestra\Debug\Facades\Profiler` in `app/config/app.php`.
 

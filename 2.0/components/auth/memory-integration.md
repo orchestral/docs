@@ -1,5 +1,6 @@
 ---
 title: Integration with Memory Component
+
 ---
 
 Integration with `Orchestra\Memory` would allow a persistent storage of ACL metric, this would reduce the need to define ACL on every request.

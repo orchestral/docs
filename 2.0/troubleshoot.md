@@ -1,5 +1,6 @@
 ---
 title: Troubleshooting
+
 ---
 
 ## Using safe mode {#safe-mode}

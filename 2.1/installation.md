@@ -1,5 +1,6 @@
 ---
 title: Installation
+
 ---
 
 * [Install Composer](#install-composer)
