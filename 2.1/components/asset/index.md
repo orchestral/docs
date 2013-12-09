@@ -3,11 +3,11 @@ title: Asset Component
 
 ---
 
-
 `Orchestra\Asset` is a port of Laravel 3 Asset for Orchestra Platform.
 
 * [Installation](#installation)
 * [Configuration](#configuration)
+* [Resources](#resources)
 
 ## Installation {#installation}
 
@@ -40,3 +40,8 @@ You might want to add `Orchestra\Support\Facades\Asset` to class aliases in `app
 
 		'Orchestra\Asset' => 'Orchestra\Support\Facades\Asset',
 	),
+
+## Resources {#resources}
+
+* [Usage](/docs/2.1/components/asset/usage)
+* [Change Log](/docs/2.1/components/asset/changes#v2-1)
