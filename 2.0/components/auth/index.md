@@ -58,4 +58,4 @@ Before we can start using `Orchestra\Auth`, please run the following:
 ## Resources {#resources}
 
 * [Usage](/docs/2.0/components/auth/usage)
-* [Change Log](docs/2.0/components/auth/changes#v2-0)
+* [Change Log](/docs/2.0/components/auth/changes#v2-0)

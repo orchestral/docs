@@ -64,4 +64,4 @@ Optionally you can enable `Orchestra\Memory` to use it with `Orchestra\Acl`, ple
 ## Resources {#resources}
 
 * [Usage](/docs/2.1/components/auth/usage)
-* [Change Log](docs/2.1/components/auth/changes#v2-1)
+* [Change Log](/docs/2.1/components/auth/changes#v2-1)

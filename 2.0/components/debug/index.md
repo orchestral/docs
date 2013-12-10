@@ -55,4 +55,4 @@ To view the profiler, run the following command in your terminal:
 
 # Resources
 
-* [Change Log](docs/2.0/components/debug/changes#v2-0)
+* [Change Log](/docs/2.0/components/debug/changes#v2-0)
