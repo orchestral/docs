@@ -1,5 +1,6 @@
 ---
 title: Translation Component
+
 ---
 
 > This has been deprecated in Laravel 4.1 since the functionality has been included in laravel/framework.
@@ -8,6 +9,7 @@ title: Translation Component
 
 * [Installation](#installation)
 * [Configuration](#configuration)
+* [Resources](#resources)
 
 ## Installation {#installation}
 
@@ -33,3 +35,7 @@ Next add the service provider in `app/config/app.php`.
 	),
 
 > `Orchestra\Translation\TranslationServiceProvider` should replace `Illuminate\Translation\TranslationServiceProvider`.
+
+## Resources {#resources}
+
+* [Change Log](/docs/2.1/components/translation/changes#v2-1)

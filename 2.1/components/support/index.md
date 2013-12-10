@@ -1,11 +1,13 @@
 ---
 title: Support Component
+
 ---
+
+`Orchestra\Support` is basically a basic set of class required by Orchestra Platform. The idea behind it is similar to what is `Illuminate\Support` to Laravel 4 Framework.
 
 * [Installation](#installation)
 * [Configuration](#configuration)
-
-`Orchestra\Support` is basically a basic set of class required by Orchestra Platform. The idea behind it is similar to what is `Illuminate\Support` to Laravel 4 Framework.
+* [Resources](#resources)
 
 ## Installation {#installation}
 
@@ -27,3 +29,11 @@ Next add the service provider in `app/config/app.php`.
 
 		'Orchestra\Support\MessagesServiceProvider',
 	),
+
+## Resources {#resources}
+
+* [Manager Class](/docs/2.1/components/support/manager)
+* [Messages Class](/docs/2.1/components/support/messages)
+* [String Class](/docs/2.1/components/support/str)
+* [Validation Class](/docs/2.1/components/support/validator)
+* [Change Log](/docs/2.1/components/support/changes#v2-1)
