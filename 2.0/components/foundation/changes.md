@@ -1,8 +1,15 @@
 ---
 title: Foundation Change Log
+
 ---
 
 ## Version 2.0 {#v2-0}
+
+### v2.0.24@dev {#v2-0-24}
+
+* Add `@secure()` Blade helper for themes.
+* Remove invalid/irrelevant filters.
+* Update Twitter Bootstrap v3.0.3.
 
 ### v2.0.23 {#v2-0-23}
 

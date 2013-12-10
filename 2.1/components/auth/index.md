@@ -7,6 +7,7 @@ title: Auth Component
 
 * [Installation](#installation)
 * [Configuration](#configuration)
+* [Resources](#resources)
 
 ## Installation {#installation}
 
@@ -59,3 +60,8 @@ Optionally you can enable `Orchestra\Memory` to use it with `Orchestra\Acl`, ple
 	php artisan memory:migrate
 
 > The command utility is enabled via `Orchestra\Memory\CommandServiceProvider`.
+
+## Resources {#resources}
+
+* [Usage](/docs/2.1/components/auth/usage)
+* [Change Log](docs/2.1/components/auth/changes#v2-1)

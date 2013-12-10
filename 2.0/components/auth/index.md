@@ -7,6 +7,7 @@ title: Auth Component
 
 * [Installation](#installation)
 * [Configuration](#configuration)
+* [Resources](#resources)
 
 ## Installation {#installation}
 
@@ -53,3 +54,8 @@ Before we can start using `Orchestra\Auth`, please run the following:
 	php artisan orchestra:auth install
 
 > The command utility is enabled via `Orchestra\Auth\CommandServiceProvider`.
+
+## Resources {#resources}
+
+* [Usage](/docs/2.0/components/auth/usage)
+* [Change Log](docs/2.0/components/auth/changes#v2-0)

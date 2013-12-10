@@ -8,6 +8,7 @@ title: Artisan Debug Profiler
 * [Installation](#installation)
 * [Configuration](#configuration)
 * [Enabling Profiler](#enabling-profiler)
+* [Resources](#resources)
 
 ## Installation {#installation}
 
@@ -51,3 +52,7 @@ To enable the profiler, all you need to do is:
 To view the profiler, run the following command in your terminal:
 
 	php artisan debug
+
+# Resources
+
+* [Change Log](docs/2.0/components/debug/changes#v2-0)
