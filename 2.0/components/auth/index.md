@@ -57,5 +57,7 @@ Before we can start using `Orchestra\Auth`, please run the following:
 
 ## Resources {#resources}
 
-* [Usage](/docs/2.0/components/auth/usage)
+* [Auth Usage](/docs/2.0/components/auth/usage)
+* [RBAC and ACL Usage](/docs/2.0/components/auth/rbac)
+* [Integration with Memory](/docs/2.0/components/auth/memory-integration)
 * [Change Log](/docs/2.0/components/auth/changes#v2-0)

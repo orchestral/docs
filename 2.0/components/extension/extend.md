@@ -1,5 +1,6 @@
 ---
 title: Extending Extension
+
 ---
 
 * [Add Extension Location](#add-extension-location)

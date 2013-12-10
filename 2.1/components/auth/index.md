@@ -63,5 +63,7 @@ Optionally you can enable `Orchestra\Memory` to use it with `Orchestra\Acl`, ple
 
 ## Resources {#resources}
 
-* [Usage](/docs/2.1/components/auth/usage)
+* [Auth Usage](/docs/2.1/components/auth/usage)
+* [RBAC and ACL Usage](/docs/2.1/components/auth/rbac)
+* [Integration with Memory](/docs/2.1/components/auth/memory-integration)
 * [Change Log](/docs/2.1/components/auth/changes#v2-1)

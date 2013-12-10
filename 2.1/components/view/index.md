@@ -1,5 +1,6 @@
 ---
 title: View Component
+
 ---
 
 `Orchestra\View` is Orchestra Platform approach to deliver themeable application that support extensions. The functionality evolves by modifying how `Illuminate\View\ViewFileFinder` would resolve which file, which would first look into the current active theme folder, before resolving it cascading-ly.
@@ -8,6 +9,7 @@ This would allow extension (or even packages) to have it's own set of view styli
 
 * [Installation](#installation)
 * [Configuration](#configuration)
+* [Resources](#resources)
 
 ## Installation {#installation}
 
@@ -19,7 +21,7 @@ To install through composer, simply put the following in your `composer.json` fi
 		}
 	}
 
-## Configuration
+## Configuration {#configuration}
 
 Next add the service provider in `app/config/app.php`.
 
@@ -31,3 +33,8 @@ Next add the service provider in `app/config/app.php`.
 		'Orchestra\View\ViewServiceProvider',
 		'Orchestra\Memory\MemoryServiceProvider',
 	),
+
+## Resources {#resources}
+
+* [Usage](/docs/2.1/components/view/usage)
+* [Change Log](/docs/2.1/components/view/changes#v2-1)

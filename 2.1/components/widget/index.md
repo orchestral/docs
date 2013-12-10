@@ -1,11 +1,16 @@
 ---
 title: Widget Component
+
 ---
 
+Widget allow you to manage widgetize actions in Orchestra Platform. By default Orchestra Platform provides the following widgets:
+
+* [Type of Widgets](#type)
 * [Installation](#installation)
 * [Configuration](#configuration)
+* [Resources](#resources)
 
-Widget allow you to manage widgetize actions in Orchestra Platform. By default Orchestra Platform provides the following widgets:
+## Type of Widgets
 
 * **Menu** to manage menu.
 * **Pane** to manage dashboard items.
@@ -31,3 +36,7 @@ Next add the service provider in `app/config/app.php`.
 
 		'Orchestra\Widget\WidgetServiceProvider',
 	),
+
+## Resources {#resources}
+
+* [Change Log](/docs/2.1/components/widget/changes#v2-1)
