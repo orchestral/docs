@@ -1,5 +1,6 @@
 ---
 title: Facile Templating
+
 ---
 
 `Orchestra\Facile` works by composing the response using Template, using the `Orchestra\Facile\FacileServiceProvider`, we setup the default template for normal usage which can compose HTML and JSON response, see `Orchestra\Facile\Template\Base`.

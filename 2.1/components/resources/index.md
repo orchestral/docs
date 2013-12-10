@@ -1,11 +1,13 @@
 ---
 title: Resources Component
+
 ---
+
+`Orchestra\Resources` is an adhoc routing manager that allow extension developer to add CRUD interface without touching Orchestra Platform.
 
 * [Installation](#installation)
 * [Configuration](#configuration)
-
-`Orchestra\Resources` is an adhoc routing manager that allow extension developer to add CRUD interface without touching Orchestra Platform.
+* [Resources](#resources)
 
 ## Installation {#installation}
 
@@ -17,7 +19,7 @@ To install through composer, simply put the following in your `composer.json` fi
 		}
 	}
 
-## Configuration
+## Configuration {#configuration}
 
 Next add the service provider in `app/config/app.php`.
 
@@ -27,3 +29,8 @@ Next add the service provider in `app/config/app.php`.
 
 		'Orchestra\Resources\ResourcesServiceProvider',
 	),
+
+## Resources {#resources}
+
+* [Usage](/docs/2.1/components/resources/usage)
+* [Change Log](/docs/2.1/components/resources/changes#v2-1)

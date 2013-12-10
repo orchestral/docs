@@ -1,11 +1,13 @@
 ---
 title: HTML Component
+
 ---
+
+`Orchestra\Html` extends the functionality of `Illuminate\Html` with the extra functionality to including a chainable Form and Table builder. These set of functionality are the backbone in allowing extensions in Orchestra Platform to attach action to any existing form or table.
 
 * [Installation](#installation)
 * [Configuration](#configuration)
-
-`Orchestra\Html` extends the functionality of `Illuminate\Html` with the extra functionality to including a chainable Form and Table builder. These set of functionality are the backbone in allowing extensions in Orchestra Platform to attach action to any existing form or table.
+* [Resources](#resources)
 
 ## Installation {#installation}
 
@@ -31,3 +33,8 @@ Next add the service provider in `app/config/app.php`.
 	),
 
 > `Orchestra\Html\HtmlServiceProvider` should replace `Illuminate\Html\HtmlServiceProvider`.
+
+## Resources {#resources}
+
+* [Usage](/docs/2.0/components/html/usage)
+* [Change Log](/docs/2.0/components/html/changes#v2-0)
