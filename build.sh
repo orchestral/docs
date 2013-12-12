@@ -12,23 +12,29 @@ function copy_changes() {
     fi
 }
 
+function set_branch() {
+    echo "git checkout $BRANCH";
+    git checkout $BRANCH;
+}
+
 function build_platform {
     cd ../platform;
     echo '-------';
     pwd;
     echo "git checkout $BRANCH";
     git checkout $BRANCH;
-    copy_changes docs ../docs/$TARGET;
+    copy_changes docs ../docs/src/$TARGET;
     echo "Documentation copied";
 }
 
 function build_docs {
     echo "git checkout $BRANCH";
     git checkout $BRANCH;
-    copy_changes docs ../docs/$TARGET/components/$DIR;
+    copy_changes docs ../docs/$TARGET/src/components/$DIR;
     echo "Documentation copied";
 }
 
+set_branch;
 build_platform;
 
 for DIR in asset auth debug extension facile foundation html memory model optimize resources support translation testbench view widget
