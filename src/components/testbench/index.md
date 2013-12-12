@@ -1,5 +1,7 @@
-Orchestra Testbench Package
-==============
+---
+title: Orchestra Testbench Package
+
+---
 
 `Orchestra\Testbench` is a simple package that is supposed to help you write tests for your Laravel package, especially when there is routing involved.
 
