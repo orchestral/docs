@@ -23,14 +23,14 @@ function build_platform {
     pwd;
     echo "git checkout $BRANCH";
     git checkout $BRANCH;
-    copy_changes docs ../docs/src/$TARGET;
+    copy_changes docs ../docs/src;
     echo "Documentation copied";
 }
 
 function build_docs {
     echo "git checkout $BRANCH";
     git checkout $BRANCH;
-    copy_changes docs ../docs/$TARGET/src/components/$DIR;
+    copy_changes docs ../docs/src/components/$DIR;
     echo "Documentation copied";
 }
 
