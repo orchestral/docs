@@ -14,10 +14,10 @@ To install through composer, simply put the following in your `composer.json` fi
 
 	{
 		"require": {
-			"orchestra/model": "2.0.*"
+			"orchestra/model": "2.1.*@dev"
 		}
 	}
 
 ## Resources {#resources}
 
-* [Change Log](/docs/2.0/components/model/changes#v2-0)
+* [Change Log](/docs/2.1/components/model/changes#v2-1)

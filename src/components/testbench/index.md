@@ -14,7 +14,7 @@ To install through composer, simply put the following in your `composer.json` fi
 ```json
 {
 	"require-dev": {
-		"orchestra/testbench": "2.0.*"
+		"orchestra/testbench": "2.1.*@dev"
 	}
 }
 ```
@@ -24,8 +24,9 @@ To install through composer, simply put the following in your `composer.json` fi
  Laravel  | Testbench
 :---------|:----------
  4.0.*    | 2.0.*
+ 4.1.*    | 2.1.*
 
 ## Resources {#resources}
 
-* [Usage](/docs/2.0/components/testbench/usage)
-* [Change Log](/docs/2.0/components/testbench/changes#v2-0)
+* [Usage](/docs/2.1/components/testbench/usage)
+* [Change Log](/docs/2.1/components/testbench/changes#v2-1)

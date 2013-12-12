@@ -3,6 +3,17 @@ title: Auth Change Log
 
 ---
 
+## Version 2.1 {#v2-1}
+
+### v2.1.0@dev {#v2-1-0}
+
+* Add `Orchestra\Auth\Acl\Fluent::attach()` and `Orchestra\Auth\Acl\Fluent::detach()` method.
+* Call `Illuminate\Auth\AuthServiceProvider::boot()` during booting.
+* `Orchestra\Auth\Acl\Container` should extend `Orchestra\Memory\Abstractable\Container`.
+* Predefined package path to avoid additional overhead to guest package path.
+* Rename command to `php artisan auth:migrate`.
+* Add `Auth::setup()` method to easily create roles event listener.
+
 ## Version 2.0 {#v2-0}
 
 ### v2.0.6 {#v2-0-6}

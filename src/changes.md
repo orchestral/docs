@@ -3,6 +3,18 @@ title: Change Log
 
 ---
 
+## Version 2.1 {#v2-1}
+
+### v2.1.0@dev {#v2-1-0}
+
+* Add [Control Extension](https://github.com/orchestral/control) for Orchestra Platform 2.
+* Add [Story CMS Extension](https://github.com/orchestral/story) for Orchestra Platform 2.
+* Add `Illuminate\Remote\RemoteServiceProvider`.
+* Update changes to Laravel Routing.
+* Move to single file log setup for simplicity.
+* Revert use of `Orchestra\Translation\TranslationServiceProvider` back to `Illuminate\Translation\TranslationServiceProvider`.
+* Consolidate all console support tools to `Illuminate\Foundation\Providers\ConsoleSupportServiceProvider` and `Orchestra\Foundation\ConsoleSupportServiceProvider`.
+
 ## Version 2.0 {#v2-0}
 
 ### v2.0.6 {#v2-0-6}

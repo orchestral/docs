@@ -15,7 +15,7 @@ To install through composer, simply put the following in your `composer.json` fi
 
 	{
 		"require": {
-			"orchestra/asset": "2.0.*"
+			"orchestra/asset": "2.1.*@dev"
 		}
 	}
 
@@ -43,5 +43,5 @@ You might want to add `Orchestra\Support\Facades\Asset` to class aliases in `app
 
 ## Resources {#resources}
 
-* [Usage](/docs/2.0/components/asset/usage)
-* [Change Log](/docs/2.0/components/asset/changes#v2-0)
+* [Usage](/docs/2.1/components/asset/usage)
+* [Change Log](/docs/2.1/components/asset/changes#v2-1)

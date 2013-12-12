@@ -15,7 +15,7 @@ To install through composer, simply put the following in your `composer.json` fi
 
 	{
 		"require": {
-			"orchestra/resources": "2.0.*"
+			"orchestra/resources": "2.1.*@dev"
 		}
 	}
 
@@ -32,5 +32,5 @@ Next add the service provider in `app/config/app.php`.
 
 ## Resources {#resources}
 
-* [Usage](/docs/2.0/components/resources/usage)
-* [Change Log](/docs/2.0/components/resources/changes#v2-0)
+* [Usage](/docs/2.1/components/resources/usage)
+* [Change Log](/docs/2.1/components/resources/changes#v2-1)

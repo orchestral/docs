@@ -3,6 +3,40 @@ title: Foundation Change Log
 
 ---
 
+## Version 2.1 {#v2-1}
+
+### v2.1.0@dev {#v2-1-0}
+
+* Split `Orchestra\Foundation\Services\AdminMenuHandler@handle` to allow easier customization.
+* Replace deprecated call to `Orchestra\Extension::isActive()` and instead use `Orchestra\Extension::activated()`.
+* Implement `"orchestra.validate: extension.{name}"` and `Orchestra\Services\Validation\Extension`.
+* Add `@placeholder("orchestra.resources: {name}")`.
+* Add data-id attributes to edit and delete link on users page.
+* Allow guest user to access resources if ACL permit.
+* All classes are mapped using PSR-0.
+* Allow `Orchestra\Foundation\Services\UserMetaRepository` to look for data from eloquent before resolving to default.
+* Rename `Orchestra\Foundation\Site::localtime()` to `Orchestra\Foundation\Site::toLocalTime()`.
+* Add `Orchestra\Foundation\Site::fromLocalTime()` to convert time from local to what set in `"app.timezone"` config.
+* Add `Orchestra\Foundation\Application::locate()` to return relative path to packages/app.
+* Add client-side JavaScript event on each page load.
+* Add safe mode notification when running from safe mode.
+* Replace deprecated call to `Orchestra\Extension::isActive()` and instead use `Orchestra\Extension::activated()`.
+Replace call to `handles('orchestra/foundation::*')` to `handles('orchestra::*')`.
+* Add italian translation.
+* Convert prefered function to use `Orchestra\Auth\Acl\Fluent::attach()` instead of `Orchestra\Auth\Acl\Fluent::fill()`.
+* Improve user searching with new `Orchestra\Support\Str::searchable()` API.
+* Refactor presenters to use app container to allow IoC overwrite from application.
+* Allow cancelling SMTP e-mail password after change password is clicked.
+* Allow Orchestra Platform route to make use of latest `Orchestra\Extension\RouteGenerator` feature allowing subdomain handling.
+* Predefined package path to avoid additional overhead to guest package path.
+* Only display resources in navigation menus if not hidden.
+* Add `orchestra/debug` and `orchestra/optimize`.
+* Consolidate all commands service provider in `Orchestra\Foundation\ConsoleSupportServiceProvider`.
+* Refactor `Orchestra\Foundation\Reminders\PasswordBroker` and `Orchestra\Foundation\Routing\ForgotController` based on Laravel 4.1 changes.
+* Refactor routing as passive controllers and move all CRUD action to `Orchestra\Foundation\Processor` namespace.
+* Update assets:
+  - Twitter Bootstrap v3.0.3.
+
 ## Version 2.0 {#v2-0}
 
 ### v2.0.24@dev {#v2-0-24}

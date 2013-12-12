@@ -3,6 +3,14 @@ title: HTML Change Log
 
 ---
 
+## Version 2.1 {#v2-1}
+
+### v2.1.0@dev {#v2-1-0}
+
+* `HTML::image()`, `HTML::link()`, `HTML::create()`, `HTML::ol()`, `HTML::ul()` and macro will utilize `HTML::raw()`.
+* Predefined package path to avoid additional overhead to guest package path.
+* Add `Orchestra\Html\Form\Grid::resource()` and `Orchestra\Html\Form\Grid::setup()` to simplify some code generation via `Orchestra\Html\Form\PresenterInterface` contract.
+
 ## Version 2.0 {#v2-0}
 
 ### v2.0.10 {#v2-0-10}

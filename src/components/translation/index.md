@@ -3,6 +3,8 @@ title: Translation Component
 
 ---
 
+> This has been deprecated in Laravel 4.1 since the functionality has been included in laravel/framework.
+
 `Orchestra\Translation` is a small improvement over `illuminate/translation` where you can now have `app/lang/en/packages/acme/foobar` without having to touch package source code.
 
 * [Installation](#installation)
@@ -15,7 +17,7 @@ To install through composer, simply put the following in your `composer.json` fi
 
 	{
 		"require": {
-			"orchestra/translation": "2.0.*"
+			"orchestra/translation": "2.1.*@dev"
 		}
 	}
 
@@ -36,4 +38,4 @@ Next add the service provider in `app/config/app.php`.
 
 ## Resources {#resources}
 
-* [Change Log](/docs/2.0/components/translation/changes#v2-0)
+* [Change Log](/docs/2.1/components/translation/changes#v2-1)

@@ -1,5 +1,5 @@
 ---
-title: Sending Mail
+title: Orchestra Mail Class
 ---
 
 * [Force Direct Sending](#force-direct-sending)

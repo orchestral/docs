@@ -16,7 +16,7 @@ To install through composer, simply put the following in your `composer.json` fi
 
 	{
 		"require": {
-			"orchestra/debug": "2.0.*"
+			"orchestra/debug": "2.1.*@dev"
 		}
 	}
 
@@ -55,4 +55,4 @@ To view the profiler, run the following command in your terminal:
 
 # Resources
 
-* [Change Log](/docs/2.0/components/debug/changes#v2-0)
+* [Change Log](/docs/2.1/components/debug/changes#v2-1)

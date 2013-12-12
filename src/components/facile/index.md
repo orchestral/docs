@@ -15,7 +15,7 @@ To install through composer, simply put the following in your `composer.json` fi
 
 	{
 		"require": {
-			"orchestra/facile": "2.0.*"
+			"orchestra/facile": "2.1.*@dev"
 		}
 	}
 
@@ -41,5 +41,5 @@ You might want to add `Orchestra\Support\Facades\Facile` to class aliases in `ap
 
 ## Resources {#resources}
 
-* [Template](/docs/2.0/components/facile/templating)
-* [Change Log](/docs/2.0/components/facile/changes#v2-0)
+* [Template](/docs/2.1/components/facile/templating)
+* [Change Log](/docs/2.1/components/facile/changes#v2-1)

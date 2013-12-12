@@ -15,7 +15,7 @@ To install through composer, simply put the following in your `composer.json` fi
 
 	{
 		"require": {
-			"orchestra/auth": "2.0.*"
+			"orchestra/auth": "2.1.*@dev"
 		}
 	}
 
@@ -51,13 +51,19 @@ To make development easier, you could add `Orchestra\Support\Facades\Acl` alias 
 
 Before we can start using `Orchestra\Auth`, please run the following:
 
-	php artisan orchestra:auth install
+	php artisan auth:migrate
 
 > The command utility is enabled via `Orchestra\Auth\CommandServiceProvider`.
 
+Optionally you can enable `Orchestra\Memory` to use it with `Orchestra\Acl`, please run the following:
+
+	php artisan memory:migrate
+
+> The command utility is enabled via `Orchestra\Memory\CommandServiceProvider`.
+
 ## Resources {#resources}
 
-* [Auth Usage](/docs/2.0/components/auth/usage)
-* [RBAC and ACL Usage](/docs/2.0/components/auth/rbac)
-* [Integration with Memory](/docs/2.0/components/auth/memory-integration)
-* [Change Log](/docs/2.0/components/auth/changes#v2-0)
+* [Auth Usage](/docs/2.1/components/auth/usage)
+* [RBAC and ACL Usage](/docs/2.1/components/auth/rbac)
+* [Integration with Memory](/docs/2.1/components/auth/memory-integration)
+* [Change Log](/docs/2.1/components/auth/changes#v2-1)

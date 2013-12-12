@@ -2,6 +2,12 @@
 title: Translation Change Log
 ---
 
+## Version 2.1 {#v2-1}
+
+### v2.1.0@dev {#v2-1-0}
+
+* Deprecate this package the functionality been added to Laravel 4.1
+
 ## Version 2.0 {#v2-0}
 
 ### v2.0.1 {#v2-0-1}

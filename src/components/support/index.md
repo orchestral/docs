@@ -15,7 +15,7 @@ To install through composer, simply put the following in your `composer.json` fi
 
 	{
 		"require": {
-			"orchestra/support": "2.0.*"
+			"orchestra/support": "2.1.*@dev"
 		}
 	}
 
@@ -32,8 +32,8 @@ Next add the service provider in `app/config/app.php`.
 
 ## Resources {#resources}
 
-* [Manager Class](/docs/2.0/components/support/manager)
-* [Messages Class](/docs/2.0/components/support/messages)
-* [String Class](/docs/2.0/components/support/str)
-* [Validation Class](/docs/2.0/components/support/validator)
-* [Change Log](/docs/2.0/components/support/changes#v2-0)
+* [Manager Class](/docs/2.1/components/support/manager)
+* [Messages Class](/docs/2.1/components/support/messages)
+* [String Class](/docs/2.1/components/support/str)
+* [Validation Class](/docs/2.1/components/support/validator)
+* [Change Log](/docs/2.1/components/support/changes#v2-1)

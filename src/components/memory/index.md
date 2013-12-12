@@ -15,7 +15,7 @@ To install through composer, simply put the following in your `composer.json` fi
 
 	{
 		"require": {
-			"orchestra/memory": "2.0.*"
+			"orchestra/memory": "2.1.*@dev"
 		}
 	}
 
@@ -36,7 +36,7 @@ Next add the service provider in `app/config/app.php`.
 
 Before we can start using `Orchestra\Memory`, please run the following:
 
-	php artisan orchestra:memory install
+	php artisan memory:migrate
 
 > The command utility is enabled via `Orchestra\Memory\CommandServiceProvider`.
 
@@ -48,5 +48,5 @@ Optionally, you can also publish the configuration file if there any requirement
 
 ## Resources {#resources}
 
-* [Usage](/docs/2.0/components/memory/usage)
-* [Change Log](/docs/2.0/components/memory/changes#v2-0)
+* [Usage](/docs/2.1/components/memory/usage)
+* [Change Log](/docs/2.1/components/memory/changes#v2-1)
