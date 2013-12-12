@@ -13,13 +13,12 @@ title: Orchestra Testbench Package
 
 To install through composer, simply put the following in your `composer.json` file:
 
-```json
-{
-	"require-dev": {
-		"orchestra/testbench": "2.0.*"
-	}
-}
-```
+
+    {
+	    "require-dev": {
+	    	"orchestra/testbench": "2.0.*"
+	    }
+    }
 
 ## Version Compatibility {#compatibility}
 
