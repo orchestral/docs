@@ -1,5 +1,4 @@
-if [ "$1" == "master" ]; then TARGET="2.1"; else TARGET=$1; fi
-BRANCH=$1;
+BRANCH=2.0;
 
 function copy_changes() {
     if [ -f $1/changes.md ]; then
