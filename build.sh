@@ -1,4 +1,4 @@
-BRANCH=2.0;
+BRANCH=2.1;
 
 function copy_changes() {
     if [ -f $1/changes.md ]; then
@@ -36,7 +36,7 @@ function build_docs {
 set_branch;
 build_platform;
 
-for DIR in asset auth debug extension facile foundation html memory model optimize resources support translation testbench view widget
+for DIR in asset auth debug extension facile foundation html memory model optimize resources support translation testbench view warden widget
 do
     cd ../;
     cd $DIR;
