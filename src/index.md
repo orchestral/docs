@@ -3,6 +3,9 @@ title: Introduction
 
 ---
 
+* [What is Orchestra Platform?](#what)
+* [Illuminating Orchestra Platform](#illuminate)
+
 ## What is Orchestra Platform? {#what}
 
 Provide a solid base off of which to build your new web applications. It's not a CMS. Instead, it's a springboard to build off of with many of the tools you wish you had on projects but never took the time to build.

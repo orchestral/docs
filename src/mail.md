@@ -2,13 +2,13 @@
 title: Orchestra Mail Class
 ---
 
-* [Force Direct Sending](#force-direct-sending)
-* [Force Sending via Queue](#force-send-queue)
-* [Sending via Configuration](#sending-via-config)
-
 `Orchestra\Mail` offer a slight improvement to `Illuminate\Mail\Mailer` where administrator can define the e-mail configuration from Settings page as well as preference to use `send` or `queue`.
 
-## Force Direct Sending {#force-direct-sending}
+* [Send](#send)
+* [Queue](#queue)
+* [Push (send via configuration)](#push)
+
+## Send {#send}
 
 `Orchestra\Mail::send()` deliver what you would expect from `Mail::send()` using the E-mail configuration setup in the Settings Page.
 
@@ -16,7 +16,7 @@ title: Orchestra Mail Class
 		$m->to($user->email);
 	});
 
-## Force Sending via Queue {#force-send-queue}
+## Queue {#queue}
 
 `Orchestra\Mail::queue()` deliver what you would expect from `Mail::queue()` using the E-mail configuration setup in the Settings Page.
 
@@ -24,7 +24,7 @@ title: Orchestra Mail Class
 		$m->to($user->email);
 	});
 
-## Sending via Configuration {#sending-via-config}
+## Push (send via configuration) {#push}
 
 `Orchestra\Mail::push()` would first check whether the administrator has choosen to send email directly or delayed it via queue.
 
