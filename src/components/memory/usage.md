@@ -62,16 +62,22 @@ Need to get rid of an item? No problem. Just mention the name of the item to the
 
 ## Extending Memory {#extending-memory}
 
-There might be requirement that a different type of storage engine would be use for memory instance, you can extending it by adding your own driver.
+There might be requirement that a different type of storage engine would be use for memory instance, you can extending it by adding your own handler.
 
-	class ExampleDriver extends Orchestra\Memory\Drivers\Driver
+	use Orchestra\Memory\MemoryHandlerInterface;
+	
+	class AcmeMemoryHandler implements MemoryHandlerInterface
 	{
 		// Add your implementation
 	}
 
 	Orchestra\Memory::extend('example', function ($app, $name) {
-		return new ExampleDriver($app, $name);
+        $handler = new AcmeMemoryHandler($name);
+
+		return new Orchestra\Memory\Provider($handler);
 	});
 
 	// Now you can use it as
 	$example = Orchestra\Memory::make('example.default');
+
+    > You can also extends `Orchestra\Memory\Abstractable\Handler` which add some boilerplate code on your custom handler.
