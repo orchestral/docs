@@ -71,13 +71,13 @@ There might be requirement that a different type of storage engine would be use 
 		// Add your implementation
 	}
 
-	Orchestra\Memory::extend('example', function ($app, $name) {
+	Orchestra\Memory::extend('acme', function ($app, $name) {
         $handler = new AcmeMemoryHandler($name);
 
 		return new Orchestra\Memory\Provider($handler);
 	});
 
 	// Now you can use it as
-	$example = Orchestra\Memory::make('example.default');
+	$acme = Orchestra\Memory::make('acme.default');
 
-    > You can also extends `Orchestra\Memory\Abstractable\Handler` which add some boilerplate code on your custom handler.
+> You can also extends `Orchestra\Memory\Abstractable\Handler` which add some boilerplate code on your custom handler.
