@@ -24,7 +24,7 @@ Once Composer is installed, download the [latest version](https://github.com/orc
 
 You can install Orchestra Platform using Composer:
 
-	php composer.phar create-project orchestra/platform website 2.0.x-dev --prefer-dist
+	php composer.phar create-project orchestra/platform website 2.0.x --prefer-dist
 
 ### Installation using GIT
 
