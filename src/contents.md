@@ -29,7 +29,7 @@ title: Table of Content
 * [Debug](/docs/2.0/components/debug)
 * [Extension](/docs/2.0/components/extension)
   - [Usage](/docs/2.0/components/extension/usage)
-  - [Extend](/docs/2.0/components/extension/extend)
+  - [Extending](/docs/2.0/components/extension/extend)
 * [Facile](/docs/2.0/components/facile)
   - [Template](/docs/2.0/components/facile/templating)
 * [Foundation](/docs/2.0/components/foundation)
