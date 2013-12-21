@@ -7,6 +7,7 @@ Essentially, the Auth class offered by Laravel 4 is already good enough for norm
 
 * [Retrieving Roles](#retrieving-roles)
 * [Check Roles](#check-roles)
+* [Setup Custom Roles Relationship](#setup-custom-roles)
 
 ## Retrieving Roles {#retrieving-roles}
 
