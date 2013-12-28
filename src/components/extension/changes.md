@@ -5,7 +5,7 @@ title: Extension Change Log
 
 ## Version 2.1 {#v2-1}
 
-### v2.1.0@dev {#v2-1-0}
+### v2.1.0 {#v2-1-0}
 
 * Modify boot sequence for `Orchestra\Extension`, this would allow `Orchestra\Foundation\FoundationServiceProvider` to have priority during boot.
 * Allow extension path to be predefined from `orchestra.json`.
@@ -20,6 +20,7 @@ title: Extension Change Log
 * `Orchestra\Extension\Environment` should extends `Orchestra\Memory\Abstractable\Container`.
 * Add ability for extension to handle domain prefix instead of just path prefix via `Orchestra\Extension\RouteGenerator`.
 * Predefined package path to avoid additional overhead to guest package path.
+* Implement [PSR-2](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-2-coding-style-guide.md) coding standard.
 * Allow wildcard `{{domain}}` for extension routing via `Orchestra\Extension\RouteGenerator`.
 * Restructure extensions console command to:
   - `php artisan extension:activate {name}`

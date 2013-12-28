@@ -5,10 +5,11 @@ title: Widget Change Log
 
 ## Version 2.1 {#v2-1}
 
-### v2.1.0@dev {#v2-1-0}
+### v2.1.0 {#v2-1-0}
 
 * Add `Orchestra\Widget\Drivers::is()` to allow direct manipulation of `Illuminate\Support\Fluent` through `Orchestra\Support\Nesty::is()` API.
 * Predefined package path to avoid additional overhead to guest package path.
+* Refactor class names to better describe the usage.
 
 ## Version 2.0 {#v2-0}
 
