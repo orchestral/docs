@@ -5,9 +5,10 @@ title: Facile Change Log
 
 ## Version 2.1 {#v2-1}
 
-### v2.1.0@dev {#v2-1-0}
+### v2.1.0 {#v2-1-0}
 
-* Update code to support `Illuminate\Support\Contracts\ArrayableInterface` support in `Illuminate\Pagination\Paginator` and refactor Facile to receive app instance.
+* Update code to support `Illuminate\Support\Contracts\ArrayableInterface` support in `Illuminate\Pagination\Paginator`
+* Refactor `Orchestra\Facile` to only include minimal dependency injection.
 
 ## Version 2.0 {#v2-0}
 
