@@ -36,7 +36,7 @@ function build_docs {
 set_branch;
 build_platform;
 
-for DIR in asset auth debug extension facile foundation html memory model optimize resources support translation testbench view warden widget
+for DIR in asset auth debug extension facile foundation html memory model notifier optimize resources support translation testbench view warden widget
 do
     cd ../;
     cd $DIR;
