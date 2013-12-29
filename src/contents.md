@@ -41,6 +41,7 @@ title: Table of Content
 * [Memory](/docs/2.1/components/memory)
   - [Usage](/docs/2.1/components/memory/usage)
 * [Model](/docs/2.1/components/model)
+* [Notifier](/docs/2.1/components/notifier)
 * [Resources](/docs/2.1/components/resources)
   - [Usage](/docs/2.1/components/resources/usage)
 * [Support](/docs/2.1/components/support)
