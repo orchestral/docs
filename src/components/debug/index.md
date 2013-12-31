@@ -33,10 +33,10 @@ Next add the following service provider in `app/config/app.php`.
 		'Orchestra\Debug\CommandServiceProvider',
 	),
 
-You could also create an alias for `Orchestra\Debug\Facades\Profiler` in `app/config/app.php`.
+You could also create an alias for `Orchestra\Support\Facades\Profiler` in `app/config/app.php`.
 
 	'alias' => array(
-		'Profiler' => 'Orchestra\Debug\Facades\Profiler',
+		'Profiler' => 'Orchestra\Support\Facades\Profiler',
 	),
 
 ## Enabling Profiler {#enabling-profiler}
