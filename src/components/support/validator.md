@@ -27,7 +27,7 @@ To run validation for `UserValidator`, all you need to do is:
 
 	$validation = App::make('UserValidator')->with(Input::all());
 
-	if ($validation->failed()) {
+	if ($validation->fails()) {
 		return Redirect::back()->withInput()->withErrors($validation);
 	}
 	
