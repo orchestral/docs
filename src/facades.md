@@ -17,6 +17,7 @@ Orchestra\Form        | Orchestra\Support\Facades\Form        | Orchestra\Html\F
 Orchestra\Mail        | Orchestra\Support\Facades\Mail        | Orchestra\Foundation\Mail
 Orchestra\Memory      | Orchestra\Support\Facades\Memory      | Orchestra\Memory\MemoryManager
 Orchestra\Messages    | Orchestra\Support\Facades\Messages    | Orchestra\Support\Messages
+Orchestra\Notifier    | Orchestra\Support\Facades\Notifier    | Orchestra\Notifier\NotifierManager
 Orchestra\Profiler    | Orchestra\Support\Facades\Profiler    | Orchestra\Debug\Profiler
 Orchestra\Publisher   | Orchestra\Support\Facades\Publisher   | Orchestra\Foundation\Publisher\PublisherManager
 Orchestra\Resources   | Orchestra\Support\Facades\Resources   | Orchestra\Resources\Environment

@@ -32,6 +32,7 @@ With the introduction of Composer, we are now free to organize the code into sma
 * Orchestra\Html
 * Orchestra\Memory
 * Orchestra\Model
+* Orchestra\Notifier
 * Orchestra\Resources
 * Orchestra\Support
 * Orchestra\Testbench
