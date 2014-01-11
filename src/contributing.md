@@ -6,17 +6,30 @@ title: Contributing To Orchestra Platform
 * [Introduction](#introduction)
 * [Pull Requests](#pull-requests)
 * [Feature Requests](#feature-requests)
+* [Template for Pull Request, Proposal, Request or Bugfixes](#templates)
 * [Coding Guidelines](#coding-guidelines)
 
 ## Introduction {#introduction}
 
 Orchestra Platform is free, open-source software, meaning anyone can contribute to its development and progress. Orchestra Platform source code is currently hosted on [Github](https://github.com), which provides an easy method for forking the project and merging your contributions.
 
-## Pull Requests {#pull-request}
+## Pull Requests {#pull-requests}
 
 The pull request process differs for new features and bugs. Before sending a pull request for a new feature, you should first create an issue with `[Proposal]` in the title. The proposal should describe the new feature, as well as implementation ideas. The proposal will then be reviewed and either approved or denied. Once a proposal is approved, a pull request may be created implementing the new feature. Pull requests which do not follow this guideline will be closed immediately.
 
-### Template for Pull Request, Proposal, Request or Bugfix
+### Pull Request for Bugfixes
+
+Pull requests for bugs may be sent without creating any proposal issue. If you believe that you know of a solution for a bug that has been filed on Github, please leave a comment detailing your proposed fix.
+
+### Unit Testing
+
+A pull request or bugfixes **should** include relevant test cases to ensure that Orchestra Platform work as expected and avoid regression bug is produced in the future.
+
+## Feature Requests {#feature-requests}
+
+If you have an idea for a new feature you would like to see added to Orchestra Platform, you may create an issue on Github with `[Request]` in the title. The feature request will then be reviewed by a core contributor.
+
+## Template for Pull Request, Proposal, Request or Bugfixes {#templates}
 
 Please include the following template when opening an issue on Github:
 
@@ -30,18 +43,6 @@ Please include the following template when opening an issue on Github:
     | Fixed tickets | [comma separated list of tickets fixed by the PR]
     | License       | MIT
     | Doc PR        | [The reference to the documentation PR if any]
-
-### Pull Request for bugfixes
-
-Pull requests for bugs may be sent without creating any proposal issue. If you believe that you know of a solution for a bug that has been filed on Github, please leave a comment detailing your proposed fix.
-
-### Unit test
-
-A pull request or bugfixes **should** include relevant test cases to ensure that Orchestra Platform work as expected and avoid regression bug is produced in the future.
-
-## Feature Requests {#feature-requests}
-
-If you have an idea for a new feature you would like to see added to Orchestra Platform, you may create an issue on Github with `[Request]` in the title. The feature request will then be reviewed by a core contributor.
 
 ## Coding Guidelines {#coding-guidelines}
 
