@@ -16,6 +16,21 @@ Orchestra Platform is free, open-source software, meaning anyone can contribute 
 
 The pull request process differs for new features and bugs. Before sending a pull request for a new feature, you should first create an issue with `[Proposal]` in the title. The proposal should describe the new feature, as well as implementation ideas. The proposal will then be reviewed and either approved or denied. Once a proposal is approved, a pull request may be created implementing the new feature. Pull requests which do not follow this guideline will be closed immediately.
 
+### Template for Pull Request, Proposal, Request or Bugfix
+
+Please include the following template when opening an issue on Github:
+
+    | Q             | A
+    | ------------- | ---
+    | Bug fix?      | [yes|no]
+    | New feature?  | [yes|no]
+    | BC breaks?    | [yes|no]
+    | Deprecations? | [yes|no]
+    | Tests pass?   | [yes|no]
+    | Fixed tickets | [comma separated list of tickets fixed by the PR]
+    | License       | MIT
+    | Doc PR        | [The reference to the documentation PR if any]
+
 ### Pull requests for bugfixes
 
 Pull requests for bugs may be sent without creating any proposal issue. If you believe that you know of a solution for a bug that has been filed on Github, please leave a comment detailing your proposed fix.
@@ -35,3 +50,4 @@ Orchestra Platform follows the [PSR-0](https://github.com/php-fig/fig-standards/
 * Namespace declarations should be on the same line as `<?php`.
 * Preferable to use `and` and `or` instead of `&&` or `||`.
 * Interface names are suffixed with `Interface (FooInterface)`.
+
