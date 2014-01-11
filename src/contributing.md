@@ -31,7 +31,7 @@ Please include the following template when opening an issue on Github:
     | License       | MIT
     | Doc PR        | [The reference to the documentation PR if any]
 
-### Pull requests for bugfixes
+### Pull Request for bugfixes
 
 Pull requests for bugs may be sent without creating any proposal issue. If you believe that you know of a solution for a bug that has been filed on Github, please leave a comment detailing your proposed fix.
 
