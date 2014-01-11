@@ -12,7 +12,7 @@ title: Foundation Component
 
 Orchestra Platform is easily install using [Composer](http://getcomposer.org).
 
-	composer create-project orchestra/platform website dev-master --prefer-dist
+	composer create-project orchestra/platform website 2.1.x --prefer-dist
 
 ## Resources {#resources}
 
