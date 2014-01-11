@@ -17,11 +17,29 @@ Retrieve user's roles is as simple as:
 
 ## Checking Roles {#checking-roles}
 
-To check if user has a role.
+### Check if user has all of the following roles
 
-	if (Auth::is(['admin'])) {
-		echo "Is an admin";
+	if (Auth::is(['admin', 'editor'])) {
+		echo "Is an admin and editor";
 	}
+
+### Check if user has any of the following roles
+
+    if (Auth::isAny(['member', 'admin'])) {
+        echo "Is a member or admin";
+    }
+
+### Check if user has none of the following roles
+
+    if (Auth::isNot(['admin', 'editor'])) {
+        echo "Isn't an admin and editor";
+    }
+
+### Check if user has none any of the following roles
+
+    if (Auth::isNotAny(['member', 'admin'])) {
+        echo "Isn't a member or admin";
+    }
 
 ## Setup Custom Roles Relationship {#setup-custom-roles}
 
