@@ -5,7 +5,7 @@ title: Extension Change Log
 
 ## Version 2.1 {#v2-1}
 
-### v2.1.1@dev {#v2-1-1}
+### v2.1.1 {#v2-1-1}
 
 * Add `php artisan extension:reset {name}` command to reset extension configuration, useful during extension development.
 * Add following events:
