@@ -5,10 +5,10 @@ title: Upgrading Guide
 
 ## Upgrading from v2.0 to v2.1
 
-* Change require `"orchestra/foundation"` version to `"2.1.*"` in `composer.json`.
-  - You may need to change `"minimum-stability"` option to `"dev"` until a stable release is tagged.
+* Change require `"orchestra/foundation"` version to `"2.1.*"` in `composer.json` ([raw](https://raw2.github.com/orchestral/platform/2.1/composer.json)).
 * Remove call to `$app->redirectIfTrailingSlash()` in `bootstrap/start.php` file.
-* Replace `public/index.php` and `artisan` files.
+* Replace `public/index.php` file.
+* Replace `artisan` file ([raw](https://raw2.github.com/orchestral/platform/2.1/artisan)).
 * Add new `app/config/remote.php` configuration file.
 * Add new `app/views/emails/auth/register.blade.php` file.
 * Edit `app/config/database.php` and update `redis.cluster` option to `false` to turn Redis clustering off by default.
@@ -24,4 +24,5 @@ title: Upgrading Guide
 * If you are overriding `missingMethod()` in your controllers, add `$method` as the first parameter and `$parameter = array()` as the second parameter.
 * Update `lang/en/reminders.php` language file.
 * If you are using http hosts to set the `$env` variable in `bootstrap/start.php`, these should be changed to machine names (as returned by PHP's `gethostname()` function).
+* Remove `bootstrap/compiled.php` file (if exist).
 * Finally, run `composer update`.

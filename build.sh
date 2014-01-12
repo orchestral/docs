@@ -5,10 +5,12 @@ function copy_changes() {
         cp $1/changes.md $2/changes.md;
         echo "Sync changes file";
     fi
-    if [ -f $1/upgrading.md ]; then
-        cp $1/upgrading.md $2/upgrading.md;
-        echo "Sync upgrade file";
-    fi
+
+    # Upgrading command.
+    # if [ -f $1/upgrading.md ]; then
+    #   cp $1/upgrading.md $2/upgrading.md;
+    #   echo "Sync upgrade file";
+    # fi
 }
 
 function set_branch() {
