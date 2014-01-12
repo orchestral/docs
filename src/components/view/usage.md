@@ -57,6 +57,11 @@ The **application** views is accessible from the root path of your theme, while 
 
 You are free to maintain where assets is located inside the theme folder as it is under public folder. To access the asset file, you can use the following snippet.
 
-	<script src="<?php echo Orchestra\Theme::to('assets/js/script.js'); ?>">
+	<script src="{{ Orchestra\Theme::to('assets/js/script.js') }}">
 	<!-- this would point to `http:://yourdomain.com/themes/default/assets/js/script.js` -->
+	
+Alternatively you can also use `Orchestra\Theme::asset()`:
+
+	<scrupt src="{{ Orchestra\Theme::asset('assets/js/script.js') }}">
+	<!-- this would point to `/themes/default/assets/js/script.js` -->
 
