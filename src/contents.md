@@ -10,7 +10,7 @@ title: Table of Content
   - [Contributing](/docs/2.1/contributing)
   - [License](/docs/2.1/license)
   - [Change Log](/docs/2.1/changes)
-  - [Upgrading](/docs/2.1/upgrading)
+  - [Upgrade Guide](/docs/2.1/upgrading)
 * Getting Started
   - [Installation](/docs/2.1/installation)
   - [Requirements](/docs/2.1/installation#requirement)
