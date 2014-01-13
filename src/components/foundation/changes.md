@@ -5,7 +5,12 @@ title: Foundation Change Log
 
 ## Version 2.1 {#v2-1}
 
-### v2.1.0@dev {#v2-1-0}
+### v2.1.1 {#v2-1-1}
+
+* Fixes missing select2 on search user filter.
+* Provides actual service locator for `Orchestra\Foundation\ConsoleSupportServiceProvider`.
+
+### v2.1.0 {#v2-1-0}
 
 * Split `Orchestra\Foundation\Services\AdminMenuHandler@handle` to allow easier customization.
 * Implement `"orchestra.validate: extension.{name}"` and `Orchestra\Services\Validation\Extension`.
@@ -31,12 +36,14 @@ Replace call to `handles('orchestra/foundation::*')` to `handles('orchestra::*')
 * Consolidate all commands service provider in `Orchestra\Foundation\ConsoleSupportServiceProvider`.
 * Refactor `Orchestra\Foundation\Reminders\PasswordBroker` and `Orchestra\Foundation\Routing\ForgotController` based on Laravel 4.1 changes.
 * Refactor routing as passive controllers and move all CRUD action to `Orchestra\Foundation\Processor` namespace.
+* Move `Orchestra\Foundation\UserMetaRepository` and `Orchestra\Foundation\UserMetaProvider` to orchestra/model.
 * Add components:
   - `orchestra/debug` for profiling your Orchestra Platform application.
   - `orchestra/optimize` to run autoloading optimization.
+  - `orchestra/notifier` to send e-mail notification per user.
 * Update assets:
   - Twitter Bootstrap v3.0.3
-  - Javie JavaScript Library v1.1.1
+  - Javie JavaScript Library v1.1.2
 
 ## Version 2.0 {#v2-0}
 

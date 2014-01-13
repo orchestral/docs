@@ -1,5 +1,6 @@
 ---
-title: Orchestra Mail Class
+title: Sending Mail
+
 ---
 
 `Orchestra\Mail` offer a slight improvement to `Illuminate\Mail\Mailer` where administrator can define the e-mail configuration from Settings page as well as preference to use `send` or `queue`.

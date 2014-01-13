@@ -6,7 +6,7 @@ title: Using Auth
 Essentially, the Auth class offered by Laravel 4 is already good enough for normal usage. Orchestra Platform only extends the default operation and allow a user to be link with one or many roles.
 
 * [Retrieving Roles](#retrieving-roles)
-* [Check Roles](#check-roles)
+* [Checking Roles](#checking-roles)
 * [Setup Custom Roles Relationship](#setup-custom-roles)
 
 ## Retrieving Roles {#retrieving-roles}
@@ -15,13 +15,31 @@ Retrieve user's roles is as simple as:
 
 	$roles = Auth::roles();
 
-## Check Roles {#check-roles}
+## Checking Roles {#checking-roles}
 
-To check if user has a role.
+### Check if user has all of the following roles
 
-	if (Auth::is(['admin'])) {
-		echo "Is an admin";
+	if (Auth::is(['admin', 'editor'])) {
+		echo "Is an admin and editor";
 	}
+
+### Check if user has any of the following roles
+
+    if (Auth::isAny(['member', 'admin'])) {
+        echo "Is a member or admin";
+    }
+
+### Check if user has none of the following roles
+
+    if (Auth::isNot(['admin', 'editor'])) {
+        echo "Isn't an admin and editor";
+    }
+
+### Check if user has none any of the following roles
+
+    if (Auth::isNotAny(['member', 'admin'])) {
+        echo "Isn't a member or admin";
+    }
 
 ## Setup Custom Roles Relationship {#setup-custom-roles}
 

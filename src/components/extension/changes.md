@@ -5,6 +5,14 @@ title: Extension Change Log
 
 ## Version 2.1 {#v2-1}
 
+### v2.1.1 {#v2-1-1}
+
+* Add `php artisan extension:reset {name}` command to reset extension configuration, useful during extension development.
+* Add following events:
+  - `orchestra.activating: {name}`
+  - `orchestra.deactivating: {name}`
+* `Orchestra\Extension\Debugger` to typehint `Illuminate\Session\Store` instead of `Illuminate\Session\SessionManager`.
+
 ### v2.1.0 {#v2-1-0}
 
 * Modify boot sequence for `Orchestra\Extension`, this would allow `Orchestra\Foundation\FoundationServiceProvider` to have priority during boot.
