@@ -14,7 +14,7 @@ Orchestra\Config      | Orchestra\Support\Facades\Config      | Orchestra\Extens
 Orchestra\Decorator   | Orchestra\Support\Facades\Decorator   | Orchestra\View\Decorator                         | `orchestra.decorator`
 Orchestra\Extension   | Orchestra\Support\Facades\Extension   | Orchestra\Extension\Environment                  | `orchestra.extension`
 Orchestra\Form        | Orchestra\Support\Facades\Form        | Orchestra\Html\Form\Environment                  | `orchestra.form`
-Orchestra\Mail        | Orchestra\Support\Facades\Mail        | Orchestra\Notifier\Mailer                        | `orchestra.mailer`
+Orchestra\Mail        | Orchestra\Support\Facades\Mail        | Orchestra\Notifier\Mailer                        | `orchestra.mail`
 Orchestra\Memory      | Orchestra\Support\Facades\Memory      | Orchestra\Memory\MemoryManager                   | `orchestra.memory`
 Orchestra\Messages    | Orchestra\Support\Facades\Messages    | Orchestra\Support\Messages                       | `orchestra.messages`
 Orchestra\Profiler    | Orchestra\Support\Facades\Profiler    | Orchestra\Debug\Profiler                         | `orchestra.debug`
