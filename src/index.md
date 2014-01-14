@@ -4,6 +4,7 @@ title: Introduction
 ---
 
 * [What is Orchestra Platform?](#what)
+* [What Makes Orchestra Platform Different?](#what-different)
 * [Illuminating Orchestra Platform](#illuminate)
 
 ## What is Orchestra Platform? {#what}
