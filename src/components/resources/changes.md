@@ -12,6 +12,10 @@ title: Resources Change Log
 
 ## Version 2.0 {#v2-0}
 
+### v2.0.5 {#v2-0-5}
+
+* Return blank `Illuminate\Http\Response` (with `200` HTTP status) when `null` is returned from controller.
+
 ### v2.0.4 {#v2-0-4}
 
 * Refactor `Orchestra\Resources\Response` and properly content as empty string shouldn't abort the app.
