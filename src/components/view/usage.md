@@ -62,6 +62,6 @@ You are free to maintain where assets is located inside the theme folder as it i
 	
 Alternatively you can also use `Orchestra\Theme::asset()`:
 
-	<scrupt src="{{ Orchestra\Theme::asset('assets/js/script.js') }}">
+	<script src="{{ Orchestra\Theme::asset('assets/js/script.js') }}">
 	<!-- this would point to `/themes/default/assets/js/script.js` -->
 
