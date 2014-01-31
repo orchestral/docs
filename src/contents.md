@@ -11,7 +11,7 @@ title: Table of Content
   - [Change Log](/docs/2.0/changes)
 * Getting Started
   - [Installation](/docs/2.0/installation)
-  - [Requirements](/docs/2.0/installation#requirement)
+  - [Requirements](/docs/2.0/installation#server-requirement)
   - [Helpers](/docs/2.0/helpers)
   - [Events](/docs/2.0/events)
   - [Troubleshooting](/docs/2.0/troubleshoot)
