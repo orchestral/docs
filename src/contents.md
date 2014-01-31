@@ -13,7 +13,7 @@ title: Table of Content
   - [Upgrade Guide](/docs/2.1/upgrading)
 * Getting Started
   - [Installation](/docs/2.1/installation)
-  - [Requirements](/docs/2.1/installation#requirement)
+  - [Requirements](/docs/2.1/installation#server-requirement)
   - [Helpers](/docs/2.1/helpers)
   - [Events](/docs/2.1/events)
   - [Troubleshooting](/docs/2.1/troubleshoot)
