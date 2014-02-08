@@ -19,7 +19,7 @@ If you come across situation where your application suddenly when back as it was
 
     $ chmod -Rf 777 app/storage
 
-## Unable to assign multiple Orchestra\Memory instance {#unable-to-assign-multiple-memory-instance}
+## Unable to assign multiple Memory instance {#unable-to-assign-multiple-memory-instance}
 
 In any event where the application stop with the following exception `Unable to assign multiple Orchestra\Memory instance`, it means that for some reason you have multiple call to assign `Orchestra\Memory` to the same ACL instance.
 
