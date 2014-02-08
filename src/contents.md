@@ -14,12 +14,12 @@ title: Table of Content
 * Getting Started
   - [Installation](/docs/2.1/installation)
   - [Requirements](/docs/2.1/installation#server-requirement)
-  - [Helpers](/docs/2.1/helpers)
-  - [Events](/docs/2.1/events)
-  - [Troubleshooting](/docs/2.1/troubleshoot)
-  - [Facades](/docs/2.1/facades)
 * Learning More
+  - [Events](/docs/2.1/events)
+  - [Facades](/docs/2.1/facades)
+  - [Helpers](/docs/2.1/helpers)
   - [Sending Mail](/docs/2.1/mail)
+  - [Troubleshooting](/docs/2.1/troubleshoot)
 
 ### Components
 
