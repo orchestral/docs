@@ -54,6 +54,21 @@ By default, route filters are disabled by Laravel because, ideally, you should t
 
 ## Working with Workbench {#working-with-workbench}
 
+### Cannot redeclare crypt_random_string()
+
+Due to the requirement with Laravel Framework 4.1, we need to maintain a modified version of `phpseclib/phpseclib` for developing Laravel/PHP packages using workbench. In order to make this work please include the following code in both your `composer.json` file for `app` and `workbench`:
+
+    {
+        "repositories": [
+            {
+                "type": "vcs",
+                "url": "git://github.com/orchestral/phpseclib.git"
+            }
+        ]
+    }
+
+### Class 'Illuminate\Foundation\Testing\TestCase' not found
+
 > Fatal error: Class 'Illuminate\Foundation\Testing\TestCase' not found in /laravel/workbench/foo/bar/vendor/orchestra/testbench/src/Orchestra/Testbench/TestCase.php
 
 Due to the requirement to include `laravel/framework` when you install `orchestra/testbench`, please remove any **Illuminate** dependencies to avoid a failed installation.
