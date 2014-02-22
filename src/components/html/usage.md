@@ -33,18 +33,12 @@ Mark a string to be excluded from being escaped.
 
 Decorate method allow developer to define HTML attributes collection as `HTML::attributes` method, with the addition of including default attributes array as second parameter.
 
-	return HTML::decorate(
-		['class' => 'foo'],
-		['id' => 'foo', 'class' => 'span5']
-	);
+	return HTML::decorate(['class' => 'foo'], ['id' => 'foo', 'class' => 'span5']);
 
 	// will return array('class' => 'foo span5', 'id' => 'foo');
 
 It also support replacement of default attributes if such requirement is needed.
 
-	$attributes = HTML::decorate(
-		['class' => 'foo !span5'],
-		['class' => 'bar span5'],
-	);
+	return HTML::decorate(['class' => 'foo !span5'], ['class' => 'bar span5']);
 
 	// will return array('class' => 'foo bar');
