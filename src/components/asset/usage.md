@@ -48,7 +48,7 @@ In this example, we are registering the jquery-ui asset, as well as specifying t
 
 Registering an asset that has multiple dependencies:
 
-	Orchestra\Asset::add('jquery-ui', 'js/jquery-ui.js', array('first', 'second'));
+	Orchestra\Asset::add('jquery-ui', 'js/jquery-ui.js', ['first', 'second']);
 
 ## Asset Containers {#asset-containers}
 
@@ -68,7 +68,14 @@ Another option to increase response time is by utilizing browser caching, while 
 
 	Orchestra\Asset::container()->addVersioning();
 
-	// or possibility
+	// or alternatively
 	Orchestra\Asset::addVersioning();
 
 > Note: this would only work with local asset.
+
+You can remove adding versioning number by using:
+
+	Orchestra\Asset::container()->removeVersioning();
+	
+	// or alternatively
+	Orchestra\Asset::removeVersioning();
