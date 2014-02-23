@@ -30,6 +30,12 @@ Dumping assets into a view:
 		{{ Orchestra\Asset::scripts() }}
 	</head>
 
+Above code can also be simplified as:
+
+	<head>
+		{{ Orchestra\Asset::show() }}
+	</head>
+
 ## Asset Dependencies {#asset-dependencies}
 
 Sometimes you may need to specify that an asset has dependencies. This means that the asset requires other assets to be declared in your view before it can be declared. Managing asset dependencies couldn't be easier in Laravel. Remember the "names" you gave to your assets? You can pass them as the third parameter to the add method to declare dependencies:
