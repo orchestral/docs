@@ -25,5 +25,7 @@ In any event where the application stop with the following exception `Unable to 
 
 ## Error on SessionHandler::read() {#error-sessionhandler-read}
 
-In any event where the application stop with the following exception `SessionHandler::read(): The session id is too long or contains illegal characters, valid characters are a-z, A-Z, 0-9 and '-,'`. Please rename your [cookie name](https://github.com/orchestral/platform/blob/2.1/app/config/session.php#L99).
+	SessionHandler::read(): The session id is too long or contains illegal characters, valid characters are a-z, A-Z, 0-9 and '-,'
+
+In any event where the application stop with the following exception. Please rename your [cookie name](https://github.com/orchestral/platform/blob/2.1/app/config/session.php#L99).
 
