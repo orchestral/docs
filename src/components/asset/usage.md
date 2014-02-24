@@ -30,6 +30,12 @@ Dumping assets into a view:
 		{{ Orchestra\Asset::scripts() }}
 	</head>
 
+Above code can also be simplified as:
+
+	<head>
+		{{ Orchestra\Asset::show() }}
+	</head>
+
 ## Asset Dependencies {#asset-dependencies}
 
 Sometimes you may need to specify that an asset has dependencies. This means that the asset requires other assets to be declared in your view before it can be declared. Managing asset dependencies couldn't be easier in Laravel. Remember the "names" you gave to your assets? You can pass them as the third parameter to the add method to declare dependencies:
@@ -42,7 +48,7 @@ In this example, we are registering the jquery-ui asset, as well as specifying t
 
 Registering an asset that has multiple dependencies:
 
-	Orchestra\Asset::add('jquery-ui', 'js/jquery-ui.js', array('first', 'second'));
+	Orchestra\Asset::add('jquery-ui', 'js/jquery-ui.js', ['first', 'second']);
 
 ## Asset Containers {#asset-containers}
 
@@ -62,7 +68,14 @@ Another option to increase response time is by utilizing browser caching, while 
 
 	Orchestra\Asset::container()->addVersioning();
 
-	// or possibility
+	// or alternatively
 	Orchestra\Asset::addVersioning();
 
 > Note: this would only work with local asset.
+
+You can remove adding versioning number by using:
+
+	Orchestra\Asset::container()->removeVersioning();
+	
+	// or alternatively
+	Orchestra\Asset::removeVersioning();
