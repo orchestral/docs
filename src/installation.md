@@ -52,7 +52,7 @@ Once Laravel 4 and Orchestra Platform is properly downloaded and installed, we n
 
 Orchestra Plaftorm has a few system requirements:
 
-* PHP >= 5.3.7
+* PHP >= 5.4.0
 * MCrypt PHP Extension
 * Apache, nginx, or another compatible web server.
 * SQLite, MySQL, PostgreSQL, or SQL Server PDO drivers.
