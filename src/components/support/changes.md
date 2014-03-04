@@ -5,6 +5,11 @@ title: Support Change Log
 
 ## Version 2.1 {#v2-1}
 
+### v2.1.1 {#v2-1-1}
+
+* Allow to specify `$prefix` and `$suffix` for `Orchestra\Support\Str::replace()` helper.
+* Implement [PSR-4](https://github.com/php-fig/fig-standards/blob/master/proposed/psr-4-autoloader/psr-4-autoloader.md) autoloading structure.
+
 ### v2.1.0 {#v2-1-0}
 
 * `Orchestra\Support\Manager` should be able to set blacklisted name, for example `Orchestra\Memory` shouldn't allow dotted.
