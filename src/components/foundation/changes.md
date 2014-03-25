@@ -9,8 +9,13 @@ title: Foundation Change Log
 
 * Bump minimum version to PHP v5.4.0.
 * Rename Environment to Factory.
+* Only implement abstract method `Orchestra\Foundation\Routing\BaseController::setupFilters()` on implementations.
 
 ## Version 2.1 {#v2-1}
+
+### v2.1.5 {#v2-1-5}
+
+* Implement [PSR-4](https://github.com/php-fig/fig-standards/blob/master/proposed/psr-4-autoloader/psr-4-autoloader.md) autoloading structure.
 
 ### v2.1.4 {#v2-1-4}
 
