@@ -5,6 +5,12 @@ title: Optimize Change Log
 
 ## Version 2.1 {#v2-1}
 
+### v2.1.2 {#v2-1-2}
+
+* Rename `Orchestra\Facile\Response` to `Orchestra\Facile\Container`.
+* Add `Orchestra\Support\Contracts\CsvableInterface`.
+* Add `Orchestra\Support\Collection`.
+
 ### v2.1.1 {#v2-1-1}
 
 * Implement [PSR-4](https://github.com/php-fig/fig-standards/blob/master/proposed/psr-4-autoloader/psr-4-autoloader.md) autoloading structure.
