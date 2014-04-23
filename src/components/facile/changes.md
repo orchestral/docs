@@ -5,6 +5,11 @@ title: Facile Change Log
 
 ## Version 2.1 {#v2-1}
 
+### v2.1.3 {#v2-1-3}
+
+* Replace `Orchestra\Facile\Container::on()` with `Orchestra\Facile\Container::when()`.
+* Allow `Orchestra\Facile\Container::format()` to take format configuration as second parameter.
+
 ### v2.1.2 {#v2-1-2}
 
 * Rename `Orchestra\Facile\Response` to `Orchestra\Facile\Container`.
