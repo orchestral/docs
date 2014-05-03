@@ -43,7 +43,7 @@ Retrieve user's roles is as simple as:
 
 ## Setup Custom Roles Relationship {#setup-custom-roles}
 
-The default event listener `orchestra.auth: roles` is no longer registered in `Orchestra\Auth\AuthServiceProvider`. This would allow better configuration over convertion control for your application.
+The default event listener `orchestra.auth: roles` is no longer registered in `Orchestra\Auth\AuthServiceProvider`. This would allow better configuration over convertion control for your application (Laravel).
 
 An example setup code would be:
 
@@ -62,4 +62,4 @@ An example setup code would be:
 	    return $roles;
     });
 
-> For Orchestra Platform, the listener are automatically registered in the bootstrap process.
+> For Orchestra Platform, the listener are automatically registered in the bootstrap process and the above code shouldn't be used!

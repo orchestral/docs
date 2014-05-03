@@ -5,6 +5,14 @@ title: Model Change Log
 
 ## Version 2.1 {#v2-1}
 
+### v2.1.5 {#v2-1-5}
+
+* Add `remember_token` to `Orchestra\Model\User::$hidden` attribute.
+
+### v2.1.4 {#v2-1-4}
+
+* Implement changes to `Illuminate\Auth\UserInterface` on v4.1.26 which fixes a vulnerability to authentication with remember me.
+
 ### v2.1.3 {#v2-1-3}
 
 * Add `Orchestra\Model\User::activate()`, `Orchestra\Model\User::deactivate()` and `Orchestra\Model\User::suspend()` helpers.
