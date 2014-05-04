@@ -12,6 +12,17 @@ title: Facile Change Log
 
 ## Version 2.1 {#v2-1}
 
+### v2.1.3 {#v2-1-3}
+
+* Replace `Orchestra\Facile\Container::on()` with `Orchestra\Facile\Container::when()`.
+* Allow `Orchestra\Facile\Container::format()` to take format configuration as second parameter.
+
+### v2.1.2 {#v2-1-2}
+
+* Rename `Orchestra\Facile\Response` to `Orchestra\Facile\Container`.
+* Add support to filter data transport between format using `Orchestra\Facile\Container::on()` method which allow `only` or `except` keyword.
+* Add support to easily export data as Comma-Separated Value (CSV).
+
 ### v2.1.1 {#v2-1-1}
 
 * Implement [PSR-4](https://github.com/php-fig/fig-standards/blob/master/proposed/psr-4-autoloader/psr-4-autoloader.md) autoloading structure.
