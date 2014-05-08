@@ -29,5 +29,5 @@ To install through composer, simply put the following in your `composer.json` fi
 
 ## Resources {#resources}
 
-* [Usage](/docs/2.1/components/testbench/usage)
-* [Change Log](/docs/2.1/components/testbench/changes#v2-1)
+* [Usage](/docs/2.2/components/testbench/usage)
+* [Change Log](/docs/2.2/components/testbench/changes#v2-2)

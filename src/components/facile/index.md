@@ -41,5 +41,5 @@ You might want to add `Orchestra\Support\Facades\Facile` to class aliases in `ap
 
 ## Resources {#resources}
 
-* [Template](/docs/2.1/components/facile/templating)
-* [Change Log](/docs/2.1/components/facile/changes#v2-1)
+* [Template](/docs/2.2/components/facile/templating)
+* [Change Log](/docs/2.2/components/facile/changes#v2-2)

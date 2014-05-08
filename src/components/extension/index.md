@@ -44,6 +44,6 @@ Before we can start using `Orchestra\Extension`, please run the following:
 
 ## Resources {#resources}
 
-* [Usage](/docs/2.1/components/extension/usage)
-* [Extend](/docs/2.1/components/extension/extend)
-* [Change Log](/docs/2.1/components/extension/changes#v2-1)
+* [Usage](/docs/2.2/components/extension/usage)
+* [Extend](/docs/2.2/components/extension/extend)
+* [Change Log](/docs/2.2/components/extension/changes#v2-2)

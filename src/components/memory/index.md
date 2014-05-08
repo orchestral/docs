@@ -48,5 +48,5 @@ Optionally, you can also publish the configuration file if there any requirement
 
 ## Resources {#resources}
 
-* [Usage](/docs/2.1/components/memory/usage)
-* [Change Log](/docs/2.1/components/memory/changes#v2-1)
+* [Usage](/docs/2.2/components/memory/usage)
+* [Change Log](/docs/2.2/components/memory/changes#v2-2)

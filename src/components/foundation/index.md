@@ -16,4 +16,4 @@ Orchestra Platform is easily install using [Composer](http://getcomposer.org).
 
 ## Resources {#resources}
 
-* [Change Log](/docs/2.1/components/foundation/changes#v2-1)
+* [Change Log](/docs/2.2/components/foundation/changes#v2-2)

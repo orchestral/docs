@@ -43,6 +43,6 @@ You might want to add `Orchestra\Support\Facades\Asset` to class aliases in `app
 
 ## Resources {#resources}
 
-* [Usage](/docs/2.1/components/asset/usage)
-* [Change Log](/docs/2.1/components/asset/changes#v2-1)
+* [Usage](/docs/2.2/components/asset/usage)
+* [Change Log](/docs/2.2/components/asset/changes#v2-2)
 * [Github](https://github.com/orchestral/asset)

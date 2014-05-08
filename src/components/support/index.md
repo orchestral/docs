@@ -32,8 +32,8 @@ Next add the service provider in `app/config/app.php`.
 
 ## Resources {#resources}
 
-* [Manager Class](/docs/2.1/components/support/manager)
-* [Messages Class](/docs/2.1/components/support/messages)
-* [String Class](/docs/2.1/components/support/str)
-* [Validation Class](/docs/2.1/components/support/validator)
-* [Change Log](/docs/2.1/components/support/changes#v2-1)
+* [Manager Class](/docs/2.2/components/support/manager)
+* [Messages Class](/docs/2.2/components/support/messages)
+* [String Class](/docs/2.2/components/support/str)
+* [Validation Class](/docs/2.2/components/support/validator)
+* [Change Log](/docs/2.2/components/support/changes#v2-2)
