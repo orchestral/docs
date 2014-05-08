@@ -1,4 +1,4 @@
-BRANCH=master;
+BRANCH=2.2;
 
 function copy_changes() {
     if [ -f $1/changes.md ]; then

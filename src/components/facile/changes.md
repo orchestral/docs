@@ -9,6 +9,9 @@ title: Facile Change Log
 
 * Bump minimum version to PHP v5.4.0.
 * Rename `Orchestra\Facile\Environment` to `Orchestra\Facile\Factory`.
+* Add support to filter data transport between format using `Orchestra\Facile\Container::when()` method which allow `only` or `except` keyword.
+* Allow `Orchestra\Facile\Container::format()` to take format configuration as second parameter.
+* Add support to easily export data as Comma-Separated Value (CSV).
 
 ## Version 2.1 {#v2-1}
 
