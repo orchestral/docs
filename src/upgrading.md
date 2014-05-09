@@ -30,7 +30,6 @@ To upgrade to Orchestra Platform 2.1, change your `"orchestra/foundation"` versi
 
 > As a pre-caution, remove `bootstrap/compiled.php` file if it exist to avoid possible error during upgrade.
 
-
 ### Replace Files
 
 Replace your `public/index.php` file with this [fresh copy from the repository](https://github.com/orchestral/platform/blob/2.1/public/index.php) ([raw](https://raw2.github.com/orchestral/platform/2.1/public/index.php)).
