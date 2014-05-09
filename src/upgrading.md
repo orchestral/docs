@@ -3,13 +3,33 @@ title: Upgrade Guide
 
 ---
 
+## Upgrading from 2.1 to 2.2 {#v2-1-v2-2}
+
+### Upgrading Your Composer Dependency
+
+To upgrade to Orchestra Platform 2.2, change your `"orchestra/foundation"` version to `"2.2.*"` in your `composer.json` file.
+
+> As a pre-caution, remove `bootstrap/compiled.php` file if it exist to avoid possible error during upgrade.
+
+### Adding Configuration Files & Options
+
+Add the new `cipher` configuration option to your `app/config/app.php` file. The default value should be `MCRYPT_RIJNDAEL_256` constant.
+
+Add the new `fallback_locale` configuration option to your `app/config/app.php` file. The default value should be `en`.
+
+Add the new alias `'SoftDeletingTrait' => 'Illuminate\Database\Eloquent\SoftDeletingTrait',` to your `app/config/app.php`.
+
+Add new `app/config/services.php` file [from the repository](https://github.com/orchestral/platform/blob/2.2/app/config/services.php) ([raw](https://raw.githubusercontent.com/orchestral/platform/2.2/app/config/services.php)).
+
+
 ## Upgrading from 2.0 to 2.1 {#v2-0-v2-1}
 
 ### Upgrading Your Composer Dependency
 
-To upgrade your Orchestra Platform 2.1, change your `"orchestra/foundation"` version to `"2.1.*"` in your `composer.json` file.
+To upgrade to Orchestra Platform 2.1, change your `"orchestra/foundation"` version to `"2.1.*"` in your `composer.json` file.
 
 > As a pre-caution, remove `bootstrap/compiled.php` file if it exist to avoid possible error during upgrade.
+
 
 ### Replace Files
 
