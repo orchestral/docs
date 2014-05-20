@@ -15,9 +15,15 @@ To upgrade to Orchestra Platform 2.2, change your `"orchestra/foundation"` versi
 
 Add the new `cipher` configuration option to your `app/config/app.php` file. The default value should be `MCRYPT_RIJNDAEL_256` constant.
 
+	'cipher' => MCRYPT_RIJNDAEL_256,
+
 Add the new `fallback_locale` configuration option to your `app/config/app.php` file. The default value should be `en`.
 
-Add the new alias `'SoftDeletingTrait' => 'Illuminate\Database\Eloquent\SoftDeletingTrait',` to your `app/config/app.php`.
+	'fallback_locale' => 'en',
+
+Add the new alias to your `app/config/app.php`.
+
+	'SoftDeletingTrait' => 'Illuminate\Database\Eloquent\SoftDeletingTrait',
 
 Add new `app/config/services.php` file [from the repository](https://github.com/orchestral/platform/blob/2.2/app/config/services.php) ([raw](https://raw.githubusercontent.com/orchestral/platform/2.2/app/config/services.php)).
 
