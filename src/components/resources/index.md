@@ -15,7 +15,7 @@ To install through composer, simply put the following in your `composer.json` fi
 
 	{
 		"require": {
-			"orchestra/resources": "2.1.*"
+			"orchestra/resources": "2.2.*"
 		}
 	}
 

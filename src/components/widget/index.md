@@ -22,7 +22,7 @@ To install through composer, simply put the following in your `composer.json` fi
 
 	{
 		"require": {
-			"orchestra/widget": "2.1.*"
+			"orchestra/widget": "2.2.*"
 		}
 	}
 
