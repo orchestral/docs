@@ -5,9 +5,16 @@ title: Facile Component
 
 `Orchestra\Facile` simplify the need to create API based response in your Laravel 4 application, with just the following code you are able to return multi format Response, either it be HTML (using `View`), json or etc.
 
-* [Installation](#installation)
-* [Configuration](#configuration)
-* [Resources](#resources)
+### Table of Content
+
+* Quick Guide
+  - [Installation](#installation)
+  - [Configuration](#configuration)
+  - [Resources](#resources)
+* Documentation
+  - [Template](/docs/2.2/components/facile/templating)
+* [Change Log](/docs/2.2/components/facile/changes#v2-2)
+* [Github](https://github.com/orchestral/facile)
 
 ## Installation {#installation}
 
@@ -38,8 +45,3 @@ You might want to add `Orchestra\Support\Facades\Facile` to class aliases in `ap
 
 		'Facile' => 'Orchestra\Support\Facades\Facile',
 	),
-
-## Resources {#resources}
-
-* [Template](/docs/2.2/components/facile/templating)
-* [Change Log](/docs/2.2/components/facile/changes#v2-2)

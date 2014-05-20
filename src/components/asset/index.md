@@ -5,7 +5,7 @@ title: Asset Component
 
 `Orchestra\Asset` is a port of Laravel 3 Asset for Orchestra Platform. It provides a simple way to manage the CSS and JavaScript used by your application.
 
-### Table of Contents
+### Table of Content
 
 * Quick Guide
   - [Installation](#installation)

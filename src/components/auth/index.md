@@ -5,7 +5,7 @@ title: Auth Component
 
 `Orchestra\Auth` extends the functionality of `Illuminate\Auth` with the extra functionality to retrieve users' role. This is important when we want to use `Orchestra\Acl` to manage application Access Control List (ACL).
 
-### Table of Contents
+### Table of Content
 
 * Quick Guide
   - [Installation](#installation)
