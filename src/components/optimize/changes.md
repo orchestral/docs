@@ -12,6 +12,10 @@ title: Optimize Change Log
 
 ## Version 2.1 {#v2-1}
 
+### v2.1.3 {#v2-1-3}
+
+* Remove models from compiled list to avoid bad deployment.
+
 ### v2.1.2 {#v2-1-2}
 
 * Rename `Orchestra\Facile\Response` to `Orchestra\Facile\Container`.
