@@ -8,6 +8,7 @@ title: Resources Change Log
 
 * Bump minimum version to PHP v5.4.0.
 * Rename `Orchestra\Resources\Environment` to `Orchestra\Resources\Factory`.
+* Return blank `Illuminate\Http\Response` (with `200` HTTP status) when `null` is returned from controller.
 
 ## Version 2.1 {#v2-1}
 
