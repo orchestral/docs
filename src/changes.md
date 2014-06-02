@@ -10,12 +10,9 @@ title: Change Log
 * Bump minimum version to PHP v5.4.0.
 * Remove redundant implementation in default `User` model.
 * Add encrypt option to iron queue config.
+* Add `app.cipher` config to use `MCRYPT_RIJNDAEL_128`.
 
 ## Version 2.1 {#v2-1}
-
-### v2.1.5 {#v2-1-5}
-
-* Add native support for Laravel Forge and Homestead.
 
 ## v2.1.4 {#v2-1-4}
 
