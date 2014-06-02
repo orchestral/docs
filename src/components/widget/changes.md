@@ -3,6 +3,15 @@ title: Widget Change Log
 
 ---
 
+## Version 2.2 {#v2-2}
+
+### v2.2.0 {#v2-2-0}
+
+* Bump minimum version to PHP v5.4.0.
+* Update configuration and add ability to override default driver.
+* Add `Orchestra\Widget\WidgetManager::of()` helper to handle widget generation using closure.
+* Implement [PSR-4](https://github.com/php-fig/fig-standards/blob/master/proposed/psr-4-autoloader/psr-4-autoloader.md) autoloading structure.
+
 ## Version 2.1 {#v2-1}
 
 ### v2.1.2 {#v2-1-2}

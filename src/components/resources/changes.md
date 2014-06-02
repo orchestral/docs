@@ -4,12 +4,21 @@ title: Resources Change Log
 ---
 ## Version 2.2 {#v2-2}
 
-### v2.2.0@dev {#v2-2-0}
+### v2.2.1 {#v2-2-1}
+
+* Fixes type-hinting to `Orchestra\Facile\Container`.
+
+### v2.2.0 {#v2-2-0}
 
 * Bump minimum version to PHP v5.4.0.
 * Rename `Orchestra\Resources\Environment` to `Orchestra\Resources\Factory`.
+* Return blank `Illuminate\Http\Response` (with `200` HTTP status) when `null` is returned from controller.
 
 ## Version 2.1 {#v2-1}
+
+### v2.1.3 {#v2-1-3}
+
+* Fixes type-hinting to `Orchestra\Facile\Container`.
 
 ### v2.1.2 {#v2-1-2}
 

@@ -5,8 +5,13 @@ title: Model Component
 
 `Orchestra\Model` add basic Eloquent Model for either use with `orchestra/auth` or `orchestra/foundation`.
 
-* [Installation](#installation)
-* [Resources](#resources)
+### Table of Content
+
+* Quick Guide
+  - [Installation](#installation)
+  - [Resources](#resources)
+* [Change Log](/docs/2.2/components/model/changes#v2-2)
+* [Github](https://github.com/orchestral/model)
 
 ## Installation {#installation}
 
@@ -14,10 +19,6 @@ To install through composer, simply put the following in your `composer.json` fi
 
 	{
 		"require": {
-			"orchestra/model": "2.1.*"
+			"orchestra/model": "2.2.*"
 		}
 	}
-
-## Resources {#resources}
-
-* [Change Log](/docs/2.1/components/model/changes#v2-1)

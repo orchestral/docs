@@ -3,11 +3,17 @@ title: Asset Component
 
 ---
 
-`Orchestra\Asset` is a port of Laravel 3 Asset for Orchestra Platform.
+`Orchestra\Asset` is a port of Laravel 3 Asset for Orchestra Platform. It provides a simple way to manage the CSS and JavaScript used by your application.
 
-* [Installation](#installation)
-* [Configuration](#configuration)
-* [Resources](#resources)
+### Table of Content
+
+* Quick Guide
+  - [Installation](#installation)
+  - [Configuration](#configuration)
+* Documentation
+  - [Usage](/docs/2.2/components/asset/usage)
+* [Change Log](/docs/2.2/components/asset/changes#v2-2)
+* [Github](https://github.com/orchestral/asset)
 
 ## Installation {#installation}
 
@@ -15,7 +21,7 @@ To install through composer, simply put the following in your `composer.json` fi
 
 	{
 		"require": {
-			"orchestra/asset": "2.1.*"
+			"orchestra/asset": "2.2.*"
 		}
 	}
 
@@ -40,9 +46,3 @@ You might want to add `Orchestra\Support\Facades\Asset` to class aliases in `app
 
 		'Orchestra\Asset' => 'Orchestra\Support\Facades\Asset',
 	),
-
-## Resources {#resources}
-
-* [Usage](/docs/2.1/components/asset/usage)
-* [Change Log](/docs/2.1/components/asset/changes#v2-1)
-* [Github](https://github.com/orchestral/asset)

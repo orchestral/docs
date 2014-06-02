@@ -15,7 +15,7 @@ To install through composer, simply put the following in your `composer.json` fi
 
 	{
 		"require": {
-			"orchestra/notifier": "2.1.*"
+			"orchestra/notifier": "2.2.*"
 		}
 	}
 
@@ -24,13 +24,13 @@ To install through composer, simply put the following in your `composer.json` fi
 Next add the service provider in `app/config/app.php`
 
 	'providers => array(
-		
+
 		// ...
-		
+
 		'Orchestra\Notifier\NotifierServiceProvider',
 	),
 
 
 ## Resources {#resources}
 
-* [Change Log](/docs/2.1/components/notifier/changes#v2-1)
+* [Change Log](/docs/2.2/components/notifier/changes#v2-2)
