@@ -15,6 +15,10 @@ title: Facile Change Log
 
 ## Version 2.1 {#v2-1}
 
+### v2.1.4 {#v2-1-4}
+
+* Fixes type-hinting to `Orchestra\Support\Contracts\CsvableInterface`.
+
 ### v2.1.3 {#v2-1-3}
 
 * Replace `Orchestra\Facile\Container::on()` with `Orchestra\Facile\Container::when()`.
