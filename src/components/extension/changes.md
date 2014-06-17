@@ -12,6 +12,11 @@ title: Extension Change Log
 
 ## Version 2.1 {#v2-1}
 
+### v2.1.3 {#v2-1-3}
+
+* Move publishing code to `orchestra/publisher` repository.
+* Display `php artisan extension:detect` output as a table.
+
 ### v2.1.2 {#v2-1-2}
 
 * Implement [PSR-4](https://github.com/php-fig/fig-standards/blob/master/proposed/psr-4-autoloader/psr-4-autoloader.md) autoloading structure.
