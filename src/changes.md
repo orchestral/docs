@@ -5,7 +5,7 @@ title: Change Log
 
 ## Version 2.2 {#v2-2}
 
-### v2.2.0@dev {#v2-2-0}
+### v2.2.0 {#v2-2-0}
 
 * Bump minimum version to PHP v5.4.0.
 * Remove redundant implementation in default `User` model.
@@ -13,6 +13,10 @@ title: Change Log
 * Add `app.cipher` config to use `MCRYPT_RIJNDAEL_128`.
 
 ## Version 2.1 {#v2-1}
+
+### v2.1.5 {#v2-1-5}
+
+* Add native support for Laravel Forge and Homestead.
 
 ## v2.1.4 {#v2-1-4}
 

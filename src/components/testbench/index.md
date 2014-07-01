@@ -24,8 +24,9 @@ To install through composer, simply put the following in your `composer.json` fi
 
  Laravel  | Testbench
 :---------|:----------
- 4.0.*    | 2.0.*
- 4.1.*    | 2.1.*
+ 4.0.x    | 2.0.x
+ 4.1.x    | 2.1.x
+ 4.2.x    | 2.2.x
 
 ## Resources {#resources}
 
