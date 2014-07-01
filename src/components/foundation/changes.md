@@ -5,7 +5,7 @@ title: Foundation Change Log
 
 ## Version 2.2 {#v2-2}
 
-### v2.2.1@dev {#v2-2-1}
+### v2.2.1 {#v2-2-1}
 
 * Fixed error with inline help `<span>`, helper `<span>` and errors for `select[role="switcher"]` HTML.
 * Utilize `orchestra/notifier` new `Orchestra\Notifier\Message` class.
