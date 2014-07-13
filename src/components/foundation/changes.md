@@ -5,6 +5,17 @@ title: Foundation Change Log
 
 ## Version 2.2 {#v2-2}
 
+### v2.2.3@dev {#v2.2.3}
+
+* Fixed event names on registration.
+* Add new `orchestra.validate: user.registration` event.
+
+### v2.2.2 {#v2-2-2}
+
+* Utilize `orchestra/notifier` new `Orchestra\Notifier\Message::create()` helper method.
+* Allow `Orchestra\Foundation\Application::group()` to mimic `Route::group()` functionality.
+* Allow default routes to be configurable.
+
 ### v2.2.1 {#v2-2-1}
 
 * Fixed error with inline help `<span>`, helper `<span>` and errors for `select[role="switcher"]` HTML.
@@ -29,6 +40,16 @@ title: Foundation Change Log
 * Add support for `orchestra/view` command.
 
 ## Version 2.1 {#v2-1}
+
+### v2.1.10@dev {#v2-1-10}
+
+* Fixed event names on registration.
+* Add new `orchestra.validate: user.registration` event.
+
+### v2.1.9 {#v2-1-9}
+
+* Allow `Orchestra\Foundation\Application::group()` to mimic `Route::group()` functionality.
+* Allow default routes to be configurable.
 
 ### v2.1.8 {#v2-1-8}
 

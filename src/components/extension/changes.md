@@ -5,7 +5,7 @@ title: Extension Change Log
 
 ## Version 2.2 {#v2-2}
 
-### v2.2.1@dev {#v2-2-1}
+### v2.2.1 {#v2-2-1}
 
 * Move publishing code to `orchestra/publisher` repository.
 
@@ -16,9 +16,10 @@ title: Extension Change Log
 
 ## Version 2.1 {#v2-1}
 
-### v2.1.3@dev {#v2-1-3}
+### v2.1.3 {#v2-1-3}
 
 * Move publishing code to `orchestra/publisher` repository.
+* Display `php artisan extension:detect` output as a table.
 
 ### v2.1.2 {#v2-1-2}
 
