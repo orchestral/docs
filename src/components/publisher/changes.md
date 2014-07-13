@@ -5,6 +5,10 @@ title: Publisher Change Log
 
 ## Version 2.2 {#v2-2}
 
+### v2.2.1 {#v2-2-1}
+
+* Add `Orchestra\Publisher\MigrateManager::package()` helper.
+
 ### v2.2.0 {#v2-2-0}
 
 * Bump minimum version to PHP v5.4.0.
