@@ -3,12 +3,26 @@ title: Extension Component
 
 ---
 
-`Orchestra\Extension` allows components or packages to be added dynamically to Orchestra Platform without the hassle of modifying the configuration.
+Extension Component allows components or packages to be added dynamically to Orchestra Platform without the hassle of modifying the configuration.
 
+## Table of Content {#toc}
+
+* [Version Compatibility](#compatibility)
 * [Installation](#installation)
 * [Configuration](#configuration)
-* [Resources](#resources)
+* [Further Reading](/docs/2.1/components/extension/usage)
+  - [Usage](/docs/2.1/components/extension/usage)
+  - [Extending Extension](/docs/2.1/components/extension/extend)
+* [Change Log](/docs/2.1/components/extension/changes#v2-1)
+* [Github](https://github.com/orchestral/extension)
 
+## Version Compatibility {#compatibility}
+
+Laravel    | Extension
+:----------|:----------
+ 4.0.x     | 2.0.x
+ 4.1.x     | 2.1.x
+ 
 ## Installation {#installation}
 
 To install through composer, simply put the following in your `composer.json` file:
@@ -18,6 +32,14 @@ To install through composer, simply put the following in your `composer.json` fi
 			"orchestra/extension": "2.1.*"
 		}
 	}
+
+And then run `composer install` from the terminal.
+
+### Quick Installation {#quick-installation}
+
+Above installation can also be simplify by using the following command:
+
+	composer require "orchestra/extension=2.1.*"
 
 ## Configuration {#configuration}
 
@@ -34,6 +56,17 @@ Next add the service provider in `app/config/app.php`.
 		'Orchestra\Extension\CommandServiceProvider',
 	),
 
+### Aliases 
+
+You might want to add `Orchestra\Support\Facades\Extension` to class aliases in `app/config/app.php`:
+
+	'aliases' => array(
+
+		// ...
+
+		'Orchestra\Extension' => 'Orchestra\Support\Facades\Extension',
+	),
+
 ### Migrations
 
 Before we can start using `Orchestra\Extension`, please run the following:
@@ -42,8 +75,4 @@ Before we can start using `Orchestra\Extension`, please run the following:
 
 > The command utility is enabled via `Orchestra\Extension\CommandServiceProvider`.
 
-## Resources {#resources}
 
-* [Usage](/docs/2.1/components/extension/usage)
-* [Extend](/docs/2.1/components/extension/extend)
-* [Change Log](/docs/2.1/components/extension/changes#v2-1)
