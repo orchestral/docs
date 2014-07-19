@@ -3,7 +3,7 @@ title: Asset Component
 
 ---
 
-`Orchestra\Asset` is a port of Laravel 3 Asset for Orchestra Platform.
+Asset is a port of Laravel 3 Asset for Orchestra Platform.
 
 * [Installation](#installation)
 * [Configuration](#configuration)
