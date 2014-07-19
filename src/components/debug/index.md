@@ -19,8 +19,7 @@ Debug Component is commandline profiling package for Laravel 4, It was based fro
 Laravel    | Debug
 :----------|:----------
  4.0.x     | 2.0.x
- 4.1.x     | 4.1.x
-
+ 4.1.x     | 2.1.x
 
 ## Installation {#installation}
 
