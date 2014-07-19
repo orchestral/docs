@@ -29,6 +29,7 @@ title: Table of Content
   - [Auth Usage](/docs/2.2/components/auth/usage)
   - [RBAC and ACL Usage](/docs/2.2/components/auth/rbac)
   - [Integration with Memory](/docs/2.2/components/auth/memory-integration)
+* [Avatar](/docs/2.2/components/avatar)
 * [Debug](/docs/2.2/components/debug)
   - [Usage](/docs/2.2/components/debug/usage)
 * [Extension](/docs/2.2/components/extension)

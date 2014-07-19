@@ -5,7 +5,7 @@ title: Asset Component
 
 Asset Component is a port of Laravel 3 Asset for Orchestra Platform 2. The component main functionality is to allow asset declaration to be handle dynamically and asset dependencies can be resolve directly from the container. It however is not intended to becoma an asset pipeline package for Laravel, for such purpose we would recommend to use Grunt or Gulp.
 
-### Table of Content {#toc}
+## Table of Content {#toc}
 
 * [Version Compatibility](#compatibility)
 * [Installation](#installation)
