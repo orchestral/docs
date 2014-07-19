@@ -42,7 +42,7 @@ This allow you to grab the latest update of Orchestra Platform app skeleton via 
 
 Once Laravel 4 and Orchestra Platform is properly downloaded and installed, we need to setup the database and create the application basic schema (including administrator user).
 
-1. Open `app/config/database.php` and configure your database connection.
+1. Open `app/config/database.php` and configure your database connection, you could also choose the environment configuration option available with Laravel.
 2. Browse to the installation page, for example `http://yoursite.com/admin` and follow the installation process.
 3. And... you're done.
 
