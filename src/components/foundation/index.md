@@ -3,17 +3,25 @@ title: Foundation Component
 
 ---
 
-`Orchestra\Foundation` is the core of Orchestra Platform. The installation of this component would require additional boilerplate app skeleton which is available from [orchestra/platform](https://github.com/orchestral/platform).
+Foundation Component is the core of Orchestra Platform. The installation of this component would require additional boilerplate app skeleton which is available from [orchestra/platform](https://github.com/orchestral/platform).
 
+## Table of Content {#toc}
+
+* [Version Compatibility](#compatibility)
 * [Installation](#installation)
-* [Resources](#resources)
+* [Change Log](/docs/2.1/components/foundation/changes#v2-1)
 
+## Version Compatibility {#compatibility}
+
+Laravel    | Foundation
+:----------|:----------
+ 4.0.x     | 2.0.x
+ 4.1.x     | 2.1.x
+ 
 ## Installation {#installation}
 
 Orchestra Platform is easily install using [Composer](http://getcomposer.org).
 
 	composer create-project orchestra/platform website 2.1.x --prefer-dist
 
-## Resources {#resources}
 
-* [Change Log](/docs/2.1/components/foundation/changes#v2-1)
