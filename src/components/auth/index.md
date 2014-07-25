@@ -3,20 +3,28 @@ title: Auth Component
 
 ---
 
-`Orchestra\Auth` extends the functionality of `Illuminate\Auth` with the extra functionality to retrieve users' role. This is important when we want to use `Orchestra\Acl` to manage application Access Control List (ACL).
+Auth Component extends the functionality of `Illuminate\Auth` with the extra functionality to retrieve users' role. This is important when we want to use `Orchestra\Acl` to manage application Access Control List (ACL).
 
-### Table of Content
+## Table of Content {#toc}
 
-* Quick Guide
-  - [Installation](#installation)
-  - [Configuration](#configuration)
-* Documentation
+* [Version Compatibility](#compatibility)
+* [Installation](#installation)
+* [Configuration](#configuration)
+* [Usage](/docs/2.2/components/auth/usage)
   - [Auth Usage](/docs/2.2/components/auth/usage)
   - [RBAC and ACL Usage](/docs/2.2/components/auth/rbac)
   - [Integration with Memory](/docs/2.2/components/auth/memory-integration)
 * [Change Log](/docs/2.2/components/auth/changes#v2-2)
 * [Github](https://github.com/orchestral/auth)
 
+## Version Compatibility {#compatibility}
+
+Laravel    | Auth
+:----------|:----------
+ 4.0.x     | 2.0.x
+ 4.1.x     | 2.1.x
+ 4.2.x     | 2.2.x
+ 
 ## Installation {#installation}
 
 To install through composer, simply put the following in your `composer.json` file:
@@ -26,6 +34,14 @@ To install through composer, simply put the following in your `composer.json` fi
 			"orchestra/auth": "2.2.*"
 		}
 	}
+	
+And then run `composer install` from the terminal.
+
+### Quick Installation {#quick-installation}
+
+Above installation can also be simplify by using the following command:
+
+	composer require "orchestra/auth=2.2.*"
 
 ## Configuration {#configuration}
 
@@ -57,13 +73,13 @@ To make development easier, you could add `Orchestra\Support\Facades\Acl` alias 
 
 ### Migrations
 
-Before we can start using `Orchestra\Auth`, please run the following:
+Before we can start using Auth Component, please run the following:
 
 	php artisan auth:migrate
 
 > The command utility is enabled via `Orchestra\Auth\CommandServiceProvider`.
 
-Optionally you can enable `Orchestra\Memory` to use it with `Orchestra\Acl`, please run the following:
+Optionally you can enable Memory Component to use it with `Orchestra\Acl`, please run the following:
 
 	php artisan memory:migrate
 
