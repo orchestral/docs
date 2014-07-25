@@ -16,8 +16,7 @@ Normally we would identify an extension to a resource for ease of use, however O
 		$robots = Orchestra\Resources::make('robotix', [
 			'name'    => 'Robots.txt',
 			'uses'    => 'Robotix\ApiController',
-			'visible' => function ()
-			{
+			'visible' => function () {
 				return (Orchestra\App::acl()->can('manage orchestra'));
 			},
 		]);
@@ -35,7 +34,7 @@ Orchestra Platform Administrator Interface now would display a new tab next to E
 
 A single resource might require multiple actions (or controllers), we allow such feature to be used by assigning child resources.
 
-	$robots->pages = 'resource:Robotix\PagesController';
+	$robots->route('pages', 'resource:Robotix\PagesController');
 
 Nested resource controller is also supported:
 
