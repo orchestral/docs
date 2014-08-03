@@ -54,4 +54,5 @@ We also have some independence packages that would work well with Orchestra Plat
 * [Orchestra\Avatar]({doc-url}/components/avatar)
 * [Orchestra\Imagine]({doc-url}/components/imagine)
 * [Orchestra\Parser]({doc-url}/components/parser)
+* [Orchestra\Tenanti]({doc-url}/components/tenanti)
 * [Orchestra\Testbench]({doc-url}/components/testbench)
