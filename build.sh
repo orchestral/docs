@@ -38,7 +38,7 @@ function build_docs {
 set_branch;
 build_platform;
 
-for DIR in avatar imagine messages parser asset auth debug extension facile foundation html memory model notifier publisher optimize resources support translation testbench view warden widget
+for DIR in avatar imagine messages parser tenanti asset auth debug extension facile foundation html memory model notifier publisher optimize resources support translation testbench view warden widget
 do
     cd ../;
     cd $DIR;
