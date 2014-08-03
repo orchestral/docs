@@ -30,7 +30,6 @@ title: Table of Content
   - [Integration with Memory]({doc-url}/components/auth/memory-integration)
 * [Avatar]({doc-url}/components/avatar)
 * [Debug]({doc-url}/components/debug)
-  - [Usage]({doc-url}/components/debug/usage)
 * [Extension]({doc-url}/components/extension)
   - [Usage]({doc-url}/components/extension/usage)
   - [Extending]({doc-url}/components/extension/extend)
