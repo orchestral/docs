@@ -42,6 +42,7 @@ title: Table of Content
   - [Usage]({doc-url}/components/memory/usage)
 * [Model]({doc-url}/components/model)
 * [Notifier]({doc-url}/components/notifier)
+* [Parser]({doc-url}/components/parser)
 * [Resources]({doc-url}/components/resources)
   - [Usage]({doc-url}/components/resources/usage)
 * [Support]({doc-url}/components/support)
