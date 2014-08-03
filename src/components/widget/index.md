@@ -39,4 +39,4 @@ Next add the service provider in `app/config/app.php`.
 
 ## Resources {#resources}
 
-* [Change Log](/docs/2.1/components/widget/changes#v2-1)
+* [Change Log]({doc-url}/components/widget/changes#v2-1)
