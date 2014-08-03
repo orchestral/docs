@@ -11,7 +11,7 @@ Notifier Component add a simplify approach to notifier the application user usin
 * [Installation](#installation)
 * [Configuration](#configuration)
 * [Resources](#resources)
-* [Change Log](/docs/2.2/components/notifier/changes#v2-2)
+* [Change Log]({doc-url}/components/notifier/changes#v2-2)
 * [Github](https://github.com/orchestral/notifier)
 
 ## Version Compatibility {#compatibility}
@@ -45,7 +45,7 @@ Above installation can also be simplify by using the following command:
 Next add the service provider in `app/config/app.php`
 
 	'providers' => array(
-		
+
 		// ...
 
 		'Orchestra\Notifier\NotifierServiceProvider',

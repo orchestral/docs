@@ -36,5 +36,5 @@ Next add the service provider in `app/config/app.php`.
 
 ## Resources {#resources}
 
-* [Usage](/docs/2.2/components/view/usage)
-* [Change Log](/docs/2.2/components/view/changes#v2-2)
+* [Usage]({doc-url}/components/view/usage)
+* [Change Log]({doc-url}/components/view/changes#v2-2)
