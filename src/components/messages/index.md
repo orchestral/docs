@@ -26,13 +26,11 @@ Laravel    | Messages
 
 To install through composer, simply put the following in your `composer.json` file:
 
-```
-{
-    "require": {
-        "orchestra/messages": "2.2.*"
+    {
+        "require": {
+            "orchestra/messages": "2.2.*"
+        }
     }
-}
-```
 
 And then run `composer install` from the terminal.
 
@@ -48,27 +46,23 @@ Next add the service provider in `app/config/app.php`.
 
 Add `Orchestra\Messages\MessagesServiceProvider` service provider in `app/config/app.php`.
 
-```
-'providers' => array(
+    'providers' => array(
 
-    // ...
+        // ...
 
-    'Orchestra\Messages\MessagesServiceProvider',
-),
-```
+        'Orchestra\Messages\MessagesServiceProvider',
+    ),
 
 ### Aliases
 
 You might want to add `Orchestra\Messages\Facade` to class aliases in `app/config/app.php`:
 
-```
-'aliases' => array(
+    'aliases' => array(
 
-    // ...
+        // ...
 
-    'Orchestra\Messages' => 'Orchestra\Messages\Facade',
-),
-```
+        'Orchestra\Messages' => 'Orchestra\Messages\Facade',
+    ),
 
 ## Usage {#usage}
 
@@ -76,44 +70,36 @@ You might want to add `Orchestra\Messages\Facade` to class aliases in `app/confi
 
 Adding a message is as easy as following:
 
-```
-Orchestra\Messages::add('success', 'A successful message');
-```
+    Orchestra\Messages::add('success', 'A successful message');
 
 You can also chain messages:
 
-```
-Orchestra\Messages::add('success', 'A successful message')
-    ->add('error', 'Some error');
-```
+    Orchestra\Messages::add('success', 'A successful message')
+        ->add('error', 'Some error');
 
 ### Extending a Message to Current Request
 
 There might be situation where you need to extend a message to the current response instead of the following request. You can do this with:
 
-```
-Orchestra\Messages::extend(function ($message) {
-    $message->add('info', 'Read-only mode');
-});
-```
+    Orchestra\Messages::extend(function ($message) {
+        $message->add('info', 'Read-only mode');
+    });
 
 ### Displaying the Message in a View
 
 Here's an example how you can display the message:
 
-```
-<?php
+    <?php
 
-$message = Orchestra\Messages::retrieve();
+    $message = Orchestra\Messages::retrieve();
 
-if ($message instanceof Orchestra\Messages\MessageBag) {
-    foreach (['error', 'info', 'success'] as $key) {
-        if ($message->has($key)) {
-            $message->setFormat(
-                '<div class="alert alert-'.$key.'">:message</div>'
-            );
-            echo implode('', $message->get($key));
+    if ($message instanceof Orchestra\Messages\MessageBag) {
+        foreach (['error', 'info', 'success'] as $key) {
+            if ($message->has($key)) {
+                $message->setFormat(
+                    '<div class="alert alert-'.$key.'">:message</div>'
+                );
+                echo implode('', $message->get($key));
+            }
         }
     }
-}
-```
