@@ -11,7 +11,7 @@ Debug Component is commandline profiling package for Laravel 4, It was based fro
 * [Installation](#installation)
 * [Configuration](#configuration)
 * [Enabling Profiler](#enabling-profiler)
-* [Change Log](/docs/2.1/components/debug/changes#v2-1)
+* [Change Log]({doc-url}/components/debug/changes#v2-1)
 * [Github](https://github.com/orchestral/debug)
 
 ## Version Compatibility {#compatibility}
@@ -30,7 +30,7 @@ To install through composer, simply put the following in your `composer.json` fi
 			"orchestra/debug": "2.1.*"
 		}
 	}
-	
+
 And then run `composer install` from the terminal.
 
 ### Quick Installation {#quick-installation}

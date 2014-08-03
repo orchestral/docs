@@ -10,10 +10,10 @@ Extension Component allows components or packages to be added dynamically to Orc
 * [Version Compatibility](#compatibility)
 * [Installation](#installation)
 * [Configuration](#configuration)
-* [Further Reading](/docs/2.1/components/extension/usage)
-  - [Usage](/docs/2.1/components/extension/usage)
-  - [Extending Extension](/docs/2.1/components/extension/extend)
-* [Change Log](/docs/2.1/components/extension/changes#v2-1)
+* [Further Reading]({doc-url}/components/extension/usage)
+  - [Usage]({doc-url}/components/extension/usage)
+  - [Extending Extension]({doc-url}/components/extension/extend)
+* [Change Log]({doc-url}/components/extension/changes#v2-1)
 * [Github](https://github.com/orchestral/extension)
 
 ## Version Compatibility {#compatibility}
@@ -22,7 +22,7 @@ Laravel    | Extension
 :----------|:----------
  4.0.x     | 2.0.x
  4.1.x     | 2.1.x
- 
+
 ## Installation {#installation}
 
 To install through composer, simply put the following in your `composer.json` file:
@@ -56,7 +56,7 @@ Next add the service provider in `app/config/app.php`.
 		'Orchestra\Extension\CommandServiceProvider',
 	),
 
-### Aliases 
+### Aliases
 
 You might want to add `Orchestra\Support\Facades\Extension` to class aliases in `app/config/app.php`:
 

@@ -20,4 +20,4 @@ To install through composer, simply put the following in your `composer.json` fi
 
 ## Resources {#resources}
 
-* [Change Log](/docs/2.1/components/model/changes#v2-1)
+* [Change Log]({doc-url}/components/model/changes#v2-1)

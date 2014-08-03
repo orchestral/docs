@@ -9,7 +9,7 @@ Foundation Component is the core of Orchestra Platform. The installation of this
 
 * [Version Compatibility](#compatibility)
 * [Installation](#installation)
-* [Change Log](/docs/2.1/components/foundation/changes#v2-1)
+* [Change Log]({doc-url}/components/foundation/changes#v2-1)
 
 ## Version Compatibility {#compatibility}
 
@@ -17,7 +17,7 @@ Laravel    | Foundation
 :----------|:----------
  4.0.x     | 2.0.x
  4.1.x     | 2.1.x
- 
+
 ## Installation {#installation}
 
 Orchestra Platform is easily install using [Composer](http://getcomposer.org).
