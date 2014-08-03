@@ -44,6 +44,7 @@ title: Table of Content
 * [Messages]({doc-url}/components/messages)
 * [Model]({doc-url}/components/model)
 * [Notifier]({doc-url}/components/notifier)
+* [Parser]({doc-url}/components/parser)
 * [Resources]({doc-url}/components/resources)
   - [Usage]({doc-url}/components/resources/usage)
 * [Support]({doc-url}/components/support)

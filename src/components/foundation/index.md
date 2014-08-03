@@ -11,6 +11,7 @@ Foundation Component is the core of Orchestra Platform. The installation of this
 * [Version Compatibility](#compatibility)
 * [Installation](#installation)
 * [Change Log]({doc-url}/components/foundation/changes#v2-2)
+* [Github](https://github.com/orchestral/foundation)
 
 ## Version Compatibility {#compatibility}
 

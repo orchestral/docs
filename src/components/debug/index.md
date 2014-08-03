@@ -10,7 +10,7 @@ Debug Component is commandline profiling package for Laravel 4, It was based fro
 * [Version Compatibility](#compatibility)
 * [Installation](#installation)
 * [Configuration](#configuration)
-* [Enabling Profiler](#enabling-profiler)
+* [Usage](#usage)
 * [Change Log]({doc-url}/components/debug/changes#v2-2)
 * [Github](https://github.com/orchestral/debug)
 
@@ -58,14 +58,16 @@ Next add the following service provider in `app/config/app.php`.
 You could also create an alias for `Orchestra\Support\Facades\Profiler` in `app/config/app.php`.
 
 	'alias' => array(
-		'Profiler' => 'Orchestra\Support\Facades\Profiler',
+		'Orchestra\Profiler' => 'Orchestra\Support\Facades\Profiler',
 	),
 
-## Enabling Profiler {#enabling-profiler}
+## Usage {#usage}
+
+### Enabling Profiler {#enabling-profiler}
 
 To enable the profiler, all you need to do is:
 
-	Profiler::attachDebugger();
+	Orchestra\Profiler::attachDebugger();
 
 > This normally would goes in your development environment such as `local` environment, in the case `app/start/local.php` would be an ideal location to include the command.
 
