@@ -36,4 +36,4 @@ Next add the service provider in `app/config/app.php`.
 
 ## Resources {#resources}
 
-* [Change Log](/docs/2.2/components/translation/changes#v2-2)
+* [Change Log]({doc-url}/components/translation/changes#v2-2)

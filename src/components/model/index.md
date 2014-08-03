@@ -10,7 +10,7 @@ title: Model Component
 * Quick Guide
   - [Installation](#installation)
   - [Resources](#resources)
-* [Change Log](/docs/2.2/components/model/changes#v2-2)
+* [Change Log]({doc-url}/components/model/changes#v2-2)
 * [Github](https://github.com/orchestral/model)
 
 ## Installation {#installation}

@@ -11,8 +11,8 @@ title: Memory Component
   - [Installation](#installation)
   - [Configuration](#configuration)
 * Documentation
-  - [Usage](/docs/2.2/components/memory/usage)
-* [Change Log](/docs/2.2/components/memory/changes#v2-2)
+  - [Usage]({doc-url}/components/memory/usage)
+* [Change Log]({doc-url}/components/memory/changes#v2-2)
 * [Github](https://github.com/orchestral/memory)
 
 ## Installation {#installation}
