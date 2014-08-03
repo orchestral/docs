@@ -66,7 +66,7 @@ You might want to add `Orchestra\Messages\Facade` to class aliases in `app/confi
 
 ## Usage {#usage}
 
-### Adding a Message
+### Adding a Message {#adding-a-message}
 
 Adding a message is as easy as following:
 
@@ -77,7 +77,7 @@ You can also chain messages:
     Orchestra\Messages::add('success', 'A successful message')
         ->add('error', 'Some error');
 
-### Extending a Message to Current Request
+### Extending a Message to Current Request {#extending-a-message-to-current-request}
 
 There might be situation where you need to extend a message to the current response instead of the following request. You can do this with:
 
@@ -85,7 +85,7 @@ There might be situation where you need to extend a message to the current respo
         $message->add('info', 'Read-only mode');
     });
 
-### Displaying the Message in a View
+### Displaying the Message in a View {#displaying-the-message-in-a-view}
 
 Here's an example how you can display the message:
 
