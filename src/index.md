@@ -9,7 +9,7 @@ title: Introduction
 
 ## What is Orchestra Platform? {#what}
 
-Provide a solid base off of which to build your new web applications. It's not a CMS. Instead, it's a springboard to build off of with many of the tools you wish you had on projects but never took the time to build. 
+Provide a solid base off of which to build your new web applications. It's not a CMS. Instead, it's a springboard to build off of with many of the tools you wish you had on projects but never took the time to build.
 
 Have you had a client that wanted you to create a custom application but at the same time they're also looking to have a robust Content Management System within that same application? If you answered yes, what are your options?
 
@@ -33,19 +33,25 @@ Orchestra Platform will solve this problem by creating a similar Administration 
 
 With the introduction of Composer, we are now free to organize the code into smaller component where there would be use-case where you can use one or two Orchestra Platform components without everything else. At this moment we have organize the code into following components:
 
-* Orchestra\Asset
-* Orchestra\Auth
-* Orchestra\Debug
-* Orchestra\Extension
-* Orchestra\Facile
-* Orchestra\Foundation
-* Orchestra\Html
-* Orchestra\Memory
-* Orchestra\Model
-* Orchestra\Notifier
-* Orchestra\Resources
-* Orchestra\Support
-* Orchestra\Testbench
-* Orchestra\Translation
-* Orchestra\View
-* Orchestra\Widget
+* [Orchestra\Asset]({doc-url}/components/asset)
+* [Orchestra\Auth]({doc-url}/components/auth)
+* [Orchestra\Debug]({doc-url}/components/debug)
+* [Orchestra\Extension]({doc-url}/components/extension)
+* [Orchestra\Facile]({doc-url}/components/facile)
+* [Orchestra\Foundation]({doc-url}/components/foundation)
+* [Orchestra\Html]({doc-url}/components/html)
+* [Orchestra\Memory]({doc-url}/components/memory)
+* [Orchestra\Model]({doc-url}/components/model)
+* [Orchestra\Notifier]({doc-url}/components/notifier)
+* [Orchestra\Resources]({doc-url}/components/resources)
+* [Orchestra\Support]({doc-url}/components/support)
+* [Orchestra\Translation]({doc-url}/components/translation)
+* [Orchestra\View]({doc-url}/components/view)
+* [Orchestra\Widget]({doc-url}/components/widget)
+
+We also have some independence packages that would work well with Orchestra Platform, including:
+
+* [Orchestra\Avatar]({doc-url}/components/avatar)
+* [Orchestra\Imagine]({doc-url}/components/imagine)
+* [Orchestra\Parser]({doc-url}/components/parser)
+* [Orchestra\Testbench]({doc-url}/components/testbench)
