@@ -9,7 +9,7 @@ title: Avatar Component
 * [Installation](#installation)
 * [Configuration](#configuration)
 * [Usage](#usage)
-* [Change Log]({doc-url}/components/avatar/changes#v2-1)
+* [Change Log]({doc-url}/components/avatar/changes#v2-2)
 * [Github](https://github.com/orchestral/avatar)
 
 ## Version Compatibility {#compatibility}
@@ -17,6 +17,7 @@ title: Avatar Component
 Laravel    | Avatar
 :----------|:----------
  4.1.x     | 2.1.x
+ 4.2.x     | 2.2.x
 
 ## Installation {#installation}
 
@@ -24,7 +25,7 @@ To install through composer, simply put the following in your `composer.json` fi
 
 	{
 		"require": {
-			"orchestra/avatar": "2.1.*"
+			"orchestra/avatar": "2.2.*"
 		}
 	}
 
@@ -34,7 +35,7 @@ And then run `composer install` from the terminal.
 
 Above installation can also be simplify by using the following command:
 
-	composer require "orchestra/avatar=2.1.*"
+	composer require "orchestra/avatar=2.2.*"
 
 ## Configuration {#configuration}
 

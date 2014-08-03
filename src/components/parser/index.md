@@ -10,7 +10,7 @@ Parser Component is a framework agnostic package that provide a simple way to pa
 * [Version Compatibility](#compatibility)
 * [Installation](#installation)
 * [Configuration](#configuration)
-* [Change Log]({doc-url}/components/parser/changes#v2-1)
+* [Change Log]({doc-url}/components/parser/changes#v2-2)
 * [Github](https://github.com/orchestral/parser)
 
 ## Version Compatibilty {#compatibility}
@@ -18,6 +18,7 @@ Parser Component is a framework agnostic package that provide a simple way to pa
 Laravel    | Parser
 :----------|:----------
  4.1.x     | 2.1.x
+ 4.2.x     | 2.2.x
 
 ## Installation {#installation}
 
@@ -25,7 +26,7 @@ To install through composer, simply put the following in your `composer.json` fi
 
     {
         "require": {
-            "orchestra/parser": "2.1.*"
+            "orchestra/parser": "2.2.*"
         }
     }
 
@@ -35,4 +36,4 @@ And then run `composer install` from the terminal.
 
 Above installation can also be simplify by using the following command:
 
-    composer require "orchestra/parser=2.1.*"
+    composer require "orchestra/parser=2.2.*"
