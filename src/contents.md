@@ -24,7 +24,6 @@ title: Table of Content
 ### Components
 
 * [Asset]({doc-url}/components/asset)
-  - [Usage]({doc-url}/components/asset/usage)
 * [Auth]({doc-url}/components/auth)
   - [Auth Usage]({doc-url}/components/auth/usage)
   - [RBAC and ACL Usage]({doc-url}/components/auth/rbac)
