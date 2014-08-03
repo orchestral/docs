@@ -6,6 +6,7 @@ title: Avatar Component
 ## Table of Content {#toc}
 
 * [Version Compatibility](#compatibility)
+* [Change Log]({doc-url}/components/avatar/changes#v2-1)
 * [Github](https://github.com/orchestral/avatar)
 
 ## Version Compatibility {#compatibility}
@@ -23,7 +24,7 @@ To install through composer, simply put the following in your `composer.json` fi
 			"orchestra/avatar": "2.1.*"
 		}
 	}
-	
+
 And then run `composer install` from the terminal.
 
 ### Quick Installation {#quick-installation}
