@@ -56,10 +56,10 @@ You might also want to add `Orchestra\Avatar\Facade` to class aliases in `app/co
 
 ## Usage {#usage}
 
-```php
-<?php
+You can easily display an avatar by passing a `User` instance.
 
-$user = User::find(1);
+    <?php
 
-$avatar = Orchestra\Avatar::user($user)->render();
-```
+    $user = User::find(1);
+
+    $avatar = Orchestra\Avatar::user($user)->render();
