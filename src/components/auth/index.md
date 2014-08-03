@@ -10,11 +10,11 @@ Auth Component extends the functionality of `Illuminate\Auth` with the extra fun
 * [Version Compatibility](#compatibility)
 * [Installation](#installation)
 * [Configuration](#configuration)
-* [Usage](/docs/2.2/components/auth/usage)
-  - [Auth Usage](/docs/2.2/components/auth/usage)
-  - [RBAC and ACL Usage](/docs/2.2/components/auth/rbac)
-  - [Integration with Memory](/docs/2.2/components/auth/memory-integration)
-* [Change Log](/docs/2.2/components/auth/changes#v2-2)
+* [Usage]({doc-url}/components/auth/usage)
+  - [Auth Usage]({doc-url}/components/auth/usage)
+  - [RBAC and ACL Usage]({doc-url}/components/auth/rbac)
+  - [Integration with Memory]({doc-url}/components/auth/memory-integration)
+* [Change Log]({doc-url}/components/auth/changes#v2-2)
 * [Github](https://github.com/orchestral/auth)
 
 ## Version Compatibility {#compatibility}
@@ -24,7 +24,7 @@ Laravel    | Auth
  4.0.x     | 2.0.x
  4.1.x     | 2.1.x
  4.2.x     | 2.2.x
- 
+
 ## Installation {#installation}
 
 To install through composer, simply put the following in your `composer.json` file:
@@ -34,7 +34,7 @@ To install through composer, simply put the following in your `composer.json` fi
 			"orchestra/auth": "2.2.*"
 		}
 	}
-	
+
 And then run `composer install` from the terminal.
 
 ### Quick Installation {#quick-installation}

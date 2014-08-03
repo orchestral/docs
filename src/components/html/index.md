@@ -11,8 +11,8 @@ title: HTML Component
   - [Installation](#installation)
   - [Configuration](#configuration)
 * Documentation
-  - [Usage](/docs/2.2/components/html/usage)
-* [Change Log](/docs/2.2/components/html/changes#v2-2)
+  - [Usage]({doc-url}/components/html/usage)
+* [Change Log]({doc-url}/components/html/changes#v2-2)
 * [Github](https://github.com/orchestral/html)
 
 ## Installation {#installation}
