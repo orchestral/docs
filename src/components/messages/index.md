@@ -40,8 +40,6 @@ Above installation can also be simplify by using the following command:
 
     composer require "orchestra/messages=2.2.*"
 
-Next add the service provider in `app/config/app.php`.
-
 ## Configuration {#configuration}
 
 Add `Orchestra\Messages\MessagesServiceProvider` service provider in `app/config/app.php`.
