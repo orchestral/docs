@@ -120,7 +120,7 @@ Retrieving an instance of an asset container:
 
 Dumping that assets from a given container:
 
-	echo Orchestra\Asset::container('footer')->scripts();
+	{{ Orchestra\Asset::container('footer')->scripts() }}
 
 ### Asset Versioning {#asset-versioning}
 
