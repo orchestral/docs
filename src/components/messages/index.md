@@ -15,6 +15,7 @@ Messages Component bring a unified notification support for Laravel 4 and Orches
   - [Extending a Message to Current Request](#extending-a-message-to-current-request)
   - [Displaying the Message in a View](#displaying-the-message-in-a-view)
 * [Change Log](http://orchestraplatform.com/docs/latest/components/messages/changes#v2-3)
+* [Github](https://github.com/orchestral/messages)
 
 ## Version Compatibility {#compatibility}
 
