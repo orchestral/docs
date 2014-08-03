@@ -24,7 +24,6 @@ title: Table of Content
 ### Components
 
 * [Asset]({doc-url}/components/asset)
-  - [Usage]({doc-url}/components/asset/usage)
 * [Auth]({doc-url}/components/auth)
   - [Auth Usage]({doc-url}/components/auth/usage)
   - [RBAC and ACL Usage]({doc-url}/components/auth/rbac)
@@ -42,13 +41,13 @@ title: Table of Content
   - [Usage]({doc-url}/components/html/usage)
 * [Memory]({doc-url}/components/memory)
   - [Usage]({doc-url}/components/memory/usage)
+* [Messages]({doc-url}/components/messages)
 * [Model]({doc-url}/components/model)
 * [Notifier]({doc-url}/components/notifier)
 * [Resources]({doc-url}/components/resources)
   - [Usage]({doc-url}/components/resources/usage)
 * [Support]({doc-url}/components/support)
   - [Manager]({doc-url}/components/support/manager)
-  - [Messages]({doc-url}/components/support/messages)
   - [String]({doc-url}/components/support/str)
   - [Validation]({doc-url}/components/support/validator)
 * [Testbench]({doc-url}/components/testbench)
