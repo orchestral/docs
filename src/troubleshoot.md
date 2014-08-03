@@ -26,7 +26,7 @@ In any event where the application stop with the following exception `Unable to 
 
     <?php
 
-    Orchestra\Acl::make('acme')->attach(Orchestra/App::memory());
+    Orchestra\Acl::make('acme')->attach(Orchestra\App::memory());
 
 > It would be adviced to have this code included from a service provider's `boot()` method.
 
