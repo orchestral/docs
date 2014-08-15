@@ -5,6 +5,11 @@ title: Extension Change Log
 
 ## Version 2.1 {#v2-1}
 
+### v2.1.4 {#v2-1-4}
+
+* Add `Orchestra\Extension\Environment::refresh()` method.
+* Add `php artisan extension:refresh {name}` command.
+
 ### v2.1.3 {#v2-1-3}
 
 * Move publishing code to `orchestra/publisher` repository.
