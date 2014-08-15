@@ -5,6 +5,10 @@ title: Resources Change Log
 
 ## Version 2.2 {#v2-2}
 
+### v2.2.3@dev {#v2-2-3}
+
+* Utilize `Illuminate\Support\Arr`.
+
 ### v2.2.2 {#v2-2-2}
 
 * Add `get()`, `set()` and `forget()` helper method on `Orchestra\Facile\Container` to allow direct manipulation to it's attributes value.
