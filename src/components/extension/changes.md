@@ -3,11 +3,31 @@ title: Extension Change Log
 
 ---
 
+## Version 2.3 {#v2-3}
+
+### v2.3.0@dev {#v2-3-0}
+
+* Add `orchestra.extension: detecting` events before running `Orchestra\Extension\Finder::detect()` method.
+* Allow paths to be set using `app::`, `base::`, `workbench::` or `vendor::` prefix.
+* Add `Orchestra\Extension\Factory::register()` which allow explicitly register an extension on a custom path.
+* Allow confirmation question to be skipped using `--force` options.
+* Add confirmation when running `activate`, `deactivate`, `publish` and `reset` command on `"production"` environment.
+* Add `Orchestra\Extension\Factory::refresh()` helper method.
+* Add `php artisan extension:refresh {name}` command.
+* Move publishing code to `orchestra/publisher` repository.
+
 ## Version 2.2 {#v2-2}
 
-### v2.2.2@dev {#v2-2-2}
+### v2.2.3 {#v2-2-3}
+
+* Add `Orchestra\Extension\Factory::register()` which allow explicitly register an extension on a custom path.
+* Allow confirmation question to be skipped using `--force` options.
+
+### v2.2.2 {#v2-2-2}
 
 * Add confirmation when running `activate`, `deactivate`, `publish` and `reset` command on `"production"` environment.
+* Add `Orchestra\Extension\Factory::refresh()` helper method.
+* Add `php artisan extension:refresh {name}` command.
 
 ### v2.2.1 {#v2-2-1}
 
@@ -19,6 +39,15 @@ title: Extension Change Log
 * Rename `Orchestra\Extension\Environment` to `Orchestra\Extension\Factory`.
 
 ## Version 2.1 {#v2-1}
+
+### v2.1.5 {#v2-1-5}
+
+* Add `Orchestra\Extension\Environment::register()` which allow explicitly register an extension on a custom path.
+
+### v2.1.4 {#v2-1-4}
+
+* Add `Orchestra\Extension\Environment::refresh()` method.
+* Add `php artisan extension:refresh {name}` command.
 
 ### v2.1.3 {#v2-1-3}
 

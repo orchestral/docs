@@ -3,9 +3,20 @@ title: HTML Change Log
 
 ---
 
+## Version 2.3 {#v2-3}
+
+### v2.3.0@dev {#v2-3-0}
+
+* Explicitly require `illuminate/html`.
+* Allow `Orchestra\Html\Form\Factory` to handle all request to `Illuminate\Html\FormBuilder`.
+
 ## Version 2.2 {#v2-2}
 
-### v2.2.3@dev {#v2-2-3}
+### v2.2.4@dev {#v2-2-4}
+
+* Allow `Orchestra\Html\Form\Factory` to handle all request to `Illuminate\Html\FormBuilder`.
+
+### v2.2.3 {#v2-2-3}
 
 * Add `Orchestra\Html\Table\Grid::searchable()` and `Orchestra\Html\Table\Grid::sortable()` to facilitate searching and sorting.
 * Allow to retrieve instance of `Illuminate\Http\Request` and `Illuminate\Translation\Translator` from within Form and Table builder.

@@ -3,7 +3,18 @@ title: Support Change Log
 
 ---
 
+## Version 2.3 {#v2-3}
+
+### v2.3.0@dev {#v2-3-0}
+
+* Add `Orchestra\Support\Facades\HTML` facade.
+
 ## Version 2.2 {#v2-2}
+
+### v2.2.4 {#v2-2-4}
+
+* Convert multi-dimensional array to single level array when using `Orchestra\Support\Str::replace()` method.
+* Utilize `Illuminate\Support\Arr`.
 
 ### v2.2.3 {#v2-2-3}
 
