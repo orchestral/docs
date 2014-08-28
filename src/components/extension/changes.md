@@ -5,6 +5,11 @@ title: Extension Change Log
 
 ## Version 2.2 {#v2-2}
 
+### v2.2.3 {#v2-2-3}
+
+* Add `Orchestra\Extension\Factory::register()` which allow explicitly register an extension on a custom path.
+* Allow confirmation question to be skipped using `--force` options.
+
 ### v2.2.2 {#v2-2-2}
 
 * Add confirmation when running `activate`, `deactivate`, `publish` and `reset` command on `"production"` environment.
