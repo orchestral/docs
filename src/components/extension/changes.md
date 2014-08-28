@@ -22,6 +22,10 @@ title: Extension Change Log
 
 ## Version 2.1 {#v2-1}
 
+### v2.1.5 {#v2-1-5}
+
+* Add `Orchestra\Extension\Environment::register()` which allow explicitly register an extension on a custom path.
+
 ### v2.1.4 {#v2-1-4}
 
 * Add `Orchestra\Extension\Environment::refresh()` method.
