@@ -5,6 +5,11 @@ title: Optimize Change Log
 
 ## Version 2.2 {#v2-2}
 
+### v2.2.1 {#v2-2-1}
+
+* Add `orchestra/messages` compile classes.
+* Update `orchestra/debug` compile classes.
+
 ### v2.2.0 {#v2-2-0}
 
 * Bump minimum version to PHP v5.4.0.
