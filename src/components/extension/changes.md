@@ -3,9 +3,9 @@ title: Extension Change Log
 
 ---
 
-## Version 2.3 {#v2-3}
+## Version 3.0 {#v3-0}
 
-### v2.3.0@dev {#v2-3-0}
+### v3.0.0@dev {#v3-0-0}
 
 * Add `orchestra.extension: detecting` events before running `Orchestra\Extension\Finder::detect()` method.
 * Allow paths to be set using `app::`, `base::`, `workbench::` or `vendor::` prefix.
