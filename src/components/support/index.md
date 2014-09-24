@@ -19,17 +19,6 @@ To install through composer, simply put the following in your `composer.json` fi
 		}
 	}
 
-## Configuration {#configuration}
-
-Next add the service provider in `app/config/app.php`.
-
-	'providers' => array(
-
-		// ...
-
-		'Orchestra\Support\MessagesServiceProvider',
-	),
-
 ## Resources {#resources}
 
 * [Manager Class]({doc-url}/components/support/manager)
