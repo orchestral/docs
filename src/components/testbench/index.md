@@ -3,22 +3,11 @@ title: Orchestra Testbench Package
 
 ---
 
-`Orchestra\Testbench` is a simple package that is supposed to help you write tests for your Laravel package, especially when there is routing involved.
+Testbench Component is a simple package that is supposed to help you write tests for your Laravel package, especially when there is routing involved.
 
-* [Installation](#installation)
 * [Version Compatibility](#compatibility)
+* [Installation](#installation)
 * [Resources](#resources)
-
-## Installation {#installation}
-
-To install through composer, simply put the following in your `composer.json` file:
-
-
-    {
-	    "require-dev": {
-		    "orchestra/testbench": "2.2.*"
-	    }
-    }
 
 ## Version Compatibility {#compatibility}
 
@@ -27,6 +16,18 @@ To install through composer, simply put the following in your `composer.json` fi
  4.0.x    | 2.0.x
  4.1.x    | 2.1.x
  4.2.x    | 2.2.x
+ 5.0.x    | 3.0.x@dev
+
+## Installation {#installation}
+
+To install through composer, simply put the following in your `composer.json` file:
+
+    {
+	    "require-dev": {
+		    "orchestra/testbench": "3.0.*"
+	    }
+    }
+
 
 ## Resources {#resources}
 

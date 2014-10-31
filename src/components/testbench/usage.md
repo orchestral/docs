@@ -4,12 +4,11 @@ title: Using Testbench
 ---
 
 * [Basic Usage](#basic-usage)
-* [Testing Route Filters](#testing-route-filters)
 * [Working with Workbench](#working-with-workbench)
 
 ## Basic Usage {#basic-usage}
 
-To use `Orchestra\Testbench`, all you need to do is extend `Orchestra\Testbench\TestCase` instead of `PHPUnit_Framework_TestCase`. The fixture `app` booted by `Orchestra\Testbench\TestCase` is predefined to follow the base application skeleton of Laravel 4.
+To use Testbench Component, all you need to do is extend `Orchestra\Testbench\TestCase` instead of `PHPUnit_Framework_TestCase`. The fixture `app` booted by `Orchestra\Testbench\TestCase` is predefined to follow the base application skeleton of Laravel 4.
 
 	<?php
 
@@ -46,26 +45,7 @@ Since `Orchestral\TestCase` overrides Laravel's `TestCase`, if you need your own
         // Your code here
     }
 
-## Testing Route Filters {#testing-route-filters}
-
-By default, route filters are disabled by Laravel because, ideally, you should test the filter separately. In order to overwrite this default, add the following code:
-
-	$this->app['router']->enableFilters();
-
 ## Working with Workbench {#working-with-workbench}
-
-### Cannot redeclare crypt_random_string()
-
-Due to the requirement with Laravel Framework 4.1, we need to maintain a modified version of `phpseclib/phpseclib` for developing Laravel/PHP packages using workbench. In order to make this work please include the following code in both your `composer.json` file for `app` and `workbench`:
-
-    {
-        "repositories": [
-            {
-                "type": "vcs",
-                "url": "git://github.com/orchestral/phpseclib.git"
-            }
-        ]
-    }
 
 ### Class 'Illuminate\Foundation\Testing\TestCase' not found
 
