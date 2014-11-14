@@ -5,6 +5,20 @@ title: Foundation Change Log
 
 ## Version 2.2 {#v2-2}
 
+### v2.2.8 {#v2-2-8}
+
+* Convert `orchestra.csrf` filter closure to `Orchestra\Foundation\Filters\VerifyCsrfToken`.
+* Attach csrf to addition routes.
+
+### v2.2.7 {#v2-2-7}
+
+* Use timing safe string comparison in CSRF filter.
+
+### v2.2.6 {#v2-2-6}
+
+* Check for session token type.
+* Add `orchestra/publisher` as a dependency.
+
 ### v2.2.5 {#v2-2-5}
 
 * Update all reference to utilise `orchestra/messages`.
@@ -54,6 +68,20 @@ title: Foundation Change Log
 * Add support for `orchestra/view` command.
 
 ## Version 2.1 {#v2-1}
+
+### v2.1.14 {#v2-1-14}
+
+* Convert `orchestra.csrf` filter closure to `Orchestra\Foundation\Filters\VerifyCsrfToken`.
+* Attach csrf to addition routes.
+
+### v2.1.13 {#v2-1-13}
+
+* Use timing safe string comparison in CSRF filter.
+
+### v2.1.12 {#v2-1-12}
+
+* Check for session token type.
+* Add `orchestra/publisher` as a dependency.
 
 ### v2.1.11 {#v2-1-11}
 
