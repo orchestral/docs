@@ -5,6 +5,15 @@ title: Change Log
 
 ## Version 2.1 {#v2-1}
 
+### v2.1.7 {#v2-1-7}
+
+* Convert `csrf` closure filter to be resolved via `Orchestra\Foundation\Filters\VerifyCsrfToken`.
+
+### v2.1.6 {#v2-1-6}
+
+* New welcome page.
+* Check for session token type.
+
 ### v2.1.5 {#v2-1-5}
 
 * Add native support for Laravel Forge and Homestead.
