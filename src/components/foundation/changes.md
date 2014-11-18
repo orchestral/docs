@@ -69,6 +69,10 @@ title: Foundation Change Log
 
 ## Version 2.1 {#v2-1}
 
+### v2.1.15 {#v2-1-15}
+
+* Fixes missing csrf token missmatch checking on delete user request.
+
 ### v2.1.14 {#v2-1-14}
 
 * Convert `orchestra.csrf` filter closure to `Orchestra\Foundation\Filters\VerifyCsrfToken`.
