@@ -5,16 +5,30 @@ title: Extension Change Log
 
 ## Version 3.0 {#v3-0}
 
-### v3.0.0@dev {#v3-0-0}
+### v3.0.1 {#v3-0-1}
 
+* Fixes path to configuration file.
+
+### v3.0.0 {#v3-0-0}
+
+* Update support to Laravel Framework v5.0.
+* Simplify PSR-4 path.
 * Add `orchestra.extension: detecting` events before running `Orchestra\Extension\Finder::detect()` method.
+* Add `orchestra.extension: booted` event.
 * Allow paths to be set using `app::`, `base::`, `workbench::` or `vendor::` prefix.
 * Add `Orchestra\Extension\Factory::register()` which allow explicitly register an extension on a custom path.
-* Allow confirmation question to be skipped using `--force` options.
+* Allow `Orchestra\Extension\ProviderRepository` to properly handle deferred service providers.
 * Add confirmation when running `activate`, `deactivate`, `publish` and `reset` command on `"production"` environment.
+* Allow confirmation question to be skipped using `--force` options.
+* Move some processing services from `orchestra/foundation` to `Orchestra\Extension\Processor` namespace.
 * Add `Orchestra\Extension\Factory::refresh()` helper method.
 * Add `php artisan extension:refresh {name}` command.
+* Rename `Orchestra\Extension\ConfigManager` to `Orchestra\Extension\Config\Repository`.
 * Move publishing code to `orchestra/publisher` repository.
+* Rework on how `Orchestra\Extension\SafeModeChecker` detect for safe mode from just using query string to config/environment variable (`EXTENSION_MODE`) as well.
+* Resolve `Orchestra\Extension\RouteGenerator` through IoC Container.
+* Add `Orchestra\Extension\RouteGenerator::setBaseUrl()` helper method.
+* Add optional `Orchestra\Extension\Traits\DomainAwareTrait` to allow setting up domain based on `app.url` config.
 
 ## Version 2.2 {#v2-2}
 

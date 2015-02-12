@@ -3,6 +3,15 @@ title: Optimize Change Log
 
 ---
 
+## Version 3.0 {#v3-0}
+
+### v3.0.0 {#v3-0-0}
+
+* Update support to Laravel Framework v5.0.
+* Simplify PSR-4 path.
+* Add `orchestra/kernel` compile classes.
+* Skip and avoid marking as missing when package directory is not available.
+
 ## Version 2.2 {#v2-2}
 
 ### v2.2.1 {#v2-2-1}

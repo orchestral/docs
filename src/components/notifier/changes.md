@@ -5,11 +5,19 @@ title: Notifier Change Log
 
 ## Version 3.0 {#v3-0}
 
-### v3.0.0@dev {#v3-0-0}
+### v3.0.0 {#v3-0-0}
 
+* Update support to Laravel Framework v5.0.
+* Simplify PSR-4 path.
+* Rename `Orchestra\Notifier\LaravelNotifier` to `Orchestra\Notifier\Handlers\Laravel`.
+* Rename `Orchestra\Notifier\OrchestraNotifier` to `Orchestra\Notifier\Handlers\Orchestra`.
 * Swap `Illuminate\Support\Fluent` with `Orchestra\Notifier\Message`.
 
 ## Version 2.2 {#v2-2}
+
+### v2.2.4 {#v2-2-4}
+
+* Change visibility of `Orchestra\Notifier\Mailer::getMailer()`.
 
 ### v2.2.3 {#v2-2-3}
 
@@ -34,6 +42,10 @@ title: Notifier Change Log
 * Add `Orchestra\Notifier\Receipt` as a unified receipt object on all e-mail sending.
 
 ## Version 2.1 {#v2-1}
+
+### v2.1.4 {#v2-1-4}
+
+* Change visibility of `Orchestra\Notifier\Mailer::getMailer()`.
 
 ### v2.1.3 {#v2-1-3}
 
