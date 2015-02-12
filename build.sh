@@ -1,4 +1,6 @@
-BRANCH=master;
+#!/bin/bash
+
+source config.conf;
 
 function copy_changes() {
     if [ -f $1/changes.md ]; then
@@ -38,7 +40,7 @@ function build_docs {
 set_branch;
 build_platform;
 
-for DIR in avatar imagine messages parser tenanti asset auth debug extension facile foundation html memory model notifier publisher optimize resources support translation testbench view warden widget
+for DIR in "${COMPONENTS[@]}"
 do
     cd ../;
     cd $DIR;
