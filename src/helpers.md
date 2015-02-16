@@ -8,12 +8,22 @@ Orchestra Platform includes a set of helpers function to help solves some of the
 * [handles()](#handles)
 * [resources()](#resources)
 * [memorize()](#memorize)
+* [messages()](#messages)
+* Redirection
+  - [redirect_with_errors](#redirect_with_errors)
+  - [redirect_with_messages](#redirect_with_messages)
+* Meta
+  - [get_meta()](#get_meta)
+  - [set_meta()](#set_meta)
 
 ## orchestra() {#orchestra}
 
 Return `orchestra.app` instance.
 
 	echo orchestra()->memory()->get('site.name');
+
+    // You can also use the following to get the same value:
+    echo orchestra('memory')->get('site.name');
 
 ## handles() {#handles}
 
@@ -24,8 +34,7 @@ Return handles configuration for a package to generate a full URL.
 	// you can also use `orchestra` as an alias to `orchestra/foundation`.
 	echo handles('orchestra::users');
 
-
-Above code would return `http://yoursite.com/orchestra/users`, however if your Orchestra Platform configuration is set to use admin as the bundle handles, the same code would then return `http:://yoursite.com/admin/users`.
+Above code would return `http://yoursite.com/admin/users`, however if your Orchestra Platform configuration is set to use root path as the handles, the same code would then return `http:://yoursite.com/users`.
 
 > During boot process, Orchestra Platform will automatically set handle for each packages, if specified in `orchestra.json` to `orchestra/extension::handles.vendor/package`, this can be modified from the extension configuration page.
 
