@@ -3,7 +3,7 @@ title: Messages Component
 
 ---
 
-Messages Component bring a unified notification support for Laravel 4 and Orchestra Platform 2.
+Messages Component bring a unified notification support for Laravel and Orchestra Platform.
 
 ## Table of Content
 

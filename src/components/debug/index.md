@@ -3,7 +3,7 @@ title: Artisan Debug Profiler
 
 ---
 
-Debug Component is commandline profiling package for Laravel 4, It was based from Laravel 4.1 commandline profiling tool which was merged with `php artisan tail`.
+Debug Component is commandline profiling package for Laravel, It was based from Laravel 4.1 commandline profiling tool which was merged with `php artisan tail`.
 
 ## Table of Content {#toc}
 

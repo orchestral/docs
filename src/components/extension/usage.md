@@ -82,7 +82,7 @@ Other than specifying the autoload file, Extension would also load the default s
 
 ### Handling a Route {#handling-a-route}
 
-Unliked basic packages for Laravel 4, end users doesn't have control to manage packages routing as compared to Orchestra Platform, any extension that offer routing would only need to identify a default route option by adding:
+Unliked basic packages for Laravel, end users doesn't have control to manage packages routing as compared to Orchestra Platform, any extension that offer routing would only need to identify a default route option by adding:
 
 	{
 		"config": {
