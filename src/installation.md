@@ -10,13 +10,13 @@ title: Installation
 
 ## Install Composer {#install-composer}
 
-Orchestra Platform utilizes [Composer](http://getcomposer.org/) to manage its dependencies. First, download a copy of the `composer.phar`. Once you have the PHAR archive, you can either keep it in your local project directory or move to `usr/local/bin` to use it globally on your system. On Windows, you can use the Composer [Windows installer](https://getcomposer.org/Composer-Setup.exe).
+Orchestra Platform utilizes [Composer](http://getcomposer.org/) to manage its dependencies. First, download a copy of the `composer` and install it globally. On Windows, you can use the Composer [Windows installer](https://getcomposer.org/Composer-Setup.exe).
 
 ## Install Orchestra Platform {#install-orchestra-platform}
 
-Once Composer is installed, download the [latest version](https://github.com/orchestral/platform/archive/3.0.zip) of the Orchestra Platform and extract its contents into a directory on your server. Next, in the root of your Orchestra Platform application, run the `php composer.phar install` command to install all dependencies. This process requires Git to be installed on the server to successfully complete the installation.
+Once Composer is installed, download the [latest version](https://github.com/orchestral/platform/archive/3.0.zip) of the Orchestra Platform and extract its contents into a directory on your server. Next, in the root of your Orchestra Platform application, run the `composer install` command to install all dependencies. This process requires Git to be installed on the server to successfully complete the installation.
 
-	php composer.phar install
+	composer install --prefer-dist
 
 > The installation process would automatically publish `orchestra/foundation` asset to your public path.
 
@@ -24,7 +24,7 @@ Once Composer is installed, download the [latest version](https://github.com/orc
 
 You can install Orchestra Platform using Composer:
 
-	php composer.phar create-project orchestra/platform website 3.0.x --prefer-dist
+	composer create-project orchestra/platform website 3.0.x --prefer-dist
 
 ### Installation using GIT
 
@@ -32,6 +32,7 @@ You can also choose to install Orchestra Platform using GIT:
 
 	git clone -o orchestra -b 3.0 git@github.com:orchestral/platform.git website
 	cd website
+    composer install --prefer-dist
 
 This allow you to grab the latest update of Orchestra Platform app skeleton via the following command.
 
