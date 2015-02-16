@@ -5,7 +5,7 @@ title: Facades
 
 List of available facades on Orchestra Platform.
 
-Alias                 | Facade                                | Root Accessor                                    | IoC Bindings
+Alias                 | Facade                                | Root Accessor                                    | Service Location
 :---------------------|:--------------------------------------|:-------------------------------------------------|:----------------------
 ACL                   | Orchestra\Support\Facades\ACL         | Orchestra\Authorization\Factory                  | `orchestra.acl`
 Asset                 | Orchestra\Support\Facades\Asset       | Orchestra\Asset\Factory                          | `orchestra.asset`
