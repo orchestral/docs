@@ -37,7 +37,7 @@ To install through composer, simply put the following in your `composer.json` fi
 ```json
 {
 	"require": {
-		"orchestra/auth": "2.2.*"
+		"orchestra/auth": "3.0.*"
 	}
 }
 ```
@@ -49,7 +49,7 @@ And then run `composer install` from the terminal.
 Above installation can also be simplify by using the following command:
 
 ```bash
-composer require "orchestra/auth=2.2.*"
+composer require "orchestra/auth=3.0.*"
 ```
 
 ## Configuration {#configuration}
@@ -68,6 +68,7 @@ Next add the service provider in `config/app.php`.
 	'Orchestra\Memory\MemoryServiceProvider',
 
 	'Orchestra\Auth\CommandServiceProvider',
+	'Orchestra\Memory\CommandServiceProvider',
 ],
 ```
 
@@ -103,3 +104,10 @@ php artisan memory:migrate
 
 > The command utility is enabled via `Orchestra\Memory\CommandServiceProvider`.
 
+## Usage
+
+Essentially, the Auth class offered by Laravel is already good enough for normal usage. Orchestra Platform only extends the default operation and allow a user to be link with one or many roles.
+
+* [Retrieving Roles](#retrieving-roles)
+* [Checking Roles](#checking-roles)
+* [Setup Custom Roles Relationship](#setup-custom-roles)

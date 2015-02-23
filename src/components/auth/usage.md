@@ -1,6 +1,6 @@
 ---
 title: Using Auth
-
+see: {doc-url}/components/auth#usage
 ---
 
 Essentially, the Auth class offered by Laravel is already good enough for normal usage. Orchestra Platform only extends the default operation and allow a user to be link with one or many roles.

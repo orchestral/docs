@@ -82,6 +82,12 @@ You might want to add `Orchestra\Support\Facades\Asset` to class aliases in `con
 
 ## Usage {#usage}
 
+* [Registering Assets](#registering-assets)
+* [Dumping Assets](#dumping-assets)
+* [Asset Dependencies](#asset-dependencies)
+* [Asset Containers](#asset-containers)
+* [Asset Versioning](#asset-versioning)
+
 ### Registering Assets {#registering-assets}
 
 The Asset class provides a simple way to manage the CSS and JavaScript used by your application. To register an asset just call the add method on the Asset class:
