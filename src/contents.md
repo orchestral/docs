@@ -11,6 +11,7 @@ title: Table of Content
   - [License]({doc-url}/license)
   - [Change Log]({doc-url}/changes)
   - [Upgrade Guide]({doc-url}/upgrading)
+  - [Troubleshooting]({doc-url}/troubleshoot)
 * Setup
   - [Installation]({doc-url}/installation)
 * The Basics
@@ -21,7 +22,6 @@ title: Table of Content
   - [Events]({doc-url}/events)
 * Services
   - [Sending Mail]({doc-url}/mail)
-  - [Troubleshooting]({doc-url}/troubleshoot)
 
 ### Components
 
