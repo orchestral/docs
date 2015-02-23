@@ -122,7 +122,7 @@ $roles = Auth::roles();
 
 ### Checking Roles {#checking-roles}
 
-#### Check if user has all of the following roles
+Check if user has all of the following roles.
 
 ```php
 if (Auth::is(['admin', 'editor'])) {
@@ -130,7 +130,7 @@ if (Auth::is(['admin', 'editor'])) {
 }
 ```
 
-#### Check if user has any of the following roles
+Check if user is any of the following roles.
 
 ```php
 if (Auth::isAny(['member', 'admin'])) {
@@ -138,7 +138,7 @@ if (Auth::isAny(['member', 'admin'])) {
 }
 ```
 
-#### Check if user has none of the following roles
+Check if user is not of the following roles.
 
 ```php
 if (Auth::isNot(['admin', 'editor'])) {
@@ -146,7 +146,7 @@ if (Auth::isNot(['admin', 'editor'])) {
 }
 ```
 
-#### Check if user has none any of the following roles
+Check if user has none any of the following roles.
 
 ```php
 if (Auth::isNotAny(['member', 'admin'])) {
