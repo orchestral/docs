@@ -9,8 +9,6 @@ title: Auth Component
 
 Auth Component extends the functionality of `Illuminate\Auth` with the extra functionality to retrieve users' role. This is important when we want to use `ACL` to manage application Access Control List (ACL).
 
-## Table of Content {#toc}
-
 * [Version Compatibility](#compatibility)
 * [Installation](#installation)
 * [Configuration](#configuration)
