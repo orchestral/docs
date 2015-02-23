@@ -51,22 +51,26 @@ Above installation can also be simplify by using the following command:
 
 Next add the following service provider in `config/app.php` or use [Config Component]({doc-url}/components/config) to handle environment based providers.
 
-	'providers' => [
+```php
+'providers' => [
 
-		// ...
+	// ...
 
-		'Orchestra\Debug\DebugServiceProvider',
+	'Orchestra\Debug\DebugServiceProvider',
 
-		'Orchestra\Debug\CommandServiceProvider',
-	],
+	'Orchestra\Debug\CommandServiceProvider',
+],
+```
 
 ### Aliases
 
 You could also create an alias for `Orchestra\Support\Facades\Profiler` in `app/config/app.php`.
 
-	'alias' => array(
-		'Profiler' => 'Orchestra\Support\Facades\Profiler',
-	),
+```php
+'aliases' => [
+	'Profiler' => 'Orchestra\Support\Facades\Profiler',
+],
+```
 
 ## Usage {#usage}
 
