@@ -15,11 +15,11 @@ Auth Component extends the functionality of `Illuminate\Auth` with the extra fun
 * [Installation](#installation)
 * [Configuration](#configuration)
 * [Usage]({doc-url}/components/auth/usage)
-  - [Auth Usage]({doc-url}/components/auth/usage)
-  - [RBAC and ACL Usage]({doc-url}/components/auth/rbac)
-  - [Integration with Memory]({doc-url}/components/auth/memory-integration)
-* [Change Log]({doc-url}/components/auth/changes#v2-2)
-* [Github](https://github.com/orchestral/auth)
+  - [Retrieving Roles](#retrieving-roles)
+  - [Checking Roles](#checking-roles)
+  - [Setup Custom Roles Relationship](#setup-custom-roles)
+* [Change Log]({doc-url}/components/auth/changes#v3-0)
+* [Resources](#resources)
 
 ## Version Compatibility {#compatibility}
 
@@ -178,3 +178,9 @@ Auth::setup(function ($user, $roles) {
 ```
 
 > For Orchestra Platform, the listener are automatically handled in `Orchestra\Foundation\Bootstrap\UserAccessPolicy` and the above code shouldn't be used!
+
+
+## Resources {#resources}
+
+* [GitHub](https://github.com/orchestral/auth)
+* [Packagist](https://packagist.org/packages/orchestra/auth)
