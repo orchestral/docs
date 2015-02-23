@@ -63,7 +63,7 @@ Next add the service provider in `config/app.php`.
 
 	// ...
 
-	'Asset\AssetServiceProvider',
+	'Orchestra\Asset\AssetServiceProvider',
 ],
 ```
 
@@ -76,7 +76,7 @@ You might want to add `Orchestra\Support\Facades\Asset` to class aliases in `con
 
 	// ...
 
-	'Asset' => 'Support\Facades\Asset',
+	'Asset' => 'Orchestra\Support\Facades\Asset',
 ],
 ```
 
