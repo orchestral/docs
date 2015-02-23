@@ -11,13 +11,15 @@ title: Table of Content
   - [License]({doc-url}/license)
   - [Change Log]({doc-url}/changes)
   - [Upgrade Guide]({doc-url}/upgrading)
-* Getting Started
+* Setup
   - [Installation]({doc-url}/installation)
-  - [Requirements]({doc-url}/installation#server-requirement)
-* Learning More
-  - [Events]({doc-url}/events)
-  - [Facades]({doc-url}/facades)
+* The Basics
   - [Helpers]({doc-url}/helpers)
+* Architecture Foundations
+  - [Contracts]({doc-url}/contracts)
+  - [Facades]({doc-url}/facades)
+  - [Events]({doc-url}/events)
+* Services
   - [Sending Mail]({doc-url}/mail)
   - [Troubleshooting]({doc-url}/troubleshoot)
 

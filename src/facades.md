@@ -24,20 +24,3 @@ Orchestra\Publisher   | Orchestra\Support\Facades\Publisher   | Orchestra\Founda
 Table                 | Orchestra\Support\Facades\Table       | Orchestra\Html\Table\Factory                     | `orchestra.table`
 Theme                 | Orchestra\Support\Facades\Theme       | Orchestra\View\Theme\ThemeManager                | `orchestra.theme`
 Orchestra\Widget      | Orchestra\Support\Facades\Widget      | Orchestra\Widget\WidgetManager                   | `orchestra.widget`
-
-## Contracts
-
-You could also type-hint contracts to resolved available service location:
-
-Contracts                                        | Service Location
-:------------------------------------------------|:----------------------------------------
- Orchestra\Contracts\Auth\Guard                  | `auth.driver`
- Orchestra\Contracts\Authorization\Factory       | `orchestra.acl`
- Orchestra\Contracts\Authorization\Authorization | `orchestra.platform.acl`
- Orchestra\Contracts\Extension\Factory           | `orchestra.extension`
- Orchestra\Contracts\Extension\Finder            | `orchestra.extension.finder`
- Orchestra\Contracts\Html\Form\Factory           | `orchestra.form`
- Orchestra\Contracts\Foundation\Foundation       | `orchestra.app`
- Orchestra\Contracts\Memory\Provider             | `orchestra.platform.memory`
- Orchestra\Contracts\Messages\MessageBag         | `orchestra.messages`
- Orchestra\Contracts\Html\Table\Factory          | `orchestra.table`
