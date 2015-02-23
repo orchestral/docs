@@ -3,10 +3,11 @@ title: Foundation Component
 
 ---
 
+[![Latest Stable Version](https://img.shields.io/github/release/orchestral/foundation.svg?style=flat)](https://packagist.org/packages/orchestra/foundation)
+[![Total Downloads](https://img.shields.io/packagist/dt/orchestra/foundation.svg?style=flat)](https://packagist.org/packages/orchestra/foundation)
+[![MIT License](https://img.shields.io/packagist/l/orchestra/foundation.svg?style=flat)](https://packagist.org/packages/orchestra/foundation)
+
 Foundation Component is the core of Orchestra Platform. The installation of this component would require additional boilerplate app skeleton which is available from [orchestra/platform](https://github.com/orchestral/platform).
-
-
-## Table of Content {#toc}
 
 * [Version Compatibility](#compatibility)
 * [Installation](#installation)
