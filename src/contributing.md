@@ -33,16 +33,18 @@ If you have an idea for a new feature you would like to see added to Orchestra P
 
 Please include the following template when opening an issue on Github:
 
-    | Q             | A
-    | ------------- | ---
-    | Bug fix?      | [yes|no]
-    | New feature?  | [yes|no]
-    | BC breaks?    | [yes|no]
-    | Deprecations? | [yes|no]
-    | Tests pass?   | [yes|no]
-    | Fixed tickets | [comma separated list of tickets fixed by the PR]
-    | License       | MIT
-    | Doc PR        | [The reference to the documentation PR if any]
+```markdown
+| Q             | A
+| ------------- | ---
+| Bug fix?      | [yes|no]
+| New feature?  | [yes|no]
+| BC breaks?    | [yes|no]
+| Deprecations? | [yes|no]
+| Tests pass?   | [yes|no]
+| Fixed tickets | [comma separated list of tickets fixed by the PR]
+| License       | MIT
+| Doc PR        | [The reference to the documentation PR if any]
+```
 
 ## Coding Guidelines {#coding-guidelines}
 
