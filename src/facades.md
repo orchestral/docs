@@ -41,4 +41,3 @@ Contracts                                        | Service Location
  Orchestra\Contracts\Memory\Provider             | `orchestra.platform.memory`
  Orchestra\Contracts\Messages\MessageBag         | `orchestra.messages`
  Orchestra\Contracts\Html\Table\Factory          | `orchestra.table`
-
