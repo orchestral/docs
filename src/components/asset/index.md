@@ -36,11 +36,13 @@ Laravel    | Asset
 
 To install through composer, simply put the following in your `composer.json` file:
 
-	{
-		"require": {
-			"orchestra/asset": "3.0.*"
-		}
+```json
+{
+	"require": {
+		"orchestra/asset": "3.0.*"
 	}
+}
+```
 
 And then run `composer install` from the terminal.
 
@@ -48,22 +50,26 @@ And then run `composer install` from the terminal.
 
 Above installation can also be simplify by using the following command:
 
-	composer require "orchestra/asset=3.0.*"
+```bash
+composer require "orchestra/asset=3.0.*"
+```
 
 ## Configuration {#configuration}
 
 Next add the service provider in `config/app.php`.
 
-	'providers' => [
+```php
+'providers' => [
 
-		// ...
+	// ...
 
-		'Asset\AssetServiceProvider',
-	],
+	'Asset\AssetServiceProvider',
+],
+```
 
 ### Aliases
 
-You might want to add `Support\Facades\Asset` to class aliases in `config/app.php`:
+You might want to add `Orchestra\Support\Facades\Asset` to class aliases in `config/app.php`:
 
 ```php
 'aliases' => [
