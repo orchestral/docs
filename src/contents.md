@@ -38,6 +38,7 @@ title: Table of Content
 * [Foundation]({doc-url}/components/foundation)
 * [HTML]({doc-url}/components/html)
   - [Usage]({doc-url}/components/html/usage)
+* [Imagine]({doc-url}/components/imagine)
 * [Memory]({doc-url}/components/memory)
   - [Usage]({doc-url}/components/memory/usage)
 * [Messages]({doc-url}/components/messages)
