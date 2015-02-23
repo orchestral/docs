@@ -4,17 +4,17 @@ title: Helpers
 
 Orchestra Platform includes a set of helpers function to help solves some of the frequent problem while developing on Laravel.
 
-* [orchestra()](#orchestra)
-* [handles()](#handles)
-* [resources()](#resources)
-* [memorize()](#memorize)
-* [messages()](#messages)
+* [orchestra](#orchestra)
+* [handles](#handles)
+* [resources](#resources)
+* [memorize](#memorize)
+* [messages](#messages)
 * [redirect_with_errors](#redirect_with_errors)
 * [redirect_with_messages](#redirect_with_messages)
-* [get_meta()](#get_meta)
-* [set_meta()](#set_meta)
+* [get_meta](#get_meta)
+* [set_meta](#set_meta)
 
-## orchestra() {#orchestra}
+## orchestra {#orchestra}
 
 Return `orchestra.app` instance.
 
@@ -25,7 +25,7 @@ echo orchestra()->memory()->get('site.name');
 echo orchestra('memory')->get('site.name');
 ```
 
-## handles() {#handles}
+## handles {#handles}
 
 Return handles configuration for a package to generate a full URL.
 
@@ -36,11 +36,11 @@ echo handles('orchestra/foundation::users');
 echo handles('orchestra::users');
 ```
 
-Above code would return `http://yoursite.com/admin/users`, however if your Orchestra Platform configuration is set to use root path as the handles, the same code would then return `http:://yoursite.com/users`.
+Above code would return `/admin/users`, however if your Orchestra Platform configuration is set to use root path as the handles, the same code would then return `/users`.
 
 > During boot process, Orchestra Platform will automatically set handle for each packages, if specified in `orchestra.json` to `orchestra/extension::handles.vendor/package`, this can be modified from the extension configuration page.
 
-## resources() {#resources}
+## resources {#resources}
 
 Return handles configuration for a resources to generate a full URL.
 
@@ -52,9 +52,9 @@ echo handles('orchestra/foundation::resources/foo/create');
 echo resources('foo/create');
 ```
 
-## memorize() {#memorize}
+## memorize {#memorize}
 
-Return memory configuration associated to the request, helper alias to `Orchestra\Memory::get()`.
+Return memory configuration associated to the request, helper alias to `Memory::get()`.
 
 ```php
 echo memorize('site.name');
