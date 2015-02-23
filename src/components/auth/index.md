@@ -104,7 +104,7 @@ php artisan memory:migrate
 
 > The command utility is enabled via `Orchestra\Memory\CommandServiceProvider`.
 
-## Usage
+## Usage {#usage}
 
 Essentially, the Auth class offered by Laravel is already good enough for normal usage. Orchestra Platform only extends the default operation and allow a user to be link with one or many roles.
 
@@ -124,7 +124,7 @@ $roles = Auth::roles();
 
 #### Check if user has all of the following roles
 
-php
+```php
 if (Auth::is(['admin', 'editor'])) {
 	echo "Is an admin and editor";
 }
