@@ -29,7 +29,7 @@ Laravel    | Authorization
  {
     "require": {
         "orchestra/authorization": "3.0.*"
-    }
+    },
     "repositories": [
         {
             "type": "vcs",
