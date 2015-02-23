@@ -16,12 +16,12 @@ Form                  | Orchestra\Support\Facades\Form        | Orchestra\Html\F
 Foundation            | Orchestra\Support\Facades\Foundation  | Orchestra\Foundation\Foundation                  | `orchestra.app`
 HTML                  | Orchestra\Support\Facades\HTML        | Orchestra\Html\HtmlBuilder                       | `html`
 Orchestra\Mail        | Orchestra\Support\Facades\Mail        | Orchestra\Notifier\Mailer                        | `orchestra.mail`
-Orchestra\Memory      | Orchestra\Support\Facades\Memory      | Orchestra\Memory\MemoryManager                   | `orchestra.memory`
-Orchestra\Messages    | Orchestra\Support\Facades\Messages    | Orchestra\Messages\MessageBag                    | `orchestra.messages`
+Memory                | Orchestra\Support\Facades\Memory      | Orchestra\Memory\MemoryManager                   | `orchestra.memory`
+Messages              | Orchestra\Support\Facades\Messages    | Orchestra\Messages\MessageBag                    | `orchestra.messages`
 Meta                  | Orchestra\Support\Facades\Meta        | Orchestra\Foundation\Meta                        | `orchestra.meta`
-Orchestra\Notifier    | Orchestra\Support\Facades\Notifier    | Orchestra\Notifier\NotifierManager               | `orchestra.notifier`
+Notifier              | Orchestra\Support\Facades\Notifier    | Orchestra\Notifier\NotifierManager               | `orchestra.notifier`
 Orchestra\Publisher   | Orchestra\Support\Facades\Publisher   | Orchestra\Foundation\Publisher\PublisherManager  | `orchestra.publisher`
-Orchestra\Table       | Orchestra\Support\Facades\Table       | Orchestra\Html\Table\Factory                     | `orchestra.table`
+Table                 | Orchestra\Support\Facades\Table       | Orchestra\Html\Table\Factory                     | `orchestra.table`
 Theme                 | Orchestra\Support\Facades\Theme       | Orchestra\View\Theme\ThemeManager                | `orchestra.theme`
 Orchestra\Widget      | Orchestra\Support\Facades\Widget      | Orchestra\Widget\WidgetManager                   | `orchestra.widget`
 
