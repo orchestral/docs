@@ -21,16 +21,6 @@ If you come across situation where your application suddenly when back as it was
 
     $ chmod -Rf 777 storage
 
-## Unable to assign multiple Memory instance {#unable-to-assign-multiple-memory-instance}
-
-In any event where the application stop with the following exception `Unable to assign multiple Orchestra\Memory instance`, it means that for some reason you have multiple call to assign `Orchestra\Memory` to the same ACL instance.
-
-    <?php
-
-    ACL::make('acme')->attach(Foundation::memory());
-
-> It would be adviced to have this code included from a service provider's `boot()` method.
-
 ## Error on SessionHandler::read() {#error-sessionhandler-read}
 
 	SessionHandler::read(): The session id is too long or contains illegal characters, valid characters are a-z, A-Z, 0-9 and '-,'
