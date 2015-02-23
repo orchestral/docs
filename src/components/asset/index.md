@@ -181,3 +181,4 @@ Asset::removeVersioning();
 
 * [Github](https://github.com/orchestral/asset)
 * [Packagist](https://packagist.org/packagist/orchestra/asset)
+* [Travis-CI](https://travis-ci.org/orchestral/asset)

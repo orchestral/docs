@@ -182,3 +182,4 @@ Auth::setup(function ($user, $roles) {
 
 * [GitHub](https://github.com/orchestral/auth)
 * [Packagist](https://packagist.org/packages/orchestra/auth)
+* [Travis-CI](https://travis-ci.org/orchestral/auth)
