@@ -80,7 +80,7 @@ To make development easier, you could add `Orchestra\Support\Facades\ACL` alias 
 ```php
 'aliases' => [
 
-	'ACL' => 'Orchestra\Support\Facades\Acl',
+	'ACL' => 'Orchestra\Support\Facades\ACL',
 
 ],
 ```
