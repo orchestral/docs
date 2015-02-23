@@ -25,6 +25,8 @@ echo orchestra()->memory()->get('site.name');
 echo orchestra('memory')->get('site.name');
 ```
 
+> Alias to `App::make('orchestra.app')`
+
 ## handles {#handles}
 
 Return handles configuration for a package to generate a full URL.
@@ -35,6 +37,8 @@ echo handles('orchestra/foundation::users');
 // you can also use `orchestra` as an alias to `orchestra/foundation`.
 echo handles('orchestra::users');
 ```
+
+> Alias to `Foundation::handles()`
 
 Above code would return `/admin/users`, however if your Orchestra Platform configuration is set to use root path as the handles, the same code would then return `/users`.
 
@@ -54,8 +58,22 @@ echo resources('foo/create');
 
 ## memorize {#memorize}
 
-Return memory configuration associated to the request, helper alias to `Memory::get()`.
+Return memory configuration associated to the request.
 
 ```php
 echo memorize('site.name');
 ```
+
+> Alias to `Memory::get()`
+
+## messages {#messages}
+
+Add a new flash messages for the following request.
+
+```php
+messages('success', 'User has been created.');
+
+messages('error', 'Unable to update the database!');
+```
+
+> Alias to `Messages::add()`
