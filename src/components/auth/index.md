@@ -111,3 +111,70 @@ Essentially, the Auth class offered by Laravel is already good enough for normal
 * [Retrieving Roles](#retrieving-roles)
 * [Checking Roles](#checking-roles)
 * [Setup Custom Roles Relationship](#setup-custom-roles)
+
+### Retrieving Roles {#retrieving-roles}
+
+Retrieve user's roles is as simple as:
+
+```php
+$roles = Auth::roles();
+```
+
+### Checking Roles {#checking-roles}
+
+#### Check if user has all of the following roles
+
+php
+if (Auth::is(['admin', 'editor'])) {
+	echo "Is an admin and editor";
+}
+```
+
+#### Check if user has any of the following roles
+
+```php
+if (Auth::isAny(['member', 'admin'])) {
+    echo "Is a member or admin";
+}
+```
+
+#### Check if user has none of the following roles
+
+```php
+if (Auth::isNot(['admin', 'editor'])) {
+    echo "Isn't an admin and editor";
+}
+```
+
+#### Check if user has none any of the following roles
+
+```php
+if (Auth::isNotAny(['member', 'admin'])) {
+    echo "Isn't a member or admin";
+}
+```
+
+### Setup Custom Roles Relationship {#setup-custom-roles}
+
+This would allow better configuration over convertion control for your application (Laravel).
+
+An example setup code would be:
+
+```php
+Auth::setup(function ($user, $roles) {
+    // If user is not logged in.
+    if (is_null($user)) {
+	    return $roles;
+    }
+
+    if ($user->is_admin) {
+    	$roles = ['Administrator'];
+    } else {
+    	$roles = ['Member'];
+    }
+
+    return $roles;
+});
+```
+
+> For Orchestra Platform, the listener are automatically handled in `Orchestra\Foundation\Bootstrap\UserAccessPolicy` and the above code shouldn't be used!
