@@ -164,3 +164,4 @@ protected function getApplicationTimezone($app)
 
 * [GitHub](https://github.com/orchestral/testbench)
 * [Packagist](https://packagist.org/orchestra/testbench)
+* [Travis-CI](https://travis-ci.org/orchestral/testbench)

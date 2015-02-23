@@ -52,7 +52,6 @@ title: Table of Content
   - [String]({doc-url}/components/support/str)
   - [Validation]({doc-url}/components/support/validator)
 * [Testbench]({doc-url}/components/testbench)
-  - [Usage]({doc-url}/components/testbench#usage)
 * [Translation]({doc-url}/components/translation)
 * [View]({doc-url}/components/view)
   - [Usage]({doc-url}/components/view/usage)
