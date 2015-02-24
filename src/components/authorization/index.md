@@ -118,7 +118,7 @@ Route::filter('foo.manage', function () {
 
 ### Integration with Memory Component {#memory-integration}
 
-Integration with [Memory Component]({doc-url/components/memory}) would allow a persistent storage of ACL metric, this would eliminate the need to define ACL on every request.
+Integration with [Memory Component]({doc-url}/components/memory}) would allow a persistent storage of ACL metric, this would eliminate the need to define ACL on every request.
 
 #### Creating a New ACL Instance
 
