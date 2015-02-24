@@ -54,6 +54,58 @@ $app->singleton(
 );
 ```
 
+### Configuration Caching Support
+
+Config Component also bring an enhanced `php artisan config:cache` support to speed up configuration loading, some features include:
+
+* Caching packages/namespaced config instead of just application `config` directory.
+* Enforcing lazy loaded packages config by including list of packages config key in `compile.config`.
+
+In order to do this you need to replace `Illuminate\Foundation\Provider\ArtisanServiceProvider` with a new `App\Providers\ArtisanServiceProvider`:
+
+```php
+<?php namespace App\Providers;
+
+use Orchestra\Config\Console\ConfigCacheCommand;
+use Illuminate\Foundation\Providers\ArtisanServiceProvider as ServiceProvider;
+
+class ArtisanServiceProvider extends ServiceProvider
+{
+    /**
+     * Register the command.
+     *
+     * @return void
+     */
+    protected function registerConfigCacheCommand()
+    {
+        $this->app->singleton('command.config.cache', function ($app) {
+            return new ConfigCacheCommand($app['files']);
+        });
+    }
+}
+```
+
+> Don't forget to update your `config/app.php` to replaces `Illuminate\Foundation\Provider\ArtisanServiceProvider` with `App\Providers\ArtisanServiceProvider`.
+
+#### Caching lazy loaded packages file
+
+In order to force certain packages to be included in config caching, you can specify either the relative key of desired packages in your `config/compile.php` file:
+
+```php
+<?php
+
+return [
+
+    // ...
+
+    'config' => [
+        'orchestra/foundation::config',  // if package config is group under "config/config.php"
+        'orchestra/foundation::roles',   // Using one of the key available in "config/config.php"
+        'orchestra/html::form',          // When package contain "config/form.php"
+    ],
+
+];
+```
 
 ## Resources {#resources}
 
