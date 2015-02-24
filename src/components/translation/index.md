@@ -3,37 +3,65 @@ title: Translation Component
 
 ---
 
-`Orchestra\Translation` is a small improvement over `illuminate/translation` where you can now have `app/lang/en/packages/acme/foobar` without having to touch package source code.
+[![Latest Stable Version](https://img.shields.io/github/release/orchestral/translation.svg?style=flat)](https://packagist.org/packages/orchestra/translation)
+[![Total Downloads](https://img.shields.io/packagist/dt/orchestra/translation.svg?style=flat)](https://packagist.org/packages/orchestra/translation)
+[![MIT License](https://img.shields.io/packagist/l/orchestra/translation.svg?style=flat)](https://packagist.org/packages/orchestra/translation)
 
+Translation Component extends the functionality of `Illuminate\Translation` to add support for cascading filesystem replacement for Laravel 4 packages.
+
+* [Version Compatibility](#compatibility)
 * [Installation](#installation)
 * [Configuration](#configuration)
+* [Change Log]({doc-url}/components/translation/changes#v3-0)
 * [Resources](#resources)
+
+## Version Compatibility {#compatibility}
+
+Laravel    | Translation
+:----------|:----------
+ 4.0.x     | 2.0.x
+ 4.1.x     | 2.1.x
+ 4.2.x     | 2.2.x
+ 5.0.x     | 3.0.x
 
 ## Installation {#installation}
 
 To install through composer, simply put the following in your `composer.json` file:
 
-	{
-		"require": {
-			"orchestra/translation": "2.2.*"
-		}
+```json
+{
+	"require": {
+		"orchestra/translation": "3.0.*"
 	}
+}
+```
+
+### Quick Installation
+
+Above installation can also be simplify by using the following command:
+
+    composer require "orchestra/translation=3.0.*"
+
 
 ## Configuration {#configuration}
 
-Next add the service provider in `app/config/app.php`.
+Next add the service provider in `config/app.php`.
 
-	'providers' => array(
+```php
+'providers' => [
 
-		// ...
-		# Remove 'Illuminate\Translation\TranslationServiceProvider'
-		# and add 'Orchestra\Translation\TranslationServiceProvider'
+	// ...
+	# Remove 'Illuminate\Translation\TranslationServiceProvider'
+	# and add 'Orchestra\Translation\TranslationServiceProvider'
 
-		'Orchestra\Translation\TranslationServiceProvider',
-	),
+	'Orchestra\Translation\TranslationServiceProvider',
+],
+```
 
 > `Orchestra\Translation\TranslationServiceProvider` should replace `Illuminate\Translation\TranslationServiceProvider`.
 
 ## Resources {#resources}
 
-* [Change Log]({doc-url}/components/translation/changes#v2-2)
+* [GitHub](https://github.com/orchestral/translation/)
+* [Packagist](https://packagist.org/packages/orchestra/translation)
+* [Travis-CI](https://travis-ci.org/orchestral/translation)
