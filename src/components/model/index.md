@@ -9,9 +9,19 @@ title: Model Component
 
 Model Component consist of basic Eloquent Model for either use with [Auth Component]({doc-url}/components/auth) or [Foundation Component]({doc-url}/components/foundation).
 
+* [Version Compatibility](#compatibility)
 * [Installation](#installation)
 * [Change Log]({doc-url}/components/model/changes#v3-0)
 * [Resources](#resources)
+
+## Version Compatibility {#compatibility}
+
+Laravel    | Model
+:----------|:----------
+ 4.0.x     | 2.0.x
+ 4.1.x     | 2.1.x
+ 4.2.x     | 2.2.x
+ 5.0.x     | 3.0.x
 
 ## Installation {#installation}
 

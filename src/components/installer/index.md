@@ -21,8 +21,6 @@ This extension is developed specifically for Orchestra Platform.
 
 ## Installation {#installation}
 
-## Installation {#installation}
-
 To install through composer, simply put the following in your `composer.json` file:
 
 ```json
