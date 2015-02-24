@@ -83,4 +83,5 @@ $avatar = Avatar::user($user)->render();
 ## Resources {#resources}
 
 * [Github](https://github.com/orchestral/avatar)
-* [Packagist]()
+* [Packagist](https://packagist.org/packages/orchestra/avatar)
+* [Travis-CI](https://travis-ci.org/orchestral/avatar)
