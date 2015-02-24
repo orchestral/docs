@@ -27,11 +27,15 @@ composer create-project orchestra/platform --prefer-dist
 
 ### Configuration {#configuration}
 
-The first thing you should do before running Orchestra Platform is set your application key to a random string. If you download Orchestra Platform via Composer, this key has probably already been set for you by the `key:generate` command.
+The first thing you should do before running Orchestra Platform is set your application key to a random string. If you download Orchestra Platform via Composer, this key has probably already been set for you during composer install. You can also rerun this command:
+
+```bash
+php artisan key:generate
+```
 
 Typically, this string should be 32 characters long. The key can be set in the `.env` environment file. **If the application key is not set, your user sessions and other encrypted data will not be secure!**
 
-Orchestra Platform needs almost no other configuration out of the box except for database configuration, which can be configured in `.env` file. However, you may wish to review the `resources/config/app.php` file and its documentation. It contains several options such as timezone and locale that you may wish to change according to your application.
+Orchestra Platform needs almost no other configuration out of the box except for **database configuration**, which can be configured in `.env` file. However, you may wish to review the `resources/config/app.php` file and its documentation. It contains several options such as `timezone` and `locale` that you may wish to change according to your application.
 
 > Note: You should never have the `app.debug` configuration option set to `true` for a production application.
 
