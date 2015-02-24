@@ -4,15 +4,15 @@ title: Helpers
 
 Orchestra Platform includes a set of helpers function to help solves some of the frequent problem while developing on Laravel.
 
-* [orchestra](#orchestra)
-* [handles](#handles)
-* [resources](#resources)
-* [memorize](#memorize)
-* [messages](#messages)
-* [redirect_with_errors](#redirect_with_errors)
-* [redirect_with_messages](#redirect_with_messages)
-* [get_meta](#get_meta)
-* [set_meta](#set_meta)
+1. [orchestra](#orchestra)
+2. [handles](#handles)
+3. [resources](#resources)
+4. [memorize](#memorize)
+5. [messages](#messages)
+6. [redirect_with_errors](#redirect_with_errors)
+7. [redirect_with_messages](#redirect_with_messages)
+8. [get_meta](#get_meta)
+9. [set_meta](#set_meta)
 
 ## orchestra {#orchestra}
 

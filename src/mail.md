@@ -5,9 +5,9 @@ title: Sending Mail
 
 `Orchestra\Mail` offer a slight improvement to `Illuminate\Mail\Mailer` where administrator can define the e-mail configuration from Settings page as well as preference to use `send` or `queue`.
 
-* [Send](#send)
-* [Queue](#queue)
-* [Push (send via configuration)](#push)
+1. [Send](#send)
+2. [Queue](#queue)
+3. [Push (send via configuration)](#push)
 
 ## Send {#send}
 

@@ -3,9 +3,9 @@ title: Troubleshooting
 
 ---
 
-* [Using safe mode](#safe-mode)
-* [Missing installation](#missing-installation)
-* [Error on SessionHandler::read()](#error-sessionhandler-read)
+1. [Using safe mode](#safe-mode)
+2. [Missing installation](#missing-installation)
+3. [Error on SessionHandler::read()](#error-sessionhandler-read)
 
 ## Using safe mode {#safe-mode}
 

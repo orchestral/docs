@@ -3,12 +3,10 @@ title: Introduction
 
 ---
 
-<summary>
-* [What is Orchestra Platform?](#what)
-* [What Makes Orchestra Platform Different?](#what-different)
-* [Illuminating Orchestra Platform](#illuminate)
-* [Version Compatibility](#version-compatibility)
-</summary>
+1. [What is Orchestra Platform?](#what)
+2. [What Makes Orchestra Platform Different?](#what-different)
+3. [Illuminating Orchestra Platform](#illuminate)
+4. [Version Compatibility](#version-compatibility)
 
 ## What is Orchestra Platform? {#what}
 

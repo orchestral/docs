@@ -3,13 +3,14 @@ title: Installation
 
 ---
 
-* [Install Composer](#install-composer)
-* [Install Orchestra Platform](#install-orchestra-platform)
+
+1. [Install Composer](#install-composer)
+2. [Install Orchestra Platform](#install-orchestra-platform)
   - [Download](#download)
   - [Configuration](#configuration)
   - [Setup](#setup)
-* [Server Requirements](#server-requirement)
-* [Pretty URLs](#pretty-urls)
+3. [Server Requirements](#server-requirement)
+4. [Pretty URLs](#pretty-urls)
 
 ## Install Composer {#install-composer}
 
