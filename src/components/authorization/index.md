@@ -148,10 +148,7 @@ class FooDefineAcl extends Migration
         $role = Orchestra\Model\Role::admin();
         $acl  = ACL::make('acme');
 
-        $actions = array(
-            'manage acme',
-            'view acme',
-        );
+        $actions = ['manage acme', 'view acme'];
 
         $acl->actions()->attach($actions);
         $acl->roles()->add($role->name);
