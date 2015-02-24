@@ -95,7 +95,7 @@ php artisan memory:migrate
 Optionally, you can also publish the configuration file if there any requirement to change the default:
 
 ```bash
-php artisan config:publish --packages=orchestra/memory
+php artisan publish:config orchestra/memory
 ```
 
 ## Usage {#usage}
