@@ -40,7 +40,6 @@ title: Table of Content
   - [Usage]({doc-url}/components/html/usage)
 * [Imagine]({doc-url}/components/imagine)
 * [Memory]({doc-url}/components/memory)
-  - [Usage]({doc-url}/components/memory/usage)
 * [Messages]({doc-url}/components/messages)
 * [Model]({doc-url}/components/model)
 * [Notifier]({doc-url}/components/notifier)
