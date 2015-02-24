@@ -5,50 +5,47 @@ title: Installation
 
 * [Install Composer](#install-composer)
 * [Install Orchestra Platform](#install-orchestra-platform)
-* [Setup Orchestra Platform](#setup-orchestra-platform)
+  - [Download](#download)
+  - [Configuration](#configuration)
+  - [Setup](#setup)
 * [Server Requirements](#server-requirement)
+* [Pretty URLs](#pretty-urls)
 
 ## Install Composer {#install-composer}
 
-Orchestra Platform utilizes [Composer](http://getcomposer.org/) to manage its dependencies. First, download a copy of the `composer` and install it globally. On Windows, you can use the Composer [Windows installer](https://getcomposer.org/Composer-Setup.exe).
+Orchestra Platform utilizes [Composer](http://getcomposer.org/) to manage its dependencies. So, before using Orchestra Platform, you will need to make sure you have Composer installed on your machine.
 
 ## Install Orchestra Platform {#install-orchestra-platform}
 
-Once Composer is installed, download the [latest version](https://github.com/orchestral/platform/archive/3.0.zip) of the Orchestra Platform and extract its contents into a directory on your server. Next, in the root of your Orchestra Platform application, run the `composer install` command to install all dependencies. This process requires Git to be installed on the server to successfully complete the installation.
-
-	composer install --prefer-dist
-
-> The installation process would automatically publish `orchestra/foundation` asset to your public path.
-
-### Installation using Composer
+### Download {#download}
 
 You can install Orchestra Platform using Composer:
 
-	composer create-project orchestra/platform website 3.0.x --prefer-dist
+```bash
+composer create-project orchestra/platform --prefer-dist
+```
 
-### Installation using GIT
+### Configuration {#configuration}
 
-You can also choose to install Orchestra Platform using GIT:
+The first thing you should do before running Orchestra Platform is set your application key to a random string. If you download Orchestra Platform via Composer, this key has probably already been set for you by the `key:generate` command.
 
-	git clone -o orchestra -b 3.0 git@github.com:orchestral/platform.git website
-	cd website
-    composer install --prefer-dist
+Typically, this string should be 32 characters long. The key can be set in the `.env` environment file. **If the application key is not set, your user sessions and other encrypted data will not be secure!**
 
-This allow you to grab the latest update of Orchestra Platform app skeleton via the following command.
+Orchestra Platform needs almost no other configuration out of the box except for database configuration, which can be configured in `.env` file. However, you may wish to review the `resources/config/app.php` file and its documentation. It contains several options such as timezone and locale that you may wish to change according to your application.
 
-	git fetch orchestra
-	git merge --squash -m "Update Orchestra Platform" orchestra/3.0
+> Note: You should never have the `app.debug` configuration option set to `true` for a production application.
 
-## Setup Orchestra Platform {#setup-orchestra-platform}
+#### Permission
 
-Once Laravel and Orchestra Platform is properly downloaded and installed, we need to setup the database and create the application basic schema (including administrator user).
+Orchestra Platform may require some permissions to be configured: folders within `storage` require write access by the web server.
 
-1. Open `.env` and configure your database connection.
-2. Run `php artisan serve` or use your prefered web server stack or vagrant.
-3. Browse to the installation page, for example `http://localhost:8000/admin` and follow the installation process.
-4. And... you're done.
+### Setup {#setup}
 
-> Application configuration are 99% identical to Laravel so that integration is stream-less.
+Once Orchestra Platform is properly configured, we need to run the installation and create the application basic schema (including administrator user).
+
+1. Run `php artisan serve` or use your prefered web server stack (or vagrant).
+2. Browse to the installation page, for example `http://localhost:8000/admin` and follow the installation process.
+3. And... you're done.
 
 ## Server Requirements {#server-requirement}
 
@@ -57,5 +54,37 @@ Orchestra Plaftorm has a few system requirements:
 * PHP >= 5.4.0 (we highly recommend using PHP 5.6 for your projects).
 * OpenSSL PHP Extension.
 * MCrypt PHP Extension.
+* Mbstring PHP Extension.
 * Apache, nginx, or another compatible web server.
 * SQLite, MySQL, PostgreSQL, or SQL Server PDO drivers.
+
+As of PHP 5.5, some OS distributions may require you to manually install the PHP JSON extension. When using Ubuntu, this can be done via `apt-get install php5-json`.
+
+## Pretty URLs {#pretty-urls}
+
+### Apache
+
+The framework ships with a `public/.htaccess` file that is used to allow URLs without `index.php`. If you use Apache to serve your Orchestra Platform application, be sure to enable the `mod_rewrite` module.
+
+If the `.htaccess` file that ships with Orchestra Platform does not work with your Apache installation, try this one:
+
+```
+Options +FollowSymLinks
+RewriteEngine On
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^ index.php [L]
+```
+
+### Nginx
+
+On Nginx, the following directive in your site configuration will allow "pretty" URLs:
+
+```
+location / {
+    try_files $uri $uri/ /index.php?$query_string;
+}
+```
+
+Of course, when using Homestead, pretty URLs will be configured automatically.
