@@ -14,6 +14,7 @@ title: Table of Content
   - [Troubleshooting]({doc-url}/troubleshoot)
 * Setup
   - [Installation]({doc-url}/installation)
+  - [Configuration]({doc-url}/configuration)
 * The Basics
   - [Helpers]({doc-url}/helpers)
 * Architecture Foundations
