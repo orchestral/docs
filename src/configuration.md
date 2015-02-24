@@ -36,7 +36,7 @@ class AppServiceProvider extends ServiceProvider
     use DomainAwareTrait;
 
     /**
-     * Register the service provider.
+     * Boot the service provider.
      *
      * @return void
      */
