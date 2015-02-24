@@ -46,3 +46,31 @@ class AppServiceProvider extends ServiceProvider
     }
 }
 ```
+
+### Securing Orchestra Platform
+
+#### Use better session driver
+
+Orchestra Platform recommends using either Redis, Memcached or APC session driver (or at least database driver). This help making sure we can handle session request without any interruption especially when for handling CSRF.
+
+#### Disallow access to `.blade.php` for themes
+
+##### Apache
+
+Configuration is included in the default `public/.htaccess`:
+
+```
+# Secure Front Themes...
+
+RewriteRule ^themes/.*\.(blade.php|php)$ - [F,L,NC]
+```
+ 
+##### Nginx
+
+You can add the following configuration:
+
+```
+location ~ ^/themes/(.*)\.php$ {
+    deny all;
+}
+```
