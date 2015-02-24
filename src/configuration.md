@@ -25,7 +25,8 @@ Edit `handles` key in `resources/config/packages/orchestra/foundation/config.php
 
 You can also assign a sub-domain to handle Orchestra Platform Administration page by editing the `handles` value to `//admin.{{domain}}`. However to do this, please make sure that you have set `APP_URL` value in `.env` and use `Orchestra\Extension\Traits\DomainAwareTrait`.
 
-```<?php namespace App\Providers;
+```php
+<?php namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use Orchestra\Extension\Traits\DomainAwareTrait;
