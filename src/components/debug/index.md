@@ -33,9 +33,9 @@ To install through composer, simply put the following in your `composer.json` fi
 
 ```json
 {
-	"require-dev": {
-		"orchestra/debug": "3.0.*"
-	}
+    "require-dev": {
+        "orchestra/debug": "3.0.*"
+    }
 }
 ```
 
@@ -45,7 +45,7 @@ And then run `composer install` from the terminal.
 
 Above installation can also be simplify by using the following command:
 
-	composer require --dev "orchestra/debug=3.0.*"
+    composer require --dev "orchestra/debug=3.0.*"
 
 ## Configuration {#configuration}
 
@@ -54,11 +54,11 @@ Next add the following service provider in `config/app.php` or use [Config Compo
 ```php
 'providers' => [
 
-	// ...
+    // ...
 
-	'Orchestra\Debug\DebugServiceProvider',
+    'Orchestra\Debug\DebugServiceProvider',
 
-	'Orchestra\Debug\CommandServiceProvider',
+    'Orchestra\Debug\CommandServiceProvider',
 ],
 ```
 
@@ -68,7 +68,7 @@ You could also create an alias for `Orchestra\Support\Facades\Profiler` in `app/
 
 ```php
 'aliases' => [
-	'Profiler' => 'Orchestra\Support\Facades\Profiler',
+    'Profiler' => 'Orchestra\Support\Facades\Profiler',
 ],
 ```
 
@@ -82,16 +82,23 @@ You could also create an alias for `Orchestra\Support\Facades\Profiler` in `app/
 To enable the profiler, all you need to do add the following to `App\Providers\AppServiceProvider`:
 
 ```php
-/**
- * Boot the service provider.
- *
- * @return void
- */
-public function boot()
+<?php namespace App\Providers;
+
+use Illuminate\Support\ServiceProvider;
+
+class AppServiceProvider extends ServiceProvider
 {
-	if ($this->app['config']['app.debug']) {
-		Profiler::attachDebugger();
-	}
+    /**
+     * Boot the service provider.
+     *
+     * @return void
+     */
+    public function boot()
+    {
+        if ($this->app['config']['app.debug']) {
+            Profiler::attachDebugger();
+        }
+    }
 }
 ```
 
@@ -99,7 +106,9 @@ public function boot()
 
 To view the profiler, run the following command in your terminal:
 
-	php artisan debug
+```bash
+php artisan debug
+```
 
 ## Resources {#resources}
 
