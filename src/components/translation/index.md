@@ -60,6 +60,10 @@ Next add the service provider in `config/app.php`.
 
 > `Orchestra\Translation\TranslationServiceProvider` should replace `Illuminate\Translation\TranslationServiceProvider`.
 
+## Usage {#usage}
+
+Translation Component make it easier to have redistribute packages language files, instead of relying on `resources/lang/en/package/name/title.php` you can now publish it under `resources/lang/package/name/en/title.php` making it easier to create repository (and publish it under [Github](https://github.com)) for a single packages or extension to handle multiple languages.
+
 ## Resources {#resources}
 
 * [GitHub](https://github.com/orchestral/translation/)
