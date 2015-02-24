@@ -66,6 +66,7 @@ You might also want to add `Orchestra\Support\Facade\Avatar` to class aliases in
     // ...
     'Avatar' => 'Orchestra\Support\Facade\Avatar',
 ],
+```
 
 ## Usage {#usage}
 
