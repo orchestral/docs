@@ -62,13 +62,13 @@ Add `Orchestra\Messages\MessagesServiceProvider` service provider in `config/app
 
 ### Aliases
 
-You might want to add `Orchestra\Messages\Facade` to class aliases in `config/app.php`:
+You might want to add `Orchestra\Support\Facades\Messages` to class aliases in `config/app.php`:
 
     'aliases' => array(
 
         // ...
 
-        'Orchestra\Messages' => 'Orchestra\Messages\Facade',
+        'Messages' => 'Orchestra\Support\Facades\Messages',
     ),
 
 ## Usage {#usage}
