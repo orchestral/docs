@@ -29,6 +29,7 @@ title: Table of Content
 * [Auth]({doc-url}/components/auth)
 * [Authorization]({doc-url}/components/authorization)
 * [Avatar]({doc-url}/components/avatar)
+* [Config]({doc-url}/components/config)
 * [Debug]({doc-url}/components/debug)
 * [Extension]({doc-url}/components/extension)
   - [Usage]({doc-url}/components/extension/usage)
