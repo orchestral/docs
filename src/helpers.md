@@ -4,43 +4,76 @@ title: Helpers
 
 Orchestra Platform includes a set of helpers function to help solves some of the frequent problem while developing on Laravel.
 
-* [orchestra()](#orchestra)
-* [handles()](#handles)
-* [resources()](#resources)
-* [memorize()](#memorize)
+* [orchestra](#orchestra)
+* [handles](#handles)
+* [resources](#resources)
+* [memorize](#memorize)
+* [messages](#messages)
+* [redirect_with_errors](#redirect_with_errors)
+* [redirect_with_messages](#redirect_with_messages)
+* [get_meta](#get_meta)
+* [set_meta](#set_meta)
 
-## orchestra() {#orchestra}
+## orchestra {#orchestra}
 
 Return `orchestra.app` instance.
 
-	echo orchestra()->memory()->get('site.name');
+```php
+echo orchestra()->memory()->get('site.name');
 
-## handles() {#handles}
+// You can also use the following to get the same value:
+echo orchestra('memory')->get('site.name');
+```
+
+> Alias to `App::make('orchestra.app')`
+
+## handles {#handles}
 
 Return handles configuration for a package to generate a full URL.
 
-	echo handles('orchestra/foundation::users');
+```php
+echo handles('orchestra/foundation::users');
 
-	// you can also use `orchestra` as an alias to `orchestra/foundation`.
-	echo handles('orchestra::users');
+// you can also use `orchestra` as an alias to `orchestra/foundation`.
+echo handles('orchestra::users');
+```
 
+> Alias to `Foundation::handles()`
 
-Above code would return `http://yoursite.com/orchestra/users`, however if your Orchestra Platform configuration is set to use admin as the bundle handles, the same code would then return `http:://yoursite.com/admin/users`.
+Above code would return `/admin/users`, however if your Orchestra Platform configuration is set to use root path as the handles, the same code would then return `/users`.
 
 > During boot process, Orchestra Platform will automatically set handle for each packages, if specified in `orchestra.json` to `orchestra/extension::handles.vendor/package`, this can be modified from the extension configuration page.
 
-## resources() {#resources}
+## resources {#resources}
 
 Return handles configuration for a resources to generate a full URL.
 
-	// To route for a resources you would normally write
-	echo handles('orchestra/foundation::resources/foo/create');
+```php
+// To route for a resources you would normally write
+echo handles('orchestra/foundation::resources/foo/create');
 
-	// this can be shortern to
-	echo resources('foo/create');
+// this can be shortern to
+echo resources('foo/create');
+```
 
-## memorize() {#memorize}
+## memorize {#memorize}
 
-Return memory configuration associated to the request, helper alias to `Orchestra\Memory::get()`.
+Return memory configuration associated to the request.
 
-	echo memorize('site.name');
+```php
+echo memorize('site.name');
+```
+
+> Alias to `Memory::get()`
+
+## messages {#messages}
+
+Add a new flash messages for the following request.
+
+```php
+messages('success', 'User has been created.');
+
+messages('error', 'Unable to update the database!');
+```
+
+> Alias to `Messages::add()`

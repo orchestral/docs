@@ -3,9 +3,11 @@ title: Messages Component
 
 ---
 
-Messages Component bring a unified notification support for Laravel 4 and Orchestra Platform 2.
+[![Latest Stable Version](https://img.shields.io/github/release/orchestral/messages.svg?style=flat)](https://packagist.org/packages/orchestra/messages)
+[![Total Downloads](https://img.shields.io/packagist/dt/orchestra/messages.svg?style=flat)](https://packagist.org/packages/orchestra/messages)
+[![MIT License](https://img.shields.io/packagist/l/orchestra/messages.svg?style=flat)](https://packagist.org/packages/orchestra/messages)
 
-## Table of Content
+Messages Component bring a unified notification support for Laravel and Orchestra Platform.
 
 * [Version Compatibility](#compatibility)
 * [Installation](#installation)
@@ -14,24 +16,27 @@ Messages Component bring a unified notification support for Laravel 4 and Orches
   - [Adding a Message](#adding-a-message)
   - [Extending a Message to Current Request](#extending-a-message-to-current-request)
   - [Displaying the Message in a View](#displaying-the-message-in-a-view)
-* [Change Log](http://orchestraplatform.com/docs/latest/components/messages/changes#v2-3)
-* [Github](https://github.com/orchestral/messages)
+* [Change Log]({doc-url}/components/messages/changes#v3-0)
+* [Resources](#resources)
 
 ## Version Compatibility {#compatibility}
 
 Laravel    | Messages
 :----------|:----------
  4.2.x     | 2.2.x
+ 5.0.x     | 3.0.x
 
 ## Installation {#installation}
 
 To install through composer, simply put the following in your `composer.json` file:
 
-    {
-        "require": {
-            "orchestra/messages": "2.2.*"
-        }
+```json
+{
+    "require": {
+        "orchestra/messages": "3.0.*"
     }
+}
+```
 
 And then run `composer install` from the terminal.
 
@@ -39,66 +44,90 @@ And then run `composer install` from the terminal.
 
 Above installation can also be simplify by using the following command:
 
-    composer require "orchestra/messages=2.2.*"
+```bash
+composer require "orchestra/messages=3.0.*"
+```
 
 ## Configuration {#configuration}
 
-Add `Orchestra\Messages\MessagesServiceProvider` service provider in `app/config/app.php`.
+Add `Orchestra\Messages\MessagesServiceProvider` service provider in `config/app.php`.
 
-    'providers' => array(
+```php
+'providers' => [
 
-        // ...
+    // ...
 
-        'Orchestra\Messages\MessagesServiceProvider',
-    ),
+    'Orchestra\Messages\MessagesServiceProvider',
+],
+```
 
 ### Aliases
 
-You might want to add `Orchestra\Messages\Facade` to class aliases in `app/config/app.php`:
+You might want to add `Orchestra\Support\Facades\Messages` to class aliases in `config/app.php`:
 
-    'aliases' => array(
+```php
+'aliases' => [
 
-        // ...
+    // ...
 
-        'Orchestra\Messages' => 'Orchestra\Messages\Facade',
-    ),
+    'Messages' => 'Orchestra\Support\Facades\Messages',
+],
+```
 
 ## Usage {#usage}
+
+* [Adding a Message](#adding-a-message)
+* [Extending a Message to Current Request](#extending-a-message-to-current-request)
+* [Displaying the Message in a View](#displaying-the-message-in-a-view)
 
 ### Adding a Message {#adding-a-message}
 
 Adding a message is as easy as following:
 
-    Orchestra\Messages::add('success', 'A successful message');
+```php
+Messages::add('success', 'A successful message');
+```
 
 You can also chain messages:
 
-    Orchestra\Messages::add('success', 'A successful message')
-        ->add('error', 'Some error');
+```php
+Messages::add('success', 'A successful message')
+    ->add('error', 'Some error');
+```
 
 ### Extending a Message to Current Request {#extending-a-message-to-current-request}
 
 There might be situation where you need to extend a message to the current response instead of the following request. You can do this with:
 
-    Orchestra\Messages::extend(function ($message) {
-        $message->add('info', 'Read-only mode');
-    });
+```php
+Messages::extend(function ($message) {
+    $message->add('info', 'Read-only mode');
+});
+```
 
 ### Displaying the Message in a View {#displaying-the-message-in-a-view}
 
 Here's an example how you can display the message:
 
-    <?php
+```php
+<?php
 
-    $message = Orchestra\Messages::retrieve();
+$message = Messages::retrieve();
 
-    if ($message instanceof Orchestra\Messages\MessageBag) {
-        foreach (['error', 'info', 'success'] as $key) {
-            if ($message->has($key)) {
-                $message->setFormat(
-                    '<div class="alert alert-'.$key.'">:message</div>'
-                );
-                echo implode('', $message->get($key));
-            }
+if ($message instanceof Orchestra\Messages\MessageBag) {
+    foreach (['error', 'info', 'success'] as $key) {
+        if ($message->has($key)) {
+            $message->setFormat(
+                '<div class="alert alert-'.$key.'">:message</div>'
+            );
+            echo implode('', $message->get($key));
         }
     }
+}
+```
+
+## Resources {#resources}
+
+* [Github](https://github.com/orchestral/messages)
+* [Packagist](https://packagist.org/packages/orchestra/messages)
+* [Travis-CI](https://travis-ci.org/orchestral/messages)

@@ -7,12 +7,6 @@ function copy_changes() {
         cp $1/changes.md $2/changes.md;
         echo "Sync changes file";
     fi
-
-    # Upgrading command.
-    # if [ -f $1/upgrading.md ]; then
-    #   cp $1/upgrading.md $2/upgrading.md;
-    #   echo "Sync upgrade file";
-    # fi
 }
 
 function set_branch() {
@@ -30,6 +24,16 @@ function build_platform {
     echo "Documentation copied";
 }
 
+function build_theme_installer {
+    cd ../theme-installer
+    echo '-------';
+    pwd;
+    echo "git checkout master";
+    git checkout master;
+    copy_changes docs ../docs/src/components/theme-installer;
+    echo "Documentation copied";
+}
+
 function build_docs {
     echo "git checkout $BRANCH";
     git checkout $BRANCH;
@@ -39,6 +43,7 @@ function build_docs {
 
 set_branch;
 build_platform;
+build_theme_installer;
 
 for DIR in "${COMPONENTS[@]}"
 do
@@ -48,3 +53,4 @@ do
     pwd;
     build_docs;
 done
+

@@ -5,6 +5,12 @@ title: Optimize Change Log
 
 ## Version 3.0 {#v3-0}
 
+### v3.0.1 {#v3-0-1}
+
+* Add multiple boostrap, filter and middleware classes.
+* Add `Orchestra\Foundation\Support\Providers\RouteServiceProvider`.
+* Add `Orchestra\Foundation\Support\Providers\ExtensionRouteServiceProvider`.
+
 ### v3.0.0 {#v3-0-0}
 
 * Update support to Laravel Framework v5.0.

@@ -3,7 +3,7 @@ title: Facile Component
 
 ---
 
-Facile Component simplify the need to create API based response in your Laravel 4 application, with just the following code you are able to return multi format Response, either it be HTML (using `View`), json or etc.
+Facile Component simplify the need to create API based response in your Laravel application, with just the following code you are able to return multi format Response, either it be HTML (using `View`), json or etc.
 
 ## Table of Content {#toc}
 

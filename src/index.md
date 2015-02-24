@@ -6,6 +6,7 @@ title: Introduction
 * [What is Orchestra Platform?](#what)
 * [What Makes Orchestra Platform Different?](#what-different)
 * [Illuminating Orchestra Platform](#illuminate)
+* [Version Compatibility](#version-compatibility)
 
 ## What is Orchestra Platform? {#what}
 
@@ -19,10 +20,9 @@ Have you had a client that wanted you to create a custom application but at the 
 
 Orchestra Platform will solve this problem by creating a similar Administration Panel as you would see in WordPress *wp-admin*, so you can continue writing awesome code in Laravel but at the same time have CMS components ready at your disposal.
 
-
 ## What Makes Orchestra Platform Different? {#what-different}
 
-* **Laravel Framework 4** is simply a great framework to work with.
+* **Laravel Framework 5** is simply a great framework to work with.
 * **Extensions** are a much needed improvement to package implementation in Laravel. With one click activation and upgrade (migration and publish).
 * **Database Based Configuration** for any extensions are a solid replacement of file based configuration, stop telling your non-technical client to edit PHP file for any simple configuration changes.
 * **Resources** lets you build HMVC implementation on top of Orchestra Platform. Hook your backend application to Orchestra with just simple API.
@@ -33,26 +33,41 @@ Orchestra Platform will solve this problem by creating a similar Administration 
 
 With the introduction of Composer, we are now free to organize the code into smaller component where there would be use-case where you can use one or two Orchestra Platform components without everything else. At this moment we have organize the code into following components:
 
-* [Orchestra\Asset]({doc-url}/components/asset)
-* [Orchestra\Auth]({doc-url}/components/auth)
-* [Orchestra\Debug]({doc-url}/components/debug)
-* [Orchestra\Extension]({doc-url}/components/extension)
-* [Orchestra\Facile]({doc-url}/components/facile)
-* [Orchestra\Foundation]({doc-url}/components/foundation)
-* [Orchestra\Html]({doc-url}/components/html)
-* [Orchestra\Memory]({doc-url}/components/memory)
-* [Orchestra\Model]({doc-url}/components/model)
-* [Orchestra\Notifier]({doc-url}/components/notifier)
-* [Orchestra\Resources]({doc-url}/components/resources)
-* [Orchestra\Support]({doc-url}/components/support)
-* [Orchestra\Translation]({doc-url}/components/translation)
-* [Orchestra\View]({doc-url}/components/view)
-* [Orchestra\Widget]({doc-url}/components/widget)
+* [Asset]({doc-url}/components/asset)
+* [Auth]({doc-url}/components/auth)
+* [Debug]({doc-url}/components/debug)
+* [Extension]({doc-url}/components/extension)
+* [Kernel]({doc-url}/components/kernel)
+* [Foundation]({doc-url}/components/foundation)
+* [Html]({doc-url}/components/html)
+* [Memory]({doc-url}/components/memory)
+* [Messages]({doc-url}/components/messages)
+* [Model]({doc-url}/components/model)
+* [Notifier]({doc-url}/components/notifier)
+* [Optimize]({doc-url}/components/optimize)
+* [Publisher]({doc-url}/components/publisher)
+* [Support]({doc-url}/components/support)
+* [Translation]({doc-url}/components/translation)
+* [View]({doc-url}/components/view)
+* [Widget]({doc-url}/components/widget)
 
 We also have some independence packages that would work well with Orchestra Platform, including:
 
-* [Orchestra\Avatar]({doc-url}/components/avatar)
-* [Orchestra\Imagine]({doc-url}/components/imagine)
-* [Orchestra\Parser]({doc-url}/components/parser)
-* [Orchestra\Tenanti]({doc-url}/components/tenanti)
-* [Orchestra\Testbench]({doc-url}/components/testbench)
+* [Avatar]({doc-url}/components/avatar)
+* [Facile]({doc-url}/components/facile)
+* [Imagine]({doc-url}/components/imagine)
+* [Parser]({doc-url}/components/parser)
+* [Resources]({doc-url}/components/resources)
+* [Tenanti]({doc-url}/components/tenanti)
+* [Testbench]({doc-url}/components/testbench)
+* [Theme Installer]({doc-url}/components/theme-installer)
+
+## Version Compatibility {#version-compatibility}
+
+Laravel    | Orchestra Platform  | Status
+:----------|:--------------------|:----------------
+ 3.2.x     | 1.x                 | Deprecated
+ 4.0.x     | 2.0.x               | Deprecated
+ 4.1.x     | 2.1.x               | LTS
+ 4.2.x     | 2.2.x               | Supported
+ 5.0.x     | 3.0.x               | Latest Stable

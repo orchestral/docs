@@ -5,6 +5,31 @@ title: Foundation Change Log
 
 ## Version 3.0 {#v3-0}
 
+## v3.0.4 {#v3-0-4}
+
+* Rework `Orchestra\Foundation\Filters\VerifyCsrfToken` to accept `X-CSRF-TOKEN` (raw token) as well as `X-XSRF-TOKEN` (encrypted token).
+* Push foundation menu handlers to `orchestra.started: admin` instead of `orchestra.ready: admin` to support Laravel Framework changes to middleware handling in v5.0.6.
+
+## v3.0.3 {#v3-0-3}
+
+* Fixes `Orchestra\Foundation\Support\Providers\RouteServiceProvider` to be able to run `setRootControllerNamespace()` and `loadCachedRoutes()` during booting process.
+* Add `Orchestra\Foundation\Support\Providers\ExtensionRouteServiceProvider` for extensions or modules routing.
+
+## v3.0.2 {#v3-0-2}
+
+* Refactor `Orchestra\Foundation\Support\Providers\RouteServiceProvider::loadFrontendRoutesFrom()` to utilize `Orchestra\Foundation\Foundation::group()` instead of `Illuminate\Routing\Router::group()`.
+* Add `Orchestra\Foundation\Support\Providers\RouteServiceProvider::afterExtensionLoaded()` helper method.
+
+### v3.0.1 {#v3-0-1}
+
+* Add `Orchestra\Foundation\Support\Providers\RouteServiceProvider`.
+* Refactor `Orchestra\Foundation\Support\MenuHandler` to be more usable.
+* Refactor `Orchestra\Foundation\AdminMenuHandler` and split the handling to following classes:
+  - `Orchestra\Foundation\Http\Handlers\ExtensionMenuHandler`.
+  - `Orchestra\Foundation\Http\Handlers\ResourcesMenuHandler`.
+  - `Orchestra\Foundation\Http\Handlers\SettingMenuHandler`.
+  - `Orchestra\Foundation\Http\Handlers\UserMenuHandler`.
+
 ### v3.0.0 {#v3-0-0}
 
 * Update support to Laravel Framework v5.0.

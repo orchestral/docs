@@ -11,23 +11,23 @@ title: Table of Content
   - [License]({doc-url}/license)
   - [Change Log]({doc-url}/changes)
   - [Upgrade Guide]({doc-url}/upgrading)
-* Getting Started
-  - [Installation]({doc-url}/installation)
-  - [Requirements]({doc-url}/installation#server-requirement)
-* Learning More
-  - [Events]({doc-url}/events)
-  - [Facades]({doc-url}/facades)
-  - [Helpers]({doc-url}/helpers)
-  - [Sending Mail]({doc-url}/mail)
   - [Troubleshooting]({doc-url}/troubleshoot)
+* Setup
+  - [Installation]({doc-url}/installation)
+* The Basics
+  - [Helpers]({doc-url}/helpers)
+* Architecture Foundations
+  - [Contracts]({doc-url}/contracts)
+  - [Facades]({doc-url}/facades)
+  - [Events]({doc-url}/events)
+* Services
+  - [Sending Mail]({doc-url}/mail)
 
 ### Components
 
 * [Asset]({doc-url}/components/asset)
 * [Auth]({doc-url}/components/auth)
-  - [Auth Usage]({doc-url}/components/auth/usage)
-  - [RBAC and ACL Usage]({doc-url}/components/auth/rbac)
-  - [Integration with Memory]({doc-url}/components/auth/memory-integration)
+* [Authorization]({doc-url}/components/authorization)
 * [Avatar]({doc-url}/components/avatar)
 * [Debug]({doc-url}/components/debug)
 * [Extension]({doc-url}/components/extension)
@@ -38,6 +38,7 @@ title: Table of Content
 * [Foundation]({doc-url}/components/foundation)
 * [HTML]({doc-url}/components/html)
   - [Usage]({doc-url}/components/html/usage)
+* [Imagine]({doc-url}/components/imagine)
 * [Memory]({doc-url}/components/memory)
   - [Usage]({doc-url}/components/memory/usage)
 * [Messages]({doc-url}/components/messages)
@@ -51,7 +52,6 @@ title: Table of Content
   - [String]({doc-url}/components/support/str)
   - [Validation]({doc-url}/components/support/validator)
 * [Testbench]({doc-url}/components/testbench)
-  - [Usage]({doc-url}/components/testbench/usage)
 * [Translation]({doc-url}/components/translation)
 * [View]({doc-url}/components/view)
   - [Usage]({doc-url}/components/view/usage)
