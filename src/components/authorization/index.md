@@ -15,6 +15,7 @@ In most other solutions, you are either restrict to file based configuration for
   - [Creating a New ACL Instance](#creating-a-new-acl-instance)
   - [Verifying the ACL](#verifying-the-acl)
   - [Integration with Memory Component](#memory-integration)
+* [Change Log]({doc-url}/components/auth/changes#v3-0)
 
 ## Version Compatibility {#compatibility}
 
