@@ -74,6 +74,7 @@ To make development easier, you could add `Orchestra\Support\Facades\ACL` alias 
 * [Concept of RBAC](#concept-of-rbac)
 * [Creating a New ACL Instance](#creating-a-new-acl-instance)
 * [Verifying the ACL](#verifying-the-acl)
+* [Integration with Memory Component](#memory-integration)
 
 ### Concept of RBAC {#concept-of-rbac}
 
