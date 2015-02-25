@@ -48,9 +48,7 @@ title: Table of Content
 
 * [Avatar]({doc-url}/components/avatar)
 * [Facile]({doc-url}/components/facile)
-  - [Template]({doc-url}/components/facile/templating)
 * [Imagine]({doc-url}/components/imagine)
 * [Parser]({doc-url}/components/parser)
 * [Resources]({doc-url}/components/resources)
-  - [Usage]({doc-url}/components/resources/usage)
 * [Testbench]({doc-url}/components/testbench)
