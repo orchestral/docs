@@ -29,7 +29,6 @@ title: Table of Content
 * [Asset]({doc-url}/components/asset)
 * [Auth]({doc-url}/components/auth)
   - [Authorization]({doc-url}/components/authorization)
-* [Debug]({doc-url}/components/debug)
 * [Extension]({doc-url}/components/extension)
 * [Foundation]({doc-url}/components/foundation)
 * [HTML]({doc-url}/components/html)
@@ -47,8 +46,10 @@ title: Table of Content
 ### Optional Components
 
 * [Avatar]({doc-url}/components/avatar)
+* [Debug]({doc-url}/components/debug)
 * [Facile]({doc-url}/components/facile)
 * [Imagine]({doc-url}/components/imagine)
+* [Installer]({doc-url}/components/installer)
 * [Parser]({doc-url}/components/parser)
 * [Resources]({doc-url}/components/resources)
 * [Testbench]({doc-url}/components/testbench)
