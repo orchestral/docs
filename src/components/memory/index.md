@@ -9,17 +9,17 @@ title: Memory Component
 
 Memory Component handles runtime configuration either using "in memory" Runtime or database using Cache, Fluent Query Builder or Eloquent ORM. Instead of just allowing static configuration to be used, Memory Component allow those configuration to be persistent in between request by utilizing multiple data storage option either through cache or database.
 
-* [Version Compatibility](#compatibility)
-* [Installation](#installation)
-* [Configuration](#configuration)
-* [Usage](#usage)
+1. [Version Compatibility](#compatibility)
+2. [Installation](#installation)
+3. [Configuration](#configuration)
+4. [Usage](#usage)
   - [Creating Instance](#create-instance)
   - [Storing Items](#storing-items)
   - [Retrieving Items](#retrieving-items)
   - [Removing Items](#removing-items)
   - [Extending Memory](#extending-memory)
-* [Change Log]({doc-url}/components/memory/changes#v3-0)
-* [Resources](#resources)
+5. [Change Log]({doc-url}/components/memory/changes#v3-0)
+6. [Resources](#resources)
 
 ## Version Compatibility {#compatibility}
 
@@ -100,11 +100,11 @@ php artisan publish:config orchestra/memory
 
 ## Usage {#usage}
 
-* [Creating Instance](#create-instance)
-* [Storing Items](#storing-items)
-* [Retrieving Items](#retrieving-items)
-* [Removing Items](#removing-items)
-* [Extending Memory](#extending-memory)
+1. [Creating Instance](#create-instance)
+2. [Storing Items](#storing-items)
+3. [Retrieving Items](#retrieving-items)
+4. [Removing Items](#removing-items)
+5. [Extending Memory](#extending-memory)
 
 ### Creating Instance {#create-instance}
 

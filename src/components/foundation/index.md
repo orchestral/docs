@@ -9,10 +9,10 @@ title: Foundation Component
 
 Foundation Component is the core of Orchestra Platform. The installation of this component would require additional boilerplate app skeleton which is available from [orchestra/platform](https://github.com/orchestral/platform).
 
-* [Version Compatibility](#compatibility)
-* [Installation](#installation)
-* [Change Log]({doc-url}/components/foundation/changes#v3-0)
-* [Resources](#resources)
+1. [Version Compatibility](#compatibility)
+2. [Installation](#installation)
+3. [Change Log]({doc-url}/components/foundation/changes#v3-0)
+4. [Resources](#resources)
 
 ## Version Compatibility {#compatibility}
 

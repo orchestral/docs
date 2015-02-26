@@ -9,9 +9,9 @@ title: Optimize Component
 
 Optimization Component is a tool specifically for Orchestra Platform, which work based on `php artisan optimize`.
 
-* [Version Compatibility](#compatibility)
-* [Change Log]({doc-url}/components/optimize/changes#v3-0)
-* [Resources](#resources)
+1. [Version Compatibility](#compatibility)
+2. [Change Log]({doc-url}/components/optimize/changes#v3-0)
+3. [Resources](#resources)
 
 ## Version Compatibility {#compatibility}
 

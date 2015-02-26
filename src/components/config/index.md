@@ -9,11 +9,11 @@ title: Config Component
 
 Config Component is a configuration with environment based support for Laravel 5 and above. The component is actually based from Laravel 4 configuration.
 
-* [Version Compatibility](#compatibility)
-* [Installation](#installation)
-* [Configuration](#configuration)
-* [Change Log]({doc-url}/components/kernel/changes#v3-0)
-* [Resources](#resources)
+1. [Version Compatibility](#compatibility)
+2. [Installation](#installation)
+3. [Configuration](#configuration)
+4. [Change Log]({doc-url}/components/kernel/changes#v3-0)
+5. [Resources](#resources)
 
 ## Version Compatibility {#compatibility}
 

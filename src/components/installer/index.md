@@ -9,11 +9,11 @@ title: Installer Component
 
 Orchestra Platform Installer Extension provide a generic installation wizard and should be enough for most generic usage. However if you find the need to have something more customize feel free to override this extension with something else.
 
-* [Version Compatibility](#compatibility)
-* [Installation](#installation)
-* [Configuration](#configuration)
-* [Change Log]({doc-url}/components/installer/changes#v3-0)
-* [Resources](#resources)
+1. [Version Compatibility](#compatibility)
+2. [Installation](#installation)
+3. [Configuration](#configuration)
+4. [Change Log]({doc-url}/components/installer/changes#v3-0)
+5. [Resources](#resources)
 
 ## Version Compatibility {#compatibility}
 
