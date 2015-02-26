@@ -34,10 +34,15 @@ title: Table of Content
 * [HTML]({doc-url}/components/html)
 * [Kernel]({doc-url}/components/kernel)
   - [Config]({doc-url}/components/config)
+  - Contracts
+  - [Database]({doc-url}/components/database)
+  - HTTP
+  - Routing
 * [Memory]({doc-url}/components/memory)
 * [Messages]({doc-url}/components/messages)
 * [Model]({doc-url}/components/model)
 * [Notifier]({doc-url}/components/notifier)
+* [Publisher]({doc-url}/components/publisher)
 * [Support]({doc-url}/components/support)
 * [Translation]({doc-url}/components/translation)
 * [View]({doc-url}/components/view)

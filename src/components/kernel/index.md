@@ -17,9 +17,10 @@ This repository contains the core code of the Orchestra Platform.
 ## Components {#components}
 
 * [Config]({doc-url}/components/config)
+* Contracts
 * [Database]({doc-url}/components/database)
-* [HTTP]({doc-url}/components/http)
-* [Routing]({doc-url}/components/routing)
+* HTTP
+* Routing
 
 ## Version Compatibility {#compatibility}
 

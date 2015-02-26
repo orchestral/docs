@@ -9,17 +9,17 @@ title: Asset Component
 
 Asset Component is a port of Laravel 3 Asset for Orchestra Platform. The component main functionality is to allow asset declaration to be handle dynamically and asset dependencies can be resolve directly from the container. It however is not intended to becoma an asset pipeline package for Laravel, for such purpose we would recommend to use Grunt or Gulp.
 
-* [Version Compatibility](#compatibility)
-* [Installation](#installation)
-* [Configuration](#configuration)
-* [Usage](#usage)
+1. [Version Compatibility](#compatibility)
+2. [Installation](#installation)
+3. [Configuration](#configuration)
+4. [Usage](#usage)
   - [Registering Assets](#registering-assets)
   - [Dumping Assets](#dumping-assets)
   - [Asset Dependencies](#asset-dependencies)
   - [Asset Containers](#asset-containers)
   - [Asset Versioning](#asset-versioning)
-* [Change Log]({doc-url}/components/asset/changes#v3-0)
-* [Resources](#resources)
+5. [Change Log]({doc-url}/components/asset/changes#v3-0)
+6. [Resources](#resources)
 
 ## Version Compatibility {#compatibility}
 
@@ -80,11 +80,11 @@ You might want to add `Orchestra\Support\Facades\Asset` to class aliases in `con
 
 ## Usage {#usage}
 
-* [Registering Assets](#registering-assets)
-* [Dumping Assets](#dumping-assets)
-* [Asset Dependencies](#asset-dependencies)
-* [Asset Containers](#asset-containers)
-* [Asset Versioning](#asset-versioning)
+1. [Registering Assets](#registering-assets)
+2. [Dumping Assets](#dumping-assets)
+3. [Asset Dependencies](#asset-dependencies)
+4. [Asset Containers](#asset-containers)
+5. [Asset Versioning](#asset-versioning)
 
 ### Registering Assets {#registering-assets}
 

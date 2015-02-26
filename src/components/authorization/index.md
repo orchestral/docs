@@ -7,15 +7,15 @@ Authorization Component gives you the ability to create custom ACL metrics which
 
 In most other solutions, you are either restrict to file based configuration for ACL or only allow to define a single metric for your entire application. This simplicity would later become an issue depends on how many extensions do you have within your application.
 
-* [Version Compatibility](#compatibility)
-* [Installation](#installation)
-* [Configuration](#configuration)
-* [Usage](#usage)
+1. [Version Compatibility](#compatibility)
+2. [Installation](#installation)
+3. [Configuration](#configuration)
+4. [Usage](#usage)
   - [Concept of RBAC](#concept-of-rbac)
   - [Creating a New ACL Instance](#creating-a-new-acl-instance)
   - [Verifying the ACL](#verifying-the-acl)
   - [Integration with Memory Component](#memory-integration)
-* [Change Log]({doc-url}/components/auth/changes#v3-0)
+5. [Change Log]({doc-url}/components/auth/changes#v3-0)
 
 ## Version Compatibility {#compatibility}
 
@@ -72,10 +72,10 @@ To make development easier, you could add `Orchestra\Support\Facades\ACL` alias 
 
 ## Usage {#usage}
 
-* [Concept of RBAC](#concept-of-rbac)
-* [Creating a New ACL Instance](#creating-a-new-acl-instance)
-* [Verifying the ACL](#verifying-the-acl)
-* [Integration with Memory Component](#memory-integration)
+1. [Concept of RBAC](#concept-of-rbac)
+2. [Creating a New ACL Instance](#creating-a-new-acl-instance)
+3. [Verifying the ACL](#verifying-the-acl)
+4. [Integration with Memory Component](#memory-integration)
 
 ### Concept of RBAC {#concept-of-rbac}
 
