@@ -3,22 +3,51 @@ title: Model Component
 
 ---
 
-`Orchestra\Model` add basic Eloquent Model for either use with `orchestra/auth` or `orchestra/foundation`.
+[![Latest Stable Version](https://img.shields.io/github/release/orchestral/model.svg?style=flat)](https://packagist.org/packages/orchestra/model)
+[![Total Downloads](https://img.shields.io/packagist/dt/orchestra/model.svg?style=flat)](https://packagist.org/packages/orchestra/model)
+[![MIT License](https://img.shields.io/packagist/l/orchestra/model.svg?style=flat)](https://packagist.org/packages/orchestra/model)
 
-### Table of Content
+Model Component consist of basic Eloquent Model for either use with [Auth Component]({doc-url}/components/auth) or [Foundation Component]({doc-url}/components/foundation).
 
-* Quick Guide
-  - [Installation](#installation)
-  - [Resources](#resources)
-* [Change Log]({doc-url}/components/model/changes#v2-2)
-* [Github](https://github.com/orchestral/model)
+1. [Version Compatibility](#compatibility)
+2. [Installation](#installation)
+3. [Change Log]({doc-url}/components/model/changes#v3-0)
+4. [Resources](#resources)
+
+## Version Compatibility {#compatibility}
+
+Laravel    | Model
+:----------|:----------
+ 4.0.x     | 2.0.x
+ 4.1.x     | 2.1.x
+ 4.2.x     | 2.2.x
+ 5.0.x     | 3.0.x
 
 ## Installation {#installation}
 
 To install through composer, simply put the following in your `composer.json` file:
 
-	{
-		"require": {
-			"orchestra/model": "2.2.*"
-		}
+```json
+{
+	"require": {
+		"orchestra/model": "3.0.*"
 	}
+}
+```
+
+And then run `composer install` from the terminal.
+
+### Quick Installation
+
+Above installation can also be simplify by using the following command:
+
+```bash
+composer require "orchestra/model=3.0.*"
+```
+
+## Resources {#resources}
+
+* [GitHub](https://github.com/orchestral/model)
+* [Packagist](https://packagist.org/packages/orchestra/model)
+* [Travis-CI](https://travis-ci.org/orchestral/model)
+

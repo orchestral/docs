@@ -9,15 +9,15 @@ title: Messages Component
 
 Messages Component bring a unified notification support for Laravel and Orchestra Platform.
 
-* [Version Compatibility](#compatibility)
-* [Installation](#installation)
-* [Configuration](#configuration)
-* [Usage](#usage)
+1. [Version Compatibility](#compatibility)
+2. [Installation](#installation)
+3. [Configuration](#configuration)
+4. [Usage](#usage)
   - [Adding a Message](#adding-a-message)
   - [Extending a Message to Current Request](#extending-a-message-to-current-request)
   - [Displaying the Message in a View](#displaying-the-message-in-a-view)
-* [Change Log]({doc-url}/components/messages/changes#v3-0)
-* [Resources](#resources)
+5. [Change Log]({doc-url}/components/messages/changes#v3-0)
+6. [Resources](#resources)
 
 ## Version Compatibility {#compatibility}
 
@@ -76,9 +76,9 @@ You might want to add `Orchestra\Support\Facades\Messages` to class aliases in `
 
 ## Usage {#usage}
 
-* [Adding a Message](#adding-a-message)
-* [Extending a Message to Current Request](#extending-a-message-to-current-request)
-* [Displaying the Message in a View](#displaying-the-message-in-a-view)
+1. [Adding a Message](#adding-a-message)
+2. [Extending a Message to Current Request](#extending-a-message-to-current-request)
+3. [Displaying the Message in a View](#displaying-the-message-in-a-view)
 
 ### Adding a Message {#adding-a-message}
 

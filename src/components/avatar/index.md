@@ -9,12 +9,12 @@ title: Avatar Component
 
 Avatar Component provide support for driver based avatar provider for your Laravel, PHP or Orchestra Platform application.
 
-* [Version Compatibility](#compatibility)
-* [Installation](#installation)
-* [Configuration](#configuration)
-* [Usage](#usage)
-* [Change Log]({doc-url}/components/avatar/changes#v3-0)
-* [Resources](#resources)
+1. [Version Compatibility](#compatibility)
+2. [Installation](#installation)
+3. [Configuration](#configuration)
+4. [Usage](#usage)
+5. [Change Log]({doc-url}/components/avatar/changes#v3-0)
+6. [Resources](#resources)
 
 ## Version Compatibility {#compatibility}
 

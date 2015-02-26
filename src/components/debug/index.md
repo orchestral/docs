@@ -9,14 +9,14 @@ title: Artisan Debug Profiler
 
 Debug Component is commandline profiling package for Laravel, It was based from Laravel 4.1 commandline profiling tool which was merged with `php artisan tail`.
 
-* [Version Compatibility](#compatibility)
-* [Installation](#installation)
-* [Configuration](#configuration)
-* [Usage](#usage)
+1. [Version Compatibility](#compatibility)
+2. [Installation](#installation)
+3. [Configuration](#configuration)
+4. [Usage](#usage)
   - [Enabling Profiler](#enabling-profiler)
   - [Viewing the Profiler](#viewing-the-profiler)
-* [Change Log]({doc-url}/components/debug/changes#v3-0)
-* [Resources](#resources)
+5. [Change Log]({doc-url}/components/debug/changes#v3-0)
+6. [Resources](#resources)
 
 ## Version Compatibility {#compatibility}
 
@@ -74,8 +74,8 @@ You could also create an alias for `Orchestra\Support\Facades\Profiler` in `app/
 
 ## Usage {#usage}
 
-* [Enabling Profiler](#enabling-profiler)
-* [Viewing the Profiler](#viewing-the-profiler)
+1. [Enabling Profiler](#enabling-profiler)
+2. [Viewing the Profiler](#viewing-the-profiler)
 
 ### Enabling Profiler {#enabling-profiler}
 

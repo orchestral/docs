@@ -3,11 +3,11 @@ title: Contributing To Orchestra Platform
 
 ---
 
-* [Introduction](#introduction)
-* [Pull Requests](#pull-requests)
-* [Feature Requests](#feature-requests)
-* [Template for Pull Request, Proposal, Request or Bugfixes](#templates)
-* [Coding Guidelines](#coding-guidelines)
+1. [Introduction](#introduction)
+2. [Pull Requests](#pull-requests)
+3. [Feature Requests](#feature-requests)
+4. [Template for Pull Request, Proposal, Request or Bugfixes](#templates)
+5. [Coding Guidelines](#coding-guidelines)
 
 ## Introduction {#introduction}
 

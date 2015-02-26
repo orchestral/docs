@@ -9,15 +9,15 @@ title: Auth Component
 
 Auth Component extends the functionality of `Illuminate\Auth` with the extra functionality to retrieve users' role. This is important when we want to use `ACL` to manage application Access Control List (ACL).
 
-* [Version Compatibility](#compatibility)
-* [Installation](#installation)
-* [Configuration](#configuration)
-* [Usage]({doc-url}/components/auth/usage)
+1. [Version Compatibility](#compatibility)
+2. [Installation](#installation)
+3. [Configuration](#configuration)
+4. [Usage]({doc-url}/components/auth/usage)
   - [Retrieving Roles](#retrieving-roles)
   - [Checking Roles](#checking-roles)
   - [Setup Custom Roles Relationship](#setup-custom-roles)
-* [Change Log]({doc-url}/components/auth/changes#v3-0)
-* [Resources](#resources)
+5. [Change Log]({doc-url}/components/auth/changes#v3-0)
+6. [Resources](#resources)
 
 ## Version Compatibility {#compatibility}
 
@@ -106,9 +106,9 @@ php artisan memory:migrate
 
 Essentially, the Auth class offered by Laravel is already good enough for normal usage. Orchestra Platform only extends the default operation and allow a user to be link with one or many roles.
 
-* [Retrieving Roles](#retrieving-roles)
-* [Checking Roles](#checking-roles)
-* [Setup Custom Roles Relationship](#setup-custom-roles)
+1. [Retrieving Roles](#retrieving-roles)
+2. [Checking Roles](#checking-roles)
+3. [Setup Custom Roles Relationship](#setup-custom-roles)
 
 ### Retrieving Roles {#retrieving-roles}
 

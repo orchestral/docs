@@ -9,10 +9,10 @@ title: Orchestra Testbench Package
 
 Testbench Component is a simple package that is supposed to help you write tests for your Laravel package, especially when there is routing involved.
 
-* [Version Compatibility](#compatibility)
-* [Installation](#installation)
-* [Change Log]({doc-url}/components/testbench/changes#v3-0)
-* [Resources](#resources)
+1. [Version Compatibility](#compatibility)
+2. [Installation](#installation)
+3. [Change Log]({doc-url}/components/testbench/changes#v3-0)
+4. [Resources](#resources)
 
 ## Version Compatibility {#compatibility}
 
