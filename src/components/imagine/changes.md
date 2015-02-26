@@ -7,8 +7,8 @@ title: Imagine Change Log
 
 ### v3.0.0 {#v3-0-0}
 
-* Update support to Laravel Framework v5.0.
-* Simplify PSR-4 path.
+* Add support for Laravel Framework v5.0.
+* Simplify PSR-2 path.
 
 ## Version 2.2 {#v2-2}
 
