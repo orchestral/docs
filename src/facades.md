@@ -21,7 +21,7 @@ Alias                 | Facade                                | Root Accessor   
 ACL                   | Orchestra\Support\Facades\ACL         | Orchestra\Authorization\Factory                  | `orchestra.acl`
 Asset                 | Orchestra\Support\Facades\Asset       | Orchestra\Asset\Factory                          | `orchestra.asset`
 Orchestra\Config      | Orchestra\Support\Facades\Config      | Orchestra\Extension\Config\Repository            | `orchestra.extension.config`
-Orchestra\Decorator   | Orchestra\Support\Facades\Decorator   | Orchestra\View\Decorator                         | `orchestra.decorator`
+-                     | Orchestra\Support\Facades\Decorator   | Orchestra\View\Decorator                         | `orchestra.decorator`
 Orchestra\Extension   | Orchestra\Support\Facades\Extension   | Orchestra\Extension\Factory                      | `orchestra.extension`
 Form                  | Orchestra\Support\Facades\Form        | Orchestra\Html\Form\Factory                      | `orchestra.form`
 Foundation            | Orchestra\Support\Facades\Foundation  | Orchestra\Foundation\Foundation                  | `orchestra.app`
