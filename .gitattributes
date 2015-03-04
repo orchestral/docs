@@ -1,3 +1,4 @@
 * text=auto
 *.sh linguist-vendored
+*.md linguist-language=Markdown
 *.md linguist-documentation=false
