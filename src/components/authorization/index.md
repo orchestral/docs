@@ -31,17 +31,19 @@ Laravel    | Authorization
  {
     "require": {
         "orchestra/authorization": "3.0.*"
-    },
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "https://github.com/orchestral/authorization.git"
-        }
-    ]
+    }
 }
 ```
 
 And then run `composer install` from the terminal.
+
+### Quick Installation {#quick-installation}
+
+Above installation can also be simplify by using the following command:
+
+```bash
+composer require "orchestra/authorization=3.0.*"
+```
 
 ## Configuration {#configuration}
 

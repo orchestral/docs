@@ -5,6 +5,11 @@ title: Change Log
 
 ## Version 3.0 {#v3-0}
 
+### v3.0.3 {#v3-0-3}
+
+* Rename `Orchestra\Foundation\Middleware\UseBackendTheme` to `Orchestra\Foundation\Http\Middleware\UseBackendTheme`.
+* Update `compiled.php` generated path.
+
 ### v3.0.2 {#v3-0-2}
 
 * Allow mail configuration to use environment variables.

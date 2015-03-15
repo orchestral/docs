@@ -5,6 +5,10 @@ title: Extension Change Log
 
 ## Version 3.0 {#v3-0}
 
+### v3.0.2 {#v3-0-2}
+
+* Simplify `Orchestra\Extension\Console\BaseCommand` based on changes to `orchestra/memory`.
+
 ### v3.0.1 {#v3-0-1}
 
 * Fixes path to configuration file.

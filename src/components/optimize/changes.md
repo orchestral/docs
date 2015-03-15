@@ -5,6 +5,10 @@ title: Optimize Change Log
 
 ## Version 3.0 {#v3-0}
 
+### v3.0.2 {#v3-0-2}
+
+* Update compiles list for `orchestra/foundation`.
+
 ### v3.0.1 {#v3-0-1}
 
 * Add multiple boostrap, filter and middleware classes.
