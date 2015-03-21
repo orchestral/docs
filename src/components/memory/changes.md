@@ -5,6 +5,19 @@ title: Memory Change Log
 
 ## Version 3.0 {#v3-0}
 
+### v3.0.4 {#v3.0.4}
+
+* Change visibility of `Orchestra\Memory\MemoryServiceProvider::bootUsingLaravel()`.
+* Use `Orchestra\Support\Providers\Traits\PackageProviderTrait::hasPackageRepository()`.
+
+### v3.0.3 {#v3.0.3}
+
+* Update `Orchestra\Memory\MemoryManager` to utilize configuration value from `$this->config` instead of fetching from `config` service location.
+
+### v3.0.2 {#v3.0.2}
+
+* Add fallback support to Laravel 5 configuration.
+
 ### v3.0.1 {#v3-0-1}
 
 * Use `Illuminate\Foundation\Application::terminating()` instead of `Illuminate\Routing\Router::after()` to close open memory handler.
