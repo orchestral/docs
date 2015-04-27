@@ -4,14 +4,19 @@ title: Contributing To Orchestra Platform
 ---
 
 1. [Introduction](#introduction)
-2. [Pull Requests](#pull-requests)
-3. [Feature Requests](#feature-requests)
-4. [Template for Pull Request, Proposal, Request or Bugfixes](#templates)
-5. [Coding Guidelines](#coding-guidelines)
+2. [Security Vulnerabilities](#security-vulnerabilities)
+3. [Pull Requests](#pull-requests)
+4. [Feature Requests](#feature-requests)
+5. [Template for Pull Request, Proposal, Request or Bugfixes](#templates)
+6. [Coding Guidelines](#coding-guidelines)
 
 ## Introduction {#introduction}
 
 Orchestra Platform is free, open-source software, meaning anyone can contribute to its development and progress. Orchestra Platform source code is currently hosted on [Github](https://github.com), which provides an easy method for forking the project and merging your contributions.
+
+## Security Vulnerabilities {#security-vulnerabilities}
+
+If you discover a security vulnerability within Orchestra Platform, please send an e-mail to security@orchestraplatform.com. All security vulnerabilities will be promptly addressed.
 
 ## Pull Requests {#pull-requests}
 

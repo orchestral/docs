@@ -5,6 +5,21 @@ title: Tenanti Change Log
 
 ## Version 3.0 {#3-0}
 
+### v3.0.4 {#v3-0-4}
+
+* Allow multiple command to allow `--id` option on action command ("install", "migrate", "rollback", "reset" or "refresh").
+* Add `php artisan tenanti:queue` to run action command ("install", "migrate", "rollback", "reset" or "refresh") via background queue workers.
+* Pass `--force` to all child command.
+
+### v3.0.3 {#v3-0-3}
+
+* Use `Illuminate\Foundation\Composer::dumpAutoloads()` directly and remove deprecated call to `$this->call('dump-autoload');`.
+* Use available `database_path()` helper.
+
+### v3.0.2 {#v3-0-2}
+
+* Add fallback support to Laravel 5 configuration.
+
 ### v3.0.1 {#v3-0-1}
 
 * Allow different connection name to be used when resolving migration.
