@@ -5,7 +5,12 @@ title: Auth Change Log
 
 ## Version 3.1 {#v3-1}
 
-### v3.1.0 {#3-1-0}
+### v3.1.1 {#v3-1-1}
+
+* Bump minimum version to PHP v5.5.0.
+* Ensure `Orchestra\Auth\Guard::getUserRolesFromEventDispatcher()` return array instead of `Illuminate\Support\Collection` etc.
+
+### v3.1.0 {#v3-1-0}
 
 * Update support for Laravel Framework v5.1.
 

@@ -4,6 +4,11 @@ title: Extension Change Log
 ---
 ## Version 3.1 {#v3-1}
 
+### v3.1.1 {#v3-1-1}
+
+* Bump minimum version to PHP v5.5.0.
+* Extension `handles` configuration value should remain the same when reactivating/refreshing an extension.
+
 ### v3.1.0 {#v3-1-0}
 
 * Update support to Laravel Framework v5.1.
