@@ -4,24 +4,44 @@ title: String Helper Class
 
 `Orchestra\Support\Str` is probably one of the few internal API class that you might use directly. It extends `Illuminate\Support\Str` and offer some improvement.
 
-* [Title](#str-title)
-* [Stream Get Contents](#stream-get-contents)
+1. [humanize()](#str-humanize)
+2. [replace()](#str-replace)
+3. [streamGetContents()](#stream-get-contents)
 
-## Title {#str-title}
+<a name="str-humanize"></a>
+## humanize()
 
-Allow a string to be transformed to a proper title.
+`Str::humanize()` convert slug or snake cased string into human readable text.
 
-	use Orchestra\Support\Str;
+```php
+use Orchestra\Support\Str;
 
-	return Str::title('hello-world'); // would return "Hello World"
+Str::humanize('hello-world'); // would return "hello world"
+Str::humanize('Laravel_is awesome'); // would return "Laravel is awesome"
+```
 
-## Stream Get Contents {#stream-get-contents}
+<a name="stream-get-contents"></a>
+## streamGetContents()
 
 Unliked other database driver, when using blob with PostgreSQL, the return value from database is a stream instead of string, using above helper method help convert it properly back to string.
 
-	use Orchestra\Support\Str;
+```php
+use Orchestra\Support\Str;
 
-	$str = Str::streamGetContents($blob);
-
+$str = Str::streamGetContents($blob);
+```
 
 > The method would return original string when it detect that it isn't a stream.
+
+<a name="str-title"></a>
+## title()
+
+Allow a string to be transformed to a proper title.
+
+```php
+use Orchestra\Support\Str;
+
+Str::title('hello-world'); // would return "Hello World"
+```
+
+> This is now available in `Illuminate\Support\Str`.
