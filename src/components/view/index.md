@@ -11,7 +11,7 @@ This would allow extension (or even packages) to have it's own set of view styli
 1. [Version Compatibility](#compatibility)
 2. [Installation](#installation)
 3. [Configuration](#configuration)
-4. [Usage]({doc-url}/components/view/usage)
+4. [Usage](#usage)
 5. [Change Log]({doc-url}/components/view/changes#v2-2)
 
 <a name="compatibility"></a>
