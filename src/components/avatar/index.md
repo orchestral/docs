@@ -73,6 +73,7 @@ You can easily display an avatar by passing a `User` instance.
 
 ```php
 <?php
+
 use App\User;
 
 $user = User::find(1);
