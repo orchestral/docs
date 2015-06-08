@@ -9,35 +9,47 @@ Widget allow you to manage widgetize actions in Orchestra Platform. By default O
 * [Type of Widgets](#type)
 * [Installation](#installation)
 * [Configuration](#configuration)
-* [Resources](#resources)
+* [Change Log]({doc-url}/components/widget/changes#v3-0)
 
+<a name="type"></a>
 ## Type of Widgets
 
 * **Menu** to manage menu.
 * **Pane** to manage dashboard items.
 * **Placeholder** to manage sidebar widgets.
 
-## Installation {#installation}
+<a name="Installation"></a>
+## Installation
 
 To install through composer, simply put the following in your `composer.json` file:
 
-	{
-		"require": {
-			"orchestra/widget": "2.2.*"
-		}
+```json
+{
+	"require": {
+		"orchestra/widget": "~3.0"
 	}
+}
+```
 
-## Configuration {#configuration}
+And then run `composer install` from the terminal.
 
-Next add the service provider in `app/config/app.php`.
+<a name="quick-installation"></a>
+### Quick Installation
 
-	'providers' => array(
+Above installation can also be simplify by using the following command:
 
-		// ...
+    composer require "orchestra/widget=~3.0"
 
-		'Orchestra\Widget\WidgetServiceProvider',
-	),
+<a name="configuration"></a>
+## Configuration
 
-## Resources {#resources}
+Next add the service provider in `config/app.php`.
 
-* [Change Log]({doc-url}/components/widget/changes#v2-2)
+```php
+'providers' => [
+
+	// ...
+
+	'Orchestra\Widget\WidgetServiceProvider',
+],
+```
