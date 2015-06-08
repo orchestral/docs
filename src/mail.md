@@ -13,12 +13,12 @@ title: Sending Mail
 <a name="mailer"></a>
 ## Mailer
 
-`Orchestra\Mail` offer a slight improvement to `Illuminate\Mail\Mailer` where administrator can define the e-mail configuration from Settings page as well as preference to use `send` or `queue`.
+`Mailer` offer a slight improvement to `Illuminate\Mail\Mailer` where administrator can define the e-mail configuration from Settings page as well as preference to use `send` or `queue`.
 
 <a name="mailer-send"></a>
 ### send()
 
-`Orchestra\Mail::send()` deliver what you would expect from `Mail::send()` using the E-mail configuration setup in the Settings Page.
+`Mailer::send()` deliver what you would expect from `Mail::send()` using the E-mail configuration setup in the Settings Page.
 
 ```php
 use Orchestra\Model\User;
@@ -33,7 +33,7 @@ Mailer::send('email.update', $data, function ($m) use ($user) {
 <a name="mailer-queue"></a>
 ### queue()
 
-`Orchestra\Mail::queue()` deliver what you would expect from `Mail::queue()` using the E-mail configuration setup in the Settings Page.
+`Mailer::queue()` deliver what you would expect from `Mail::queue()` using the E-mail configuration setup in the Settings Page.
 
 ```php
 use Orchestra\Model\User;
@@ -48,7 +48,7 @@ Mailer::queue('email.update', $data, function ($m) use ($user) {
 <a name="mailer-push"></a>
 ### push() (send via configuration)
 
-`Orchestra\Mail::push()` would first check whether the administrator has choosen to send email directly or delayed it via queue.
+`Mailer::push()` would first check whether the administrator has choosen to send email directly or delayed it via queue.
 
 ```php
 use Orchestra\Model\User;
@@ -65,7 +65,7 @@ Mailer::push('email.update', $data, function ($m) use ($user) {
 <a name="notifier"></a>
 ## Notifier
 
-`Notifier` is a simplified approach to send email notification to any registered user. This is slightly different from `Orchestra\Mail` where we actually set the recipient from `Orchestra\Model\User` model.
+`Notifier` is a simplified approach to send email notification to any registered user. This is slightly different from `Mailer` where we actually set the recipient from `Orchestra\Model\User` model.
 
 <a name="notifier-send"></a>
 ### Send
