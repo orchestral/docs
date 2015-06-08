@@ -28,12 +28,30 @@ php artisan publish:config orchestra/foundation
 
 Edit `handles` key in `resources/config/packages/orchestra/foundation/config.php` to (as an example) `"sudo"`. With this changes Orchestra Platform Administration page while be accessible from `/sudo`.
 
+```php
+<?php
+
+return [
+    'handles' => 'sudo',
+];
+```
+
 You could as well set it to `"/"` and it would handle the root uri.
 
 <a name="admin-url-as-domain"></a>
 ### As Domain
 
-You can also assign a sub-domain to handle Orchestra Platform Administration page by editing the `handles` value to `//admin.{{domain}}`. However to do this, please make sure that you have set `APP_URL` value in `.env` and use `Orchestra\Extension\Traits\DomainAwareTrait`.
+You can also assign a sub-domain to handle Orchestra Platform Administration page by editing the `handles` value to `//admin.{{domain}}`.
+
+```php
+<?php
+
+return [
+    'handles' => '//admin.{{domain}}',
+];
+```
+
+However to do this, please make sure that you have set `APP_URL` value in `.env` and use `Orchestra\Extension\Traits\DomainAwareTrait`.
 
 ```php
 <?php namespace App\Providers;
