@@ -46,7 +46,7 @@ To install through composer, simply put the following in your `composer.json` fi
 And then run `composer install` from the terminal.
 
 <a name="quick-installation"></a>
-### Quick Installation {#quick-installation}
+### Quick Installation
 
 Above installation can also be simplify by using the following command:
 

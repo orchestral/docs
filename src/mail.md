@@ -8,7 +8,7 @@ title: Sending Mail
   - [queue()](#mailer-queue)
   - [push() (send via configuration)](#mailer-push)
 2. [Notifier](#notifier)
-  - [send()](#notifer-send)
+  - [send()](#notifier-send)
 
 <a name="mailer"></a>
 ## Mailer
