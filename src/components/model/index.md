@@ -10,7 +10,8 @@ Model Component consist of basic Eloquent Model for either use with [Auth Compon
 2. [Installation](#installation)
 3. [Change Log]({doc-url}/components/model/changes#v3-0)
 
-## Version Compatibility {#compatibility}
+<a name="compatibility"></a>
+## Version Compatibility
 
 Laravel    | Model
 :----------|:----------
@@ -19,7 +20,8 @@ Laravel    | Model
  4.2.x     | 2.2.x
  5.0.x     | 3.0.x
 
-## Installation {#installation}
+<a name="installation"></a>
+## Installation
 
 To install through composer, simply put the following in your `composer.json` file:
 
