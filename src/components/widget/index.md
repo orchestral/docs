@@ -6,17 +6,21 @@ badge: widget
 
 Widget allow you to manage widgetize actions in Orchestra Platform. By default Orchestra Platform provides the following widgets:
 
-* [Type of Widgets](#type)
-* [Installation](#installation)
-* [Configuration](#configuration)
-* [Change Log]({doc-url}/components/widget/changes#v3-0)
+1. [Version Compatibility](#compatibility)
+3. [Installation](#installation)
+4. [Configuration](#configuration)
+2. [Type of Widgets](#type)
+5. [Change Log]({doc-url}/components/widget/changes#v3-0)
 
-<a name="type"></a>
-## Type of Widgets
+<a name="compatibility"></a>
+## Version Compatibility
 
-* **Menu** to manage menu.
-* **Pane** to manage dashboard items.
-* **Placeholder** to manage sidebar widgets.
+ Laravel  | Widget
+:---------|:----------
+ 4.0.x    | 2.0.x
+ 4.1.x    | 2.1.x
+ 4.2.x    | 2.2.x
+ 5.0.x    | 3.0.x
 
 <a name="Installation"></a>
 ## Installation
@@ -53,3 +57,11 @@ Next add the service provider in `config/app.php`.
 	'Orchestra\Widget\WidgetServiceProvider',
 ],
 ```
+
+<a name="type"></a>
+## Type of Widgets
+
+* **Menu** to manage menu.
+* **Pane** to manage dashboard items.
+* **Placeholder** to manage sidebar widgets.
+
