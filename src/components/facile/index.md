@@ -10,8 +10,7 @@ Facile Component simplify the need to create API based response in your Laravel 
 2. [Installation](#installation)
 3. [Configuration](#configuration)
 4. [Usage](#usage)
-5. [Change Log]({doc-url}/components/facile/changes#v2-2)
-6. [Github](https://github.com/orchestral/facile)
+5. [Change Log]({doc-url}/components/facile/changes#v3-0)
 
 <a name="compatibility"></a>
 ## Version Compatibility

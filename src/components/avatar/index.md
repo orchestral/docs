@@ -11,7 +11,6 @@ Avatar Component provide support for driver based avatar provider for your Larav
 3. [Configuration](#configuration)
 4. [Usage](#usage)
 5. [Change Log]({doc-url}/components/avatar/changes#v3-0)
-6. [Resources](#resources)
 
 <a name="compatibility"></a>
 ## Version Compatibility
@@ -74,8 +73,8 @@ You can easily display an avatar by passing a `User` instance.
 
 ```php
 <?php
+use App\User;
 
 $user = User::find(1);
-
 $avatar = Avatar::user($user)->render();
 ```
