@@ -1,11 +1,8 @@
 ---
 title: Auth Component
+badge: auth
 
 ---
-
-[![Latest Stable Version](https://img.shields.io/github/release/orchestral/auth.svg?style=flat)](https://github.com/orchestral/auth/releases)
-[![Total Downloads](https://img.shields.io/packagist/dt/orchestra/auth.svg?style=flat)](https://packagist.org/packages/orchestra/auth)
-[![MIT License](https://img.shields.io/packagist/l/orchestra/auth.svg?style=flat)](https://github.com/orchestral/auth)
 
 Auth Component extends the functionality of `Illuminate\Auth` with the extra functionality to retrieve users' role. This is important when we want to use `ACL` to manage application Access Control List (ACL).
 

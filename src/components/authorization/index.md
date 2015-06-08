@@ -1,5 +1,6 @@
 ---
 title: Authorization Component
+badge: authorization
 
 ---
 
