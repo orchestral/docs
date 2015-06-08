@@ -77,8 +77,9 @@ use Orchestra\Model\User;
 use Orchestra\Notifier\Message;
 
 $user = User::find(5);
+$message = Message::create('email.update', ['user' => $user], 'Email subject to be displayed!');
 
-Notifier::send($user, Message::create('email.update', ['user' => $user], 'Email subject to be displayed!'));
+Notifier::send($user, $message);
 ```
 
 You can also use the available `Orchestra\Notifier\NotifableTrait` which is already used in `Orchestra\Model\User` and write is as:
