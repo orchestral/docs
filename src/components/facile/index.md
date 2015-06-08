@@ -6,13 +6,11 @@ badge: facile
 
 Facile Component simplify the need to create API based response in your Laravel application, with just the following code you are able to return multi format Response, either it be HTML (using `View`), json or etc.
 
-## Table of Content {#toc}
-
-* [Version Compatibility](#compatibility)
-* [Installation](#installation)
-* [Configuration](#configuration)
-* [Change Log]({doc-url}/components/facile/changes#v2-2)
-* [Github](https://github.com/orchestral/facile)
+1. [Version Compatibility](#compatibility)
+2. [Installation](#installation)
+3. [Configuration](#configuration)
+4. [Change Log]({doc-url}/components/facile/changes#v2-2)
+5. [Github](https://github.com/orchestral/facile)
 
 <a name="compatibility"></a>
 ## Version Compatibility
@@ -25,7 +23,7 @@ Laravel    | Facile
  5.0.x     | 3.0.x
 
 <a name="installation"></a>
-## Installation {#installation}
+## Installation
 
 To install through composer, simply put the following in your `composer.json` file:
 
@@ -47,7 +45,7 @@ Above installation can also be simplify by using the following command:
 	composer require "orchestra/facile=~3.0"
 
 <a name="configuration"></a>
-## Configuration {#configuration}
+## Configuration
 
 Next add the service provider in `config/app.php`.
 
