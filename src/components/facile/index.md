@@ -9,8 +9,9 @@ Facile Component simplify the need to create API based response in your Laravel 
 1. [Version Compatibility](#compatibility)
 2. [Installation](#installation)
 3. [Configuration](#configuration)
-4. [Change Log]({doc-url}/components/facile/changes#v2-2)
-5. [Github](https://github.com/orchestral/facile)
+4. [Usage](#usage)
+5. [Change Log]({doc-url}/components/facile/changes#v2-2)
+6. [Github](https://github.com/orchestral/facile)
 
 <a name="compatibility"></a>
 ## Version Compatibility
@@ -70,3 +71,18 @@ You might want to add `Orchestra\Support\Facades\Facile` to class aliases in `co
 	'Facile' => 'Orchestra\Support\Facades\Facile',
 ],
 ```
+
+<a name="usage"></a>
+## Usage
+
+Facile component works by composing the response using Template, using the `Orchestra\Facile\FacileServiceProvider`, we setup the default template for normal usage which can compose HTML, CSV and JSON response, see `Orchestra\Facile\Template\Simple`.
+
+```php
+Route::get('users', function () {
+	$users = User::all();
+
+	return Facile::view('users')->with(['users' => $users]);
+});
+```
+
+In above example, what actually happen is that the response was generated using `Orchestra\Facile\Template\Simple::composeHtml()` method when you hit `/users` and `Orchestra\Facile\Template\Simple::composeJson()` when you hit `/users` with `Accept: application/json` request header.
