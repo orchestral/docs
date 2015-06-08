@@ -57,7 +57,10 @@ Orchestra\Mail::push('email.update', $data, function ($m) use ($user) {
 <a name="send"></a>
 ### Send
 ```php
-$user = Orchestra\Model\User::find(5);
+use Orchestra\Model\User;
+use Orchestra\Notifier\Message;
+
+$user = User::find(5);
 
 Notifier::send($user, Message::create('email.view.path', ['user' => $user], 'Email subject to be displayed!'));
 ```
@@ -65,7 +68,9 @@ Notifier::send($user, Message::create('email.view.path', ['user' => $user], 'Ema
 You can also use the available `Orchestra\Notifier\NotifableTrait` which is already used in `Orchestra\Model\User` and write is as:
 
 ```php
-$user = Orchestra\Model\User::find(5);
+use Orchestra\Model\User;
+
+$user = User::find(5);
 
 $user->notify('Email subject to be displayed!', 'email.view.path', ['user' => $user]);
 ```
@@ -73,9 +78,12 @@ $user->notify('Email subject to be displayed!', 'email.view.path', ['user' => $u
 This simple code is equivalent of:
 
 ```php
-$user = Orchestra\Model\User::find(5);
+use Orchestra\Model\User;
+use Orchestra\Mail as Mailer;
 
-Orchestra\Mail::push('email.view.path', ['user' => $user], function ($m) use ($user) {
+$user = User::find(5);
+
+Mailer::push('email.view.path', ['user' => $user], function ($m) use ($user) {
     $m->subject('Email subject to be displayed!');
     $m->to($user->email, $user->fullname);
 });
