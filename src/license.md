@@ -6,7 +6,7 @@ title: License
 Orchestra Platform is license under MIT License.
 
 <blockquote>
-<p>Copyright (C) 2012 Mior Muhammad Zaki <http://git.io/crynobone></p>
+<p>Copyright (C) 2012 Mior Muhammad Zaki <crynobone@gmail.com></p>
 
 <p>Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

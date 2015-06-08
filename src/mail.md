@@ -9,7 +9,8 @@ title: Sending Mail
 2. [Queue](#queue)
 3. [Push (send via configuration)](#push)
 
-## Send {#send}
+<a name="send"></a>
+## Send
 
 `Orchestra\Mail::send()` deliver what you would expect from `Mail::send()` using the E-mail configuration setup in the Settings Page.
 
@@ -19,7 +20,8 @@ Orchestra\Mail::send('email.update', $data, function ($m) use ($user) {
 });
 ```
 
-## Queue {#queue}
+<a name="queue"></a>
+## Queue
 
 `Orchestra\Mail::queue()` deliver what you would expect from `Mail::queue()` using the E-mail configuration setup in the Settings Page.
 
@@ -29,7 +31,8 @@ Orchestra\Mail::queue('email.update', $data, function ($m) use ($user) {
 });
 ```
 
-## Push (send via configuration) {#push}
+<a name="push"></a>
+## Push (send via configuration)
 
 `Orchestra\Mail::push()` would first check whether the administrator has choosen to send email directly or delayed it via queue.
 

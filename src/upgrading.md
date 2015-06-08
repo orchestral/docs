@@ -3,7 +3,8 @@ title: Upgrade Guide
 
 ---
 
-## Upgrading from 2.1 to 2.2 {#v2-1-v2-2}
+<a name="v2-1-v2-2"></a>
+## Upgrading from 2.1 to 2.2
 
 ### Upgrading Your Composer Dependency
 
@@ -27,8 +28,8 @@ Add the new alias to your `app/config/app.php`.
 
 Add new `app/config/services.php` file [from the repository](https://github.com/orchestral/platform/blob/2.2/app/config/services.php) ([raw](https://raw.githubusercontent.com/orchestral/platform/2.2/app/config/services.php)).
 
-
-## Upgrading from 2.0 to 2.1 {#v2-0-v2-1}
+<a name="v2-0-v2-1"></a>
+## Upgrading from 2.0 to 2.1
 
 ### Upgrading Your Composer Dependency
 

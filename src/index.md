@@ -8,7 +8,8 @@ title: Introduction
 3. [Illuminating Orchestra Platform](#illuminate)
 4. [Version Compatibility](#version-compatibility)
 
-## What is Orchestra Platform? {#what}
+<a name="what"></a>
+## What is Orchestra Platform?
 
 Provide a solid base off of which to build your new web applications. It's not a CMS. Instead, it's a springboard to build off of with many of the tools you wish you had on projects but never took the time to build.
 
@@ -20,7 +21,8 @@ Have you had a client that wanted you to create a custom application but at the 
 
 Orchestra Platform will solve this problem by creating a similar Administration Panel as you would see in WordPress *wp-admin*, so you can continue writing awesome code in Laravel but at the same time have CMS components ready at your disposal.
 
-## What Makes Orchestra Platform Different? {#what-different}
+<a name="what-different"></a>
+## What Makes Orchestra Platform Different?
 
 * **Laravel Framework 5** is simply a great framework to work with.
 * **Extensions** are a much needed improvement to package implementation in Laravel. With one click activation and upgrade (migration and publish).
@@ -29,7 +31,8 @@ Orchestra Platform will solve this problem by creating a similar Administration 
 * **ACL and User Management** are repetitive boilerplate module on every projects, lets stop reinventing the wheel and let Orchestra Platform do its magic. If you need something more advanced, there are more than 20 events that you can hook into your own implementation without overwriting Orchestra Platform core file.
 * **Responsive Design** is always available when you're on mobile.
 
-## Illuminating Orchestra Platform {#illuminate}
+<a name="illuminate"></a>
+## Illuminating Orchestra Platform
 
 With the introduction of Composer, we are now free to organize the code into smaller component where there would be use-case where you can use one or two Orchestra Platform components without everything else. At this moment we have organize the code into following components:
 
@@ -62,7 +65,8 @@ We also have some independence packages that would work well with Orchestra Plat
 * [Testbench]({doc-url}/components/testbench)
 * [Theme Installer]({doc-url}/components/theme-installer)
 
-## Version Compatibility {#version-compatibility}
+<a name="version-compatibility"></a>
+## Version Compatibility
 
 Laravel    | Orchestra Platform  | Status
 :----------|:--------------------|:----------------
@@ -71,3 +75,4 @@ Laravel    | Orchestra Platform  | Status
  4.1.x     | 2.1.x               | LTS
  4.2.x     | 2.2.x               | Supported
  5.0.x     | 3.0.x               | Latest Stable
+
