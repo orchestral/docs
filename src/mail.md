@@ -4,10 +4,11 @@ title: Sending Mail
 ---
 
 1. [Mailer](#mailer)
-  - [Send](#mailer-send)
-  - [Queue](#mailer-queue)
-  - [Push (send via configuration)](#mailer-push)
+  - [send()](#mailer-send)
+  - [queue()](#mailer-queue)
+  - [push() (send via configuration)](#mailer-push)
 2. [Notifier](#notifier)
+  - [send()](#notifer-send)
 
 <a name="mailer"></a>
 ## Mailer
@@ -15,7 +16,7 @@ title: Sending Mail
 `Orchestra\Mail` offer a slight improvement to `Illuminate\Mail\Mailer` where administrator can define the e-mail configuration from Settings page as well as preference to use `send` or `queue`.
 
 <a name="mailer-send"></a>
-### Send
+### send()
 
 `Orchestra\Mail::send()` deliver what you would expect from `Mail::send()` using the E-mail configuration setup in the Settings Page.
 
@@ -26,7 +27,7 @@ Orchestra\Mail::send('email.update', $data, function ($m) use ($user) {
 ```
 
 <a name="mailer-queue"></a>
-### Queue
+### queue()
 
 `Orchestra\Mail::queue()` deliver what you would expect from `Mail::queue()` using the E-mail configuration setup in the Settings Page.
 
@@ -37,7 +38,7 @@ Orchestra\Mail::queue('email.update', $data, function ($m) use ($user) {
 ```
 
 <a name="mailer-push"></a>
-### Push (send via configuration)
+### push() (send via configuration)
 
 `Orchestra\Mail::push()` would first check whether the administrator has choosen to send email directly or delayed it via queue.
 
@@ -54,7 +55,7 @@ Orchestra\Mail::push('email.update', $data, function ($m) use ($user) {
 
 `Notifier` is a simplified approach to send email notification to any registered user. This is slightly different from `Orchestra\Mail` where we actually set the recipient from `Orchestra\Model\User` model.
 
-<a name="send"></a>
+<a name="notifier-send"></a>
 ### Send
 ```php
 use Orchestra\Model\User;
