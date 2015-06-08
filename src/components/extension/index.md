@@ -51,16 +51,18 @@ Above installation can also be simplify by using the following command:
 
 Next add the service provider in `config/app.php`.
 
-	'providers' => array(
+```php
+'providers' => [
 
-		// ...
+	// ...
 
-		'Orchestra\Extension\ExtensionServiceProvider',
-		'Orchestra\Memory\MemoryServiceProvider',
-		'Orchestra\Extension\PublisherServiceProvider',
+	'Orchestra\Extension\ExtensionServiceProvider',
+	'Orchestra\Memory\MemoryServiceProvider',
+	'Orchestra\Extension\PublisherServiceProvider',
 
-		'Orchestra\Extension\CommandServiceProvider',
-	),
+	'Orchestra\Extension\CommandServiceProvider',
+],
+```
 
 ### Aliases
 
