@@ -12,13 +12,16 @@ title: Installation
 3. [Server Requirements](#server-requirement)
 4. [Pretty URLs](#pretty-urls)
 
-## Install Composer {#install-composer}
+<a name="install-composer"></a>
+## Install Composer
 
 Orchestra Platform utilizes [Composer](http://getcomposer.org/) to manage its dependencies. So, before using Orchestra Platform, you will need to make sure you have Composer installed on your machine.
 
-## Install Orchestra Platform {#install-orchestra-platform}
+<a name="install-orchestra-platform"></a>
+## Install Orchestra Platform
 
-### Download {#download}
+<a name="download"></a>
+### Download
 
 You can install Orchestra Platform using Composer:
 
@@ -26,7 +29,8 @@ You can install Orchestra Platform using Composer:
 composer create-project orchestra/platform --prefer-dist
 ```
 
-### Configuration {#configuration}
+<a name="configuration"></a>
+### Configuration
 
 The first thing you should do before running Orchestra Platform is set your application key to a random string. If you download Orchestra Platform via Composer, this key has probably already been set for you during composer install. You can also rerun this command:
 
@@ -44,7 +48,8 @@ Orchestra Platform needs almost no other configuration out of the box except for
 
 Orchestra Platform may require some permissions to be configured: folders within `storage` require write access by the web server.
 
-### Setup {#setup}
+<a name="setup"></a>
+### Setup
 
 Once Orchestra Platform is properly configured, we need to run the installation and create the application basic schema (including administrator user).
 
@@ -52,7 +57,8 @@ Once Orchestra Platform is properly configured, we need to run the installation 
 2. Browse to the installation page, for example `http://localhost:8000/admin` and follow the installation process.
 3. And... you're done.
 
-## Server Requirements {#server-requirement}
+<a name="server-requirement"></a>
+## Server Requirements
 
 Orchestra Plaftorm has a few system requirements:
 
@@ -65,7 +71,8 @@ Orchestra Plaftorm has a few system requirements:
 
 As of PHP 5.5, some OS distributions may require you to manually install the PHP JSON extension. When using Ubuntu, this can be done via `apt-get install php5-json`.
 
-## Pretty URLs {#pretty-urls}
+<a name="pretty-urls"></a>
+## Pretty URLs
 
 ### Apache
 
