@@ -1,11 +1,8 @@
 ---
 title: Artisan Debug Profiler
+badge: debug
 
 ---
-
-[![Latest Stable Version](https://img.shields.io/github/release/orchestral/debug.svg?style=flat)](https://github.com/orchestral/debug/releases)
-[![Total Downloads](https://img.shields.io/packagist/dt/orchestra/debug.svg?style=flat)](https://packagist.org/packages/orchestra/debug)
-[![MIT License](https://img.shields.io/packagist/l/orchestra/debug.svg?style=flat)](https://github.com/orchestral/debug)
 
 Debug Component is commandline profiling package for Laravel, It was based from Laravel 4.1 commandline profiling tool which was merged with `php artisan tail`.
 

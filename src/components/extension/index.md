@@ -1,11 +1,8 @@
 ---
 title: Extension Component
+badge: extension
 
 ---
-
-[![Latest Stable Version](https://img.shields.io/github/release/orchestral/extension.svg?style=flat)](https://github.com/orchestral/extension/releases)
-[![Total Downloads](https://img.shields.io/packagist/dt/orchestra/extension.svg?style=flat)](https://packagist.org/packages/orchestra/extension)
-[![MIT License](https://img.shields.io/packagist/l/orchestra/extension.svg?style=flat)](https://github.com/orchestral/extension)
 
 Extension Component allows components or packages to be added dynamically to Orchestra Platform without the hassle of modifying the configuration.
 
@@ -18,7 +15,7 @@ Extension Component allows components or packages to be added dynamically to Orc
 * [Change Log]({doc-url}/components/extension/changes#v2-2)
 * [Github](https://github.com/orchestral/extension)
 
-<a href="" name="compatibility"></a>
+<a name="compatibility"></a>
 ## Version Compatibility
 
 Laravel    | Extension
@@ -42,14 +39,14 @@ To install through composer, simply put the following in your `composer.json` fi
 
 And then run `composer install` from the terminal.
 
-<a href="" name="quick-installation"></a>
+<a name="quick-installation"></a>
 ### Quick Installation
 
 Above installation can also be simplify by using the following command:
 
 	composer require "orchestra/extension=~3.0"
 
-<a href="" name="configuration"></a>
+<a name="configuration"></a>
 ## Configuration
 
 Next add the service provider in `config/app.php`.

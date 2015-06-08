@@ -1,11 +1,8 @@
 ---
 title: Config Component
+badge: config
 
 ---
-
-[![Latest Stable Version](https://img.shields.io/packagist/v/orchestra/config.svg?style=flat)](https://github.com/orchestral/config)
-[![Total Downloads](https://img.shields.io/packagist/dt/orchestra/config.svg?style=flat)](https://packagist.org/packages/orchestra/config)
-[![MIT License](https://img.shields.io/packagist/l/orchestra/config.svg?style=flat)](https://github.com/orchestral/config)
 
 Config Component is a configuration with environment based support for Laravel 5 and above. The component is actually based from Laravel 4 configuration.
 

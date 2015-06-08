@@ -1,5 +1,6 @@
 ---
 title: Facile Component
+badge: facile
 
 ---
 
@@ -13,7 +14,7 @@ Facile Component simplify the need to create API based response in your Laravel 
 * [Change Log]({doc-url}/components/facile/changes#v2-2)
 * [Github](https://github.com/orchestral/facile)
 
-<a href="" name="compatibility"></a>
+<a name="compatibility"></a>
 ## Version Compatibility
 
 Laravel    | Facile
@@ -23,7 +24,7 @@ Laravel    | Facile
  4.2.x     | 2.2.x
  5.0.x     | 3.0.x
 
-<a href="" name="installation"></a>
+<a name="installation"></a>
 ## Installation {#installation}
 
 To install through composer, simply put the following in your `composer.json` file:
@@ -38,14 +39,14 @@ To install through composer, simply put the following in your `composer.json` fi
 
 And then run `composer install` from the terminal.
 
-<a href="" name="quick-installation"></a>
+<a name="quick-installation"></a>
 ### Quick Installation
 
 Above installation can also be simplify by using the following command:
 
 	composer require "orchestra/facile=~3.0"
 
-<a href="" name="configuration"></a>
+<a name="configuration"></a>
 ## Configuration {#configuration}
 
 Next add the service provider in `config/app.php`.

@@ -1,11 +1,8 @@
 ---
 title: Avatar Component
+badge: avatar
 
 ---
-
-[![Latest Stable Version](https://img.shields.io/github/release/orchestral/avatar.svg?style=flat)](https://github.com/orchestral/avatar/releases)
-[![Total Downloads](https://img.shields.io/packagist/dt/orchestra/avatar.svg?style=flat)](https://packagist.org/packages/orchestra/avatar)
-[![MIT License](https://img.shields.io/packagist/l/orchestra/avatar.svg?style=flat)](https://github.com/orchestral/avatar)
 
 Avatar Component provide support for driver based avatar provider for your Laravel, PHP or Orchestra Platform application.
 
