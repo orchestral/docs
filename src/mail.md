@@ -22,7 +22,6 @@ title: Sending Mail
 
 ```php
 use Orchestra\Model\User;
-use Orchestra\Mail as Mailer;
 
 $user = User::find(5);
 
@@ -38,7 +37,6 @@ Mailer::send('email.update', $data, function ($m) use ($user) {
 
 ```php
 use Orchestra\Model\User;
-use Orchestra\Mail as Mailer;
 
 $user = User::find(5);
 
@@ -54,7 +52,6 @@ Mailer::queue('email.update', $data, function ($m) use ($user) {
 
 ```php
 use Orchestra\Model\User;
-use Orchestra\Mail as Mailer;
 
 $user = User::find(5);
 
