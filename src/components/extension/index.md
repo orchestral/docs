@@ -14,9 +14,7 @@ Extension Component allows components or packages to be added dynamically to Orc
 * [Version Compatibility](#compatibility)
 * [Installation](#installation)
 * [Configuration](#configuration)
-* [Further Reading]({doc-url}/components/extension/usage)
-  - [Usage]({doc-url}/components/extension/usage)
-  - [Extending Extension]({doc-url}/components/extension/extend)
+* [Usage]({doc-url}/components/extension/usage)
 * [Change Log]({doc-url}/components/extension/changes#v2-2)
 * [Github](https://github.com/orchestral/extension)
 

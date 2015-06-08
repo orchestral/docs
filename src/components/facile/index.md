@@ -13,50 +13,61 @@ Facile Component simplify the need to create API based response in your Laravel 
 * [Change Log]({doc-url}/components/facile/changes#v2-2)
 * [Github](https://github.com/orchestral/facile)
 
-## Version Compatibility {#compatibility}
+<a href="" name="compatibility"></a>
+## Version Compatibility
 
 Laravel    | Facile
 :----------|:----------
  4.0.x     | 2.0.x
  4.1.x     | 2.1.x
  4.2.x     | 2.2.x
+ 5.0.x     | 3.0.x
 
+<a href="" name="installation"></a>
 ## Installation {#installation}
 
 To install through composer, simply put the following in your `composer.json` file:
 
-	{
-		"require": {
-			"orchestra/facile": "2.2.*"
-		}
+```json
+{
+	"require": {
+		"orchestra/facile": "~3.0"
 	}
+}
+```
 
 And then run `composer install` from the terminal.
 
-### Quick Installation {#quick-installation}
+<a href="" name="quick-installation"></a>
+### Quick Installation
 
 Above installation can also be simplify by using the following command:
 
-	composer require "orchestra/facile=2.2.*"
+	composer require "orchestra/facile=~3.0"
 
+<a href="" name="configuration"></a>
 ## Configuration {#configuration}
 
-Next add the service provider in `app/config/app.php`.
+Next add the service provider in `config/app.php`.
 
-	'providers' => array(
+```php
+'providers' => [
 
-		// ...
+	// ...
 
-		'Orchestra\Facile\FacileServiceProvider',
-	),
+	'Orchestra\Facile\FacileServiceProvider',
+],
+```
 
 ### Aliases
 
-You might want to add `Orchestra\Support\Facades\Facile` to class aliases in `app/config/app.php`:
+You might want to add `Orchestra\Support\Facades\Facile` to class aliases in `config/app.php`:
 
-	'aliases' => array(
+```php
+'aliases' => [
 
-		// ...
+	// ...
 
-		'Facile' => 'Orchestra\Support\Facades\Facile',
-	),
+	'Facile' => 'Orchestra\Support\Facades\Facile',
+],
+```

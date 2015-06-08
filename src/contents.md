@@ -20,6 +20,7 @@ title: Table of Content
 * Architecture Foundations
   - [Contracts]({doc-url}/contracts)
   - [Facades]({doc-url}/facades)
+  - [Extension]({doc-url}/components/extension/usage)
   - [Events]({doc-url}/events)
 * Services
   - [Sending Mail]({doc-url}/mail)
