@@ -73,7 +73,6 @@ $user->notify('Email subject to be displayed!', 'email.view.path', ['user' => $u
 This simple code is equivalent of:
 
 ```php
-
 $user = Orchestra\Model\User::find(5);
 
 Orchestra\Mail::push('email.view.path', ['user' => $user], function ($m) use ($user) {
