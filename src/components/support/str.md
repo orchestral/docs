@@ -20,6 +20,18 @@ Str::humanize('hello-world'); // would return "hello world"
 Str::humanize('Laravel_is awesome'); // would return "Laravel is awesome"
 ```
 
+<a name="str-replace"></a>
+## replace()
+
+`Str::replace()` is a simple way to replace text similarly to `strtr()` approach with customize delimiter.
+
+```php
+use Orchestra\Support\Str;
+
+Str::replace('Hello {name}', ['name' => 'Laravel']); // would return "Hello Laravel"
+Str::replace('Hello <name>', ['name' => 'world'], '<', '>'); // would return "Hello world"
+```
+
 <a name="stream-get-contents"></a>
 ## streamGetContents()
 
