@@ -53,6 +53,7 @@ Next add the service provider in `config/app.php`.
 
 	'Orchestra\Resources\ResourcesServiceProvider',
 ],
+```
 
 ### Aliases
 

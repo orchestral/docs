@@ -45,9 +45,7 @@ And then run `composer install` from the terminal.
 
 Above installation can also be simplify by using the following command:
 
-```bash
-composer require "orchestra/authorization=3.0.*"
-```
+	composer require "orchestra/authorization=~3.0"
 
 <a name="configuration"></a>
 ## Configuration

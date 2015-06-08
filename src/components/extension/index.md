@@ -24,7 +24,8 @@ Laravel    | Extension
  4.2.x     | 2.2.x
  5.0.x     | 3.0.x
 
-## Installation {#installation}
+<a name="installation"></a>
+## Installation
 
 To install through composer, simply put the following in your `composer.json` file:
 
@@ -65,12 +66,13 @@ Next add the service provider in `config/app.php`.
 
 You might want to add `Orchestra\Support\Facades\Extension` to class aliases in `config/app.php`:
 
-	'aliases' => array(
+```php
+'aliases' => [
 
-		// ...
+	// ...
 
-		'Orchestra\Extension' => 'Orchestra\Support\Facades\Extension',
-	),
+	'Extension' => 'Orchestra\Support\Facades\Extension',
+],
 
 ### Migrations
 

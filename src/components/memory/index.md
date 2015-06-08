@@ -3,10 +3,6 @@ title: Memory Component
 
 ---
 
-[![Latest Stable Version](https://img.shields.io/github/release/orchestral/memory.svg?style=flat)](https://packagist.org/packages/orchestra/memory)
-[![Total Downloads](https://img.shields.io/packagist/dt/orchestra/memory.svg?style=flat)](https://packagist.org/packages/orchestra/memory)
-[![MIT License](https://img.shields.io/packagist/l/orchestra/memory.svg?style=flat)](https://packagist.org/packages/orchestra/memory)
-
 Memory Component handles runtime configuration either using "in memory" Runtime or database using Cache, Fluent Query Builder or Eloquent ORM. Instead of just allowing static configuration to be used, Memory Component allow those configuration to be persistent in between request by utilizing multiple data storage option either through cache or database.
 
 1. [Version Compatibility](#compatibility)
@@ -19,7 +15,6 @@ Memory Component handles runtime configuration either using "in memory" Runtime 
   - [Removing Items](#removing-items)
   - [Extending Memory](#extending-memory)
 5. [Change Log]({doc-url}/components/memory/changes#v3-0)
-6. [Resources](#resources)
 
 ## Version Compatibility {#compatibility}
 
@@ -30,6 +25,7 @@ Laravel    | Memory
  4.2.x     | 2.2.x
  5.0.x     | 3.0.x
 
+<a name="installation"></a>
 ## Installation {#installation}
 
 To install through composer, simply put the following in your `composer.json` file:
@@ -37,22 +33,22 @@ To install through composer, simply put the following in your `composer.json` fi
 ```json
 {
 	"require": {
-		"orchestra/memory": "3.0.*"
+		"orchestra/memory": "~3.0"
 	}
 }
 ```
 
 And then run `composer install` from the terminal.
 
+<a name="quick-installation"></a>
 ### Quick Installation
 
 Above installation can also be simplify by using the following command:
 
-```bash
-composer require "orchestra/memory=3.0.*"
-```
+    composer require "orchestra/memory=~3.0"
 
-## Configuration {#configuration}
+<a name="configuration"></a>
+## Configuration
 
 Next add the service provider in `config/app.php`.
 
@@ -84,9 +80,7 @@ You might want to add `Orchestra\Support\Facades\Memory` to class aliases in `co
 
 Before we can start using Memory Component, please run the following:
 
-```bash
-php artisan memory:migrate
-```
+    php artisan memory:migrate
 
 > The command utility is enabled via `Orchestra\Memory\CommandServiceProvider`.
 
@@ -94,11 +88,10 @@ php artisan memory:migrate
 
 Optionally, you can also publish the configuration file if there any requirement to change the default:
 
-```bash
-php artisan publish:config orchestra/memory
-```
+    php artisan publish:config orchestra/memory
 
-## Usage {#usage}
+<a name="usage"></a>
+## Usage
 
 1. [Creating Instance](#create-instance)
 2. [Storing Items](#storing-items)
@@ -106,9 +99,10 @@ php artisan publish:config orchestra/memory
 4. [Removing Items](#removing-items)
 5. [Extending Memory](#extending-memory)
 
-### Creating Instance {#create-instance}
+<a name="create-instance"></a>
+### Creating Instance
 
-Below are list of possible ways to use `Orchestra\Memory`:
+Below are list of possible ways to use `Memory`:
 
 ```php
 $runtime  = Memory::make('runtime');
@@ -125,7 +119,8 @@ $memory = Memory::make();
 
 > When using with Orchestra Platform, `Memory::make()` would be used throughout the application.
 
-### Storing Items {#storing-items}
+<a name="storing-items"></a>
+### Storing Items
 
 Storing items in the `Memory` is simple. Simply call the put method:
 
@@ -138,7 +133,8 @@ Memory::put('site.author', 'Taylor');
 
 The first parameter is the **key** to the config item. You will use this key to retrieve the item from the config. The second parameter is the **value** of the item.
 
-### Retrieving Items {#retrieving-items}
+<a name="retrieving-items"></a>
+### Retrieving Items
 
 Retrieving items from `Memory` is even more simple than storing them. It is done using the get method. Just mention the key of the item you wish to retrieve:
 
@@ -157,7 +153,8 @@ $name = $memory->get('site.author', 'Fred');
 
 Now, "Fred" will be returned if the "site.author" item does not exist.
 
-### Removing Items {#removing-items}
+<a name="removing-items"></a>
+### Removing Items
 
 Need to get rid of an item? No problem. Just mention the name of the item to the forget method:
 
@@ -168,7 +165,8 @@ $memory->forget('site.author');
 Memory::forget('site.author');
 ```
 
-### Extending Memory {#extending-memory}
+<a name="extending-memory"></a>
+### Extending Memory
 
 There might be requirement that a different type of storage engine would be use for memory instance, you can extending it by adding your own handler.
 
@@ -192,9 +190,3 @@ $acme = Memory::make('acme.default');
 ```
 
 > You can also extends `Orchestra\Memory\Abstractable\Handler` which add some boilerplate code on your custom handler.
-
-## Resources {#resources}
-
-* [GitHub](https://github.com/orchestral/memory)
-* [Packagist](https://packagist.org/packagist/orchestra/memory)
-* [Travis-CI](https://travis-ci.org/orchestral/memory)

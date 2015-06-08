@@ -1,5 +1,6 @@
 ---
 title: Optimize Component
+badge: optimize
 
 ---
 
@@ -11,14 +12,7 @@ Optimization Component is a tool specifically for Orchestra Platform, which work
 
 1. [Version Compatibility](#compatibility)
 2. [Change Log]({doc-url}/components/optimize/changes#v3-0)
-3. [Resources](#resources)
 
 ## Version Compatibility {#compatibility}
 
 This component is developed specifically for Orchestra Platform.
-
-## Resources {#resources}
-
-* [Github](https://github.com/orchestral/optimize)
-* [Packagist](https://packagist.org/packages/orchestra/optimize)
-* [Travis-CI](https://travis-ci.org/orchestral/optimize)
