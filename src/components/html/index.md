@@ -27,7 +27,7 @@ Laravel    | Facile
 
 To install through composer, simply put the following in your `composer.json` file:
 
-`json
+```json
 {
 	"require": {
 		"orchestra/html": "~3.0"
