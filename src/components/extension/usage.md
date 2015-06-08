@@ -4,15 +4,15 @@ title: Using Extension
 
 An extension is a basically a package or module (package with routes) except that first it need to have a manifest file as similar as you would have `composer.json` for every package.
 
-* [Managing an Extension](#managing-an-extension)
-* [Basic of an Extension](#basic-of-an-extension)
+1. [Managing an Extension](#managing-an-extension)
+2. [Basic of an Extension](#basic-of-an-extension)
   * [Manifest File](#manifest-file)
-* [Configuring an Extension](#configuring-an-extension)
+3. [Configuring an Extension](#configuring-an-extension)
   * [Service Providers for Extension](#service-providers-for-extension)
     - [Autoloading Files](#autoloading-files)
   * [Handling a Route](#handling-a-route)
   * [Disabling Configuration](#disabling-configuration)
-* [Adding Extension Location](#add-extension-location)
+4. [Adding Extension Location](#add-extension-location)
 
 <a name="managing-an-extension"></a>
 ## Managing an Extension
