@@ -7,9 +7,10 @@ badge: support
 Support component is basically a basic set of class required by Orchestra Platform. The idea behind it is similar to what is `Illuminate\Support` to Laravel Framework.
 
 1. [Version Compatibility](#compatibility)
-* [Installation](#installation)
-* [Configuration](#configuration)
-* [Resources](#resources)
+2. [Installation](#installation)
+3. [Configuration](#configuration)
+4. [Classes](#classes)
+5. [Change Log]({doc-url}/components/support/changes#v3-0)
 
 <a name="compatibility"></a>
 ## Version Compatibility
@@ -43,10 +44,9 @@ Above installation can also be simplify by using the following command:
 
     composer require "orchestra/support=~3.0"
 
-## Resources {#resources}
+<a name="classes"></a>
+## Classes
 
 * [Manager Class]({doc-url}/components/support/manager)
-* [Messages Class]({doc-url}/components/support/messages)
 * [String Class]({doc-url}/components/support/str)
 * [Validation Class]({doc-url}/components/support/validator)
-* [Change Log]({doc-url}/components/support/changes#v2-2)
