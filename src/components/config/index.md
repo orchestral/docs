@@ -1,11 +1,8 @@
 ---
 title: Config Component
+badge: config
 
 ---
-
-[![Latest Stable Version](https://img.shields.io/packagist/v/orchestra/config.svg?style=flat)](https://packagist.org/packages/orchestra/config)
-[![Total Downloads](https://img.shields.io/packagist/dt/orchestra/config.svg?style=flat)](https://packagist.org/packages/orchestra/config)
-[![MIT License](https://img.shields.io/packagist/l/orchestra/config.svg?style=flat)](https://packagist.org/packages/orchestra/config)
 
 Config Component is a configuration with environment based support for Laravel 5 and above. The component is actually based from Laravel 4 configuration.
 
@@ -15,42 +12,44 @@ Config Component is a configuration with environment based support for Laravel 5
 4. [Change Log]({doc-url}/components/kernel/changes#v3-0)
 5. [Resources](#resources)
 
-## Version Compatibility {#compatibility}
+<a name="compatibility"></a>
+## Version Compatibility
 
 Laravel    | Config
 :----------|:----------
  5.0.x     | 3.0.x
 
- ## Installation
+<a name="installation"></a>
+## Installation
 
 To install through composer, simply put the following in your `composer.json` file:
 
 ```json
 {
-    "require": {
-        "orchestra/config": "3.0.*"
-    }
+	"require": {
+		"orchestra/config": "~3.0"
+	}
 }
 ```
 
 And then run `composer install` from the terminal.
 
+<a name="quick-installation"></a>
 ### Quick Installation
 
 Above installation can also be simplify by using the following command:
 
-```bash
-composer require "orchestra/config=3.0.*"
-```
+	composer require "orchestra/config=~3.0"
 
-## Configuration {#configuration}
+<a name="configuration"></a>
+## Configuration
 
 To swap Laravel 5 default configuration, all you need to do is add the following code to `bootstrap/app.php`:
 
 ```php
 $app->singleton(
-    'Illuminate\Foundation\Bootstrap\LoadConfiguration',
-    'Orchestra\Config\Bootstrap\LoadConfiguration'
+	'Illuminate\Foundation\Bootstrap\LoadConfiguration',
+	'Orchestra\Config\Bootstrap\LoadConfiguration'
 );
 ```
 
@@ -71,17 +70,17 @@ use Illuminate\Foundation\Providers\ArtisanServiceProvider as ServiceProvider;
 
 class ArtisanServiceProvider extends ServiceProvider
 {
-    /**
-     * Register the command.
-     *
-     * @return void
-     */
-    protected function registerConfigCacheCommand()
-    {
-        $this->app->singleton('command.config.cache', function ($app) {
-            return new ConfigCacheCommand($app['files']);
-        });
-    }
+	/**
+	 * Register the command.
+	 *
+	 * @return void
+	 */
+	protected function registerConfigCacheCommand()
+	{
+		$this->app->singleton('command.config.cache', function ($app) {
+			return new ConfigCacheCommand($app['files']);
+		});
+	}
 }
 ```
 
@@ -96,19 +95,13 @@ In order to force certain packages to be included in config caching, you can spe
 
 return [
 
-    // ...
+	// ...
 
-    'config' => [
-        'orchestra/foundation::config',  // if package config is group under "config/config.php"
-        'orchestra/foundation::roles',   // Using one of the key available in "config/config.php"
-        'orchestra/html::form',          // When package contain "config/form.php"
-    ],
+	'config' => [
+		'orchestra/foundation::config',  // if package config is group under "config/config.php"
+		'orchestra/foundation::roles',   // Using one of the key available in "config/config.php"
+		'orchestra/html::form',          // When package contain "config/form.php"
+	],
 
 ];
 ```
-
-## Resources {#resources}
-
-* [GitHub](https://github.com/orchestral/config)
-* [Packagist](https://packagist.org/packages/orchestra/config)
-* [Travis-CI](https://travis-ci.org/orchestral/config)

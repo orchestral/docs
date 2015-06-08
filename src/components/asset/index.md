@@ -1,11 +1,8 @@
 ---
 title: Asset Component
+badge: asset
 
 ---
-
-[![Latest Stable Version](https://img.shields.io/github/release/orchestral/asset.svg?style=flat)](https://github.com/orchestral/asset/releases)
-[![Total Downloads](https://img.shields.io/packagist/dt/orchestra/asset.svg?style=flat)](https://packagist.org/packages/orchestra/asset)
-[![MIT License](https://img.shields.io/packagist/l/orchestra/asset.svg?style=flat)](https://github.com/orchestral/asset)
 
 Asset Component is a port of Laravel 3 Asset for Orchestra Platform. The component main functionality is to allow asset declaration to be handle dynamically and asset dependencies can be resolve directly from the container. It however is not intended to becoma an asset pipeline package for Laravel, for such purpose we would recommend to use Grunt or Gulp.
 
@@ -47,7 +44,7 @@ To install through composer, simply put the following in your `composer.json` fi
 And then run `composer install` from the terminal.
 
 <a name="quick-installation"></a>
-### Quick Installation {#quick-installation}
+### Quick Installation
 
 Above installation can also be simplify by using the following command:
 

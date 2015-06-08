@@ -1,5 +1,6 @@
 ---
 title: Widget Component
+badge: widget
 
 ---
 

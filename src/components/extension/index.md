@@ -1,5 +1,6 @@
 ---
 title: Extension Component
+badge: extension
 
 ---
 
@@ -10,41 +11,44 @@ Extension Component allows components or packages to be added dynamically to Orc
 * [Version Compatibility](#compatibility)
 * [Installation](#installation)
 * [Configuration](#configuration)
-* [Further Reading]({doc-url}/components/extension/usage)
-  - [Usage]({doc-url}/components/extension/usage)
-  - [Extending Extension]({doc-url}/components/extension/extend)
+* [Usage]({doc-url}/components/extension/usage)
 * [Change Log]({doc-url}/components/extension/changes#v2-2)
-* [Github](https://github.com/orchestral/extension)
 
-## Version Compatibility {#compatibility}
+<a name="compatibility"></a>
+## Version Compatibility
 
 Laravel    | Extension
 :----------|:----------
  4.0.x     | 2.0.x
  4.1.x     | 2.1.x
  4.2.x     | 2.2.x
+ 5.0.x     | 3.0.x
 
 ## Installation {#installation}
 
 To install through composer, simply put the following in your `composer.json` file:
 
-	{
-		"require": {
-			"orchestra/extension": "2.2.*"
-		}
+```json
+{
+	"require": {
+		"orchestra/extension": "~3.0"
 	}
+}
+```
 
 And then run `composer install` from the terminal.
 
-### Quick Installation {#quick-installation}
+<a name="quick-installation"></a>
+### Quick Installation
 
 Above installation can also be simplify by using the following command:
 
-	composer require "orchestra/extension=2.2.*"
+	composer require "orchestra/extension=~3.0"
 
-## Configuration {#configuration}
+<a name="configuration"></a>
+## Configuration
 
-Next add the service provider in `app/config/app.php`.
+Next add the service provider in `config/app.php`.
 
 	'providers' => array(
 
@@ -59,7 +63,7 @@ Next add the service provider in `app/config/app.php`.
 
 ### Aliases
 
-You might want to add `Orchestra\Support\Facades\Extension` to class aliases in `app/config/app.php`:
+You might want to add `Orchestra\Support\Facades\Extension` to class aliases in `config/app.php`:
 
 	'aliases' => array(
 
@@ -70,7 +74,7 @@ You might want to add `Orchestra\Support\Facades\Extension` to class aliases in 
 
 ### Migrations
 
-Before we can start using `Orchestra\Extension`, please run the following:
+Before we can start using Extension component, please run the following:
 
 	php artisan extension:migrate
 

@@ -1,11 +1,8 @@
 ---
 title: Auth Component
+badge: auth
 
 ---
-
-[![Latest Stable Version](https://img.shields.io/github/release/orchestral/auth.svg?style=flat)](https://packagist.org/packages/orchestra/auth)
-[![Total Downloads](https://img.shields.io/packagist/dt/orchestra/auth.svg?style=flat)](https://packagist.org/packages/orchestra/auth)
-[![MIT License](https://img.shields.io/packagist/l/orchestra/auth.svg?style=flat)](https://packagist.org/packages/orchestra/auth)
 
 Auth Component extends the functionality of `Illuminate\Auth` with the extra functionality to retrieve users' role. This is important when we want to use `ACL` to manage application Access Control List (ACL).
 
@@ -17,9 +14,9 @@ Auth Component extends the functionality of `Illuminate\Auth` with the extra fun
   - [Checking Roles](#checking-roles)
   - [Setup Custom Roles Relationship](#setup-custom-roles)
 5. [Change Log]({doc-url}/components/auth/changes#v3-0)
-6. [Resources](#resources)
 
-## Version Compatibility {#compatibility}
+<a name="Compatibility"></a>
+## Version Compatibility
 
 Laravel    | Auth
 :----------|:----------
@@ -28,29 +25,30 @@ Laravel    | Auth
  4.2.x     | 2.2.x
  5.0.x     | 3.0.x
 
-## Installation {#installation}
+<a name="installation"></a>
+## Installation
 
 To install through composer, simply put the following in your `composer.json` file:
 
 ```json
 {
 	"require": {
-		"orchestra/auth": "3.0.*"
+		"orchestra/auth": "~3.0"
 	}
 }
 ```
 
 And then run `composer install` from the terminal.
 
-### Quick Installation {#quick-installation}
+<a name="quick-installation"></a>
+### Quick Installation
 
 Above installation can also be simplify by using the following command:
 
-```bash
-composer require "orchestra/auth=3.0.*"
-```
+    composer require "orchestra/auth=~3.0"
 
-## Configuration {#configuration}
+<a name="configuration"></a>
+## Configuration
 
 Next add the service provider in `config/app.php`.
 
@@ -88,21 +86,18 @@ To make development easier, you could add `Orchestra\Support\Facades\ACL` alias 
 
 Before we can start using Auth Component, please run the following:
 
-```bash
-php artisan auth:migrate
-```
+    php artisan auth:migrate
 
 > The command utility is enabled via `Orchestra\Auth\CommandServiceProvider`.
 
 Optionally you can enable Memory Component to use it with `ACL`, please run the following:
 
-```bash
-php artisan memory:migrate
-```
+    php artisan memory:migrate
 
 > The command utility is enabled via `Orchestra\Memory\CommandServiceProvider`.
 
-## Usage {#usage}
+<a name="usage"></a>
+## Usage
 
 Essentially, the Auth class offered by Laravel is already good enough for normal usage. Orchestra Platform only extends the default operation and allow a user to be link with one or many roles.
 
@@ -110,7 +105,8 @@ Essentially, the Auth class offered by Laravel is already good enough for normal
 2. [Checking Roles](#checking-roles)
 3. [Setup Custom Roles Relationship](#setup-custom-roles)
 
-### Retrieving Roles {#retrieving-roles}
+<a name="retrieving-roles"></a>
+### Retrieving Roles
 
 Retrieve user's roles is as simple as:
 
@@ -118,7 +114,8 @@ Retrieve user's roles is as simple as:
 $roles = Auth::roles();
 ```
 
-### Checking Roles {#checking-roles}
+<a name="checking-roles"></a>
+### Checking Roles
 
 Check if user has all of the following roles.
 
@@ -152,7 +149,8 @@ if (Auth::isNotAny(['member', 'admin'])) {
 }
 ```
 
-### Setup Custom Roles Relationship {#setup-custom-roles}
+<a name="setup-custom-roles"></a>
+### Setup Custom Roles Relationship
 
 This would allow better configuration over convertion control for your application (Laravel).
 
@@ -176,10 +174,3 @@ Auth::setup(function ($user, $roles) {
 ```
 
 > For Orchestra Platform, the listener are automatically handled in `Orchestra\Foundation\Bootstrap\UserAccessPolicy` and the above code shouldn't be used!
-
-
-## Resources {#resources}
-
-* [GitHub](https://github.com/orchestral/auth)
-* [Packagist](https://packagist.org/packages/orchestra/auth)
-* [Travis-CI](https://travis-ci.org/orchestral/auth)
