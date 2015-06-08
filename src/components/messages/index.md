@@ -1,11 +1,8 @@
 ---
 title: Messages Component
+badge: messages
 
 ---
-
-[![Latest Stable Version](https://img.shields.io/github/release/orchestral/messages.svg?style=flat)](https://packagist.org/packages/orchestra/messages)
-[![Total Downloads](https://img.shields.io/packagist/dt/orchestra/messages.svg?style=flat)](https://packagist.org/packages/orchestra/messages)
-[![MIT License](https://img.shields.io/packagist/l/orchestra/messages.svg?style=flat)](https://packagist.org/packages/orchestra/messages)
 
 Messages Component bring a unified notification support for Laravel and Orchestra Platform.
 
@@ -17,38 +14,39 @@ Messages Component bring a unified notification support for Laravel and Orchestr
   - [Extending a Message to Current Request](#extending-a-message-to-current-request)
   - [Displaying the Message in a View](#displaying-the-message-in-a-view)
 5. [Change Log]({doc-url}/components/messages/changes#v3-0)
-6. [Resources](#resources)
 
-## Version Compatibility {#compatibility}
+<a name="compatibility"></a>
+## Version Compatibility
 
 Laravel    | Messages
 :----------|:----------
  4.2.x     | 2.2.x
  5.0.x     | 3.0.x
 
-## Installation {#installation}
+<a name="installation"></a>
+## Installation
 
 To install through composer, simply put the following in your `composer.json` file:
 
 ```json
 {
     "require": {
-        "orchestra/messages": "3.0.*"
+        "orchestra/messages": "~3.0"
     }
 }
 ```
 
 And then run `composer install` from the terminal.
 
+<a name="quick-installation"></a>
 ### Quick Installation
 
 Above installation can also be simplify by using the following command:
 
-```bash
-composer require "orchestra/messages=3.0.*"
-```
+    composer require "orchestra/messages=~3.0"
 
-## Configuration {#configuration}
+<a name="configuration"></a>
+## Configuration
 
 Add `Orchestra\Messages\MessagesServiceProvider` service provider in `config/app.php`.
 
@@ -74,13 +72,15 @@ You might want to add `Orchestra\Support\Facades\Messages` to class aliases in `
 ],
 ```
 
-## Usage {#usage}
+<a name="usage"></a>
+## Usage
 
 1. [Adding a Message](#adding-a-message)
 2. [Extending a Message to Current Request](#extending-a-message-to-current-request)
 3. [Displaying the Message in a View](#displaying-the-message-in-a-view)
 
-### Adding a Message {#adding-a-message}
+<a name="adding-a-message"></a>
+### Adding a Message
 
 Adding a message is as easy as following:
 
@@ -95,7 +95,8 @@ Messages::add('success', 'A successful message')
     ->add('error', 'Some error');
 ```
 
-### Extending a Message to Current Request {#extending-a-message-to-current-request}
+<a name="extending-a-message-to-current-request"></a>
+### Extending a Message to Current Request
 
 There might be situation where you need to extend a message to the current response instead of the following request. You can do this with:
 
@@ -105,7 +106,8 @@ Messages::extend(function ($message) {
 });
 ```
 
-### Displaying the Message in a View {#displaying-the-message-in-a-view}
+<a name="displaying-the-message-in-a-view"></a>
+### Displaying the Message in a View
 
 Here's an example how you can display the message:
 
@@ -125,9 +127,3 @@ if ($message instanceof Orchestra\Messages\MessageBag) {
     }
 }
 ```
-
-## Resources {#resources}
-
-* [Github](https://github.com/orchestral/messages)
-* [Packagist](https://packagist.org/packages/orchestra/messages)
-* [Travis-CI](https://travis-ci.org/orchestral/messages)
