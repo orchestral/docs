@@ -117,7 +117,7 @@ if (! $acl->can('manage acme')) {
 }
 ```
 
-Or you can create a route filter.
+Or you can create a route middleware.
 
 ```php
 <?php namespace Acme\Http\Middleware;
