@@ -51,7 +51,7 @@ You can review the full application skeleton changes by viewing the [full change
 
 ### Laravel Changes
 
-You can also check out the full upgrading guide for [Laravel 5.1](http://laravel.com/docs/5.1/upgrade#upgrade-5.1.0).
+You can also check out the full [Upgrading Guide for Laravel 5.1](http://laravel.com/docs/5.1/upgrade#upgrade-5.1.0) as well as [Laravel 5.1 Release Note](http://laravel.com/docs/5.1/releases#laravel-5.1).
 
 <a name="v2-1-v2-2"></a>
 ## Upgrading from 2.1 to 2.2
