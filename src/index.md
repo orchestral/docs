@@ -38,7 +38,6 @@ With the introduction of Composer, we are now free to organize the code into sma
 
 * [Asset]({doc-url}/components/asset)
 * [Auth]({doc-url}/components/auth)
-* [Debug]({doc-url}/components/debug)
 * [Extension]({doc-url}/components/extension)
 * [Kernel]({doc-url}/components/kernel)
 * [Foundation]({doc-url}/components/foundation)
@@ -57,6 +56,7 @@ With the introduction of Composer, we are now free to organize the code into sma
 We also have some independence packages that would work well with Orchestra Platform, including:
 
 * [Avatar]({doc-url}/components/avatar)
+* [Debug]({doc-url}/components/debug)
 * [Facile]({doc-url}/components/facile)
 * [Imagine]({doc-url}/components/imagine)
 * [Parser]({doc-url}/components/parser)
@@ -73,6 +73,6 @@ Laravel    | Orchestra Platform  | Status
  3.2.x     | 1.x                 | Deprecated
  4.0.x     | 2.0.x               | Deprecated
  4.1.x     | 2.1.x               | LTS
- 4.2.x     | 2.2.x               | Supported
+ 4.2.x     | 2.2.x               | Ending 19th June 2015
  5.0.x     | 3.0.x               | Latest Stable
 
