@@ -28,7 +28,7 @@ Orchestra\Extension   | Orchestra\Support\Facades\Extension   | Orchestra\Extens
 Form                  | Orchestra\Support\Facades\Form        | Orchestra\Html\Form\Factory                      | `orchestra.form`
 Foundation            | Orchestra\Support\Facades\Foundation  | Orchestra\Foundation\Foundation                  | `orchestra.app`
 HTML                  | Orchestra\Support\Facades\HTML        | Orchestra\Html\HtmlBuilder                       | `html`
-Orchestra\Mail        | Orchestra\Support\Facades\Mail        | Orchestra\Notifier\Mailer                        | `orchestra.mail`
+Mailer                | Orchestra\Support\Facades\Mail        | Orchestra\Notifier\Mailer                        | `orchestra.mail`
 Memory                | Orchestra\Support\Facades\Memory      | Orchestra\Memory\MemoryManager                   | `orchestra.memory`
 Messages              | Orchestra\Support\Facades\Messages    | Orchestra\Messages\MessageBag                    | `orchestra.messages`
 Meta                  | Orchestra\Support\Facades\Meta        | Orchestra\Foundation\Meta                        | `orchestra.meta`
