@@ -3,6 +3,14 @@ title: Optimize Change Log
 
 ---
 
+## Version 3.1 {#v3-1}
+
+### v3.1.0 {#v3-1-0}
+
+* Update support to Laravel Framework v5.1.
+* Only display "File not found" notice when using `-vv` or `-vvv` verbosity.
+* Update compiles list for `orchestra/foundation` and `orchestra/support`.
+
 ## Version 3.0 {#v3-0}
 
 ### v3.0.3 {#v3-0-3}
