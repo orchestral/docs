@@ -9,11 +9,11 @@ Auth Component extends the functionality of `Illuminate\Auth` with the extra fun
 1. [Version Compatibility](#compatibility)
 2. [Installation](#installation)
 3. [Configuration](#configuration)
-4. [Usage]({doc-url}/components/auth/usage)
+4. [Usage](#usage)
   - [Retrieving Roles](#retrieving-roles)
   - [Checking Roles](#checking-roles)
   - [Setup Custom Roles Relationship](#setup-custom-roles)
-5. [Change Log]({doc-url}/components/auth/changes#v3-0)
+5. [Change Log]({doc-url}/components/auth/changes#v3-1)
 
 <a name="Compatibility"></a>
 ## Version Compatibility
@@ -24,6 +24,7 @@ Laravel    | Auth
  4.1.x     | 2.1.x
  4.2.x     | 2.2.x
  5.0.x     | 3.0.x
+ 5.1.x     | 3.1.x
 
 <a name="installation"></a>
 ## Installation
@@ -59,12 +60,12 @@ Next add the service provider in `config/app.php`.
 	# Remove 'Illuminate\Auth\AuthServiceProvider'
 	# and add 'Orchestra\Auth\AuthServiceProvider'
 
-	'Orchestra\Auth\AuthServiceProvider',
-	'Orchestra\Authorization\AuthorizationServiceProvider',
-	'Orchestra\Memory\MemoryServiceProvider',
+	Orchestra\Auth\AuthServiceProvider::class,
+	Orchestra\Authorization\AuthorizationServiceProvider::class,
+	Orchestra\Memory\MemoryServiceProvider::class,
 
-	'Orchestra\Auth\CommandServiceProvider',
-	'Orchestra\Memory\CommandServiceProvider',
+	Orchestra\Auth\CommandServiceProvider::class,
+	Orchestra\Memory\CommandServiceProvider::class,
 ],
 ```
 
@@ -77,7 +78,7 @@ To make development easier, you could add `Orchestra\Support\Facades\ACL` alias 
 ```php
 'aliases' => [
 
-	'ACL' => 'Orchestra\Support\Facades\ACL',
+	'ACL' => Orchestra\Support\Facades\ACL::class,
 
 ],
 ```
