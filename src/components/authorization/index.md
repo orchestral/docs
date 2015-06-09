@@ -98,7 +98,7 @@ acl      | Is a boolean mapping between actions and roles, which determine wheth
 ```php
 <?php
 
-ACL::make('acme');
+$acl = ACL::make('acme');
 ```
 
 Imagine we have a **acme** extension, above configuration is all you need in your extension/application service provider.
