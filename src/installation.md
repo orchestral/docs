@@ -25,18 +25,14 @@ Orchestra Platform utilizes [Composer](http://getcomposer.org/) to manage its de
 
 You can install Orchestra Platform using Composer:
 
-```bash
-composer create-project orchestra/platform --prefer-dist
-```
+    composer create-project orchestra/platform --prefer-dist
 
 <a name="configuration"></a>
 ### Configuration
 
 The first thing you should do before running Orchestra Platform is set your application key to a random string. If you download Orchestra Platform via Composer, this key has probably already been set for you during composer install. You can also rerun this command:
 
-```bash
-php artisan key:generate
-```
+    php artisan key:generate
 
 Typically, this string should be 32 characters long. The key can be set in the `.env` environment file. **If the application key is not set, your user sessions and other encrypted data will not be secure!**
 
@@ -62,9 +58,8 @@ Once Orchestra Platform is properly configured, we need to run the installation 
 
 Orchestra Plaftorm has a few system requirements:
 
-* PHP >= 5.4.0 (we highly recommend using PHP 5.6 for your projects).
+* PHP >= 5.5.9 (we highly recommend using PHP 5.6 for your projects).
 * OpenSSL PHP Extension.
-* MCrypt PHP Extension.
 * Mbstring PHP Extension.
 * Apache, nginx, or another compatible web server.
 * SQLite, MySQL, PostgreSQL, or SQL Server PDO drivers.
