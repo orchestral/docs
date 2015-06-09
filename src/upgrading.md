@@ -3,6 +3,9 @@ title: Upgrade Guide
 
 ---
 
+1. [Upgrading from 2.1 to 2.2](#v2-1-v2-2)
+1. [Upgrading from 2.0 to 2.1](#v2-0-v2-1)
+
 <a name="v2-1-v2-2"></a>
 ## Upgrading from 2.1 to 2.2
 

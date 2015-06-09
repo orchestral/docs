@@ -8,11 +8,11 @@ Extension Component allows components or packages to be added dynamically to Orc
 
 ## Table of Content {#toc}
 
-* [Version Compatibility](#compatibility)
-* [Installation](#installation)
-* [Configuration](#configuration)
-* [Usage]({doc-url}/components/extension/usage)
-* [Change Log]({doc-url}/components/extension/changes#v2-2)
+1. [Version Compatibility](#compatibility)
+2. [Installation](#installation)
+3. [Configuration](#configuration)
+4. [Usage]({doc-url}/components/extension/usage)
+5. [Change Log]({doc-url}/components/extension/changes#v3-0)
 
 <a name="compatibility"></a>
 ## Version Compatibility
@@ -51,16 +51,18 @@ Above installation can also be simplify by using the following command:
 
 Next add the service provider in `config/app.php`.
 
-	'providers' => array(
+```php
+'providers' => [
 
-		// ...
+	// ...
 
-		'Orchestra\Extension\ExtensionServiceProvider',
-		'Orchestra\Memory\MemoryServiceProvider',
-		'Orchestra\Extension\PublisherServiceProvider',
+	'Orchestra\Extension\ExtensionServiceProvider',
+	'Orchestra\Memory\MemoryServiceProvider',
+	'Orchestra\Extension\PublisherServiceProvider',
 
-		'Orchestra\Extension\CommandServiceProvider',
-	),
+	'Orchestra\Extension\CommandServiceProvider',
+],
+```
 
 ### Aliases
 
