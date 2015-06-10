@@ -9,7 +9,8 @@ Testbench Component is a simple package that is supposed to help you write tests
 1. [Version Compatibility](#compatibility)
 2. [Installation](#installation)
 3. [Usage](#usage)
-4. [Change Log]({doc-url}/components/testbench/changes#v3-1)
+4. [Troubleshoot](#troubleshoot)
+5. [Change Log]({doc-url}/components/testbench/changes#v3-1)
 
 <a name="compatibility"></a>
 ## Version Compatibility
@@ -167,3 +168,26 @@ protected function getApplicationTimezone($app)
     return 'Asia/Kuala_Lumpur';
 }
 ```
+
+<a name="troubleshoot"></a>
+## Troubleshoot
+
+<a name="troubleshoot-invalid-key-length"></a>
+### No supported encrypter found. The cipher and / or key length are invalid.
+
+    RuntimeException: No supported encrypter found. The cipher and / or key length are invalid.
+
+This error would only occur if your test suite require actual usage of the encrypter. To solve this you can add a dummy `APP_KEY` or use a specific key to your application/package `phpunit.xml`.
+
+```xml
+<phpunit>
+
+    // ...
+
+    <php>
+        <env name="APP_KEY" value="AckfSECXIvnK5r28GVIWUAxmbBSjTsmF"/>
+    </php>
+
+</phpunit>
+```
+
