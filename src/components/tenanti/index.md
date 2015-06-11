@@ -23,6 +23,7 @@ Laravel  | Tenanti
 :--------|:---------
  4.2.x   | 2.2.x
  5.0.x   | 3.0.x
+ 5.1.x   | 3.1.x
 
 <a name="installation"></a>
 ## Installation
@@ -55,8 +56,8 @@ Next add the following service provider in `config/app.php`.
 'providers' => [
 
     // ...
-    'Orchestra\Tenanti\TenantiServiceProvider',
-    'Orchestra\Tenanti\CommandServiceProvider',
+    Orchestra\Tenanti\TenantiServiceProvider::class,
+    Orchestra\Tenanti\CommandServiceProvider::class,
 ],
 ```
 
@@ -78,6 +79,7 @@ Update your `App\Providers\ConfigServiceProvider` to include following options:
 ```php
 <?php namespace App\Providers;
 
+use App\User;
 use Illuminate\Support\ServiceProvider;
 
 class ConfigServiceProvider extends ServiceProvider
@@ -86,7 +88,7 @@ class ConfigServiceProvider extends ServiceProvider
     {
         config([
             'orchestra.tenanti.drivers.user' => [
-                'model' => 'App\User',
+                'model' => User::class,
                 'path'  => database_path('tenanti/user'),
             ],
         ]);
@@ -176,6 +178,7 @@ By introducing a `migration` config, you can now setup the migration table name 
 ```php
 <?php namespace App\Providers;
 
+use App\User;
 use Illuminate\Support\ServiceProvider;
 
 class ConfigServiceProvider extends ServiceProvider
@@ -184,7 +187,7 @@ class ConfigServiceProvider extends ServiceProvider
     {
         config([
             'orchestra.tenanti.drivers.user' => [
-                'model'     => 'App\User',
+                'model'     => User::class,
                 'migration' => 'tenant_migrations',
                 'path'      => database_path('tenanti/user'),
             ],
