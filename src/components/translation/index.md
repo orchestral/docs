@@ -10,7 +10,11 @@ Translation Component extends the functionality of `Illuminate\Translation` to a
 2. [Installation](#installation)
 3. [Configuration](#configuration)
 4. [Usage](#usage)
+<<<<<<< HEAD
 5. [Change Log]({doc-url}/components/translation/changes#v3-1)
+=======
+5. [Change Log]({doc-url}/components/translation/changes#v3-0)
+>>>>>>> 3.0
 
 <a name="compatibility"></a>
 ## Version Compatibility
