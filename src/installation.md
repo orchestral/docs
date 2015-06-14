@@ -3,7 +3,6 @@ title: Installation
 
 ---
 
-
 1. [Install Composer](#install-composer)
 2. [Install Orchestra Platform](#install-orchestra-platform)
   - [Download](#download)
@@ -42,7 +41,7 @@ Orchestra Platform needs almost no other configuration out of the box except for
 
 #### Permission
 
-Orchestra Platform may require some permissions to be configured: folders within `storage` require write access by the web server.
+Orchestra Platform may require some permissions to be configured: folders within `storage` and `bootstrap/cache` requires write access by the web server.
 
 <a name="setup"></a>
 ### Setup
