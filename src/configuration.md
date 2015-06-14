@@ -19,9 +19,7 @@ All of the configuration files for the Orchestra Platform are stored in the `res
 
 Instead of using the default `/admin` prefix for your administration page, you can configure Orchestra Platform to handled by a different URL, to utilize this feature all you need to do is publish `orchestra/foundation` configuration using the following command:
 
-```bash
-php artisan publish:config orchestra/foundation
-```
+    php artisan publish:config orchestra/foundation
 
 <a name="admin-url-as-prefix"></a>
 ### As Prefix
