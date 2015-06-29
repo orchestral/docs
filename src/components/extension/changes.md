@@ -4,6 +4,14 @@ title: Extension Change Log
 ---
 ## Version 3.1 {#v3-1}
 
+### v3.1.4 {#v3-1-4}
+
+* Add `Orchestra\Extension\Factory::after()`.
+
+### v3.1.3 {#v3-1-3}
+
+* Add `Orchestra\Extension\RouteGenerator::group()`.
+
 ### v3.1.2 {#v3-1-2}
 
 * Improved performances by reducing call within `Illuminate\Container\Container`.
