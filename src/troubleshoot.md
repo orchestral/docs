@@ -5,7 +5,8 @@ title: Troubleshooting
 
 1. [Using safe mode](#safe-mode)
 2. [Missing installation](#missing-installation)
-3. [Error on SessionHandler::read()](#error-sessionhandler-read)
+3. [Maximum function nesting level of '100' reached, aborting!](#maximum-nesting)
+4. [Error on SessionHandler::read()](#error-sessionhandler-read)
 
 <a name="safe-mode"></a>
 ## Using safe mode
@@ -22,6 +23,23 @@ To do this, just add `EXTENSION_MODE=safe` to your `.env`. This way, we would cr
 If you come across situation where your application suddenly when back as it wasn't installed, do check that `storage` contain the correct permission.
 
     $ chmod -Rf 777 storage
+
+<a name="maximum-nesting"></a>
+## Maximum function nesting level of '100' reached, aborting!
+
+This is a random error that only happen when you have an older version of `xdebug` enabled (See <http://bugs.xdebug.org/bug_view_page.php?bug_id=00001100>. Here some recommendation that you can use to solve this issue:
+
+### Homestead
+
+Update to the latest version should solved this issue.
+
+### Update `php.ini` or `xdebug.ini`
+
+You can update `php.ini` or `xdebug` extension configuration file by increasing the default value of `100` to something higher such as `250`:
+
+    xdebug.max_nesting_level = 250
+
+> For production environment, it's better to turn off `xdebug` extension as this would speed up your application.
 
 <a name="error-sessionhandler-read"></a>
 ## Error on SessionHandler::read() {#error-sessionhandler-read}
