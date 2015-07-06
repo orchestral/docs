@@ -78,7 +78,7 @@ class AppServiceProvider extends ServiceProvider
 
 ### Use better session driver
 
-Orchestra Platform recommends using either Redis, Memcached or APC session driver (or at least database driver). This help making sure we can handle session request without any interruption especially when for handling CSRF.
+Orchestra Platform recommends using either Redis, Memcached or APC session driver (or at least database driver). This help making sure we can handle session request without any interruption especially when for handling CSRF or Login Throttling.
 
 ### Disallow access to `.blade.php` for themes
 
