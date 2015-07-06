@@ -34,7 +34,7 @@ return [
 ];
 ```
 
-You could as well set it to `"/"` and it would handle the root uri.
+You could as well set it to `"/"` and it would handle the root uri for application without sub-domain, or read on to configure it [as domain](#admin-url-as-domain).
 
 <a name="admin-url-as-domain"></a>
 ### As Domain
