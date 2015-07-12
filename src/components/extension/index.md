@@ -75,6 +75,7 @@ You might want to add `Orchestra\Support\Facades\Extension` to class aliases in 
 
 	'Extension' => 'Orchestra\Support\Facades\Extension',
 ],
+```
 
 ### Migrations
 
