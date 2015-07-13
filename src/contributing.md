@@ -61,6 +61,7 @@ Orchestra Platform follows the [PSR-0](https://github.com/php-fig/fig-standards/
 
 * Namespace declarations should be on the same line as `<?php`.
 * Preferable to use `&&` and `||` instead of `and` or `or`.
+* Use imports should be ordered by length.
 * Trait names are suffixed with `Trait (FooTrait)`.
 
 We also include `.php_cs` file on each repository which would allow you to run [PHP-CS-Fixer](https://github.com/FriendsOfPHP/PHP-CS-Fixer) if you have it install locally.
