@@ -33,13 +33,15 @@ This is a random error that only happen when you have an older version of `xdebu
 
 Update to the latest version should solved this issue.
 
-### Update `php.ini` or `xdebug.ini`
+### Manually on Local Environment
 
 You can update `php.ini` or `xdebug` extension configuration file by increasing the default value of `100` to something higher such as `250`:
 
     xdebug.max_nesting_level = 250
 
-> For production environment, it's better to turn off `xdebug` extension as this would speed up your application.
+### Production Environment
+
+For production environment, it's better to turn off `xdebug` extension as this would speed up your application.
 
 <a name="error-sessionhandler-read"></a>
 ## Error on SessionHandler::read() {#error-sessionhandler-read}
