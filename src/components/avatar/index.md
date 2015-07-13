@@ -10,7 +10,7 @@ Avatar Component provide support for driver based avatar provider for your Larav
 2. [Installation](#installation)
 3. [Configuration](#configuration)
 4. [Usage](#usage)
-5. [Change Log]({doc-url}/components/avatar/changes#v3-0)
+5. [Change Log]({doc-url}/components/avatar/changes#v3-1)
 
 <a name="compatibility"></a>
 ## Version Compatibility
@@ -20,6 +20,7 @@ Laravel    | Avatar
  4.1.x     | 2.1.x
  4.2.x     | 2.2.x
  5.0.x     | 3.0.x
+ 5.1.x     | 3.1.x
 
 <a name="installation"></a>
 ## Installation
@@ -52,7 +53,8 @@ Add `Orchestra\Avatar\AvatarServiceProvider` service provider in `config/app.php
 'providers' => [
 
     // ...
-    'Orchestra\Avatar\AvatarServiceProvider',
+
+    Orchestra\Avatar\AvatarServiceProvider::class,
 ],
 ```
 
@@ -62,7 +64,8 @@ You might also want to add `Orchestra\Support\Facade\Avatar` to class aliases in
 'aliases' => [
 
     // ...
-    'Avatar' => 'Orchestra\Support\Facade\Avatar',
+
+    'Avatar' => Orchestra\Support\Facade\Avatar::class,
 ],
 ```
 
@@ -77,5 +80,11 @@ You can easily display an avatar by passing a `User` instance.
 use App\User;
 
 $user = User::find(1);
-$avatar = Avatar::user($user)->render();
+$avatar = Avatar::user($user);
+```
+
+You can use it in a view by rendering it.
+
+```html
+<img src="{{ $avatar }}" class="avatar">
 ```
