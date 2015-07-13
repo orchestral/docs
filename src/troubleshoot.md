@@ -27,7 +27,7 @@ If you come across situation where your application suddenly when back as it was
 <a name="maximum-nesting"></a>
 ## Maximum function nesting level of '100' reached, aborting!
 
-This is a random error that only happen when you have an older version of `xdebug` enabled (See <http://bugs.xdebug.org/bug_view_page.php?bug_id=00001100>. Here some recommendation that you can use to solve this issue:
+This is a random error that only happen when you have an older version of `xdebug` enabled (See <http://bugs.xdebug.org/bug_view_page.php?bug_id=00001100>). Here some recommendation that you can use to solve this issue:
 
 ### Homestead
 
