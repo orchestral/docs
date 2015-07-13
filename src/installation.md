@@ -60,7 +60,7 @@ Orchestra Platform may require some permissions to be configured: folders within
 
 Once Orchestra Platform is properly configured, we need to run the installation and create the application basic schema (including administrator user).
 
-1. Run `php artisan serve` or use your prefered web server stack (or vagrant).
+1. Run `php artisan serve` or use your prefered web server stack or Vagrant (Homestead etc).
 2. Browse to the installation page, for example `http://localhost:8000/admin` and follow the installation process.
 3. And... you're done.
 
