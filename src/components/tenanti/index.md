@@ -104,8 +104,6 @@ Alternatively, you could also use `php artisan vendor:publish` command to publis
 
 For each driver, you should also consider adding the migration path into autoload (if it not already defined). To do this you can edit your `composer.json`.
 
-##### composer.json
-
 ```json
 {
     "autoload": {
