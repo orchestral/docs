@@ -10,7 +10,7 @@ Imagine (Wrapper) Component is a Laravel 5 package wrapper for [Imagine](https:/
 * [Installation](#installation)
 * [Configuration](#configuration)
 * [Usage](#usage)
-* [Change Log]({doc-url}/components/imagine/changes#v3-0)
+* [Change Log]({doc-url}/components/imagine/changes#v3-1)
 
 <a name="compatibility"></a>
 ## Version Compatibility
