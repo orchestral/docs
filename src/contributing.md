@@ -43,18 +43,16 @@ If you have an idea for a new feature you would like to see added to Orchestra P
 
 Please include the following template when opening an issue on Github:
 
-```markdown
-| Q             | A
-| ------------- | ---
-| Bug fix?      | [yes|no]
-| New feature?  | [yes|no]
-| BC breaks?    | [yes|no]
-| Deprecations? | [yes|no]
-| Tests pass?   | [yes|no]
-| Fixed tickets | [comma separated list of tickets fixed by the PR]
-| License       | MIT
-| Doc PR        | [The reference to the documentation PR if any]
-```
+    | Q             | A
+    | ------------- | ---
+    | Bug fix?      | [yes|no]
+    | New feature?  | [yes|no]
+    | BC breaks?    | [yes|no]
+    | Deprecations? | [yes|no]
+    | Tests pass?   | [yes|no]
+    | Fixed tickets | [comma separated list of tickets fixed by the PR]
+    | License       | MIT
+    | Doc PR        | [The reference to the documentation PR if any]
 
 <a name="coding-guidelines"></a>
 ## Coding Guidelines
@@ -65,4 +63,6 @@ Orchestra Platform follows the [PSR-0](https://github.com/php-fig/fig-standards/
 * Preferable to use `&&` and `||` instead of `and` or `or`.
 * Trait names are suffixed with `Trait (FooTrait)`.
 
-We also include `.php_cs` file on each repository which would allow you to run `php-cs-fixer fix` if you have [PHP-CS-Fixer](https://github.com/FriendsOfPHP/PHP-CS-Fixer) install locally.
+We also include `.php_cs` file on each repository which would allow you to run [PHP-CS-Fixer](https://github.com/FriendsOfPHP/PHP-CS-Fixer) if you have it install locally.
+
+    php-cs-fixer fix
