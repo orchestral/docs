@@ -80,24 +80,23 @@ class AppServiceProvider extends ServiceProvider
 
 Orchestra Platform recommends using either Redis, Memcached or APC session driver (or at least database driver). This help making sure we can handle session request without any interruption especially when for handling CSRF or Login Throttling.
 
+<a name="disable-access-to-theme"></a>
 ### Disallow access to `.blade.php` for themes
 
+<a name="disable-access-to-theme-for-apache"></a>
 #### Apache
 
 Configuration is included in the default `public/.htaccess`:
 
-```
-# Secure Front Themes...
+    # Secure Front Themes...
 
-RewriteRule ^themes/.*\.(blade.php|php)$ - [F,L,NC]
-```
+    RewriteRule ^themes/.*\.(blade.php|php)$ - [F,L,NC]
 
+<a name="disable-access-to-theme-for-nginx"></a>
 #### Nginx
 
 You can add the following configuration:
 
-```
-location ~ ^/themes/(.*)\.php$ {
-    deny all;
-}
-```
+    location ~ ^/themes/(.*)\.php$ {
+        deny all;
+    }
