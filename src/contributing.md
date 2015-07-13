@@ -13,7 +13,7 @@ title: Contributing To Orchestra Platform
 <a name="introduction"></a>
 ## Introduction
 
-Orchestra Platform is free, open-source software, meaning anyone can contribute to its development and progress. Orchestra Platform source code is currently hosted on [Github](https://github.com), which provides an easy method for forking the project and merging your contributions.
+Orchestra Platform is free, open-source software, meaning anyone can contribute to its development and progress. Orchestra Platform source code is currently hosted on [GitHub](https://github.com), which provides an easy method for forking the project and merging your contributions.
 
 <a name="security-vulnerabilities"></a>
 ## Security Vulnerabilities
@@ -27,7 +27,7 @@ The pull request process differs for new features and bugs. Before sending a pul
 
 ### Pull Request for Bugfixes
 
-Pull requests for bugs may be sent without creating any proposal issue. If you believe that you know of a solution for a bug that has been filed on Github, please leave a comment detailing your proposed fix.
+Pull requests for bugs may be sent without creating any proposal issue. If you believe that you know of a solution for a bug that has been filed on GitHub, please leave a comment detailing your proposed fix.
 
 ### Unit Testing
 
@@ -36,12 +36,12 @@ A pull request or bugfixes **should** include relevant test cases to ensure that
 <a name="feature-requests"></a>
 ## Feature Requests
 
-If you have an idea for a new feature you would like to see added to Orchestra Platform, you may create an issue on Github with `[Request]` in the title. The feature request will then be reviewed by a core contributor.
+If you have an idea for a new feature you would like to see added to Orchestra Platform, you may create an issue on GitHub with `[Request]` in the title. The feature request will then be reviewed by a core contributor.
 
 <a name="templates"></a>
 ## Template for Pull Request, Proposal, Request or Bugfixes
 
-Please include the following template when opening an issue on Github:
+Please include the following template when opening an issue on GitHub:
 
     | Q             | A
     | ------------- | ---
