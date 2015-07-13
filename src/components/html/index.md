@@ -1,41 +1,60 @@
 ---
 title: HTML Component
+badge: html
 
 ---
 
-`Orchestra\Html` extends the functionality of `Illuminate\Html` with the extra functionality to including a chainable Form and Table builder. These set of functionality are the backbone in allowing extensions in Orchestra Platform to attach action to any existing form or table.
+HTML component extends the functionality of the deprecated `Illuminate\Html` with the extra functionality to including a chainable Form and Table builder. These set of functionality are the backbone in allowing extensions in Orchestra Platform to attach action to any existing form or table.
 
-### Table of Content
+1. [Version Compatibility](#compatibility)
+2. [Installation](#installation)
+3. [Configuration](#configuration)
+4. [Usage]({doc-url}/components/html/basic/html)
+5. [Change Log]({doc-url}/components/html/changes#v3-0)
 
-* Quick Guide
-  - [Installation](#installation)
-  - [Configuration](#configuration)
-* Documentation
-  - [Usage]({doc-url}/components/html/usage)
-* [Change Log]({doc-url}/components/html/changes#v2-2)
-* [Github](https://github.com/orchestral/html)
+<a name="compatibility"></a>
+## Version Compatibility
 
-## Installation {#installation}
+Laravel    | Facile
+:----------|:----------
+ 4.0.x     | 2.0.x
+ 4.1.x     | 2.1.x
+ 4.2.x     | 2.2.x
+ 5.0.x     | 3.0.x
+
+<a name="installation"></a>
+## Installation
 
 To install through composer, simply put the following in your `composer.json` file:
 
-	{
-		"require": {
-			"orchestra/html": "2.2.*"
-		}
+```json
+{
+	"require": {
+		"orchestra/html": "~3.0"
 	}
+}
+```
 
-## Configuration {#configuration}
+And then run `composer install` from the terminal.
 
-Next add the service provider in `app/config/app.php`.
+<a name="quick-installation"></a>
+### Quick Installation
 
-	'providers' => array(
+Above installation can also be simplify by using the following command:
 
-		// ...
-		# Remove 'Illuminate\Html\HtmlServiceProvider'
-		# and add 'Orchestra\Html\HtmlServiceProvider'
+    composer require "orchestra/html=~3.0"
 
-		'Orchestra\Html\HtmlServiceProvider',
-	),
+<a name="configuration"></a>
+## Configuration
 
-> `Orchestra\Html\HtmlServiceProvider` should replace `Illuminate\Html\HtmlServiceProvider`.
+Next add the service provider in `config/app.php`.
+
+```php
+'providers' => [
+
+    // ...
+
+	'Orchestra\Html\HtmlServiceProvider',
+
+],
+```

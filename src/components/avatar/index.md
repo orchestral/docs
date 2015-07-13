@@ -1,11 +1,8 @@
 ---
 title: Avatar Component
+badge: avatar
 
 ---
-
-[![Latest Stable Version](https://img.shields.io/github/release/orchestral/avatar.svg?style=flat)](https://packagist.org/packages/orchestra/avatar)
-[![Total Downloads](https://img.shields.io/packagist/dt/orchestra/avatar.svg?style=flat)](https://packagist.org/packages/orchestra/avatar)
-[![MIT License](https://img.shields.io/packagist/l/orchestra/avatar.svg?style=flat)](https://packagist.org/packages/orchestra/avatar)
 
 Avatar Component provide support for driver based avatar provider for your Laravel, PHP or Orchestra Platform application.
 
@@ -13,40 +10,42 @@ Avatar Component provide support for driver based avatar provider for your Larav
 2. [Installation](#installation)
 3. [Configuration](#configuration)
 4. [Usage](#usage)
-5. [Change Log]({doc-url}/components/avatar/changes#v3-0)
-6. [Resources](#resources)
+5. [Change Log]({doc-url}/components/avatar/changes#v3-1)
 
-## Version Compatibility {#compatibility}
+<a name="compatibility"></a>
+## Version Compatibility
 
 Laravel    | Avatar
 :----------|:----------
  4.1.x     | 2.1.x
  4.2.x     | 2.2.x
  5.0.x     | 3.0.x
+ 5.1.x     | 3.1.x
 
-## Installation {#installation}
+<a name="installation"></a>
+## Installation
 
 To install through composer, simply put the following in your `composer.json` file:
 
 ```json
 {
 	"require": {
-		"orchestra/avatar": "3.0.*"
+		"orchestra/avatar": "~3.0"
 	}
 }
 ```
 
 And then run `composer install` from the terminal.
 
-### Quick Installation {#quick-installation}
+<a name="quick-installation"></a>
+### Quick Installation
 
 Above installation can also be simplify by using the following command:
 
-```bash
-composer require "orchestra/avatar=3.0.*"
-```
+    composer require "orchestra/avatar=~3.0"
 
-## Configuration {#configuration}
+<a name="configuration"></a>
+## Configuration
 
 Add `Orchestra\Avatar\AvatarServiceProvider` service provider in `config/app.php`.
 
@@ -54,7 +53,8 @@ Add `Orchestra\Avatar\AvatarServiceProvider` service provider in `config/app.php
 'providers' => [
 
     // ...
-    'Orchestra\Avatar\AvatarServiceProvider',
+
+    Orchestra\Avatar\AvatarServiceProvider::class,
 ],
 ```
 
@@ -64,24 +64,27 @@ You might also want to add `Orchestra\Support\Facade\Avatar` to class aliases in
 'aliases' => [
 
     // ...
-    'Avatar' => 'Orchestra\Support\Facade\Avatar',
+
+    'Avatar' => Orchestra\Support\Facade\Avatar::class,
 ],
 ```
 
-## Usage {#usage}
+<a name="usage"></a>
+## Usage
 
 You can easily display an avatar by passing a `User` instance.
 
 ```php
 <?php
 
-$user = User::find(1);
+use App\User;
 
-$avatar = Avatar::user($user)->render();
+$user = User::find(1);
+$avatar = Avatar::user($user);
 ```
 
-## Resources {#resources}
+You can use it in a view by rendering it.
 
-* [Github](https://github.com/orchestral/avatar)
-* [Packagist](https://packagist.org/packages/orchestra/avatar)
-* [Travis-CI](https://travis-ci.org/orchestral/avatar)
+```html
+<img src="{{ $avatar }}" class="avatar">
+```

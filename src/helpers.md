@@ -14,7 +14,8 @@ Orchestra Platform includes a set of helpers function to help solves some of the
 8. [get_meta](#get_meta)
 9. [set_meta](#set_meta)
 
-## orchestra {#orchestra}
+<a name="orchestra"></a>
+## orchestra
 
 Return `orchestra.app` instance.
 
@@ -27,7 +28,8 @@ echo orchestra('memory')->get('site.name');
 
 > Alias to `App::make('orchestra.app')`
 
-## handles {#handles}
+<a name="handles"></a>
+## handles
 
 Return handles configuration for a package to generate a full URL.
 
@@ -44,7 +46,8 @@ Above code would return `/admin/users`, however if your Orchestra Platform confi
 
 > During boot process, Orchestra Platform will automatically set handle for each packages, if specified in `orchestra.json` to `orchestra/extension::handles.vendor/package`, this can be modified from the extension configuration page.
 
-## resources {#resources}
+<a name="resources"></a>
+## resources
 
 Return handles configuration for a resources to generate a full URL.
 
@@ -56,7 +59,8 @@ echo handles('orchestra/foundation::resources/foo/create');
 echo resources('foo/create');
 ```
 
-## memorize {#memorize}
+<a name="memorize"></a>
+## memorize
 
 Return memory configuration associated to the request.
 
@@ -66,7 +70,8 @@ echo memorize('site.name');
 
 > Alias to `Memory::get()`
 
-## messages {#messages}
+<a name="messages"></a>
+## messages
 
 Add a new flash messages for the following request.
 

@@ -9,28 +9,47 @@ title: Configuration
    - [As Domain](#admin-url-as-domain)
 3. [Securing Orchestra Platform](#securing)
 
-## Introduction {#introduction}
+<a name="introduction"></a>
+## Introduction
 
 All of the configuration files for the Orchestra Platform are stored in the `resources/config` directory. Each option is documented, so feel free to look through the files and get familiar with the options available to you.
 
-## Setting Admin URL {#admin-url}
+<a name="admin-url"></a>
+## Setting Admin URL
 
 Instead of using the default `/admin` prefix for your administration page, you can configure Orchestra Platform to handled by a different URL, to utilize this feature all you need to do is publish `orchestra/foundation` configuration using the following command:
 
-```bash
-php artisan publish:config orchestra/foundation
-```
+    php artisan publish:config orchestra/foundation
 
-### As Prefix {#admin-url-as-prefix}
+<a name="admin-url-as-prefix"></a>
+### As Prefix
 
 Edit `handles` key in `resources/config/packages/orchestra/foundation/config.php` to (as an example) `"sudo"`. With this changes Orchestra Platform Administration page while be accessible from `/sudo`.
 
-You could as well set it to `"/"` and it would handle the root uri.
+```php
+<?php
 
+return [
+    'handles' => 'sudo',
+];
+```
 
-### As Domain {#admin-url-as-domain}
+You could as well set it to `"/"` and it would handle the root uri. Else, read on to configure it [as domain](admin-url-as-domain).
 
-You can also assign a sub-domain to handle Orchestra Platform Administration page by editing the `handles` value to `//admin.{{domain}}`. However to do this, please make sure that you have set `APP_URL` value in `.env` and use `Orchestra\Extension\Traits\DomainAwareTrait`.
+<a name="admin-url-as-domain"></a>
+### As Domain
+
+You can also assign a sub-domain to handle Orchestra Platform Administration page by editing the `handles` value to `//admin.{{domain}}`.
+
+```php
+<?php
+
+return [
+    'handles' => '//admin.{{domain}}',
+];
+```
+
+However to do this, please make sure that you have set `APP_URL` value in `.env` and use `Orchestra\Extension\Traits\DomainAwareTrait`.
 
 ```php
 <?php namespace App\Providers;
@@ -54,30 +73,30 @@ class AppServiceProvider extends ServiceProvider
 }
 ```
 
-## Securing Orchestra Platform {#securing}
+<a name="securing"></a>
+## Securing Orchestra Platform
 
 ### Use better session driver
 
-Orchestra Platform recommends using either Redis, Memcached or APC session driver (or at least database driver). This help making sure we can handle session request without any interruption especially when for handling CSRF.
+Orchestra Platform recommends using either Redis, Memcached or APC session driver (or at least database driver). This help making sure we can handle session request without any interruption especially when for handling CSRF or Login Throttling.
 
+<a name="disable-access-to-theme"></a>
 ### Disallow access to `.blade.php` for themes
 
+<a name="disable-access-to-theme-for-apache"></a>
 #### Apache
 
 Configuration is included in the default `public/.htaccess`:
 
-```
-# Secure Front Themes...
+    # Secure Front Themes...
 
-RewriteRule ^themes/.*\.(blade.php|php)$ - [F,L,NC]
-```
- 
+    RewriteRule ^themes/.*\.(blade.php|php)$ - [F,L,NC]
+
+<a name="disable-access-to-theme-for-nginx"></a>
 #### Nginx
 
 You can add the following configuration:
 
-```
-location ~ ^/themes/(.*)\.php$ {
-    deny all;
-}
-```
+    location ~ ^/themes/(.*)\.php$ {
+        deny all;
+    }

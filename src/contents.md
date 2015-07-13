@@ -20,6 +20,7 @@ title: Table of Content
 * Architecture Foundations
   - [Contracts]({doc-url}/contracts)
   - [Facades]({doc-url}/facades)
+  - [Extension]({doc-url}/components/extension/usage)
   - [Events]({doc-url}/events)
 * Services
   - [Sending Mail]({doc-url}/mail)
@@ -57,4 +58,5 @@ title: Table of Content
 * [Installer]({doc-url}/components/installer)
 * [Parser]({doc-url}/components/parser)
 * [Resources]({doc-url}/components/resources)
+* [Tenanti]({doc-url}/components/tenanti)
 * [Testbench]({doc-url}/components/testbench)

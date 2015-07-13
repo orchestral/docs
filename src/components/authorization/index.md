@@ -1,5 +1,6 @@
 ---
 title: Authorization Component
+badge: authorization
 
 ---
 
@@ -15,48 +16,51 @@ In most other solutions, you are either restrict to file based configuration for
   - [Creating a New ACL Instance](#creating-a-new-acl-instance)
   - [Verifying the ACL](#verifying-the-acl)
   - [Integration with Memory Component](#memory-integration)
-5. [Change Log]({doc-url}/components/auth/changes#v3-0)
+5. [Change Log]({doc-url}/components/auth/changes#v3-1)
 
-## Version Compatibility {#compatibility}
+<a name="compatibility"></a>
+## Version Compatibility
 
 Laravel    | Authorization
 :----------|:----------
  5.0.x     | 3.0.x
+ 5.1.x     | 3.1.x
 
- ## Installation
+<a name="installation"></a>
+## Installation
 
- To install through composer, simply put the following in your `composer.json` file:
+To install through composer, simply put the following in your `composer.json` file:
 
- ```json
- {
-    "require": {
-        "orchestra/authorization": "3.0.*"
-    }
+```json
+{
+	"require": {
+		"orchestra/authorization": "~3.0"
+	}
 }
 ```
 
 And then run `composer install` from the terminal.
 
-### Quick Installation {#quick-installation}
+<a name="quick-installation"></a>
+### Quick Installation
 
 Above installation can also be simplify by using the following command:
 
-```bash
-composer require "orchestra/authorization=3.0.*"
-```
+	composer require "orchestra/authorization=~3.0"
 
-## Configuration {#configuration}
+<a name="configuration"></a>
+## Configuration
 
 Next add the service provider in `config/app.php`.
 
 ```php
 'providers' => [
 
-    // ...
-    'Orchestra\Authorization\AuthorizationServiceProvider',
-    'Orchestra\Memory\MemoryServiceProvider',
+	// ...
+	Orchestra\Authorization\AuthorizationServiceProvider::class,
+	Orchestra\Memory\MemoryServiceProvider::class,
 
-    'Orchestra\Memory\CommandServiceProvider',
+	Orchestra\Memory\CommandServiceProvider::class,
 ],
 ```
 
@@ -67,19 +71,21 @@ To make development easier, you could add `Orchestra\Support\Facades\ACL` alias 
 ```php
 'aliases' => [
 
-    'ACL' => 'Orchestra\Support\Facades\ACL',
+	'ACL' => Orchestra\Support\Facades\ACL::class,
 
 ],
 ```
 
-## Usage {#usage}
+<a name="usage"></a>
+## Usage
 
 1. [Concept of RBAC](#concept-of-rbac)
 2. [Creating a New ACL Instance](#creating-a-new-acl-instance)
 3. [Verifying the ACL](#verifying-the-acl)
 4. [Integration with Memory Component](#memory-integration)
 
-### Concept of RBAC {#concept-of-rbac}
+<a name="concept-of-rbac"></a>
+### Concept of RBAC
 
 Name     | Description
 :--------|:-----------------------
@@ -87,17 +93,19 @@ actions  | Actions is either route or activity that we as a user can do (or not 
 roles    | Roles are user group that a user can belong to.
 acl      | Is a boolean mapping between actions and roles, which determine whether a role is allow to do an action.
 
-### Creating a New ACL Instance {#creating-a-new-acl-instance}
+<a name="creating-a-new-acl-instance"></a>
+### Creating a New ACL Instance
 
 ```php
 <?php
 
-ACL::make('acme');
+$acl = ACL::make('acme');
 ```
 
 Imagine we have a **acme** extension, above configuration is all you need in your extension/application service provider.
 
-### Verifying the ACL {#verifying-the-acl}
+<a name="verifying-the-acl"></a>
+### Verifying the ACL
 
 To verify the created ACL, you can use the following code.
 
@@ -105,23 +113,35 @@ To verify the created ACL, you can use the following code.
 $acl = ACL::make('acme');
 
 if (! $acl->can('manage acme')) {
-    return redirect()->to(handles('orchestra::login'));
+	return redirect()->to(handles('orchestra::login'));
 }
 ```
 
-Or you can create a route filter.
+Or you can create a route middleware.
 
 ```php
-Route::filter('foo.manage', function () {
-    if (! ACL::make('acme')->can('manage acme')) {
-        return redirect()->to(handles('orchestra::login'));
-    }
-});
+<?php namespace Acme\Http\Middleware;
+
+use Closure;
+use Orchestra\Support\Facades\ACL;
+
+class ManageAcme
+{
+	public function handle($request, Closure $next)
+	{
+		if (! ACL::make('acme')->can('manage acme')) {
+			return redirect()->to(handles('orchestra::login'));
+		}
+
+		return $next($request);
+	}
+}
 ```
 
-### Integration with Memory Component {#memory-integration}
+<a name="memory-integration"></a>
+### Integration with Memory Component
 
-Integration with [Memory Component]({doc-url}/components/memory}) would allow a persistent storage of ACL metric, this would eliminate the need to define ACL on every request.
+Integration with [Memory component]({doc-url}/components/memory}) would allow a persistent storage of ACL metric, this would eliminate the need to define ACL on every request.
 
 #### Creating a New ACL Instance
 
@@ -138,38 +158,37 @@ Since an ACL metric is defined for each extension, it is best to define ACL acti
 ```php
 <?php
 
+use Orchestra\Model\Role;
 use Illuminate\Database\Migrations\Migration;
 
 class FooDefineAcl extends Migration
 {
-    /**
-     * Run the migrations.
-     *
-     * @return void
-     */
-    public function up()
-    {
-        $role = Orchestra\Model\Role::admin();
-        $acl  = ACL::make('acme');
+	/**
+	 * Run the migrations.
+	 *
+	 * @return void
+	 */
+	public function up()
+	{
+		$role = Role::admin();
+		$acl  = ACL::make('acme');
 
-        $actions = ['manage acme', 'view acme'];
+		$actions = ['manage acme', 'view acme'];
 
-        $acl->actions()->attach($actions);
-        $acl->roles()->add($role->name);
+		$acl->actions()->attach($actions);
+		$acl->roles()->add($role->name);
 
-        $acl->allow($role->name, $actions);
+		$acl->allow($role->name, $actions);
+	}
 
-        Memory::finish();
-    }
-
-    /**
-     * Reverse the migrations.
-     *
-     * @return void
-     */
-    public function down()
-    {
-        // nothing to do here.
-    }
+	/**
+	 * Reverse the migrations.
+	 *
+	 * @return void
+	 */
+	public function down()
+	{
+		// nothing to do here.
+	}
 }
 ```

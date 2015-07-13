@@ -3,6 +3,29 @@ title: HTML Change Log
 
 ---
 
+## Version 3.1 {#v3-1}
+
+### v3.1.3 {#v3-1-3}
+
+* Add a new `Orchestra\Html\Grid::find()` contracts and implements it on:
+  - `Orchestra\Html\Form\Fieldset`.
+  - `Orchestra\Html\Table\Grid`.
+
+### v3.1.2 {#v3-1-2}
+
+* Improved performances by reducing call within `Illuminate\Container\Container`.
+
+### v3.1.1 {#v3-1-1}
+
+* Bump minimum version to PHP v5.5.0.
+* Ensure checkboxes and select "options" return array instead of `Illuminate\Support\Collection` etc.
+
+### v3.1.0 {#v3-1-0}
+
+* Update support for Laravel Framework v5.1.
+* Add `Form::number()` and `Form::date()` helpers.
+* Add `HTML::meta()` and `HTML::dl()` helpers.
+
 ## Version 3.0 {#v3-0}
 
 ### v3.0.1 {#v3-0-1}

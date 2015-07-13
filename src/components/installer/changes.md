@@ -3,6 +3,17 @@ title: Installer Change Log
 
 ---
 
+## Version 3.1 {#v3-1}
+
+### v3.1.1 {#v3-1-1}
+
+* Enables routes caching.
+
+### v3.1.0 {#v3-1-0}
+
+* Update support for Orchestra Platform v3.1.
+* Convert filter to middleware.
+
 ## Version 3.0 {#v3-0}
 
 ### v3.0.2 {#v3-0-2}

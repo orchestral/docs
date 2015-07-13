@@ -3,6 +3,22 @@ title: Messages Change Log
 
 ---
 
+## Version 3.1 {#v3-1}
+
+### v3.1.2 {#v3-1-2}
+
+* Improved performances by reducing call within `Illuminate\Container\Container`.
+
+### v3.1.1 {#v3-1-1}
+
+* Increase minimum PHP requirement to v5.5+.
+* Add `Orchestra\Messages\Http\Middleware\StoreMessageBag`.
+* Avoid using deprecated `Route::filter()` by moving it to middleware.
+
+### v3.1.0 {#v3-1-0}
+
+* Update support to Laravel Framework v5.1.
+
 ## Version 3.0 {#v3-0}
 
 ### v3.0.0 {#v3-0-0}

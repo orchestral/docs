@@ -5,13 +5,10 @@ title: Parser Component
 
 Parser Component is a framework agnostic package that provide a simple way to parse XML to array without having to write a complex logic.
 
-## Table of Content {#toc}
-
 1. [Version Compatibility](#compatibility)
 2. [Installation](#installation)
 3. [Configuration](#configuration)
-4. [Change Log]({doc-url}/components/parser/changes#v2-2)
-5. [Github](https://github.com/orchestral/parser)
+4. [Change Log]({doc-url}/components/parser/changes#v3-0)
 
 ## Version Compatibilty {#compatibility}
 
@@ -25,16 +22,19 @@ Laravel    | Parser
 
 To install through composer, simply put the following in your `composer.json` file:
 
-    {
-        "require": {
-            "orchestra/parser": "3.0.*"
-        }
-    }
+```json
+{
+	"require": {
+		"orchestra/parser": "~3.0"
+	}
+}
+```
 
 And then run `composer install` from the terminal.
 
-### Quick Installation {#quick-installation}
+<a name="quick-installation"></a>
+### Quick Installation
 
 Above installation can also be simplify by using the following command:
 
-    composer require "orchestra/parser=3.0.*"
+	composer require "orchestra/parser=~3.0"

@@ -1,20 +1,17 @@
 ---
 title: Foundation Component
+badge: foundation
 
 ---
-
-[![Latest Stable Version](https://img.shields.io/github/release/orchestral/foundation.svg?style=flat)](https://packagist.org/packages/orchestra/foundation)
-[![Total Downloads](https://img.shields.io/packagist/dt/orchestra/foundation.svg?style=flat)](https://packagist.org/packages/orchestra/foundation)
-[![MIT License](https://img.shields.io/packagist/l/orchestra/foundation.svg?style=flat)](https://packagist.org/packages/orchestra/foundation)
 
 Foundation Component is the core of Orchestra Platform. The installation of this component would require additional boilerplate app skeleton which is available from [orchestra/platform](https://github.com/orchestral/platform).
 
 1. [Version Compatibility](#compatibility)
 2. [Installation](#installation)
 3. [Change Log]({doc-url}/components/foundation/changes#v3-0)
-4. [Resources](#resources)
 
-## Version Compatibility {#compatibility}
+<a name="compatibility"></a>
+## Version Compatibility
 
 Laravel    | Foundation
 :----------|:----------
@@ -23,17 +20,10 @@ Laravel    | Foundation
  4.2.x     | 2.2.x
  5.0.x     | 3.0.x
 
-## Installation {#installation}
+<a name="installation"></a>
+## Installation
 
 Orchestra Platform is easily install using [Composer](http://getcomposer.org).
 
-```bash
-composer create-project orchestra/platform website 3.0.x --prefer-dist
-```
-
-## Resources {#resources}
-
-* [Github](https://github.com/orchestral/foundation)
-* [Packagist](https://packagist.org/packages/orchestra/foundation)
-* [Travis-CI](https://travis-ci.org/orchestral/foundation)
+    composer create-project orchestra/platform website 3.0.x --prefer-dist
 

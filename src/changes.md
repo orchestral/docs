@@ -3,7 +3,44 @@ title: Change Log
 
 ---
 
+## Version 3.1 {#v3-1}
+
+### v3.1.3 {#v3-1-3}
+
+* Add new `resources/lang/en/auth.php` language file.
+* Add `storage/artifact/.gitignore` for zip file based composer install.
+
+### v3.1.2 {#v3-1-2}
+
+* Include `bootstrap-sass` by default in `bower.json`.
+* Update `gulpfile.js` to include bower installed path.
+* Include `bower` as `npm` installable dependencies.
+
+### v3.1.1 {#v3-1-1}
+
+* use `Orchestra\Extension\Traits\DomainAwareTrait` on `App\Providers\AppServiceProvider`.
+* Bump elixir requirement to `^2.0.0`.
+* Added whitelist to remove warning for upcoming PHPUnit v4.8.
+* Fixes doctype declarations.
+* Fixes CSS.
+* Set default charset for sqlsrv driver to `utf8`.
+
+### v3.1.0 {#v3-1-0}
+
+* Update support to Laravel Framework v5.1.
+* Remove `App\Commands\Command` abstract class.
+* Remove `App\Http\Controllers\Auth\AuthController`, `App\Http\Controllers\Auth\PasswordController` and `App\Http\Controllers\HomeController` boilerplate routes.
+* Improves available middlewares.
+* Add `App\Http\Middleware\EncryptCookies` middleware.
+* Add `App\Jobs\Job` abstract class.
+* Remove `App\Providers\BusServiceProvider` and `App\Providers\ConfigServiceProvider`.
+
 ## Version 3.0 {#v3-0}
+
+### v3.0.6 {#v3-0-6}
+
+* Update `composer.json` commands.
+* Update language string based on Laravel changes.
 
 ### v3.0.5 {#v3-0-5}
 

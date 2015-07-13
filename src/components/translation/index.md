@@ -1,11 +1,8 @@
 ---
 title: Translation Component
+badge: translation
 
 ---
-
-[![Latest Stable Version](https://img.shields.io/github/release/orchestral/translation.svg?style=flat)](https://packagist.org/packages/orchestra/translation)
-[![Total Downloads](https://img.shields.io/packagist/dt/orchestra/translation.svg?style=flat)](https://packagist.org/packages/orchestra/translation)
-[![MIT License](https://img.shields.io/packagist/l/orchestra/translation.svg?style=flat)](https://packagist.org/packages/orchestra/translation)
 
 Translation Component extends the functionality of `Illuminate\Translation` to add support for cascading filesystem replacement for Laravel 4 packages.
 
@@ -13,10 +10,14 @@ Translation Component extends the functionality of `Illuminate\Translation` to a
 2. [Installation](#installation)
 3. [Configuration](#configuration)
 4. [Usage](#usage)
+<<<<<<< HEAD
+5. [Change Log]({doc-url}/components/translation/changes#v3-1)
+=======
 5. [Change Log]({doc-url}/components/translation/changes#v3-0)
-6. [Resources](#resources)
+>>>>>>> 3.0
 
-## Version Compatibility {#compatibility}
+<a name="compatibility"></a>
+## Version Compatibility
 
 Laravel    | Translation
 :----------|:----------
@@ -24,26 +25,31 @@ Laravel    | Translation
  4.1.x     | 2.1.x
  4.2.x     | 2.2.x
  5.0.x     | 3.0.x
+ 5.1.x     | 3.1.x
 
-## Installation {#installation}
+<a name="installation"></a>
+## Installation
 
 To install through composer, simply put the following in your `composer.json` file:
 
 ```json
 {
 	"require": {
-		"orchestra/translation": "3.0.*"
+		"orchestra/translation": "~3.0"
 	}
 }
 ```
 
+And then run `composer install` from the terminal.
+
+<a name="quick-installation"></a>
 ### Quick Installation
 
 Above installation can also be simplify by using the following command:
 
-    composer require "orchestra/translation=3.0.*"
+    composer require "orchestra/translation=~3.0"
 
-
+<a name="configuration"></a>
 ## Configuration {#configuration}
 
 Next add the service provider in `config/app.php`.
@@ -55,18 +61,13 @@ Next add the service provider in `config/app.php`.
 	# Remove 'Illuminate\Translation\TranslationServiceProvider'
 	# and add 'Orchestra\Translation\TranslationServiceProvider'
 
-	'Orchestra\Translation\TranslationServiceProvider',
+	Orchestra\Translation\TranslationServiceProvider::class,
 ],
 ```
 
 > `Orchestra\Translation\TranslationServiceProvider` should replace `Illuminate\Translation\TranslationServiceProvider`.
 
-## Usage {#usage}
+<a name="usage"></a>
+## Usage
 
-Translation Component make it easier to have redistribute packages language files, instead of relying on `resources/lang/en/package/name/title.php` you can now publish it under `resources/lang/package/name/en/title.php` making it easier to create repository (and publish it under [Github](https://github.com)) for a single packages or extension to handle multiple languages.
-
-## Resources {#resources}
-
-* [GitHub](https://github.com/orchestral/translation/)
-* [Packagist](https://packagist.org/packages/orchestra/translation)
-* [Travis-CI](https://travis-ci.org/orchestral/translation)
+Translation Component make it easier to have redistribute packages language files, instead of relying on `resources/lang/en/package/name/title.php` you can now publish it under `resources/lang/vendor/name/en/title.php` making it easier to create repository (and publish it under [GitHub](https://github.com)) for a single packages or extension to handle multiple languages.

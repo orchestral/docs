@@ -1,20 +1,19 @@
 ---
 title: Orchestra Testbench Package
+badge: testbench
 
 ---
-
-[![Latest Stable Version](https://img.shields.io/github/release/orchestral/testbench.svg?style=flat)](https://packagist.org/packages/orchestra/testbench)
-[![Total Downloads](https://img.shields.io/packagist/dt/orchestra/testbench.svg?style=flat)](https://packagist.org/packages/orchestra/testbench)
-[![MIT License](https://img.shields.io/packagist/l/orchestra/testbench.svg?style=flat)](https://packagist.org/packages/orchestra/testbench)
 
 Testbench Component is a simple package that is supposed to help you write tests for your Laravel package, especially when there is routing involved.
 
 1. [Version Compatibility](#compatibility)
 2. [Installation](#installation)
-3. [Change Log]({doc-url}/components/testbench/changes#v3-0)
-4. [Resources](#resources)
+3. [Usage](#usage)
+4. [Troubleshoot](#troubleshoot)
+5. [Change Log]({doc-url}/components/testbench/changes#v3-1)
 
-## Version Compatibility {#compatibility}
+<a name="compatibility"></a>
+## Version Compatibility
 
  Laravel  | Testbench
 :---------|:----------
@@ -22,27 +21,31 @@ Testbench Component is a simple package that is supposed to help you write tests
  4.1.x    | 2.1.x
  4.2.x    | 2.2.x
  5.0.x    | 3.0.x
+ 5.1.x    | 3.1.x
 
-## Installation {#installation}
+<a name="installation"></a>
+## Installation
 
 To install through composer, simply put the following in your `composer.json` file:
 
 ```json
 {
 	"require-dev": {
-		"orchestra/testbench": "3.0.*"
+		"orchestra/testbench": "~3.0"
 	}
 }
 ```
 
 And then run `composer install` from the terminal.
 
+<a name="quick-installation"></a>
 ### Quick Installation
 
 Above installation can also be simplify by using the following command:
 
-	composer require --dev "orchestra/testbench=3.0.*"
+	composer require --dev "orchestra/testbench=~3.0"
 
+<a name="usage"></a>
 ## Usage
 
 To use Testbench Component, all you need to do is extend `Orchestra\Testbench\TestCase` instead of `PHPUnit_Framework_TestCase`. The fixture `app` booted by `Orchestra\Testbench\TestCase` is predefined to follow the base application skeleton of Laravel 5.
@@ -54,23 +57,25 @@ class TestCase extends Orchestra\Testbench\TestCase {}
 
 ```
 
+<a name="package-providers"></a>
 ### Custom Service Provider
 
 To load your package service provider, override the `getPackageProviders`.
 
 ```php
-protected function getPackageProviders()
+protected function getPackageProviders($app)
 {
 	return ['Acme\AcmeServiceProvider'];
 }
 ```
 
+<a name="package-aliases"></a>
 ### Custom Aliases
 
 To load your package alias, override the `getPackageAliases`.
 
 ```php
-protected function getPackageAliases()
+protected function getPackageAliases($app)
 {
 	return [
 		'Acme' => 'Acme\Facade'
@@ -78,6 +83,7 @@ protected function getPackageAliases()
 }
 ```
 
+<a name="overriding-setup-method"></a>
 ### Overriding setUp() method
 
 Since `Orchestra\Testbench\TestCase` replace Laravel's `Illuminate\Foundation\Testing\TestCase`, if you need your own `setUp()` implementation, do not forget to call `parent::setUp()`:
@@ -109,6 +115,7 @@ protected function getEnvironmentSetUp($app)
 }
 ```
 
+<a name="overriding-console-kernel"></a>
 ### Overriding Console Kernel
 
 You can easily swap Console Kernel for application bootstrap by overriding `resolveApplicationConsoleKernel()` method:
@@ -126,6 +133,7 @@ protected function resolveApplicationConsoleKernel($app)
 }
 ```
 
+<a name="overriding-http-kernel"></a>
 ### Overriding HTTP Kernel
 
 You can easily swap HTTP Kernel for application bootstrap by overriding `resolveApplicationHttpKernel()` method:
@@ -143,6 +151,7 @@ protected function resolveApplicationHttpKernel($app)
 }
 ```
 
+<a name="overriding-application-timezone"></a>
 ### Overriding Application Timezone
 
 You can also easily override application default timezone, instead of the default `"UTC"`:
@@ -160,8 +169,25 @@ protected function getApplicationTimezone($app)
 }
 ```
 
-## Resources {#resources}
+<a name="troubleshoot"></a>
+## Troubleshoot
 
-* [GitHub](https://github.com/orchestral/testbench)
-* [Packagist](https://packagist.org/orchestra/testbench)
-* [Travis-CI](https://travis-ci.org/orchestral/testbench)
+<a name="troubleshoot-invalid-key-length"></a>
+### No supported encrypter found. The cipher and / or key length are invalid.
+
+    RuntimeException: No supported encrypter found. The cipher and / or key length are invalid.
+
+This error would only occur if your test suite require actual usage of the encrypter. To solve this you can add a dummy `APP_KEY` or use a specific key to your application/package `phpunit.xml`.
+
+```xml
+<phpunit>
+
+    // ...
+
+    <php>
+        <env name="APP_KEY" value="AckfSECXIvnK5r28GVIWUAxmbBSjTsmF"/>
+    </php>
+
+</phpunit>
+```
+
