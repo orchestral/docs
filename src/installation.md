@@ -4,12 +4,23 @@ title: Installation
 ---
 
 1. [Install Composer](#install-composer)
-2. [Install Orchestra Platform](#install-orchestra-platform)
+2. [Minimum Server Requirements](#server-requirement)
+3. [Install Orchestra Platform](#install-orchestra-platform)
   - [Download](#download)
   - [Configuration](#configuration)
   - [Setup](#setup)
-3. [Server Requirements](#server-requirement)
 4. [Pretty URLs](#pretty-urls)
+
+<a name="server-requirement"></a>
+## Minimum Server Requirements
+
+Orchestra Plaftorm has a few system requirements:
+
+* PHP >= 5.5.9 (we highly recommend using PHP 5.6 for your projects).
+* OpenSSL PHP Extension.
+* Mbstring PHP Extension.
+* Apache, nginx, or another compatible web server.
+* SQLite, MySQL, PostgreSQL, or SQL Server PDO drivers.
 
 <a name="install-composer"></a>
 ## Install Composer
@@ -51,19 +62,6 @@ Once Orchestra Platform is properly configured, we need to run the installation 
 1. Run `php artisan serve` or use your prefered web server stack (or vagrant).
 2. Browse to the installation page, for example `http://localhost:8000/admin` and follow the installation process.
 3. And... you're done.
-
-<a name="server-requirement"></a>
-## Server Requirements
-
-Orchestra Plaftorm has a few system requirements:
-
-* PHP >= 5.5.9 (we highly recommend using PHP 5.6 for your projects).
-* OpenSSL PHP Extension.
-* Mbstring PHP Extension.
-* Apache, nginx, or another compatible web server.
-* SQLite, MySQL, PostgreSQL, or SQL Server PDO drivers.
-
-As of PHP 5.5, some OS distributions may require you to manually install the PHP JSON extension. When using Ubuntu, this can be done via `apt-get install php5-json`.
 
 <a name="pretty-urls"></a>
 ## Pretty URLs
