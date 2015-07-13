@@ -3,8 +3,8 @@ title: Installation
 
 ---
 
-1. [Install Composer](#install-composer)
-2. [Minimum Server Requirements](#server-requirement)
+1. [Minimum Server Requirements](#server-requirement)
+2. [Install Composer](#install-composer)
 3. [Install Orchestra Platform](#install-orchestra-platform)
   - [Download](#download)
   - [Configuration](#configuration)
