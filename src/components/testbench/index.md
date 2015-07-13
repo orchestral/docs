@@ -15,8 +15,10 @@ Testbench Component is a simple package that is supposed to help you write tests
     - [Overriding Console Kernel](#overriding-console-kernel)
     - [Overriding HTTP Kernel](#overriding-http-kernel)
     - [Overriding Application Timezone](#overriding-application-timezone)
-4. [Troubleshoot](#troubleshoot)
-5. [Change Log]({doc-url}/components/testbench/changes#v3-1)
+    - [Using Migrations](#using-migrations)
+4. [Alternative 3rd Party Testing](#alternative-testing)
+5. [Troubleshoot](#troubleshoot)
+6. [Change Log]({doc-url}/components/testbench/changes#v3-1)
 
 <a name="compatibility"></a>
 ## Version Compatibility
@@ -194,6 +196,14 @@ $this->artisan('migrate', [
     '--realpath' => realpath(__DIR__.'/../migrations'),
 ]);
 ```
+
+<a name="alternative-testing"></a>
+## Alternative 3rd Party Testing
+
+There also 3rd party packages that extends Testbench Component on CodeCeption and PHPSpec:
+
+* [Testbench with CodeCeption](https://bitbucket.org/aedart/testing-laravel)
+* [Testbench with PHPSpec](https://github.com/Pixelindustries/phpspec-testbench)
 
 <a name="troubleshoot"></a>
 ## Troubleshoot
