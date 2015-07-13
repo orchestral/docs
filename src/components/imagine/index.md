@@ -21,6 +21,7 @@ Laravel    | Imagine
  4.1.x     | 2.1.x
  4.2.x     | 2.2.x
  5.0.x     | 3.0.x
+ 5.1.x     | 3.1.x
 
 <a name="installation"></a>
 ## Installation {#installation}
@@ -55,7 +56,7 @@ Add `Orchestra\Imagine\ImagineServiceProvider` service provider in `config/app.p
 
     // ...
 
-    'Orchestra\Imagine\ImagineServiceProvider',
+    Orchestra\Imagine\ImagineServiceProvider::class,
 ],
 ```
 
@@ -68,7 +69,7 @@ Add `Orchestra\Imagine\Facade` facade alias in `config/app.php`.
 
     // ...
 
-    'Imagine' => 'Orchestra\Imagine\Facade',
+    'Imagine' => Orchestra\Imagine\Facade::class,
 ],
 ```
 
