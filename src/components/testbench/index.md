@@ -53,8 +53,9 @@ To use Testbench Component, all you need to do is extend `Orchestra\Testbench\Te
 ```php
 <?php
 
-class TestCase extends Orchestra\Testbench\TestCase {}
-
+class TestCase extends Orchestra\Testbench\TestCase {
+    //
+}
 ```
 
 <a name="package-providers"></a>
