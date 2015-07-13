@@ -9,6 +9,12 @@ Testbench Component is a simple package that is supposed to help you write tests
 1. [Version Compatibility](#compatibility)
 2. [Installation](#installation)
 3. [Usage](#usage)
+    - [Custom Service Providers](#package-providers)
+    - [Custom Aliases](#package-aliases)
+    - [Overriding setup() method](#overriding-setup-method)
+    - [Overriding Console Kernel](#overriding-console-kernel)
+    - [Overriding HTTP Kernel](#overriding-http-kernel)
+    - [Overriding Application Timezone](#overriding-application-timezone)
 4. [Troubleshoot](#troubleshoot)
 5. [Change Log]({doc-url}/components/testbench/changes#v3-1)
 
@@ -60,7 +66,7 @@ class TestCase extends Orchestra\Testbench\TestCase
 ```
 
 <a name="package-providers"></a>
-### Custom Service Provider
+### Custom Service Providers
 
 To load your package service provider, override the `getPackageProviders`.
 
@@ -175,6 +181,18 @@ protected function getApplicationTimezone($app)
 {
     return 'Asia/Kuala_Lumpur';
 }
+```
+
+<a name="using-migrations"></a>
+### Using Migrations
+
+Testbench include a custom migrations command that support `realpath` option instead of the basic relative `path` option, this would make it easier for you to run database migrations during testing by just including the full realpath to your package database/migration folder.
+
+```php
+$this->artisan('migrate', [
+    '--database' => 'testbench',
+    '--realpath' => realpath(__DIR__.'/../migrations'),
+]);
 ```
 
 <a name="troubleshoot"></a>
