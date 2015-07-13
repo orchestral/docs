@@ -67,29 +67,27 @@ Once Orchestra Platform is properly configured, we need to run the installation 
 <a name="pretty-urls"></a>
 ## Pretty URLs
 
+<a name="pretty-urls-for-apache"></a>
 ### Apache
 
 The framework ships with a `public/.htaccess` file that is used to allow URLs without `index.php`. If you use Apache to serve your Orchestra Platform application, be sure to enable the `mod_rewrite` module.
 
 If the `.htaccess` file that ships with Orchestra Platform does not work with your Apache installation, try this one:
 
-```
-Options +FollowSymLinks
-RewriteEngine On
+    Options +FollowSymLinks
+    RewriteEngine On
 
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^ index.php [L]
-```
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^ index.php [L]
 
+<a name="pretty-urls-for-nginx"></a>
 ### Nginx
 
 On Nginx, the following directive in your site configuration will allow "pretty" URLs:
 
-```
-location / {
-    try_files $uri $uri/ /index.php?$query_string;
-}
-```
+    location / {
+        try_files $uri $uri/ /index.php?$query_string;
+    }
 
 Of course, when using Homestead, pretty URLs will be configured automatically.
