@@ -17,8 +17,9 @@ title: Installation
 Orchestra Plaftorm has a few system requirements:
 
 * PHP >= 5.5.9 (we highly recommend using PHP 5.6 for your projects).
-* OpenSSL PHP Extension.
-* Mbstring PHP Extension.
+* PHP Extensions:
+  - OpenSSL
+  - Mbstring
 * Apache, nginx, or another compatible web server.
 * SQLite, MySQL, PostgreSQL, or SQL Server PDO drivers.
 
