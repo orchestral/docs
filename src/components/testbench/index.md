@@ -112,7 +112,13 @@ If you need to add something early in the application bootstrapping process, you
  */
 protected function getEnvironmentSetUp($app)
 {
-	//
+	// setup default database to use sqlite :memory:
+    $app['config']->set('database.default', 'testbench');
+    $app['config']->set('database.connections.testbench', [
+        'driver'   => 'sqlite',
+        'database' => ':memory:',
+        'prefix'   => '',
+    ]);
 }
 ```
 
