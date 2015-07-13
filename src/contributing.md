@@ -57,7 +57,7 @@ Please include the following template when opening an issue on GitHub:
 <a name="coding-guidelines"></a>
 ## Coding Guidelines
 
-Orchestra Platform follows the [PSR-0](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-0.md), [PSR-1](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-1-basic-coding-standard.md) and [PSR-2](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-2-coding-style-guide.md) coding standards. In addition to these standards, below is a list of other coding standards that should be followed:
+Orchestra Platform follows the [PSR-1](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-1-basic-coding-standard.md), [PSR-2](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-2-coding-style-guide.md) and [PSR-4](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-4-autoloader.md) coding standards. In addition to these standards, below is a list of other coding standards that should be followed:
 
 * Namespace declarations should be on the same line as `<?php`.
 * Preferable to use `&&` and `||` instead of `and` or `or`.
