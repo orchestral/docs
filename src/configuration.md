@@ -14,6 +14,10 @@ title: Configuration
 
 All of the configuration files for the Orchestra Platform are stored in the `resources/config` directory. Each option is documented, so feel free to look through the files and get familiar with the options available to you.
 
+Orchestra Platform needs almost no other configuration out of the box except for **database configuration**, which can be configured in `.env` file. However, you may wish to review the `resources/config/app.php` file and its documentation. It contains several options such as `timezone` and `locale` that you may wish to change according to your application.
+
+> Note: You should never have the `app.debug` configuration option set to `true` for a production application.
+
 <a name="admin-url"></a>
 ## Setting Admin URL
 

@@ -3,18 +3,22 @@ title: Securing Orchestra Platform
 
 ---
 
-1. [Set Application Key](#set-application-key)
-2. [Use Better Session Driver](#use-better-session-driver)
-3. [Disallow access to `.blade.php` for themes](#disable-access-to-theme)
+1. [Application Key](#app-key)
+2. [Environment Configuration](#environment-configuration)
+3. [Use Better Session Driver](#use-better-session-driver)
+4. [Disallow access to `.blade.php` for themes](#disable-access-to-theme)
 
-<a name="set-application-key"></a>
-## Set Application Key
+<a name="app-key"></a>
+## Application Key
 
-The application key should always be unique for every application which would mainly be used to encrypt your session cookies (among other stuff). If you haven't set a key, run the following command to do so:
+The first thing you should do before running Orchestra Platform is set your application key to a random string. If you download Orchestra Platform via Composer, this key has probably already been set for you during composer install. You can also rerun this command:
 
     php artisan key:generate
 
 Typically, this string should be 32 characters long. The key can be set in the `.env` environment file. **If the application key is not set, your user sessions and other encrypted data will not be secure!**
+
+<a name="environment-configuration"></a>
+## Environment Configuration
 
 <a name="use-better-session-driver"></a>
 ## Use Better Session Driver
