@@ -30,13 +30,13 @@ If you have an idea for a new feature you would like to see added to Orchestra P
 
 The pull request process differs for new features and bugs. A pull request or bugfixes **should** include relevant test cases to ensure that Orchestra Platform work as expected and avoid regression bug is produced in the future.
 
-<a name="pr-for-features"></a>
-### Pull Requests for Features
+<a name="pr-for-new-features"></a>
+### New Features
 
 Before sending a pull request for a new feature, you should first create an issue with `[Proposal]` in the title. The proposal should describe the new feature, as well as implementation ideas. The proposal will then be reviewed and either approved or denied. Once a proposal is approved, a pull request may be created implementing the new feature. Pull requests which do not follow this guideline may be closed immediately.
 
 <a name="pr-for-bugfixes"></a>
-### Pull Request for Bugfixes
+### Bugfixes
 
 Pull requests for bugs may be sent without creating any proposal issue. If you believe that you know of a solution for a bug that has been filed on GitHub, please leave a comment detailing your proposed fix.
 
