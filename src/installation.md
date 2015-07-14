@@ -41,7 +41,7 @@ You can install Orchestra Platform using Composer:
 <a name="configuration"></a>
 ### Preparing Installation
 
-To get started, basically you need to do the following:
+To running the setup to install Orchestra Platform on your local machine, it best to do the following:
 
 1. Set the [application key]({doc-url}/security#app-key) by running `php artisan key:generate`, this will be reflected as `APP_KEY` in `.env`.
 2. Setup `APP_ENV` values, the default `local` environment is a commonly used for local environment.
