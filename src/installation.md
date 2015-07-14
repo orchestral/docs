@@ -43,10 +43,10 @@ You can install Orchestra Platform using Composer:
 
 To get started, basically you need to do the following:
 
-* Set the [application key]({doc-url}/security#app-key), this will be reflected as `APP_KEY` in `.env`.
-* Setup `APP_ENV` values, the default `local` environment is a commonly used for local environment.
-* Configure database connection via `.env`.
-* Folders within `storage` and `bootstrap/cache` requires write access by the web server.
+1. Set the [application key]({doc-url}/security#app-key), this will be reflected as `APP_KEY` in `.env`.
+2. Setup `APP_ENV` values, the default `local` environment is a commonly used for local environment.
+3. Configure database connection via `.env`.
+4. Folders within `storage` and `bootstrap/cache` requires write access by the web server.
 
 <a name="setup"></a>
 ### Setup
