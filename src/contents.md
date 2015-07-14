@@ -15,6 +15,7 @@ title: Table of Content
 * Setup
   - [Installation]({doc-url}/installation)
   - [Configuration]({doc-url}/configuration)
+  - [Security]({doc-url}/security)
 * The Basics
   - [Helpers]({doc-url}/helpers)
 * Architecture Foundations
