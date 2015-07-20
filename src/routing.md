@@ -53,7 +53,7 @@ Above code improves the basic `Route::group()` by adding few things:
 * Add `Orchestra\Foundation\Http\Middleware\UseBackendTheme` middleware.
 * Add route group namespace to `App\Http\Controllers\Admin`.
 
-It's actually an alias of `Foundation::group()` with additional configuration:
+It's actually an alias of `Foundation::group()` with additional configuration, above code is actually an equivalent of using `Foundation::group()` as the following:
 
 ```php
 use Illuminate\Routing\Router;
