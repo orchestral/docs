@@ -11,7 +11,7 @@ title: Routing
 <a name="registering-routes"></a>
 ## Registering Routes
 
-Routing with Orchestra Platform is based on Laravel routing engine. However we include two base method for registering routes; `Foundation::namespaced()` and `Foundation::group()`.
+Routing with Orchestra Platform is still based on Laravel routing engine. However we include two base method for registering routes; `Foundation::namespaced()` and `Foundation::group()`.
 
 <a name="register-frontend-routing"></a>
 ### Frontend Routing
@@ -24,6 +24,14 @@ use Illuminate\Routing\Router;
 Foundation::group('app', '/', ['namespace' => 'App\Http\Controllers'], function (Router $router) {
     $router->resources('photos', 'PhotoController', ['only' => ['index', 'show']]);
 });
+```
+
+The main different is that we now include a namespace and a fallback prefix before providing any attributes for our route group. In this case `app` is our route namespace and `/` is the fallback prefix URL if `app` path is not registered.
+
+The reason namespace is important because using this concept we can set an anchor to the URL via the following:
+
+```html
+<a href="{{ handles("app::photos")" }}">List Photos</a>
 ```
 
 <a name="register-backend-routing"></a>
@@ -45,7 +53,7 @@ Above code improves the basic `Route::group()` by adding few things:
 * Add `Orchestra\Foundation\Http\Middleware\UseBackendTheme` middleware.
 * Add route group namespace to `App\Http\Controllers\Admin`.
 
-It's actually an alias of frontend routing with additional configuration:
+It's actually an alias of `Foundation::group()` with additional configuration:
 
 ```php
 use Illuminate\Routing\Router;
