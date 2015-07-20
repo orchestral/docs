@@ -16,7 +16,7 @@ Routing with Orchestra Platform is still based on Laravel routing engine. Howeve
 <a name="register-frontend-routing"></a>
 ### Frontend Routing
 
-Anything other than Orchestra Platform administration page are considered as frontend routing, this includes routing to frontend for app and extensions. 
+Anything other than Orchestra Platform administration routes are considered as frontend routing, this includes routing to frontend for app and extensions. 
 
 ```php
 use Illuminate\Routing\Router;
@@ -37,7 +37,7 @@ The reason namespace is important because using this concept we can set an ancho
 <a name="register-backend-routing"></a>
 ### Backend Routing
 
-You can easily create a new page for Orchestra Platform administration page by using `Foundation::namespaced()`:
+You can easily create a new page for Orchestra Platform administration routes by using `Foundation::namespaced()`:
 
 ```php
 use Illuminate\Routing\Router;
