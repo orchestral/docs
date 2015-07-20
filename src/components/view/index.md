@@ -12,7 +12,7 @@ This would allow extension (or even packages) to have it's own set of view styli
 2. [Installation](#installation)
 3. [Configuration](#configuration)
 4. [Usage](#usage)
-5. [Change Log]({doc-url}/components/view/changes#v2-2)
+5. [Change Log]({doc-url}/components/view/changes#v3-1)
 
 <a name="compatibility"></a>
 ## Version Compatibility
@@ -23,6 +23,7 @@ This would allow extension (or even packages) to have it's own set of view styli
  4.1.x    | 2.1.x
  4.2.x    | 2.2.x
  5.0.x    | 3.0.x
+ 5.1.x    | 3.1.x
 
 ## Installation {#installation}
 
@@ -53,11 +54,11 @@ Next add the service provider in `config/app.php`.
 ```php
 'providers' => [
 
-	// ...
+    // ...
 
-	'Orchestra\View\DecoratorServiceProvider',
-	'Orchestra\View\ViewServiceProvider',
-	'Orchestra\Memory\MemoryServiceProvider',
+    Orchestra\View\DecoratorServiceProvider::class,
+    Orchestra\View\ViewServiceProvider::class,
+    Orchestra\Memory\MemoryServiceProvider::class,
 ],
 ```
 
@@ -68,7 +69,7 @@ Next add the service provider in `config/app.php`.
 2. [Anatomy of a Theme](#anatomy-of-a-theme)
 3. [Asset Routing](#asset-routing)
 
-<a href="" name="basic-of-a-theme"></a>
+<a name="basic-of-a-theme"></a>
 ## Basic of a Theme
 
 ### Default Theme
@@ -83,11 +84,11 @@ Each theme can have a manifest file, which provide Orchestra Platform the requir
 
 ```json
 {
-	"name": "Default",
-	"description": "Default Theme for Orchestra Platform",
-	"author": "Orchestra Platform",
-	"autoload": [
-	]
+  "name": "Default",
+  "description": "Default Theme for Orchestra Platform",
+  "author": "Orchestra Platform",
+  "autoload": [
+  ]
 }
 ```
 
@@ -97,10 +98,10 @@ There would be time where you would need to be able to customize Theme by adding
 
 ```json
 {
-	"autoload": [
-		"start.php",
-		"helpers.php"
-	]
+  "autoload": [
+    "start.php",
+    "helpers.php"
+  ]
 }
 ```
 
@@ -126,10 +127,14 @@ The **application** views is accessible from the root path of your theme, while 
 
 You are free to maintain where assets is located inside the theme folder as it is under public folder. To access the asset file, you can use the following snippet.
 
-	<script src="{{ Theme::to('assets/js/script.js') }}">
-	<!-- this would point to `http:://yourdomain.com/themes/default/assets/js/script.js` -->
+```html
+<script src="{{ Theme::to('assets/js/script.js') }}">
+<!-- this would point to `http:://yourdomain.com/themes/default/assets/js/script.js` -->
+```
 
 Alternatively you can also use `Theme::asset()`:
 
-	<script src="{{ Theme::asset('assets/js/script.js') }}">
-	<!-- this would point to `/themes/default/assets/js/script.js` -->
+```html
+<script src="{{ Theme::asset('assets/js/script.js') }}">
+<!-- this would point to `/themes/default/assets/js/script.js` -->
+```
