@@ -8,7 +8,7 @@ Notifier Component add a simplify approach to notifier the application user usin
 1. [Version Compatibility](#compatibility)
 2. [Installation](#installation)
 3. [Configuration](#configuration)
-5. [Change Log]({doc-url}/components/notifier/changes#v2-2)
+5. [Change Log]({doc-url}/components/notifier/changes#v3-1)
 
 <a name="compatibility"></a>
 ## Version Compatibility
@@ -50,9 +50,9 @@ Next add the service provider in `config/app.php`
 ```php
 'providers' => [
 
-	// ...
+    // ...
 
-	Orchestra\Notifier\NotifierServiceProvider::class,
+    Orchestra\Notifier\NotifierServiceProvider::class,
 ],
 ```
 
@@ -63,7 +63,7 @@ You might want to add `Orchestra\Support\Facades\Notifier` to class aliases in `
 ```php
 'aliases' => [
 
-	// ...
+    // ...
 
     'Mailer'   => Orchestra\Support\Facades\Mailer::class,
 	'Notifier' => Orchestra\Support\Facades\Notifier::class,
