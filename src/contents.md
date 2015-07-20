@@ -23,6 +23,7 @@ title: Table of Content
   - [Contracts]({doc-url}/contracts)
   - [Facades]({doc-url}/facades)
   - [Extension]({doc-url}/components/extension/usage)
+  - [Routing]({doc-url}/routing)
   - [Events]({doc-url}/events)
 * Services
   - [Sending Mail]({doc-url}/mail)
