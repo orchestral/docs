@@ -17,6 +17,7 @@ title: Table of Content
   - [Configuration]({doc-url}/configuration)
   - [Security]({doc-url}/security)
 * The Basics
+  - [Meta Data]({doc-url}/meta)
   - [Helpers]({doc-url}/helpers)
 * Architecture Foundations
   - [Contracts]({doc-url}/contracts)

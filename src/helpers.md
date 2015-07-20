@@ -51,7 +51,7 @@ Above code would return `/admin/users`, however if your Orchestra Platform confi
 
 Return handles configuration for a resources to generate a full URL.
 
-```php
+```php 
 // To route for a resources you would normally write
 echo handles('orchestra/foundation::resources/foo/create');
 
@@ -82,3 +82,7 @@ messages('error', 'Unable to update the database!');
 ```
 
 > Alias to `Messages::add()`
+
+<a name="get_meta"></a>
+## get_meta
+
