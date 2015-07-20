@@ -5,6 +5,13 @@ title: Meta Data
 
 Meta data are configuration information that are only available on current request. It similar to Laravel configuration repository but without the persistent information. This make it useful for adding information that is specific to the current request.
 
+1. [Basic Usage](#basic-usage)
+2. [Using Helpers](#using-helpers)
+3. [Using Blade Directives](#using-blade-directives)
+
+<a name="basic-usage"></a>
+## Basic Usage
+
 A common usage of meta data is to define current page title:
 
 ```php
@@ -16,8 +23,8 @@ This value can be retrieved via `Meta::get()`:
 ```php
 echo Meta::get('title');
 ```
-
-## Using helpers
+<a name="using-helpers"></a>
+## Using Helpers
 
 Set a meta data:
 
@@ -31,7 +38,8 @@ Get a meta data (this will `return` the value):
 echo get_meta('title');
 ```
 
-## Using Blade directive
+<a name="using-blade-directives"></a>
+## Using Blade Directives
 
 Set a meta data:
 
