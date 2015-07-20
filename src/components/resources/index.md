@@ -18,6 +18,7 @@ Laravel    | Facile
  4.1.x     | 2.1.x
  4.2.x     | 2.2.x
  5.0.x     | 3.0.x
+ 5.1.x     | 3.1.x
 
 <a name="installation"></a>
 ## Installation
@@ -49,9 +50,9 @@ Next add the service provider in `config/app.php`.
 ```php
 'providers' => [
 
-	// ...
+    // ...
 
-	'Orchestra\Resources\ResourcesServiceProvider',
+    Orchestra\Resources\ResourcesServiceProvider::class,
 ],
 ```
 
@@ -62,7 +63,7 @@ To make development easier, you could add `Orchestra\Support\Facades\Resources` 
 ```php
 'aliases' => [
 
-    'Resources' => 'Orchestra\Support\Facades\Resources',
+    'Resources' => Orchestra\Support\Facades\Resources::class,
 
 ],
 ```
