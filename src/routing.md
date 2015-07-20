@@ -31,7 +31,7 @@ The main different is that we now include a namespace and a fallback prefix befo
 The reason namespace is important because using this concept we can set an anchor to the URL via the following:
 
 ```html
-<a href="{{ handles("app::photos")" }}">List Photos</a>
+<a href="{{ handles('app::photos') }}">List Photos</a>
 ```
 
 <a name="register-backend-routing"></a>
