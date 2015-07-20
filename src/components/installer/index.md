@@ -9,7 +9,7 @@ Orchestra Platform Installer Extension provide a generic installation wizard and
 1. [Version Compatibility](#compatibility)
 2. [Installation](#installation)
 3. [Configuration](#configuration)
-4. [Change Log]({doc-url}/components/installer/changes#v3-0)
+4. [Change Log]({doc-url}/components/installer/changes#v3-1)
 
 <a name="compatibility"></a>
 ## Version Compatibility
@@ -48,6 +48,6 @@ Add `Orchestra\Installer\InstallerServiceProvider` service provider in `config/a
 
     // ...
 
-    'Orchestra\Installer\InstallerServiceProvider',
+    Orchestra\Installer\InstallerServiceProvider::class,
 ],
 ```
