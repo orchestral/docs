@@ -98,3 +98,28 @@ messages('error', 'Unable to update the database!');
 <a name="get_meta"></a>
 ## get_meta
 
+Get available meta data for current request:
+
+```php
+get_meta('title')
+```
+
+You can also set a default value if key is not available:
+
+```php
+get_meta('title', 'Home')
+```
+
+> Alias to `Meta::get()`
+
+<a name="set_meta"></a>
+## set_meta
+
+Set new meta data for current request:
+
+```php
+set_meta('title', 'Welcome')
+```
+
+> Alias to `Meta::set()`
+
