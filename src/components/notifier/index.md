@@ -1,5 +1,6 @@
 ---
 title: Notifier Component
+badge: notifier
 
 ---
 
