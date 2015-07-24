@@ -7,7 +7,6 @@ title: Configuration
 2. [Setting Admin URL](#admin-url)
    - [As Prefix](#admin-url-as-prefix)
    - [As Domain](#admin-url-as-domain)
-3. [Securing Orchestra Platform]({doc-url}/security)
 
 <a name="introduction"></a>
 ## Introduction
