@@ -176,7 +176,7 @@ use Orchestra\Contracts\Memory\Handler as HandlerContract;
 
 class AcmeMemoryHandler implements HandlerContract
 {
-  // Add your implementation
+    // Add your implementation
 }
 
 Memory::extend('acme', function ($app, $name) {
