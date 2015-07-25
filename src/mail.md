@@ -8,7 +8,7 @@ title: Sending Mail
    - [Queued Sending](#mailer-queue)
    - [Configured Sending via `push()` method](#mailer-push)
 2. [Notifier](#notifier)
-  - [Sending](#notifier-send)
+   - [Sending](#notifier-send)
 
 <a name="mailer"></a>
 ## Mailer
@@ -92,4 +92,3 @@ $user = User::find(5);
 
 $user->notify('Email subject to be displayed!', 'email.update', ['user' => $user]);
 ```
-
