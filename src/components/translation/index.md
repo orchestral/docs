@@ -57,7 +57,7 @@ Next add the service provider in `config/app.php`.
     # Remove 'Illuminate\Translation\TranslationServiceProvider'
     # and add 'Orchestra\Translation\TranslationServiceProvider'
 
-	Orchestra\Translation\TranslationServiceProvider::class,
+    Orchestra\Translation\TranslationServiceProvider::class,
 ],
 ```
 
