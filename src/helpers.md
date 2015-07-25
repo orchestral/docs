@@ -59,7 +59,7 @@ Return handles configuration for a resources to generate a full URL.
 
 To route for a resources you would normally write the following:
 
-```php 
+```php
 echo handles('orchestra/foundation::resources/foo/create');
 ```
 
@@ -101,13 +101,13 @@ messages('error', 'Unable to update the database!');
 Get available meta data for current request:
 
 ```php
-get_meta('title')
+get_meta('title');
 ```
 
 You can also set a default value if key is not available:
 
 ```php
-get_meta('title', 'Home')
+get_meta('title', 'Home');
 ```
 
 > Alias to `Meta::get()`
@@ -118,7 +118,7 @@ get_meta('title', 'Home')
 Set new meta data for current request:
 
 ```php
-set_meta('title', 'Welcome')
+set_meta('title', 'Welcome');
 ```
 
 > Alias to `Meta::set()`
