@@ -89,4 +89,3 @@ $user = User::find(5);
 
 $user->notify('Email subject to be displayed!', 'email.update', ['user' => $user]);
 ```
-
