@@ -69,7 +69,7 @@ You might also want to add `Orchestra\Support\Facade\Avatar` to class aliases in
 <a name="usage"></a>
 ## Usage
 
-You can easily display an avatar by passing a `User` instance.
+You can easily display an avatar by passing a `App\User` instance.
 
 ```php
 <?php
@@ -77,5 +77,11 @@ You can easily display an avatar by passing a `User` instance.
 use App\User;
 
 $user = User::find(1);
-$avatar = Avatar::user($user)->render();
+$avatar = Avatar::user($user);
+```
+
+You can use it in a view by rendering it.
+
+```html
+<img src="{{ $avatar }}" class="avatar">
 ```
