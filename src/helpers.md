@@ -21,8 +21,11 @@ Return `orchestra.app` instance.
 
 ```php
 echo orchestra()->memory()->get('site.name');
+```
 
-// You can also use the following to get the same value:
+You can also use the following to get the same value:
+
+```php
 echo orchestra('memory')->get('site.name');
 ```
 
@@ -35,8 +38,11 @@ Return handles configuration for a package to generate a full URL.
 
 ```php
 echo handles('orchestra/foundation::users');
+```
 
-// you can also use `orchestra` as an alias to `orchestra/foundation`.
+You can also use `orchestra` as an alias to `orchestra/foundation`.
+
+```
 echo handles('orchestra::users');
 ```
 
@@ -51,11 +57,15 @@ Above code would return `/admin/users`, however if your Orchestra Platform confi
 
 Return handles configuration for a resources to generate a full URL.
 
-```php
-// To route for a resources you would normally write
-echo handles('orchestra/foundation::resources/foo/create');
+To route for a resources you would normally write the following:
 
-// this can be shortern to
+```php
+echo handles('orchestra/foundation::resources/foo/create');
+```
+
+This can be shortern to:
+
+```php
 echo resources('foo/create');
 ```
 
@@ -77,8 +87,38 @@ Add a new flash messages for the following request.
 
 ```php
 messages('success', 'User has been created.');
+```
 
+```php
 messages('error', 'Unable to update the database!');
 ```
 
 > Alias to `Messages::add()`
+
+<a name="get_meta"></a>
+## get_meta
+
+Get available meta data for current request:
+
+```php
+get_meta('title');
+```
+
+You can also set a default value if key is not available:
+
+```php
+get_meta('title', 'Home');
+```
+
+> Alias to `Meta::get()`
+
+<a name="set_meta"></a>
+## set_meta
+
+Set new meta data for current request:
+
+```php
+set_meta('title', 'Welcome');
+```
+
+> Alias to `Meta::set()`
