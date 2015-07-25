@@ -41,13 +41,13 @@ Above installation can also be simplify by using the following command:
 <a name="configuration"></a>
 ## Configuration
 
-Add `Orchestra\Installer\InstallerServiceProvider` service provider in `config/app.php`.
+Add `Orchestra\Installation\InstallerServiceProvider` service provider in `resources/config/app.php`.
 
 ```php
 'providers' => [
 
     // ...
 
-    Orchestra\Installer\InstallerServiceProvider::class,
+    Orchestra\Installation\InstallerServiceProvider::class,
 ],
 ```
