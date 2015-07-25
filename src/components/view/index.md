@@ -31,9 +31,9 @@ To install through composer, simply put the following in your `composer.json` fi
 
 ```json
 {
-	"require": {
-		"orchestra/view": "~3.0"
-	}
+    "require": {
+        "orchestra/view": "~3.0"
+    }
 }
 ```
 

@@ -30,9 +30,9 @@ To install through composer, simply put the following in your `composer.json` fi
 
 ```json
 {
-	"require": {
-		"orchestra/translation": "~3.0"
-	}
+    "require": {
+        "orchestra/translation": "~3.0"
+    }
 }
 ```
 
@@ -53,9 +53,9 @@ Next add the service provider in `config/app.php`.
 ```php
 'providers' => [
 
-	// ...
-	# Remove 'Illuminate\Translation\TranslationServiceProvider'
-	# and add 'Orchestra\Translation\TranslationServiceProvider'
+    // ...
+    # Remove 'Illuminate\Translation\TranslationServiceProvider'
+    # and add 'Orchestra\Translation\TranslationServiceProvider'
 
 	Orchestra\Translation\TranslationServiceProvider::class,
 ],
