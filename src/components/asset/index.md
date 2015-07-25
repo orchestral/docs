@@ -15,7 +15,7 @@ Asset Component is a port of Laravel 3 Asset for Orchestra Platform. The compone
   - [Asset Dependencies](#asset-dependencies)
   - [Asset Containers](#asset-containers)
   - [Asset Versioning](#asset-versioning)
-5. [Change Log]({doc-url}/components/asset/changes#v3-0)
+5. [Change Log]({doc-url}/components/asset/changes#v3-1)
 
 <a name="compatibility"></a>
 ## Version Compatibility
@@ -26,6 +26,7 @@ Laravel    | Asset
  4.1.x     | 2.1.x
  4.2.x     | 2.2.x
  5.0.x     | 3.0.x
+ 5.1.x     | 3.1.x
 
 <a name="installation"></a>
 ## Installation
@@ -59,7 +60,7 @@ Next add the service provider in `config/app.php`.
 
 	// ...
 
-	'Orchestra\Asset\AssetServiceProvider',
+	Orchestra\Asset\AssetServiceProvider::class,
 ],
 ```
 
@@ -72,7 +73,7 @@ You might want to add `Orchestra\Support\Facades\Asset` to class aliases in `con
 
 	// ...
 
-	'Asset' => 'Orchestra\Support\Facades\Asset',
+	'Asset' => Orchestra\Support\Facades\Asset::class,
 ],
 ```
 

@@ -23,6 +23,7 @@ Laravel    | Debug
  4.1.x     | 2.1.x
  4.2.x     | 2.2.x
  5.0.x     | 3.0.x
+ 5.1.x     | 3.1.x
 
 <a name="installation"></a>
 ## Installation
@@ -56,19 +57,19 @@ Next add the following service provider in `config/app.php` or use [Config Compo
 
 	// ...
 
-	'Orchestra\Debug\DebugServiceProvider',
+	Orchestra\Debug\DebugServiceProvider::class,
 
-	'Orchestra\Debug\CommandServiceProvider',
+	Orchestra\Debug\CommandServiceProvider::class,
 ],
 ```
 
 ### Aliases
 
-You could also create an alias for `Orchestra\Support\Facades\Profiler` in `app/config/app.php`.
+You could also create an alias for `Orchestra\Support\Facades\Profiler` in `config/app.php`.
 
 ```php
 'aliases' => [
-	'Profiler' => 'Orchestra\Support\Facades\Profiler',
+	'Profiler' => Orchestra\Support\Facades\Profiler::class,
 ],
 ```
 

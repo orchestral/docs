@@ -16,7 +16,7 @@ In most other solutions, you are either restrict to file based configuration for
   - [Creating a New ACL Instance](#creating-a-new-acl-instance)
   - [Verifying the ACL](#verifying-the-acl)
   - [Integration with Memory Component](#memory-integration)
-5. [Change Log]({doc-url}/components/auth/changes#v3-0)
+5. [Change Log]({doc-url}/components/auth/changes#v3-1)
 
 <a name="compatibility"></a>
 ## Version Compatibility
@@ -24,6 +24,7 @@ In most other solutions, you are either restrict to file based configuration for
 Laravel    | Authorization
 :----------|:----------
  5.0.x     | 3.0.x
+ 5.1.x     | 3.1.x
 
 <a name="installation"></a>
 ## Installation
@@ -56,10 +57,10 @@ Next add the service provider in `config/app.php`.
 'providers' => [
 
 	// ...
-	'Orchestra\Authorization\AuthorizationServiceProvider',
-	'Orchestra\Memory\MemoryServiceProvider',
+	Orchestra\Authorization\AuthorizationServiceProvider::class,
+	Orchestra\Memory\MemoryServiceProvider::class,
 
-	'Orchestra\Memory\CommandServiceProvider',
+	Orchestra\Memory\CommandServiceProvider::class,
 ],
 ```
 
@@ -70,7 +71,7 @@ To make development easier, you could add `Orchestra\Support\Facades\ACL` alias 
 ```php
 'aliases' => [
 
-	'ACL' => 'Orchestra\Support\Facades\ACL',
+	'ACL' => Orchestra\Support\Facades\ACL::class,
 
 ],
 ```
@@ -140,7 +141,7 @@ class ManageAcme
 <a name="memory-integration"></a>
 ### Integration with Memory Component
 
-Integration with [Memory Component]({doc-url}/components/memory}) would allow a persistent storage of ACL metric, this would eliminate the need to define ACL on every request.
+Integration with [Memory component]({doc-url}/components/memory}) would allow a persistent storage of ACL metric, this would eliminate the need to define ACL on every request.
 
 #### Creating a New ACL Instance
 
@@ -178,8 +179,6 @@ class FooDefineAcl extends Migration
 		$acl->roles()->add($role->name);
 
 		$acl->allow($role->name, $actions);
-
-		Memory::finish();
 	}
 
 	/**

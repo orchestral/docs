@@ -3,6 +3,21 @@ title: Translation Change Log
 
 ---
 
+## Version 3.1 {#v3-1}
+
+### v3.1.2 {#v3-1-2}
+
+* Improved performances by reducing call within `Illuminate\Container\Container`.
+
+### v3.1.1 {#v3-1-1}
+
+* Add abstract `Orchestra\Translation\Middleware\Locale` middleware class.
+
+### v3.1.0 {#v3-1-0}
+
+* Update to support Laravel Framework v5.1.
+* Update Laravel path for package language.
+
 ## Version 3.0 {#v3-0}
 
 ### v3.0.1 {#v3-0-1}

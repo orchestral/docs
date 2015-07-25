@@ -2,6 +2,29 @@
 title: Extension Change Log
 
 ---
+## Version 3.1 {#v3-1}
+
+### v3.1.4 {#v3-1-4}
+
+* Add `Orchestra\Extension\Factory::after()`.
+
+### v3.1.3 {#v3-1-3}
+
+* Add `Orchestra\Extension\RouteGenerator::group()`.
+
+### v3.1.2 {#v3-1-2}
+
+* Improved performances by reducing call within `Illuminate\Container\Container`.
+* Improved performances by merging list of deferred services once instead of on every loop.
+
+### v3.1.1 {#v3-1-1}
+
+* Bump minimum version to PHP v5.5.0.
+* Extension `handles` configuration value should remain the same when reactivating/refreshing an extension.
+
+### v3.1.0 {#v3-1-0}
+
+* Update support to Laravel Framework v5.1.
 
 ## Version 3.0 {#v3-0}
 

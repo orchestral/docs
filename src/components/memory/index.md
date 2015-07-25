@@ -14,7 +14,7 @@ Memory Component handles runtime configuration either using "in memory" Runtime 
   - [Retrieving Items](#retrieving-items)
   - [Removing Items](#removing-items)
   - [Extending Memory](#extending-memory)
-5. [Change Log]({doc-url}/components/memory/changes#v3-0)
+5. [Change Log]({doc-url}/components/memory/changes#v3-1)
 
 ## Version Compatibility {#compatibility}
 
@@ -24,6 +24,7 @@ Laravel    | Memory
  4.1.x     | 2.1.x
  4.2.x     | 2.2.x
  5.0.x     | 3.0.x
+ 5.1.x     | 3.1.x
 
 <a name="installation"></a>
 ## Installation {#installation}
@@ -32,9 +33,9 @@ To install through composer, simply put the following in your `composer.json` fi
 
 ```json
 {
-	"require": {
-		"orchestra/memory": "~3.0"
-	}
+    "require": {
+        "orchestra/memory": "~3.0"
+    }
 }
 ```
 
@@ -55,11 +56,11 @@ Next add the service provider in `config/app.php`.
 ```php
 'providers' => [
 
-	// ...
+    // ...
 
-	'Orchestra\Memory\MemoryServiceProvider',
+    Orchestra\Memory\MemoryServiceProvider::class,
 
-	'Orchestra\Memory\CommandServiceProvider',
+    Orchestra\Memory\CommandServiceProvider::class,
 ],
 ```
 
@@ -70,9 +71,9 @@ You might want to add `Orchestra\Support\Facades\Memory` to class aliases in `co
 ```php
 'aliases' => [
 
-	// ...
+    // ...
 
-	'Memory' => 'Orchestra\Support\Facades\Memory',
+    'Memory' => Orchestra\Support\Facades\Memory::class,
 ],
 ```
 
@@ -176,13 +177,13 @@ use Orchestra\Contracts\Memory\Handler as HandlerContract;
 
 class AcmeMemoryHandler implements HandlerContract
 {
-	// Add your implementation
+    // Add your implementation
 }
 
 Memory::extend('acme', function ($app, $name) {
     $handler = new AcmeMemoryHandler($name);
 
-	return new Provider($handler);
+    return new Provider($handler);
 });
 
 // Now you can use it as

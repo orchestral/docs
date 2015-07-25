@@ -1,5 +1,6 @@
 ---
 title: Notifier Component
+badge: notifier
 
 ---
 
@@ -8,7 +9,7 @@ Notifier Component add a simplify approach to notifier the application user usin
 1. [Version Compatibility](#compatibility)
 2. [Installation](#installation)
 3. [Configuration](#configuration)
-5. [Change Log]({doc-url}/components/notifier/changes#v2-2)
+5. [Change Log]({doc-url}/components/notifier/changes#v3-1)
 
 <a name="compatibility"></a>
 ## Version Compatibility
@@ -18,6 +19,7 @@ Laravel    | Notifier
  4.1.x     | 2.1.x
  4.2.x     | 2.2.x
  5.0.x     | 3.0.x
+ 5.1.x     | 3.1.x
 
 <a name="installation"></a>
 ## Installation
@@ -49,9 +51,9 @@ Next add the service provider in `config/app.php`
 ```php
 'providers' => [
 
-	// ...
+    // ...
 
-	'Orchestra\Notifier\NotifierServiceProvider',
+    Orchestra\Notifier\NotifierServiceProvider::class,
 ],
 ```
 
@@ -62,8 +64,9 @@ You might want to add `Orchestra\Support\Facades\Notifier` to class aliases in `
 ```php
 'aliases' => [
 
-	// ...
+    // ...
 
-	'Notifier' => 'Orchestra\Support\Facades\Notifier',
+    'Mailer'   => Orchestra\Support\Facades\Mailer::class,
+	'Notifier' => Orchestra\Support\Facades\Notifier::class,
 ],
 ```

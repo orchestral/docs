@@ -9,7 +9,7 @@ Orchestra Platform Installer Extension provide a generic installation wizard and
 1. [Version Compatibility](#compatibility)
 2. [Installation](#installation)
 3. [Configuration](#configuration)
-4. [Change Log]({doc-url}/components/installer/changes#v3-0)
+4. [Change Log]({doc-url}/components/installer/changes#v3-1)
 
 <a name="compatibility"></a>
 ## Version Compatibility
@@ -41,13 +41,13 @@ Above installation can also be simplify by using the following command:
 <a name="configuration"></a>
 ## Configuration
 
-Add `Orchestra\Installer\InstallerServiceProvider` service provider in `config/app.php`.
+Add `Orchestra\Installation\InstallerServiceProvider` service provider in `resources/config/app.php`.
 
 ```php
 'providers' => [
 
     // ...
 
-    'Orchestra\Installer\InstallerServiceProvider',
+    Orchestra\Installation\InstallerServiceProvider::class,
 ],
 ```

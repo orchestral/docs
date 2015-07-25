@@ -3,6 +3,35 @@ title: Auth Change Log
 
 ---
 
+## Version 3.1 {#v3-1}
+
+### v3.1.4 {#v3-1-4}
+
+* Improved performances by reducing call within `Illuminate\Container\Container`.
+* Reduces call to `Orchestra\Authorization\Keyword` on known keyword.
+
+### v3.1.3 {#v3-1-3}
+
+* Authorization:
+  - Add `Orchestra\Authorization\Authorization::canIf()` method to only check for ACL metric if the metric is available.
+  - Add `Orchestra\Authorization\Keyword` to simplify validating fluent keyword against slug value.
+  - Fixes exceptions thrown message via `Orchestra\Authorization\Fluent`.
+
+### v3.1.2 {#v3-1-2}
+
+* Authorization:
+  - Add `Orchestra\Authorization\AuthorizationTrait::auth()` helper to get instance of `Orchestra\Contracts\Auth\Guard` from `$acl` instance.
+
+### v3.1.1 {#v3-1-1}
+
+* Bump minimum version to PHP v5.5.0.
+* Auth:
+  - Ensure `Orchestra\Auth\Guard::getUserRolesFromEventDispatcher()` return array instead of `Illuminate\Support\Collection` etc.
+
+### v3.1.0 {#v3-1-0}
+
+* Update support for Laravel Framework v5.1.
+
 ## Version 3.0 {#v3-0}
 
 ### v3.0.2 {#v3-0-2}

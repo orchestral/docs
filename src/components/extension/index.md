@@ -12,7 +12,7 @@ Extension Component allows components or packages to be added dynamically to Orc
 2. [Installation](#installation)
 3. [Configuration](#configuration)
 4. [Usage]({doc-url}/components/extension/usage)
-5. [Change Log]({doc-url}/components/extension/changes#v3-0)
+5. [Change Log]({doc-url}/components/extension/changes#v3-1)
 
 <a name="compatibility"></a>
 ## Version Compatibility
@@ -23,6 +23,7 @@ Laravel    | Extension
  4.1.x     | 2.1.x
  4.2.x     | 2.2.x
  5.0.x     | 3.0.x
+ 5.1.x     | 3.1.x
 
 <a name="installation"></a>
 ## Installation
@@ -54,13 +55,13 @@ Next add the service provider in `config/app.php`.
 ```php
 'providers' => [
 
-	// ...
+    // ...
 
-	'Orchestra\Extension\ExtensionServiceProvider',
-	'Orchestra\Memory\MemoryServiceProvider',
-	'Orchestra\Extension\PublisherServiceProvider',
+    Orchestra\Extension\ExtensionServiceProvider::clas,
+    Orchestra\Memory\MemoryServiceProvider::class,
+    Orchestra\Extension\PublisherServiceProvider::class,
 
-	'Orchestra\Extension\CommandServiceProvider',
+    Orchestra\Extension\CommandServiceProvider::class,
 ],
 ```
 
@@ -71,9 +72,9 @@ You might want to add `Orchestra\Support\Facades\Extension` to class aliases in 
 ```php
 'aliases' => [
 
-	// ...
+    // ...
 
-	'Extension' => 'Orchestra\Support\Facades\Extension',
+    'Extension' => Orchestra\Support\Facades\Extension::class,
 ],
 ```
 

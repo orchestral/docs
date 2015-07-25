@@ -3,6 +3,20 @@ title: Avatar Change Log
 
 ---
 
+## Version 3.1 {#v3-1}
+
+### v3.1.2 {#v3-1-2}
+
+* Use "protocol-less" URL.
+
+### v3.1.1 {#v3-1-1}
+
+* Improved performances by reducing call within `Illuminate\Container\Container`.
+
+### v3.1.0 {#v3-1-0}
+
+* Update support to Laravel Framework v5.1.
+
 ## Version 3.0 {#v3-0}
 
 ### v3.0.2 {#v3-0-2}

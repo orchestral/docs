@@ -10,7 +10,7 @@ Widget allow you to manage widgetize actions in Orchestra Platform. By default O
 3. [Installation](#installation)
 4. [Configuration](#configuration)
 2. [Type of Widgets](#type)
-5. [Change Log]({doc-url}/components/widget/changes#v3-0)
+5. [Change Log]({doc-url}/components/widget/changes#v3-1)
 
 <a name="compatibility"></a>
 ## Version Compatibility
@@ -21,6 +21,7 @@ Widget allow you to manage widgetize actions in Orchestra Platform. By default O
  4.1.x    | 2.1.x
  4.2.x    | 2.2.x
  5.0.x    | 3.0.x
+ 5.1.x    | 3.1.x
 
 <a name="Installation"></a>
 ## Installation
@@ -52,9 +53,9 @@ Next add the service provider in `config/app.php`.
 ```php
 'providers' => [
 
-	// ...
+    // ...
 
-	'Orchestra\Widget\WidgetServiceProvider',
+    Orchestra\Widget\WidgetServiceProvider::class,
 ],
 ```
 

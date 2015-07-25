@@ -3,8 +3,55 @@ title: Upgrade Guide
 
 ---
 
+1. [Upgrading from 3.0 to 3.1](#v3-0-v3-1)
 1. [Upgrading from 2.1 to 2.2](#v2-1-v2-2)
 1. [Upgrading from 2.0 to 2.1](#v2-0-v2-1)
+
+<a name="v3-0-v3-1"></a>
+## Upgrading from 3.0 to 3.1
+
+### Update `bootstrap/autoload.php`
+
+Update the `$compiledPath` variable in `bootstrap/autoload.php` to the following:
+
+```php
+$compiledPath = __DIR__.'/cache/compiled.php';
+```
+
+### Create `bootstrap/cache` Directory
+
+Within your `bootstrap` directory, create a `cache` directory (`bootstrap/cache`). Place a `.gitignore` file in this directory with the following contents:
+
+    *
+    !.gitignore
+
+This directory should be writable, and will be used by the framework to store temporary optimization files like `compiled.php`, `routes.php`, `config.php`, and `services.json`.
+
+### Upgrading Your Composer Dependency
+
+To upgrade to Orchestra Platform 3.1, change your `"orchestra/foundation"` version to `"3.1.*"` in your `composer.json` file.
+
+> As a pre-caution, run `php artisan clear-compiled` before executing `composer update`.
+
+### Adding Configuration Files & Options
+
+Update your aliases and providers arrays in your `resources/config/app.php` configuration file. The updated values for these arrays can be found in [this file](https://github.com/orchestral/platform/blob/3.1/resources/config/app.php) ([raw](https://raw2.github.com/orchestral/platform/3.1/resources/config/app.php)). Be sure to add your custom and package service providers / aliases back to the arrays.
+
+Provides                                                        | Action
+:---------------------------------------------------------------|:----------------------
+`Illuminate\Broadcasting\BroadcastServiceProvider`              | Add
+`Orchestra\Foundation\Providers\FilterServiceProvider`          | Remove
+`Orchestra\Foundation\Providers\RouteServiceProvider`           | Add
+
+Add the new `resources/config/broadcasting.php` file [from the repository](https://github.com/orchestral/platform/blob/3.1/resources/config/broadcasting.php) ([raw](https://raw2.github.com/orchestral/platform/3.1/resources/config/broadcasting.php)).
+
+### Full Skeleton Changes
+
+You can review the full application skeleton changes by viewing the [full changes](https://github.com/orchestral/platform/compare/v3.0.0...v3.1.0).
+
+### Laravel Changes
+
+You can also check out the full [Upgrading Guide for Laravel 5.1](http://laravel.com/docs/5.1/upgrade#upgrade-5.1.0) as well as [Laravel 5.1 Release Note](http://laravel.com/docs/5.1/releases#laravel-5.1).
 
 <a name="v2-1-v2-2"></a>
 ## Upgrading from 2.1 to 2.2
@@ -69,7 +116,6 @@ Orchestra\Auth\CommandServiceProvider                           | Remove
 Orchestra\Extension\CommandServiceProvider                      | Remove
 Orchestra\Memory\CommandServiceProvider                         | Remove
 Orchestra\Foundation\ConsoleSupportServiceProvider              | Add
-
 
 Update `redis.cluster` configuration section to `false` in your `app/config/database.php`.
 

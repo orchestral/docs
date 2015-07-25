@@ -3,6 +3,57 @@ title: Foundation Change Log
 
 ---
 
+## Version 3.1 {#v3-1}
+
+### v3.1.5 {#v3-1-5}
+
+* Publish extension assets and migrations during `php artisan orchestra:assemble`.
+* Add `appendTableColumns()` and `prependTableColumns()` to `Orchestra\Foundation\Http\Presenters\User`.
+* Tweak `resources/views/components/messages.php`.
+* Add assets:
+  - Vue 0.12.6
+
+### v3.1.4 {#v3-1-4}
+
+* Add login throttles using `Orchestra\Foundation\Auth\BasicThrottle`.
+* Add new assets:
+  - Font Awesome v4.3.0
+  - Vue v0.12.4
+
+### v3.1.3 {#v3-1-3}
+
+* Simplify `Orchestra\Foundation\Application` and use `DIRECTORY_SEPARATOR` constant.
+* Use `Orchestra\Http\Traits\PassThroughTrait` in `Orchestra\Foundation\Http\Middleware\VerifyCsrfToken`.
+* Avoid reloading cached routes as application `RouteServiceProvider` should already done this.
+* Use `Orchestra\Extension\Factory::after()` in `Orchestra\Foundation\Support\Providers\Traits\RouteProviderTrait`.
+* Update assets:
+  - Javie v2.0.2
+  - Underscore v1.8.3
+  - Bootstrap v3.3.5
+
+### v3.1.2 {#v3-1-2}
+
+* Improved performances by reducing call within `Illuminate\Container\Container`.
+* Utilize `Orchestra\Authorization\Authorization::canIf()` helper.
+* Simplify `Orchestra\Foundation\Providers\RouteServiceProvider`.
+* Avoid sending `Orchestra\Foundation\Jobs\RefreshRouteCache` to queue and instead execute it immediately.
+
+### v3.1.1 {#v3-1-1}
+
+* Add support for menu nesting with `Orchestra\Foundation\Support\MenuHandler`.
+
+### v3.1.0 {#v3-1-0}
+
+* Update support to Laravel Framework v5.1.
+* Add `Orchestra\Foundation\Console\Commands\AssembleCommand`.
+* Convert all filter to middleware (include `composer require "orchestra/bequest=~3.0"` if you need to deprecated filter support).
+* Deprecate `Orchestra\Foundation\Http\Controllers\BaseController::setupFilters()` and add new abstract method `Orchestra\Foundation\Http\Controllers\BaseController::setupMiddleware()`.
+* Add `Orchestra\Foundation\Jobs\RefreshRouteCache`, allows extension routes to be recached after activation/deactivation.
+* Remove most of redundant alias which is now registered in the application `app.aliases` config.
+* Add `Orchestra\Foundation\Providers\RouteServiceProvider`.
+* Remove FTP updating support (include `composer require "orchestra/ftp-updater=~3.0"` if you need it).
+* Remove deprecated `Orchestra\Foundation\MenuHandler::get{Name}()`, use `Orchestra\Foundation\MenuHandler::get{Name}Attribute()` helper instead.
+
 ## Version 3.0 {#v3-0}
 
 ### v3.0.13 {#v3-0-13}
@@ -17,7 +68,7 @@ title: Foundation Change Log
 
 ### v3.0.11 {#v3-0-11}
 
-* Add option to include page number to HTML::title().
+* Add option to include page number to `HTML::title()`.
 * Add support to configure sending mail using Amazon SES API.
 * Hide API Secret configuration (act similar to password) for security purpose.
 * Improves Setting validations for email password and email secret when relevant.

@@ -10,7 +10,7 @@ HTML component extends the functionality of the deprecated `Illuminate\Html` wit
 2. [Installation](#installation)
 3. [Configuration](#configuration)
 4. [Usage]({doc-url}/components/html/basic/html)
-5. [Change Log]({doc-url}/components/html/changes#v3-0)
+5. [Change Log]({doc-url}/components/html/changes#v3-1)
 
 <a name="compatibility"></a>
 ## Version Compatibility
@@ -21,6 +21,7 @@ Laravel    | Facile
  4.1.x     | 2.1.x
  4.2.x     | 2.2.x
  5.0.x     | 3.0.x
+ 5.1.x     | 3.1.x
 
 <a name="installation"></a>
 ## Installation
@@ -54,7 +55,7 @@ Next add the service provider in `config/app.php`.
 
     // ...
 
-	'Orchestra\Html\HtmlServiceProvider',
+	Orchestra\Html\HtmlServiceProvider::class,
 
 ],
 ```

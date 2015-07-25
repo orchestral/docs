@@ -3,6 +3,47 @@ title: Kernel Change Log
 
 ---
 
+## Version 3.1 {#v3-1}
+
+### v3.1.5 {#v3-1-5}
+
+* Add `Orchestra\Contracts\Auth\Command\DeauthenticateUser`.
+* Add `Orchestra\Contracts\Auth\Command\ThrottlesLogins`.
+* Add `Orchestra\Contracts\Auth\Listener\DeauthenticateUser`.
+* Add `Orchestra\Contracts\Auth\Listener\ThrottlesLogins`.
+
+### v3.1.4 {#v3-1-4}
+
+* HTTP:
+  - Allow `Orchestra\Http\RouteManager::group()` to utilize new `Orchestra\Extension\RouteManager::group()`.
+
+### v3.1.3 {#v3-1-3}
+
+* HTTP:
+  - Add `Orchestra\Http\Traits\PassThroughTrait`.
+
+### v3.1.2 {#v3-1-2}
+
+* Improved performances by reducing call within `Illuminate\Container\Container`.
+
+### v3.1.1 {#v3-1-1}
+
+* Contracts:
+  - Add `Orchestra\Authorization\Authorization::canIf()` contract.
+
+### v3.1.0 {#v3-1-0}
+
+* Update support to Laravel Framework v5.1.
+* Config:
+  - Simplify `Orchestra\Config\Console\ConfigCacheCommand` class.
+* Contracts:
+  - Update `Orchestra\Contracts\Memory\Provider` contract.
+  - Add `Orchestra\Contracts\Publisher\Publisher` contract.
+  - Add `Orchestra\Contracts\Publisher\Uploader` contract.
+  - Add `Orchestra\Contracts\Publisher\ServerException` exception.
+* Routing
+  - Add `Orchestra\Routing\ResourceRegistrar` to support `GET resources/id/delete` route for resource routing.
+
 ## Version 3.0 {#v3-0}
 
 ### v3.0.4 {#v3-0-4}
@@ -10,7 +51,7 @@ title: Kernel Change Log
 * HTTP:
   - Bind custom messages values to `Orchestra\Http\FormRequest`.
   - Add `Orchestra\Http\HashIdServiceProvider` which utilize `hashids/hashids` packages to generate unique short ID for URL.
-  
+
 ### v3.0.3 {#v3-0-3}
 
 * Config:
