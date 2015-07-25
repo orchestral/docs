@@ -119,7 +119,7 @@ $message = Messages::retrieve();
 
 if ($message instanceof Orchestra\Messages\MessageBag) {
     $message->setFormat('<div class="alert alert-:key">:message</div>');
-    
+
     foreach (['error', 'info', 'success'] as $key) {
         if ($message->has($key)) {
             echo implode('', $message->get($key));

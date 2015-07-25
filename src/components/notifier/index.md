@@ -28,9 +28,9 @@ To install through composer, simply put the following in your `composer.json` fi
 
 ```json
 {
-	"require": {
-		"orchestra/notifier": "~3.0"
-	}
+    "require": {
+        "orchestra/notifier": "~3.0"
+    }
 }
 ```
 
@@ -41,7 +41,7 @@ And then run `composer install` from the terminal.
 
 Above installation can also be simplify by using the following command:
 
-	composer require "orchestra/notifier=~3.0"
+    composer require "orchestra/notifier=~3.0"
 
 <a name="configuration"></a>
 ## Configuration {#configuration}
@@ -67,6 +67,6 @@ You might want to add `Orchestra\Support\Facades\Notifier` to class aliases in `
     // ...
 
     'Mailer'   => Orchestra\Support\Facades\Mailer::class,
-	'Notifier' => Orchestra\Support\Facades\Notifier::class,
+    'Notifier' => Orchestra\Support\Facades\Notifier::class,
 ],
 ```
