@@ -7,7 +7,7 @@ title: Installation
 2. [Install Composer](#install-composer)
 3. [Install Orchestra Platform](#install-orchestra-platform)
   - [Download](#download)
-  - [Preparing Setup](#preparing-setup)
+  - [Preparing Setup](#configuration)
   - [Setup](#setup)
 4. [Pretty URLs](#pretty-urls)
 

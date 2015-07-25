@@ -20,7 +20,7 @@ Orchestra Platform is free, open-source software, meaning anyone can contribute 
 <a name="security-vulnerabilities"></a>
 ## Security Vulnerabilities
 
-If you discover a security vulnerability within Orchestra Platform, please send an e-mail to security@orchestraplatform.com. All security vulnerabilities will be promptly addressed.
+If you discover a security vulnerability within Orchestra Platform, please send an e-mail to <security@orchestraplatform.com>. All security vulnerabilities will be promptly addressed.
 
 <a name="feature-requests"></a>
 ## Feature Requests
@@ -46,7 +46,6 @@ Pull requests for bugs may be sent without creating any proposal issue. If you b
 ### New Features
 
 Before sending a pull request for a new feature, you should first create an issue with `[Proposal]` in the title. The proposal should describe the new feature, as well as implementation ideas. The proposal will then be reviewed and either approved or denied. Once a proposal is approved, a pull request may be created implementing the new feature. Pull requests which do not follow this guideline may be closed immediately.
-
 
 <a name="templates"></a>
 ## Template for Pull Request, Proposal, Request or Bugfixes

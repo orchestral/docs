@@ -122,4 +122,3 @@ set_meta('title', 'Welcome');
 ```
 
 > Alias to `Meta::set()`
-
