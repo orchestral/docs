@@ -23,7 +23,7 @@ Laravel    | Imagine
  5.0.x     | 3.0.x
 
 <a name="installation"></a>
-## Installation {#installation}
+## Installation
 
 To install through composer, simply put the following in your `composer.json` file:
 

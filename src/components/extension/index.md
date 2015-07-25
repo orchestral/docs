@@ -31,9 +31,9 @@ To install through composer, simply put the following in your `composer.json` fi
 
 ```json
 {
-	"require": {
-		"orchestra/extension": "~3.0"
-	}
+    "require": {
+        "orchestra/extension": "~3.0"
+    }
 }
 ```
 
@@ -44,7 +44,7 @@ And then run `composer install` from the terminal.
 
 Above installation can also be simplify by using the following command:
 
-	composer require "orchestra/extension=~3.0"
+    composer require "orchestra/extension=~3.0"
 
 <a name="configuration"></a>
 ## Configuration
@@ -54,13 +54,13 @@ Next add the service provider in `config/app.php`.
 ```php
 'providers' => [
 
-	// ...
+    // ...
 
-	'Orchestra\Extension\ExtensionServiceProvider',
-	'Orchestra\Memory\MemoryServiceProvider',
-	'Orchestra\Extension\PublisherServiceProvider',
+    'Orchestra\Extension\ExtensionServiceProvider',
+    'Orchestra\Memory\MemoryServiceProvider',
+    'Orchestra\Extension\PublisherServiceProvider',
 
-	'Orchestra\Extension\CommandServiceProvider',
+    'Orchestra\Extension\CommandServiceProvider',
 ],
 ```
 
@@ -71,9 +71,9 @@ You might want to add `Orchestra\Support\Facades\Extension` to class aliases in 
 ```php
 'aliases' => [
 
-	// ...
+    // ...
 
-	'Extension' => 'Orchestra\Support\Facades\Extension',
+    'Extension' => 'Orchestra\Support\Facades\Extension',
 ],
 ```
 
@@ -81,6 +81,6 @@ You might want to add `Orchestra\Support\Facades\Extension` to class aliases in 
 
 Before we can start using Extension component, please run the following:
 
-	php artisan extension:migrate
+    php artisan extension:migrate
 
 > The command utility is enabled via `Orchestra\Extension\CommandServiceProvider`.
