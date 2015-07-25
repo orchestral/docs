@@ -29,9 +29,9 @@ To install through composer, simply put the following in your `composer.json` fi
 
 ```json
 {
-	"require": {
-		"orchestra/widget": "~3.0"
-	}
+    "require": {
+        "orchestra/widget": "~3.0"
+    }
 }
 ```
 
@@ -52,9 +52,9 @@ Next add the service provider in `config/app.php`.
 ```php
 'providers' => [
 
-	// ...
+    // ...
 
-	'Orchestra\Widget\WidgetServiceProvider',
+    'Orchestra\Widget\WidgetServiceProvider',
 ],
 ```
 
