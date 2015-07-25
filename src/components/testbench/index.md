@@ -38,9 +38,9 @@ To install through composer, simply put the following in your `composer.json` fi
 
 ```json
 {
-	"require-dev": {
-		"orchestra/testbench": "~3.0"
-	}
+    "require-dev": {
+        "orchestra/testbench": "~3.0"
+    }
 }
 ```
 
@@ -51,7 +51,7 @@ And then run `composer install` from the terminal.
 
 Above installation can also be simplify by using the following command:
 
-	composer require --dev "orchestra/testbench=~3.0"
+    composer require --dev "orchestra/testbench=~3.0"
 
 <a name="usage"></a>
 ## Usage
@@ -75,7 +75,7 @@ To load your package service provider, override the `getPackageProviders`.
 ```php
 protected function getPackageProviders($app)
 {
-	return ['Acme\AcmeServiceProvider'];
+    return ['Acme\AcmeServiceProvider'];
 }
 ```
 
@@ -87,9 +87,9 @@ To load your package alias, override the `getPackageAliases`.
 ```php
 protected function getPackageAliases($app)
 {
-	return [
-		'Acme' => 'Acme\Facade'
-	];
+    return [
+        'Acme' => 'Acme\Facade'
+    ];
 }
 ```
 
@@ -104,9 +104,9 @@ Since `Orchestra\Testbench\TestCase` replace Laravel's `Illuminate\Foundation\Te
  */
 public function setUp()
 {
-	parent::setUp();
+    parent::setUp();
 
-	// Your code here
+    // Your code here
 }
 ```
 
@@ -121,7 +121,7 @@ If you need to add something early in the application bootstrapping process, you
  */
 protected function getEnvironmentSetUp($app)
 {
-	// setup default database to use sqlite :memory:
+    // Setup default database to use sqlite :memory:
     $app['config']->set('database.default', 'testbench');
     $app['config']->set('database.connections.testbench', [
         'driver'   => 'sqlite',
@@ -226,4 +226,3 @@ This error would only occur if your test suite require actual usage of the encry
 
 </phpunit>
 ```
-
