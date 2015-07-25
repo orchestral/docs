@@ -9,6 +9,13 @@ Testbench Component is a simple package that is supposed to help you write tests
 1. [Version Compatibility](#compatibility)
 2. [Installation](#installation)
 3. [Usage](#usage)
+    - [Custom Service Providers](#package-providers)
+    - [Custom Aliases](#package-aliases)
+    - [Overriding setup() method](#overriding-setup-method)
+    - [Overriding Console Kernel](#overriding-console-kernel)
+    - [Overriding HTTP Kernel](#overriding-http-kernel)
+    - [Overriding Application Timezone](#overriding-application-timezone)
+    - [Using Migrations](#using-migrations)
 4. [Change Log]({doc-url}/components/testbench/changes#v3-0)
 
 <a name="compatibility"></a>
@@ -28,9 +35,9 @@ To install through composer, simply put the following in your `composer.json` fi
 
 ```json
 {
-	"require-dev": {
-		"orchestra/testbench": "~3.0"
-	}
+    "require-dev": {
+        "orchestra/testbench": "~3.0"
+    }
 }
 ```
 
@@ -41,7 +48,7 @@ And then run `composer install` from the terminal.
 
 Above installation can also be simplify by using the following command:
 
-	composer require --dev "orchestra/testbench=~3.0"
+    composer require --dev "orchestra/testbench=~3.0"
 
 <a name="usage"></a>
 ## Usage
@@ -51,19 +58,22 @@ To use Testbench Component, all you need to do is extend `Orchestra\Testbench\Te
 ```php
 <?php
 
-class TestCase extends Orchestra\Testbench\TestCase {}
+class TestCase extends Orchestra\Testbench\TestCase
+{
+    //
+}
 
 ```
 
 <a name="package-providers"></a>
-### Custom Service Provider
+### Custom Service Providers
 
 To load your package service provider, override the `getPackageProviders`.
 
 ```php
 protected function getPackageProviders($app)
 {
-	return ['Acme\AcmeServiceProvider'];
+    return ['Acme\AcmeServiceProvider'];
 }
 ```
 
@@ -75,9 +85,9 @@ To load your package alias, override the `getPackageAliases`.
 ```php
 protected function getPackageAliases($app)
 {
-	return [
-		'Acme' => 'Acme\Facade'
-	];
+    return [
+        'Acme' => 'Acme\Facade'
+    ];
 }
 ```
 
@@ -92,9 +102,9 @@ Since `Orchestra\Testbench\TestCase` replace Laravel's `Illuminate\Foundation\Te
  */
 public function setUp()
 {
-	parent::setUp();
+    parent::setUp();
 
-	// Your code here
+    // Your code here
 }
 ```
 
@@ -109,7 +119,13 @@ If you need to add something early in the application bootstrapping process, you
  */
 protected function getEnvironmentSetUp($app)
 {
-	//
+    // Setup default database to use sqlite :memory:
+    $app['config']->set('database.default', 'testbench');
+    $app['config']->set('database.connections.testbench', [
+        'driver'   => 'sqlite',
+        'database' => ':memory:',
+        'prefix'   => '',
+    ]);
 }
 ```
 
@@ -165,4 +181,46 @@ protected function getApplicationTimezone($app)
 {
     return 'Asia/Kuala_Lumpur';
 }
+```
+
+<a name="using-migrations"></a>
+### Using Migrations
+
+Testbench include a custom migrations command that support `realpath` option instead of the basic relative `path` option, this would make it easier for you to run database migrations during testing by just including the full realpath to your package database/migration folder.
+
+```php
+$this->artisan('migrate', [
+    '--database' => 'testbench',
+    '--realpath' => realpath(__DIR__.'/../migrations'),
+]);
+```
+
+<a name="alternative-testing"></a>
+## Alternative 3rd Party Testing
+
+There also 3rd party packages that extends Testbench Component on CodeCeption and PHPSpec:
+
+* [Testbench with CodeCeption](https://bitbucket.org/aedart/testing-laravel)
+* [Testbench with PHPSpec](https://github.com/Pixelindustries/phpspec-testbench)
+
+<a name="troubleshoot"></a>
+## Troubleshoot
+
+<a name="troubleshoot-invalid-key-length"></a>
+### No supported encrypter found. The cipher and / or key length are invalid.
+
+    RuntimeException: No supported encrypter found. The cipher and / or key length are invalid.
+
+This error would only occur if your test suite require actual usage of the encrypter. To solve this you can add a dummy `APP_KEY` or use a specific key to your application/package `phpunit.xml`.
+
+```xml
+<phpunit>
+
+    // ...
+
+    <php>
+        <env name="APP_KEY" value="AckfSECXIvnK5r28GVIWUAxmbBSjTsmF"/>
+    </php>
+
+</phpunit>
 ```
