@@ -8,7 +8,7 @@ title: Sending Mail
    - [Queued Sending](#mailer-queue)
    - [Configured Sending via `push()` method](#mailer-push)
 2. [Notifier](#notifier)
-   - [Sending Notification](#notifier-send)
+   - [Sending](#notifier-send)
 
 <a name="mailer"></a>
 ## Mailer
@@ -68,7 +68,7 @@ Mailer::push('email.update', $data, function ($m) use ($user) {
 `Notifier` is a simplified approach to send email notification to any registered user. This is slightly different from `Mailer` where we actually set the recipient from `Orchestra\Model\User` model.
 
 <a name="notifier-send"></a>
-### Sending E-mails
+### Sending
 
 ```php
 use Orchestra\Model\User;

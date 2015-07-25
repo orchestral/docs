@@ -16,7 +16,7 @@ Routing with Orchestra Platform is still based on Laravel routing engine. Howeve
 <a name="register-frontend-routing"></a>
 ### Frontend Routing
 
-Anything other than Orchestra Platform administration routes are considered as frontend routing, this includes routing to frontend for app and extensions. 
+Anything other than Orchestra Platform administration routes are considered as frontend routing, this includes routing to frontend for app and extensions.
 
 ```php
 use Illuminate\Routing\Router;
@@ -67,4 +67,4 @@ Foundation::group('orchestra/foundation', 'admin', ['middleware' => 'Orchestra\F
 <a name="generating-url"></a>
 ## Generating URL
 
-In order to make the routing configurable we have merged `route()`, `action()` and `url()` to a single `Foundation::handles()` method. 
+In order to make the routing configurable we have merged `route()`, `action()` and `url()` to a single `Foundation::handles()` method.
