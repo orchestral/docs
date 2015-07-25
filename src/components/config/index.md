@@ -25,9 +25,9 @@ To install through composer, simply put the following in your `composer.json` fi
 
 ```json
 {
-	"require": {
-		"orchestra/config": "~3.0"
-	}
+    "require": {
+        "orchestra/config": "~3.0"
+    }
 }
 ```
 
@@ -38,7 +38,7 @@ And then run `composer install` from the terminal.
 
 Above installation can also be simplify by using the following command:
 
-	composer require "orchestra/config=~3.0"
+    composer require "orchestra/config=~3.0"
 
 <a name="configuration"></a>
 ## Configuration
@@ -47,8 +47,8 @@ To swap Laravel 5 default configuration, all you need to do is add the following
 
 ```php
 $app->singleton(
-	'Illuminate\Foundation\Bootstrap\LoadConfiguration',
-	'Orchestra\Config\Bootstrap\LoadConfiguration'
+    'Illuminate\Foundation\Bootstrap\LoadConfiguration',
+    'Orchestra\Config\Bootstrap\LoadConfiguration'
 );
 ```
 
@@ -69,17 +69,17 @@ use Illuminate\Foundation\Providers\ArtisanServiceProvider as ServiceProvider;
 
 class ArtisanServiceProvider extends ServiceProvider
 {
-	/**
-	 * Register the command.
-	 *
-	 * @return void
-	 */
-	protected function registerConfigCacheCommand()
-	{
-		$this->app->singleton('command.config.cache', function ($app) {
-			return new ConfigCacheCommand($app['files']);
-		});
-	}
+    /**
+     * Register the command.
+     *
+     * @return void
+     */
+    protected function registerConfigCacheCommand()
+    {
+        $this->app->singleton('command.config.cache', function ($app) {
+            return new ConfigCacheCommand($app['files']);
+        });
+    }
 }
 ```
 
@@ -94,13 +94,13 @@ In order to force certain packages to be included in config caching, you can spe
 
 return [
 
-	// ...
+    // ...
 
-	'config' => [
-		'orchestra/foundation::config',  // if package config is group under "config/config.php"
-		'orchestra/foundation::roles',   // Using one of the key available in "config/config.php"
-		'orchestra/html::form',          // When package contain "config/form.php"
-	],
+    'config' => [
+        'orchestra/foundation::config', // if package config is group under "config.php"
+        'orchestra/foundation::roles',  // Using one of the key available in "config.php"
+        'orchestra/html::form',         // When package contain "form.php"
+    ],
 
 ];
 ```

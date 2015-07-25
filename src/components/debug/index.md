@@ -31,9 +31,9 @@ To install through composer, simply put the following in your `composer.json` fi
 
 ```json
 {
-	"require-dev": {
-		"orchestra/debug": "~3.0"
-	}
+    "require-dev": {
+        "orchestra/debug": "~3.0"
+    }
 }
 ```
 
@@ -44,7 +44,7 @@ And then run `composer install` from the terminal.
 
 Above installation can also be simplify by using the following command:
 
-	composer require --dev "orchestra/debug=~3.0"
+    composer require --dev "orchestra/debug=~3.0"
 
 <a name="configuration"></a>
 ## Configuration
@@ -54,21 +54,21 @@ Next add the following service provider in `config/app.php` or use [Config Compo
 ```php
 'providers' => [
 
-	// ...
+    // ...
 
-	'Orchestra\Debug\DebugServiceProvider',
+    'Orchestra\Debug\DebugServiceProvider',
 
-	'Orchestra\Debug\CommandServiceProvider',
+    'Orchestra\Debug\CommandServiceProvider',
 ],
 ```
 
 ### Aliases
 
-You could also create an alias for `Orchestra\Support\Facades\Profiler` in `app/config/app.php`.
+You could also create an alias for `Orchestra\Support\Facades\Profiler` in `config/app.php`.
 
 ```php
 'aliases' => [
-	'Profiler' => 'Orchestra\Support\Facades\Profiler',
+    'Profiler' => 'Orchestra\Support\Facades\Profiler',
 ],
 ```
 
@@ -90,17 +90,17 @@ use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
 {
-	/**
-	 * Boot the service provider.
-	 *
-	 * @return void
-	 */
-	public function boot()
-	{
-		if ($this->app['config']['app.debug']) {
-			Profiler::attachDebugger();
-		}
-	}
+    /**
+     * Boot the service provider.
+     *
+     * @return void
+     */
+    public function boot()
+    {
+        if ($this->app['config']['app.debug']) {
+            Profiler::attachDebugger();
+        }
+    }
 }
 ```
 
@@ -109,5 +109,5 @@ class AppServiceProvider extends ServiceProvider
 
 To view the profiler, run the following command in your terminal:
 
-	php artisan debug
+    php artisan debug
 
