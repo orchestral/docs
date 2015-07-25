@@ -12,7 +12,7 @@ Translation Component extends the functionality of `Illuminate\Translation` to a
 4. [Usage](#usage)
 5. [Change Log]({doc-url}/components/translation/changes#v3-0)
 
-<a href="" name="compatibility"></a>
+<a name="compatibility"></a>
 ## Version Compatibility
 
 Laravel    | Translation
@@ -22,21 +22,20 @@ Laravel    | Translation
  4.2.x     | 2.2.x
  5.0.x     | 3.0.x
 
-<a href="" name="installation"></a>
+<a name="installation"></a>
 ## Installation
 
 To install through composer, simply put the following in your `composer.json` file:
 
 ```json
 {
-	"require": {
-		"orchestra/translation": "~3.0"
-	}
+    "require": {
+        "orchestra/translation": "~3.0"
+    }
 }
 ```
 
 And then run `composer install` from the terminal.
-
 
 <a name="quick-installation"></a>
 ### Quick Installation
@@ -46,18 +45,18 @@ Above installation can also be simplify by using the following command:
     composer require "orchestra/translation=~3.0"
 
 <a name="configuration"></a>
-## Configuration {#configuration}
+## Configuration
 
 Next add the service provider in `config/app.php`.
 
 ```php
 'providers' => [
 
-	// ...
-	# Remove 'Illuminate\Translation\TranslationServiceProvider'
-	# and add 'Orchestra\Translation\TranslationServiceProvider'
+    // ...
+    # Remove 'Illuminate\Translation\TranslationServiceProvider'
+    # and add 'Orchestra\Translation\TranslationServiceProvider'
 
-	'Orchestra\Translation\TranslationServiceProvider',
+    'Orchestra\Translation\TranslationServiceProvider',
 ],
 ```
 
