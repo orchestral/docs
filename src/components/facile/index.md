@@ -30,9 +30,9 @@ To install through composer, simply put the following in your `composer.json` fi
 
 ```json
 {
-	"require": {
-		"orchestra/facile": "~3.0"
-	}
+    "require": {
+        "orchestra/facile": "~3.0"
+    }
 }
 ```
 
@@ -43,7 +43,7 @@ And then run `composer install` from the terminal.
 
 Above installation can also be simplify by using the following command:
 
-	composer require "orchestra/facile=~3.0"
+    composer require "orchestra/facile=~3.0"
 
 <a name="configuration"></a>
 ## Configuration
@@ -66,9 +66,9 @@ You might want to add `Orchestra\Support\Facades\Facile` to class aliases in `co
 ```php
 'aliases' => [
 
-	// ...
+    // ...
 
-	'Facile' => Orchestra\Support\Facades\Facile::class,
+    'Facile' => Orchestra\Support\Facades\Facile::class,
 ],
 ```
 
@@ -79,9 +79,9 @@ Facile component works by composing the response using Template, using the `Orch
 
 ```php
 Route::get('users', function () {
-	$users = User::all();
+    $users = User::all();
 
-	return Facile::view('users')->with(['users' => $users]);
+    return Facile::view('users')->with(['users' => $users]);
 });
 ```
 
