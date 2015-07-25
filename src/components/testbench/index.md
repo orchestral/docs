@@ -64,7 +64,6 @@ class TestCase extends Orchestra\Testbench\TestCase
 {
     //
 }
-
 ```
 
 <a name="package-providers"></a>

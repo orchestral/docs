@@ -42,7 +42,7 @@ echo handles('orchestra/foundation::users');
 
 You can also use `orchestra` as an alias to `orchestra/foundation`.
 
-```
+```php
 echo handles('orchestra::users');
 ```
 
