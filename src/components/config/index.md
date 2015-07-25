@@ -98,9 +98,9 @@ return [
     // ...
 
     'config' => [
-        'orchestra/foundation::config', // if package config is group under "config/config.php"
-        'orchestra/foundation::roles',  // Using one of the key available in "config/config.php"
-        'orchestra/html::form',         // When package contain "config/form.php"
+        'orchestra/foundation::config', // if package config is group under "config.php"
+        'orchestra/foundation::roles',  // Using one of the key available in "config.php"
+        'orchestra/html::form',         // When package contain "form.php"
     ],
 
 ];
