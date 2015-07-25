@@ -9,7 +9,6 @@ title: Installation
   - [Download](#download)
   - [Preparing Setup](#configuration)
   - [Setup](#setup)
-3. [Server Requirements](#server-requirement)
 4. [Pretty URLs](#pretty-urls)
 
 <a name="server-requirement"></a>
