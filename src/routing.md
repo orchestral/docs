@@ -59,9 +59,14 @@ It's actually an alias of `Foundation::group()` with additional configuration, a
 use Illuminate\Routing\Router;
 use Orchestra\Foundation\Http\Middleware\UseBackendTheme;
 
-Foundation::group('orchestra/foundation', 'admin', ['middleware' => UseBackendTheme::class, 'namespace' => 'App\Http\Controllers\Admin'], function (Router $router) {
-    $router->resource('photos', 'PhotoController');
-});
+Foundation::group(
+    'orchestra/foundation',
+    'admin',
+    ['middleware' => UseBackendTheme::class, 'namespace' => 'App\Http\Controllers\Admin'],
+    function (Router $router) {
+        $router->resource('photos', 'PhotoController');
+    }
+);
 ```
 
 
