@@ -5,12 +5,22 @@ title: Kernel Change Log
 
 ## Version 3.1 {#v3-1}
 
+### v3.1.6 {#v3-1-6}
+
+* Contracts:
+  - Remove `Orchestra\Contracts\Extension\SafeMode` and replace with `Orchestra\Contracts\Extension\StatusChecker`.
+* HTTP:
+  - `Orchestra\Http\RouteManager` should implements `Orchestra\Contracts\Http\RouteManager`.
+  - Add `Orchestra\Http\RouteManager::mode()` abstract method.
+  - Small optimization to reduce additional method calls when generating routes.
+
 ### v3.1.5 {#v3-1-5}
 
-* Add `Orchestra\Contracts\Auth\Command\DeauthenticateUser`.
-* Add `Orchestra\Contracts\Auth\Command\ThrottlesLogins`.
-* Add `Orchestra\Contracts\Auth\Listener\DeauthenticateUser`.
-* Add `Orchestra\Contracts\Auth\Listener\ThrottlesLogins`.
+* Contracts:
+  - Add `Orchestra\Contracts\Auth\Command\DeauthenticateUser`.
+  - Add `Orchestra\Contracts\Auth\Command\ThrottlesLogins`.
+  - Add `Orchestra\Contracts\Auth\Listener\DeauthenticateUser`.
+  - Add `Orchestra\Contracts\Auth\Listener\ThrottlesLogins`.
 
 ### v3.1.4 {#v3-1-4}
 
