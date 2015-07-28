@@ -4,6 +4,10 @@ title: Extension Change Log
 ---
 ## Version 3.1 {#v3-1}
 
+### v3.1.7 {#v3-1-7}
+
+* Avoid storing irrelevant extension manifest data.
+
 ### v3.1.6 {#v3-1-6}
 
 * Recache routes after activating and deactivating an extension via artisan.
