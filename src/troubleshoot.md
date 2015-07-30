@@ -16,7 +16,7 @@ There would be time when you might face problem with Orchestra Platform where an
 
 To do this, just add `EXTENSION_MODE=safe` to your `.env`. This way, we would create a session data to indicate that you are browsing the site in safe mode. Once you have deactivate any problematic/broken extension just remove the value or change it to `EXTENSION_MODE=normal` to browse the website normally (with extensions re-enabled).
 
-> You can also use `?_mode=safe` (default to `normal`) as URL query string, however this is no longer persist between request.
+> You can also use `?_mode=safe` (default to `normal`) as URL query string.
 
 <a name="missing-installation"></a>
 ## Missing installation
