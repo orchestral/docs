@@ -13,7 +13,7 @@ title: Routing
 
 Routing with Orchestra Platform is still based on Laravel routing engine. However we include two base method for registering routes; `Foundation::namespaced()` and `Foundation::group()`.
 
-<a name="register-frontend-routing"></a>
+<a name="frontend-routing"></a>
 ### Frontend Routing
 
 Anything other than Orchestra Platform administration routes are considered as frontend routing, this includes routing to frontend for app and extensions.
@@ -34,7 +34,7 @@ The reason namespace is important because using this concept we can set an ancho
 <a href="{{ handles('app::photos') }}">List Photos</a>
 ```
 
-<a name="register-backend-routing"></a>
+<a name="backend-routing"></a>
 ### Backend Routing
 
 You can easily create a new page for Orchestra Platform administration routes by using `Foundation::namespaced()`:
