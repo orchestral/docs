@@ -8,7 +8,7 @@ Model Component consist of basic Eloquent Model for either use with [Auth Compon
 
 1. [Version Compatibility](#compatibility)
 2. [Installation](#installation)
-3. [Change Log]({doc-url}/components/model/changes#v3-0)
+3. [Change Log]({doc-url}/components/model/changes#v3-1)
 
 <a name="compatibility"></a>
 ## Version Compatibility
@@ -19,6 +19,7 @@ Laravel    | Model
  4.1.x     | 2.1.x
  4.2.x     | 2.2.x
  5.0.x     | 3.0.x
+ 5.1.x     | 3.1.x
 
 <a name="installation"></a>
 ## Installation

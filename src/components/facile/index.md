@@ -10,7 +10,7 @@ Facile Component simplify the need to create API based response in your Laravel 
 2. [Installation](#installation)
 3. [Configuration](#configuration)
 4. [Usage](#usage)
-5. [Change Log]({doc-url}/components/facile/changes#v3-0)
+5. [Change Log]({doc-url}/components/facile/changes#v3-1)
 
 <a name="compatibility"></a>
 ## Version Compatibility
@@ -21,6 +21,7 @@ Laravel    | Facile
  4.1.x     | 2.1.x
  4.2.x     | 2.2.x
  5.0.x     | 3.0.x
+ 5.1.x     | 3.1.x
 
 <a name="installation"></a>
 ## Installation
@@ -29,9 +30,9 @@ To install through composer, simply put the following in your `composer.json` fi
 
 ```json
 {
-	"require": {
-		"orchestra/facile": "~3.0"
-	}
+    "require": {
+        "orchestra/facile": "~3.0"
+    }
 }
 ```
 
@@ -42,7 +43,7 @@ And then run `composer install` from the terminal.
 
 Above installation can also be simplify by using the following command:
 
-	composer require "orchestra/facile=~3.0"
+    composer require "orchestra/facile=~3.0"
 
 <a name="configuration"></a>
 ## Configuration
@@ -52,9 +53,9 @@ Next add the service provider in `config/app.php`.
 ```php
 'providers' => [
 
-	// ...
+    // ...
 
-	'Orchestra\Facile\FacileServiceProvider',
+    Orchestra\Facile\FacileServiceProvider::class,
 ],
 ```
 
@@ -65,9 +66,9 @@ You might want to add `Orchestra\Support\Facades\Facile` to class aliases in `co
 ```php
 'aliases' => [
 
-	// ...
+    // ...
 
-	'Facile' => 'Orchestra\Support\Facades\Facile',
+    'Facile' => Orchestra\Support\Facades\Facile::class,
 ],
 ```
 
@@ -78,9 +79,9 @@ Facile component works by composing the response using Template, using the `Orch
 
 ```php
 Route::get('users', function () {
-	$users = User::all();
+    $users = User::all();
 
-	return Facile::view('users')->with(['users' => $users]);
+    return Facile::view('users')->with(['users' => $users]);
 });
 ```
 

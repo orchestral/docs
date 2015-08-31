@@ -6,7 +6,8 @@ title: Troubleshooting
 1. [Using safe mode](#safe-mode)
 2. [Missing installation](#missing-installation)
 3. [Maximum function nesting level of '100' reached, aborting!](#maximum-nesting)
-4. [Error on SessionHandler::read()](#error-sessionhandler-read)
+4. [Class 'orchestra.publisher.ftp' not found](#orchestra-publisher-ftp-class-not-found)
+5. [Error on SessionHandler::read()](#error-sessionhandler-read)
 
 <a name="safe-mode"></a>
 ## Using safe mode
@@ -15,7 +16,7 @@ There would be time when you might face problem with Orchestra Platform where an
 
 To do this, just add `EXTENSION_MODE=safe` to your `.env`. This way, we would create a session data to indicate that you are browsing the site in safe mode. Once you have deactivate any problematic/broken extension just remove the value or change it to `EXTENSION_MODE=normal` to browse the website normally (with extensions re-enabled).
 
-> You can also use `?_mode=safe` (default to `normal`) as URL query string, however this is no longer persist between request.
+> You can also use `?_mode=safe` (default to `normal`) as URL query string.
 
 <a name="missing-installation"></a>
 ## Missing installation
@@ -42,6 +43,19 @@ You can update `php.ini` or `xdebug` extension configuration file by increasing 
 ### Production Environment
 
 For production environment, it's better to turn off `xdebug` extension as this would speed up your application.
+
+<a name="orchestra-publisher-ftp-class-not-found"></a>
+## Class 'orchestra.publisher.ftp' not found
+
+In some deployment/production environment with limited access, you may come across the following error:
+
+    Class 'orchestra.publisher.ftp' not found
+    
+This is a sign that your `public/packages` directly is not accessible (for write) by the web user, which is typical when you're using FTP user to upload the content or using `root` user to pull the content (using cvs etc).
+
+In order to solve this you can either change the ownership of `public/packages` to the web user or pull in the FTP support for installing extension via:
+
+    composer require "orchestra/ftp-updater=~3.0"
 
 <a name="error-sessionhandler-read"></a>
 ## Error on SessionHandler::read() {#error-sessionhandler-read}

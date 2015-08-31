@@ -5,6 +5,15 @@ title: Testbench Change Log
 
 ## Version 3.1 {#v3-1}
 
+### v3.1.4 {#v3-1-4}
+
+* Update Laravel configuration fixtures, add support for new authorization feature.
+
+### v3.1.3 {#v3-1-3}
+
+* Update Laravel configuration fixtures.
+* Execute `Mockery::close()` if Mockery class is available on teardown.
+
 ### v3.1.2 {#v3-1-2}
 
 * Include `fzaninotto/faker` as a dependency for compatibility with Laravel Framework v5.1.7 and above.

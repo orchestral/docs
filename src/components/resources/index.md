@@ -10,7 +10,7 @@ Resources component is an adhoc routing manager that allow extension developer t
 2. [Installation](#installation)
 3. [Configuration](#configuration)
 4. [Usage](#usage)
-*5.[Change Log]({doc-url}/components/resources/changes#v3-0)
+5. [Change Log]({doc-url}/components/resources/changes#v3-1)
 
 Laravel    | Facile
 :----------|:----------
@@ -18,6 +18,7 @@ Laravel    | Facile
  4.1.x     | 2.1.x
  4.2.x     | 2.2.x
  5.0.x     | 3.0.x
+ 5.1.x     | 3.1.x
 
 <a name="installation"></a>
 ## Installation
@@ -26,9 +27,9 @@ To install through composer, simply put the following in your `composer.json` fi
 
 ```json
 {
-	"require": {
-		"orchestra/resources": "~3.0"
-	}
+    "require": {
+        "orchestra/resources": "~3.0"
+    }
 }
 ```
 
@@ -49,9 +50,9 @@ Next add the service provider in `config/app.php`.
 ```php
 'providers' => [
 
-	// ...
+    // ...
 
-	'Orchestra\Resources\ResourcesServiceProvider',
+    Orchestra\Resources\ResourcesServiceProvider::class,
 ],
 ```
 
@@ -62,7 +63,7 @@ To make development easier, you could add `Orchestra\Support\Facades\Resources` 
 ```php
 'aliases' => [
 
-    'Resources' => 'Orchestra\Support\Facades\Resources',
+    'Resources' => Orchestra\Support\Facades\Resources::class,
 
 ],
 ```

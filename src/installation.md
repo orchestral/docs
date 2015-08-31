@@ -7,7 +7,7 @@ title: Installation
 2. [Install Composer](#install-composer)
 3. [Install Orchestra Platform](#install-orchestra-platform)
   - [Download](#download)
-  - [Configuration](#configuration)
+  - [Preparing Setup](#configuration)
   - [Setup](#setup)
 4. [Pretty URLs](#pretty-urls)
 
@@ -39,21 +39,14 @@ You can install Orchestra Platform using Composer:
     composer create-project orchestra/platform --prefer-dist
 
 <a name="configuration"></a>
-### Configuration
+### Preparing Installation
 
-The first thing you should do before running Orchestra Platform is set your application key to a random string. If you download Orchestra Platform via Composer, this key has probably already been set for you during composer install. You can also rerun this command:
+To running the setup to install Orchestra Platform on your local machine, it best to do the following:
 
-    php artisan key:generate
-
-Typically, this string should be 32 characters long. The key can be set in the `.env` environment file. **If the application key is not set, your user sessions and other encrypted data will not be secure!**
-
-Orchestra Platform needs almost no other configuration out of the box except for **database configuration**, which can be configured in `.env` file. However, you may wish to review the `resources/config/app.php` file and its documentation. It contains several options such as `timezone` and `locale` that you may wish to change according to your application.
-
-> Note: You should never have the `app.debug` configuration option set to `true` for a production application.
-
-#### Permission
-
-Orchestra Platform may require some permissions to be configured: folders within `storage` and `bootstrap/cache` requires write access by the web server.
+1. Set the [application key]({doc-url}/security#app-key) by running `php artisan key:generate`, this will be reflected as `APP_KEY` in `.env`.
+2. Setup `APP_ENV` values, the default `local` environment is commonly used for local environment.
+3. Configure database connection via `.env`.
+4. Folders within `storage` and `bootstrap/cache` requires write access by the web server.
 
 <a name="setup"></a>
 ### Setup

@@ -5,6 +5,12 @@ title: Optimize Change Log
 
 ## Version 3.1 {#v3-1}
 
+### v3.1.2 {#v3-1-2}
+
+* Display "File not found" notice when using `-v` verbosity.
+* Display "File added" info when using `-vv` verbosity.
+* Update compiles list for `orchestra/extension` and `orchestra/kernel`.
+
 ### v3.1.1 {#v3-1-1}
 
 * Improved performances by reducing call within `Illuminate\Container\Container`.

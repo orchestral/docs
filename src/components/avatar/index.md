@@ -72,7 +72,7 @@ You might also want to add `Orchestra\Support\Facade\Avatar` to class aliases in
 <a name="usage"></a>
 ## Usage
 
-You can easily display an avatar by passing a `User` instance.
+You can easily display an avatar by passing a `App\User` instance.
 
 ```php
 <?php

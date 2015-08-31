@@ -1,5 +1,6 @@
 ---
 title: Notifier Component
+badge: notifier
 
 ---
 
@@ -8,7 +9,7 @@ Notifier Component add a simplify approach to notifier the application user usin
 1. [Version Compatibility](#compatibility)
 2. [Installation](#installation)
 3. [Configuration](#configuration)
-5. [Change Log]({doc-url}/components/notifier/changes#v2-2)
+5. [Change Log]({doc-url}/components/notifier/changes#v3-1)
 
 <a name="compatibility"></a>
 ## Version Compatibility
@@ -27,9 +28,9 @@ To install through composer, simply put the following in your `composer.json` fi
 
 ```json
 {
-	"require": {
-		"orchestra/notifier": "~3.0"
-	}
+    "require": {
+        "orchestra/notifier": "~3.0"
+    }
 }
 ```
 
@@ -40,7 +41,7 @@ And then run `composer install` from the terminal.
 
 Above installation can also be simplify by using the following command:
 
-	composer require "orchestra/notifier=~3.0"
+    composer require "orchestra/notifier=~3.0"
 
 <a name="configuration"></a>
 ## Configuration {#configuration}
@@ -50,9 +51,9 @@ Next add the service provider in `config/app.php`
 ```php
 'providers' => [
 
-	// ...
+    // ...
 
-	Orchestra\Notifier\NotifierServiceProvider::class,
+    Orchestra\Notifier\NotifierServiceProvider::class,
 ],
 ```
 
@@ -63,9 +64,9 @@ You might want to add `Orchestra\Support\Facades\Notifier` to class aliases in `
 ```php
 'aliases' => [
 
-	// ...
+    // ...
 
     'Mailer'   => Orchestra\Support\Facades\Mailer::class,
-	'Notifier' => Orchestra\Support\Facades\Notifier::class,
+    'Notifier' => Orchestra\Support\Facades\Notifier::class,
 ],
 ```

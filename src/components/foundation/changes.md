@@ -5,12 +5,35 @@ title: Foundation Change Log
 
 ## Version 3.1 {#v3-1}
 
+### v3.1.8 {#v3-1-8}
+
+* Utilize new `Illuminate\Cache\RateLimiter` on login throttles, require a bump Laravel Framework `~5.1.9`.
+* Allow login key to be customize between application instead of a hardcoded default using `"email"`.
+* Add `Orchestra\Foundation\Http\Presenters\User::getSortableFields()` to allow filtering which fields can be sorted when displaying users table.
+* Update assets:
+  - Vue 0.12.10
+
+### v3.1.7 {#v3-1-7}
+
+* Allow meta `description` and `author` to be configurable.
+* Add meta to share CSRF token.
+* Move `Orchestra\Foundation\Support\Providers\Traits\RouteProviderTrait` properties to implementing class.
+
+### v3.1.6 {#v3-1-6}
+
+* Dispatch `Orchestra\Foundation\Jobs\RefreshRouteCache` after configuring an extension.
+* Add `Orchestra\Foundation\Foundation::mode()` to fetch current request mode (e.g: safe or normal).
+* Allow safe mode to persist between request via `?_mode=safe` http query string.
+* Use new `Orchestra\Contracts\Extension\StatusChecker` contracts.
+* Update assets:
+  - Vue 0.12.8
+
 ### v3.1.5 {#v3-1-5}
 
 * Publish extension assets and migrations during `php artisan orchestra:assemble`.
 * Add `appendTableColumns()` and `prependTableColumns()` to `Orchestra\Foundation\Http\Presenters\User`.
 * Tweak `resources/views/components/messages.php`.
-* Add assets:
+* Update assets:
   - Vue 0.12.6
 
 ### v3.1.4 {#v3-1-4}
@@ -55,6 +78,18 @@ title: Foundation Change Log
 * Remove deprecated `Orchestra\Foundation\MenuHandler::get{Name}()`, use `Orchestra\Foundation\MenuHandler::get{Name}Attribute()` helper instead.
 
 ## Version 3.0 {#v3-0}
+
+### v3.0.14 {#v3-0-14}
+
+* Allow meta `description` and `author` to be configurable.
+* Add meta to share CSRF token.
+* Make it easier to extends user table by extending `Orchestra\Foundation\Http\Presenters\User`.
+* Move `Orchestra\Foundation\Support\Providers\Traits\RouteProviderTrait` properties to implementing class.
+* Assets:
+  - Added Font Awesome v4.3.0
+  - Update Twitter Bootstrap v3.3.5
+  - Update Javie v2.0.2
+  - Update Underscore.js v1.8.3
 
 ### v3.0.13 {#v3-0-13}
 

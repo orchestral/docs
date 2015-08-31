@@ -76,4 +76,3 @@ Laravel    | Orchestra Platform  | Status
  4.2.x     | 2.2.x               | Deprecated
  5.0.x     | 3.0.x               | Supported
  5.1.x     | 3.1.x               | LTS
-

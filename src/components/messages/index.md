@@ -13,7 +13,7 @@ Messages Component bring a unified notification support for Laravel and Orchestr
   - [Adding a Message](#adding-a-message)
   - [Extending a Message to Current Request](#extending-a-message-to-current-request)
   - [Displaying the Message in a View](#displaying-the-message-in-a-view)
-5. [Change Log]({doc-url}/components/messages/changes#v3-0)
+5. [Change Log]({doc-url}/components/messages/changes#v3-1)
 
 <a name="compatibility"></a>
 ## Version Compatibility
@@ -22,6 +22,7 @@ Laravel    | Messages
 :----------|:----------
  4.2.x     | 2.2.x
  5.0.x     | 3.0.x
+ 5.1.x     | 3.1.x
 
 <a name="installation"></a>
 ## Installation
@@ -55,7 +56,7 @@ Add `Orchestra\Messages\MessagesServiceProvider` service provider in `config/app
 
     // ...
 
-    'Orchestra\Messages\MessagesServiceProvider',
+    Orchestra\Messages\MessagesServiceProvider::class,
 ],
 ```
 
@@ -68,7 +69,7 @@ You might want to add `Orchestra\Support\Facades\Messages` to class aliases in `
 
     // ...
 
-    'Messages' => 'Orchestra\Support\Facades\Messages',
+    'Messages' => Orchestra\Support\Facades\Messages::class,
 ],
 ```
 
@@ -117,11 +118,10 @@ Here's an example how you can display the message:
 $message = Messages::retrieve();
 
 if ($message instanceof Orchestra\Messages\MessageBag) {
+    $message->setFormat('<div class="alert alert-:key">:message</div>');
+
     foreach (['error', 'info', 'success'] as $key) {
         if ($message->has($key)) {
-            $message->setFormat(
-                '<div class="alert alert-'.$key.'">:message</div>'
-            );
             echo implode('', $message->get($key));
         }
     }

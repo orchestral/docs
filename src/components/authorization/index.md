@@ -33,9 +33,9 @@ To install through composer, simply put the following in your `composer.json` fi
 
 ```json
 {
-	"require": {
-		"orchestra/authorization": "~3.0"
-	}
+    "require": {
+        "orchestra/authorization": "~3.0"
+    }
 }
 ```
 
@@ -46,7 +46,7 @@ And then run `composer install` from the terminal.
 
 Above installation can also be simplify by using the following command:
 
-	composer require "orchestra/authorization=~3.0"
+    composer require "orchestra/authorization=~3.0"
 
 <a name="configuration"></a>
 ## Configuration
@@ -56,11 +56,11 @@ Next add the service provider in `config/app.php`.
 ```php
 'providers' => [
 
-	// ...
-	Orchestra\Authorization\AuthorizationServiceProvider::class,
-	Orchestra\Memory\MemoryServiceProvider::class,
+    // ...
+    Orchestra\Authorization\AuthorizationServiceProvider::class,
+    Orchestra\Memory\MemoryServiceProvider::class,
 
-	Orchestra\Memory\CommandServiceProvider::class,
+    Orchestra\Memory\CommandServiceProvider::class,
 ],
 ```
 
@@ -71,7 +71,7 @@ To make development easier, you could add `Orchestra\Support\Facades\ACL` alias 
 ```php
 'aliases' => [
 
-	'ACL' => Orchestra\Support\Facades\ACL::class,
+    'ACL' => Orchestra\Support\Facades\ACL::class,
 
 ],
 ```
@@ -113,7 +113,7 @@ To verify the created ACL, you can use the following code.
 $acl = ACL::make('acme');
 
 if (! $acl->can('manage acme')) {
-	return redirect()->to(handles('orchestra::login'));
+    return redirect()->to(handles('orchestra::login'));
 }
 ```
 
@@ -127,21 +127,21 @@ use Orchestra\Support\Facades\ACL;
 
 class ManageAcme
 {
-	public function handle($request, Closure $next)
-	{
-		if (! ACL::make('acme')->can('manage acme')) {
-			return redirect()->to(handles('orchestra::login'));
-		}
+    public function handle($request, Closure $next)
+    {
+        if (! ACL::make('acme')->can('manage acme')) {
+            return redirect()->to(handles('orchestra::login'));
+        }
 
-		return $next($request);
-	}
+        return $next($request);
+    }
 }
 ```
 
 <a name="memory-integration"></a>
 ### Integration with Memory Component
 
-Integration with [Memory component]({doc-url}/components/memory}) would allow a persistent storage of ACL metric, this would eliminate the need to define ACL on every request.
+Integration with [Memory Component]({doc-url}/components/memory}) would allow a persistent storage of ACL metric, this would eliminate the need to define ACL on every request.
 
 #### Creating a New ACL Instance
 
@@ -163,32 +163,32 @@ use Illuminate\Database\Migrations\Migration;
 
 class FooDefineAcl extends Migration
 {
-	/**
-	 * Run the migrations.
-	 *
-	 * @return void
-	 */
-	public function up()
-	{
-		$role = Role::admin();
-		$acl  = ACL::make('acme');
+    /**
+     * Run the migrations.
+     *
+     * @return void
+     */
+    public function up()
+    {
+        $role = Role::admin();
+        $acl  = ACL::make('acme');
 
-		$actions = ['manage acme', 'view acme'];
+        $actions = ['manage acme', 'view acme'];
 
-		$acl->actions()->attach($actions);
-		$acl->roles()->add($role->name);
+        $acl->actions()->attach($actions);
+        $acl->roles()->add($role->name);
 
-		$acl->allow($role->name, $actions);
-	}
+        $acl->allow($role->name, $actions);
+    }
 
-	/**
-	 * Reverse the migrations.
-	 *
-	 * @return void
-	 */
-	public function down()
-	{
-		// nothing to do here.
-	}
+    /**
+     * Reverse the migrations.
+     *
+     * @return void
+     */
+    public function down()
+    {
+        // nothing to do here.
+    }
 }
 ```

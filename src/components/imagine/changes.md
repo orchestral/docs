@@ -4,6 +4,16 @@ title: Imagine Change Log
 ---
 ## Version 3.1 {#v3-1}
 
+### v3.1.2 {#v3-1-2}
+
+* Fixes dispatchable job not resizing the file as expected.
+
+### v3.1.1 {#v3-1-1}
+
+* Improved performances by reducing call within `Illuminate\Container\Container`.
+* Create dispatchable job that you can use to create image thumbnail via `Orchestra\Imagine\Jobs\CreateThumbnail`.
+* Create dispatchable job that you can use to resize an image via `Orchestra\Imagine\Jobs\ResizeImage`.
+
 ### v3.1.0 {#v3-1-0}
 
 * Update support to Laravel Framework v5.1.

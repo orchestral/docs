@@ -5,6 +5,30 @@ title: Change Log
 
 ## Version 3.1 {#v3-1}
 
+### v3.1.7 {#v3-1-7}
+
+* Add support for Laravel new Authorization feature.
+* Add `App\Provider\AuthServiceProvider`.
+
+### v3.1.6 {#v3-1-6}
+
+* Readd `App\Http\Controllers\HomeController`.
+* Update `validation` language file.
+* Update base application layout.
+
+### v3.1.5 {#v3-1-5}
+
+* Bump elixir requirement to `^3.0.0`.
+* Convert `Illuminate\Database\Eloquent\ModelNotFoundException` to 404 exceptions.
+* Improves the built-in `DatabaseSeeder` class.
+* Add base namespace to the default `TestCase` class.
+
+### v3.1.4 {#v3-1-4}
+
+* Use environment variables for `resources/config/services.php`.
+* Typehint `Faker\Generator` on factories.
+* Order key by alphabetical order on `resources/lang/en/validation.php`.
+
 ### v3.1.3 {#v3-1-3}
 
 * Add new `resources/lang/en/auth.php` language file.

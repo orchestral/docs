@@ -7,12 +7,15 @@ title: Configuration
 2. [Setting Admin URL](#admin-url)
    - [As Prefix](#admin-url-as-prefix)
    - [As Domain](#admin-url-as-domain)
-3. [Securing Orchestra Platform](#securing)
 
 <a name="introduction"></a>
 ## Introduction
 
 All of the configuration files for the Orchestra Platform are stored in the `resources/config` directory. Each option is documented, so feel free to look through the files and get familiar with the options available to you.
+
+Orchestra Platform needs almost no other configuration out of the box except for **database configuration**, which can be configured in `.env` file. However, you may wish to review the `resources/config/app.php` file and its documentation. It contains several options such as `timezone` and `locale` that you may wish to change according to your application.
+
+> Note: You should never have the `app.debug` configuration option set to `true` for a production application.
 
 <a name="admin-url"></a>
 ## Setting Admin URL
@@ -72,31 +75,3 @@ class AppServiceProvider extends ServiceProvider
     }
 }
 ```
-
-<a name="securing"></a>
-## Securing Orchestra Platform
-
-### Use better session driver
-
-Orchestra Platform recommends using either Redis, Memcached or APC session driver (or at least database driver). This help making sure we can handle session request without any interruption especially when for handling CSRF or Login Throttling.
-
-<a name="disable-access-to-theme"></a>
-### Disallow access to `.blade.php` for themes
-
-<a name="disable-access-to-theme-for-apache"></a>
-#### Apache
-
-Configuration is included in the default `public/.htaccess`:
-
-    # Secure Front Themes...
-
-    RewriteRule ^themes/.*\.(blade.php|php)$ - [F,L,NC]
-
-<a name="disable-access-to-theme-for-nginx"></a>
-#### Nginx
-
-You can add the following configuration:
-
-    location ~ ^/themes/(.*)\.php$ {
-        deny all;
-    }

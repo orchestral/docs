@@ -4,6 +4,23 @@ title: Extension Change Log
 ---
 ## Version 3.1 {#v3-1}
 
+### v3.1.7 {#v3-1-7}
+
+* Avoid storing irrelevant extension manifest data.
+
+### v3.1.6 {#v3-1-6}
+
+* Recache routes after activating and deactivating an extension via artisan.
+
+### v3.1.5 {#v3-1-5}
+
+* Replace `Orchestra\Contracts\Extension\SafeMode` with `Orchestra\Contracts\Extension\StatusChecker`.
+* Deprecate and remove `Orchestra\Extension\SafeModeChecker::check()`.
+* Rename `Orchestra\Extension\SafeModeChecker` to `Orchestra\Extension\StatusChecker`.
+* Add `Orchestra\Extension\StatusChecker::is()` method.
+* Add `Orchestra\Extension\StatusChecker::isNot()` method.
+* Add `Orchestra\Extension\StatusChecker::mode()` method.
+
 ### v3.1.4 {#v3-1-4}
 
 * Add `Orchestra\Extension\Factory::after()`.
