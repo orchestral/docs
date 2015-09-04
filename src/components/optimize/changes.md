@@ -5,6 +5,10 @@ title: Optimize Change Log
 
 ## Version 3.1 {#v3-1}
 
+### v3.1.3 {#v3-1-3}
+
+* Update compiles list for `orchestra/extension`, `orchestra/kernel` and `orchestra/support`.
+
 ### v3.1.2 {#v3-1-2}
 
 * Display "File not found" notice when using `-v` verbosity.
