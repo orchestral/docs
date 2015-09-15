@@ -5,6 +5,10 @@ title: Optimize Change Log
 
 ## Version 3.1 {#v3-1}
 
+### v3.1.5 {#v3-1-5}
+
+* Update compiles list for `orchestra/foundation`.
+
 ### v3.1.4 {#v3-1-4}
 
 * Update compiles list for `orchestra/auth` and `orchestra/widget`.
