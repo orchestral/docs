@@ -4,6 +4,12 @@ title: Extension Change Log
 ---
 ## Version 3.1 {#v3-1}
 
+### v3.1.8 {#v3-1-8}
+
+* Simplified registering extension configuration via `Orchestra\Extension\Plugin`.
+* Allow to register extension service provider based on `when()` event.
+* Refactor console to use `$signature`.
+
 ### v3.1.7 {#v3-1-7}
 
 * Avoid storing irrelevant extension manifest data.

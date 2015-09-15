@@ -5,6 +5,48 @@ title: Foundation Change Log
 
 ## Version 3.1 {#v3-1}
 
+### v3.1.14 {#v3-1-14}
+
+* Add `Orchestra\Foundation\Support\Providers\ModuleServiceProvider` to replace `Orchestra\Foundation\Support\Providers\ExtensionRouteServiceProvider`.
+* Add basic alert html template for emails.
+
+### v3.1.13 {#v3-1-13}
+
+* Fixes missing `Orchestra\Foundation\Support\Providers\ExtensionRouteServiceProvider::$routeMiddleware`.
+
+### v3.1.12 {#v3-1-12}
+
+* Improve extension (with routes) service provider support.
+* Utilize `Orchestra\Html\HtmlBuilder::attributable()` helper.
+* Fixes google fonts to be loaded via HTTPS URL to allow Orchestra Platform to be used either using SSL or without.
+* Add `.editorconfig`.
+* Add assets:
+  - html5shiv v3.7.3.
+
+### v3.1.11 {#v3-1-11}
+
+* Reworks on backend menu to support generating current active menu.
+* Improves views overall implementation, ensure readability is optimized.
+* Fixes email address not shown on certain mail transport.
+* Update assets:
+  - Vue v0.12.14.
+
+### v3.1.10 {#v3-1-10}
+
+* Add `Orchestra\Foundation\Console\Commands\OptimizeCommand`.
+* Wrap `assetic()` method to generate URL using `asset()`.
+* Fixes password confirmation key used on edit password form.
+* Update assets:
+  - Vue v0.12.13.
+
+### v3.1.9 {#v3-1-9}
+
+* Add `assetic()` helper as an alternative to `elixir()` helper.
+* Detect updated extension when running `orchestra:assemble` command.
+* Add basic action html template for emails.
+* Update assets:
+  - Vue 0.12.12
+
 ### v3.1.8 {#v3-1-8}
 
 * Utilize new `Illuminate\Cache\RateLimiter` on login throttles, require a bump Laravel Framework `~5.1.9`.
@@ -78,6 +120,23 @@ title: Foundation Change Log
 * Remove deprecated `Orchestra\Foundation\MenuHandler::get{Name}()`, use `Orchestra\Foundation\MenuHandler::get{Name}Attribute()` helper instead.
 
 ## Version 3.0 {#v3-0}
+
+### v3.0.16 {#v3-0-16}
+
+* Fixes google fonts to be loaded via HTTPS URL to allow Orchestra Platform to be used either using SSL or without.
+* Add `.editorconfig`.
+* Add assets:
+  - html5shiv v3.7.3.
+* Update assets:
+  - Vue v0.12.14.
+
+### v3.0.15 {#v3-0-15}
+
+* Filter only relevant input fields for `Orchestra\Foundation\Http\Controllers\CredentialController::login()`.
+* Fixes password confirmation key used on edit password form.
+* Tweak validations.
+* Update assets:
+  - Vue v0.12.13.
 
 ### v3.0.14 {#v3-0-14}
 
