@@ -5,6 +5,11 @@ title: Installer Change Log
 
 ## Version 3.1 {#v3-1}
 
+### v3.1.2 {#v3-1-2}
+
+* `Orchestra\Installation\InstallerServiceProvider` should utilize the new `Orchestra\Foundation\Support\Providers\ModuleServiceProvider`.
+* Improved performances by reducing call within `Illuminate\Container\Container`.
+
 ### v3.1.1 {#v3-1-1}
 
 * Enables routes caching.
