@@ -5,6 +5,17 @@ title: HTML Change Log
 
 ## Version 3.1 {#v3-1}
 
+### v3.1.7 {#v3-1-7}
+
+* Don't double escape in `Orchestra\Html\Support\FormBuilder::option()`.
+* Allow `Orchestra\Html\Support\FormBuilder::checkbox()` to work with eloquent relationship.
+* Fixes incorrect param type in `Orchestra\Html\Support\HtmlBuilder` codeblock.
+
+### v3.1.6 {#v3-1-6}
+
+* Rework on configuration binding. Solve issue where configuration is missing when binding occur earlier than service provider booting process especially during testing.
+* Use new `Orchestra\Html\HtmlBuilder::attributable()` on table default views.
+
 ### v3.1.5 {#v3-1-5}
 
 * Add `Orchestra\Html\HtmlBuilder::attributable()` method.
