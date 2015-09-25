@@ -24,6 +24,7 @@ This would allow extension (or even packages) to have it's own set of view styli
  4.2.x    | 2.2.x
  5.0.x    | 3.0.x
  5.1.x    | 3.1.x
+ 5.2.x    | 3.2.x@dev
 
 ## Installation {#installation}
 

@@ -9,7 +9,7 @@ Facile Component simplify the need to create API based multi-format response in 
 ```php
 Route::get('users', function () {
     $users = User::paginate();
-    
+
     return Facile::view('users')->with(compact('users'));
 });
 ```
@@ -30,6 +30,7 @@ Laravel    | Facile
  4.2.x     | 2.2.x
  5.0.x     | 3.0.x
  5.1.x     | 3.1.x
+ 5.2.x     | 3.2.x@dev
 
 <a name="installation"></a>
 ## Installation
@@ -93,6 +94,6 @@ Route::get('users', function () {
 });
 ```
 
-Based on above example, the response will be generated via `Orchestra\Facile\Template\Simple::composeHtml()` method and use `resources/views/users.blade.php` when you hit `/users`. Otherwise it would use `Orchestra\Facile\Template\Simple::composeJson()` when you hit `/users` with `Accept: application/json` request header. 
+Based on above example, the response will be generated via `Orchestra\Facile\Template\Simple::composeHtml()` method and use `resources/views/users.blade.php` when you hit `/users`. Otherwise it would use `Orchestra\Facile\Template\Simple::composeJson()` when you hit `/users` with `Accept: application/json` request header.
 
 > Facile is also smart enough to handle content negotiation accept header.
