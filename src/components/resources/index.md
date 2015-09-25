@@ -4,6 +4,8 @@ badge: resources
 
 ---
 
+> Resources component has been deprecated, please read [Backend Routing]({doc-url}/routing#backend-routing) for alternative approach.
+
 Resources component is an adhoc routing manager that allow extension developer to add CRUD interface without touching Orchestra Platform.
 
 1. [Version Compatibility](#compatibility)
