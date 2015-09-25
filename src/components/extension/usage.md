@@ -119,7 +119,7 @@ Extension developers can disable configuration option by adding `"configurable" 
 By default, Extension component is configured to search for extension under the following folders using `glob()` PHP function:
 
 * `app`
-* `app/Extensions/*/*`
+* `workbench/*/*`
 * `vendor/*/*`
 
 If there a requirement to add non-distributed packages feel free to include your own structure, and include the path in `App\Providers\ExtensionServiceProvider`.
