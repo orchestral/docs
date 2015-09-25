@@ -9,7 +9,7 @@ Parser Component is a framework agnostic package that provide a simple way to pa
 1. [Version Compatibility](#compatibility)
 2. [Installation](#installation)
 3. [Configuration](#configuration)
-4. [Change Log]({doc-url}/components/parser/changes#v3-1)
+4. [Change Log]({doc-url}/components/parser/changes#v3-2)
 
 <a name="compatibility"></a>
 ## Version Compatibilty

@@ -13,7 +13,7 @@ Messages Component bring a unified notification support for Laravel and Orchestr
    - [Adding a Message](#adding-a-message)
    - [Extending a Message to Current Request](#extending-a-message-to-current-request)
    - [Displaying the Message in a View](#displaying-the-message-in-a-view)
-5. [Change Log]({doc-url}/components/messages/changes#v3-1)
+5. [Change Log]({doc-url}/components/messages/changes#v3-2)
 
 <a name="compatibility"></a>
 ## Version Compatibility

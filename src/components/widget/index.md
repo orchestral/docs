@@ -10,7 +10,7 @@ Widget allow you to manage widgetize actions in Orchestra Platform. By default O
 3. [Installation](#installation)
 4. [Configuration](#configuration)
 2. [Type of Widgets](#type)
-5. [Change Log]({doc-url}/components/widget/changes#v3-1)
+5. [Change Log]({doc-url}/components/widget/changes#v3-2)
 
 <a name="compatibility"></a>
 ## Version Compatibility

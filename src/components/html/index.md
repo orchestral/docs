@@ -10,7 +10,7 @@ HTML component extends the functionality of the deprecated `Illuminate\Html` wit
 2. [Installation](#installation)
 3. [Configuration](#configuration)
 4. [Usage]({doc-url}/components/html/basic/html)
-5. [Change Log]({doc-url}/components/html/changes#v3-1)
+5. [Change Log]({doc-url}/components/html/changes#v3-2)
 
 <a name="compatibility"></a>
 ## Version Compatibility

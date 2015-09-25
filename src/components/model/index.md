@@ -8,7 +8,7 @@ Model Component consist of basic Eloquent Model for either use with [Auth Compon
 
 1. [Version Compatibility](#compatibility)
 2. [Installation](#installation)
-3. [Change Log]({doc-url}/components/model/changes#v3-1)
+3. [Change Log]({doc-url}/components/model/changes#v3-2)
 
 <a name="compatibility"></a>
 ## Version Compatibility

@@ -18,7 +18,7 @@ Testbench Component is a simple package that is supposed to help you write tests
     - [Using Migrations](#using-migrations)
 4. [Alternative 3rd Party Testing](#alternative-testing)
 5. [Troubleshoot](#troubleshoot)
-6. [Change Log]({doc-url}/components/testbench/changes#v3-1)
+6. [Change Log]({doc-url}/components/testbench/changes#v3-2)
 
 <a name="compatibility"></a>
 ## Version Compatibility

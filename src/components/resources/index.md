@@ -13,7 +13,7 @@ Resources component is an adhoc routing manager that allow extension developer t
 2. [Installation](#installation)
 3. [Configuration](#configuration)
 4. [Usage](#usage)
-5. [Change Log]({doc-url}/components/resources/changes#v3-1)
+5. [Change Log]({doc-url}/components/resources/changes#v3-2)
 
 Laravel    | Facile
 :----------|:----------

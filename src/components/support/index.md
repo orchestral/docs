@@ -10,7 +10,7 @@ Support component is basically a basic set of class required by Orchestra Platfo
 2. [Installation](#installation)
 3. [Configuration](#configuration)
 4. [Classes](#classes)
-5. [Change Log]({doc-url}/components/support/changes#v3-1)
+5. [Change Log]({doc-url}/components/support/changes#v3-2)
 
 <a name="compatibility"></a>
 ## Version Compatibility

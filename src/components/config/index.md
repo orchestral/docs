@@ -9,7 +9,7 @@ Config Component is a configuration with environment based support for Laravel 5
 1. [Version Compatibility](#compatibility)
 2. [Installation](#installation)
 3. [Configuration](#configuration)
-4. [Change Log]({doc-url}/components/kernel/changes#v3-1)
+4. [Change Log]({doc-url}/components/kernel/changes#v3-2)
 
 <a name="compatibility"></a>
 ## Version Compatibility

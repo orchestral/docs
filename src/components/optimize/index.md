@@ -7,7 +7,7 @@ badge: optimize
 Optimization Component is a tool specifically for Orchestra Platform, which work based on `php artisan optimize`.
 
 1. [Version Compatibility](#compatibility)
-2. [Change Log]({doc-url}/components/optimize/changes#v3-1)
+2. [Change Log]({doc-url}/components/optimize/changes#v3-2)
 
 <a name="compatibility"></a>
 ## Version Compatibility

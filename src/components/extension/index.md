@@ -12,7 +12,7 @@ Extension Component allows components or packages to be added dynamically to Orc
 2. [Installation](#installation)
 3. [Configuration](#configuration)
 4. [Usage]({doc-url}/components/extension/usage)
-5. [Change Log]({doc-url}/components/extension/changes#v3-1)
+5. [Change Log]({doc-url}/components/extension/changes#v3-2)
 
 <a name="compatibility"></a>
 ## Version Compatibility

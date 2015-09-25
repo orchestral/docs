@@ -14,7 +14,7 @@ Memory Component handles runtime configuration either using "in memory" Runtime 
    - [Retrieving Items](#retrieving-items)
    - [Removing Items](#removing-items)
    - [Extending Memory](#extending-memory)
-5. [Change Log]({doc-url}/components/memory/changes#v3-1)
+5. [Change Log]({doc-url}/components/memory/changes#v3-2)
 
 ## Version Compatibility {#compatibility}
 

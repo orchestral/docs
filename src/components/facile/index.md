@@ -18,7 +18,7 @@ Route::get('users', function () {
 2. [Installation](#installation)
 3. [Configuration](#configuration)
 4. [Usage](#usage)
-5. [Change Log]({doc-url}/components/facile/changes#v3-1)
+5. [Change Log]({doc-url}/components/facile/changes#v3-2)
 
 <a name="compatibility"></a>
 ## Version Compatibility
