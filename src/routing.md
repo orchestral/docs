@@ -45,7 +45,7 @@ use Orchestra\Foundation\Support\Providers\ModuleServiceProvider;
 
 class ModuleServiceProvider extends ModuleServiceProvider
 {
-    protected $namespace = 'App\Http\Controller';
+    protected $namespace = 'App\Http\Controllers';
     
     protected $routeGroup = 'app';
     
@@ -116,7 +116,7 @@ use Orchestra\Foundation\Support\Providers\ModuleServiceProvider;
 
 class ModuleServiceProvider extends ModuleServiceProvider
 {
-    protected $namespace = 'App\Http\Controller';
+    protected $namespace = 'App\Http\Controllers';
     
     protected $routeGroup = 'app';
     
