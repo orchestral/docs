@@ -12,7 +12,7 @@ Debug Component is commandline profiling package for Laravel, It was based from 
 4. [Usage](#usage)
    - [Enabling Profiler](#enabling-profiler)
    - [Viewing the Profiler](#viewing-the-profiler)
-5. [Change Log]({doc-url}/components/debug/changes#v3-0)
+5. [Change Log]({doc-url}/components/debug/changes#v3-1)
 
 <a name="compatibility"></a>
 ## Version Compatibility

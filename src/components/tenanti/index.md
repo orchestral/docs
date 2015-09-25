@@ -14,7 +14,7 @@ Tenanti allow you to manage multi-tenant data schema and migration manager for y
    - [Setup Model Observer](#setup-model-observer)
    - [Console Support](#console-support)
    - [Multi Database Connection Setup](#multi-database-connection-setup)
-5. [Change Log]({doc-url}/components/tenanti/changes#v3-0)
+5. [Change Log]({doc-url}/components/tenanti/changes#v3-1)
 
 <a name="compatibility"></a>
 ## Version Compatibility
