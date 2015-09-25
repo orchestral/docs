@@ -34,6 +34,42 @@ The reason namespace is important because using this concept we can set an ancho
 <a href="{{ handles('app::photos') }}">List Photos</a>
 ```
 
+#### Using ModuleServiceProvider
+
+You can simplify frontend routing by utilizing `Orchestra\Foundation\Support\Providers\ModuleServiceProvider`.
+
+```php
+<?php namespace App\Providers;
+
+use Orchestra\Foundation\Support\Providers\ModuleServiceProvider;
+
+class ModuleServiceProvider extends ModuleServiceProvider
+{
+    protected $namespace = 'App\Http\Controller';
+    
+    protected $routeGroup = 'app';
+    
+    protected $routePrefix = '/';
+    
+    protected function loadRoutes()
+    {
+        $this->afterExtensionLoaded(function () {
+            $this->loadBackendRoutesFrom(app_path('Http/frontend.php'));
+        });
+    }
+}
+```
+
+And under `app/Http/frontend.php`:
+
+```php
+<?php
+
+use Illuminate\Routing\Router;
+
+$router->resources('photos', 'PhotoController', ['only' => ['index', 'show']]);
+```
+
 <a name="backend-routing"></a>
 ### Backend Routing
 
