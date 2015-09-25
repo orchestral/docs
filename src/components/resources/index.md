@@ -1,6 +1,7 @@
 ---
 title: Resources Component
 badge: resources
+deprecated: true
 
 ---
 
@@ -123,4 +124,3 @@ $robots['pages.comments'] = 'resource:Robotix\Pages\CommentController';
 ## Returning Response from a Resource
 
 Controllers mapped as Orchestra Platform Resources is no different from any other controller except the layout is using Orchestra Platform Administrator Interface. You can use `View`, `Response` and `Redirect` normally as you would without Orchestra Platform integration.
-
