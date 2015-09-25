@@ -9,7 +9,7 @@ Notifier Component add a simplify approach to notifier the application user usin
 1. [Version Compatibility](#compatibility)
 2. [Installation](#installation)
 3. [Configuration](#configuration)
-5. [Change Log]({doc-url}/components/notifier/changes#v3-1)
+4. [Change Log]({doc-url}/components/notifier/changes#v3-1)
 
 <a name="compatibility"></a>
 ## Version Compatibility

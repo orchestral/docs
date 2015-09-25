@@ -10,8 +10,8 @@ Debug Component is commandline profiling package for Laravel, It was based from 
 2. [Installation](#installation)
 3. [Configuration](#configuration)
 4. [Usage](#usage)
-  - [Enabling Profiler](#enabling-profiler)
-  - [Viewing the Profiler](#viewing-the-profiler)
+   - [Enabling Profiler](#enabling-profiler)
+   - [Viewing the Profiler](#viewing-the-profiler)
 5. [Change Log]({doc-url}/components/debug/changes#v3-0)
 
 <a name="compatibility"></a>
@@ -98,7 +98,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        if ($this->app['config']['app.debug']) {
+        if (config('app.debug')) {
             Profiler::attachDebugger();
         }
     }

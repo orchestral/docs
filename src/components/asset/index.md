@@ -10,11 +10,11 @@ Asset Component is a port of Laravel 3 Asset for Orchestra Platform. The compone
 2. [Installation](#installation)
 3. [Configuration](#configuration)
 4. [Usage](#usage)
-  - [Registering Assets](#registering-assets)
-  - [Dumping Assets](#dumping-assets)
-  - [Asset Dependencies](#asset-dependencies)
-  - [Asset Containers](#asset-containers)
-  - [Asset Versioning](#asset-versioning)
+   - [Registering Assets](#registering-assets)
+   - [Dumping Assets](#dumping-assets)
+   - [Asset Dependencies](#asset-dependencies)
+   - [Asset Containers](#asset-containers)
+   - [Asset Versioning](#asset-versioning)
 5. [Change Log]({doc-url}/components/asset/changes#v3-1)
 
 <a name="compatibility"></a>

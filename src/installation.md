@@ -20,7 +20,7 @@ Orchestra Plaftorm has a few system requirements:
 * PHP Extensions:
   - OpenSSL
   - Mbstring
-* Apache, nginx, or another compatible web server.
+* Apache, Nginx, or another compatible web server.
 * SQLite, MySQL, PostgreSQL, or SQL Server PDO drivers.
 
 <a name="install-composer"></a>

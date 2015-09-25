@@ -75,7 +75,7 @@ You might want to add `Orchestra\Support\Facades\Facile` to class aliases in `co
 <a name="usage"></a>
 ## Usage
 
-Facile component works by composing the response using Template, using the `Orchestra\Facile\FacileServiceProvider`, we setup the default template for normal usage which can compose HTML, CSV and JSON response, see `Orchestra\Facile\Template\Simple`.
+Facile component works by composing the response using template, using the `Orchestra\Facile\FacileServiceProvider`, we setup the default template for normal usage which can compose HTML, CSV and JSON response (resolved via `Orchestra\Facile\Template\Simple`).
 
 ```php
 Route::get('users', function () {

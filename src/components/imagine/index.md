@@ -6,11 +6,11 @@ badge: imagine
 
 Imagine (Wrapper) Component is a Laravel 5 package wrapper for [Imagine](https://github.com/avalanche123/Imagine).
 
-* [Version Compatibility](#compatibility)
-* [Installation](#installation)
-* [Configuration](#configuration)
-* [Usage](#usage)
-* [Change Log]({doc-url}/components/imagine/changes#v3-1)
+1. [Version Compatibility](#compatibility)
+2. [Installation](#installation)
+3. [Configuration](#configuration)
+4. [Usage](#usage)
+5. [Change Log]({doc-url}/components/imagine/changes#v3-1)
 
 <a name="compatibility"></a>
 ## Version Compatibility

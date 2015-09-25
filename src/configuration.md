@@ -52,7 +52,7 @@ return [
 ];
 ```
 
-However to do this, please make sure that you have set `APP_URL` value in `.env` and use `Orchestra\Extension\Traits\DomainAwareTrait`.
+However to do this, please make sure that you have set `APP_URL` value in `.env` and using `Orchestra\Extension\Traits\DomainAwareTrait` to allow `{{domain}}` to be resolved dynamically.
 
 ```php
 <?php namespace App\Providers;
