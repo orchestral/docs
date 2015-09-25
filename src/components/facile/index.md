@@ -4,7 +4,15 @@ badge: facile
 
 ---
 
-Facile Component simplify the need to create API based response in your Laravel application, with just the following code you are able to return multi format Response, either it be HTML (using `View`), json or etc.
+Facile Component simplify the need to create API based multi-format response in your Laravel application, with just the following code you are able to return multi format Response, either it be HTML (using `View`), json or etc.
+
+```php
+Route::get('users', function () {
+    $users = User::paginate();
+    
+    return Facile::view('users')->with(compact('users'));
+});
+```
 
 1. [Version Compatibility](#compatibility)
 2. [Installation](#installation)
@@ -81,7 +89,7 @@ Facile component works by composing the response using template, using the `Orch
 Route::get('users', function () {
     $users = User::all();
 
-    return Facile::view('users')->with(['users' => $users]);
+    return Facile::view('users')->with(compact('users'));
 });
 ```
 
