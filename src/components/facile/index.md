@@ -85,4 +85,6 @@ Route::get('users', function () {
 });
 ```
 
-In above example, what actually happen is that the response was generated using `Orchestra\Facile\Template\Simple::composeHtml()` method when you hit `/users` and `Orchestra\Facile\Template\Simple::composeJson()` when you hit `/users` with `Accept: application/json` request header.
+Based on above example, the response will be generated via `Orchestra\Facile\Template\Simple::composeHtml()` method and use `resources/views/users.blade.php` when you hit `/users`. Otherwise it would use `Orchestra\Facile\Template\Simple::composeJson()` when you hit `/users` with `Accept: application/json` request header. 
+
+> Facile is also smart enough to handle content negotiation accept header.
