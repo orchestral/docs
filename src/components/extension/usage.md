@@ -17,12 +17,12 @@ An extension is a basically a package or module (package with routes) except tha
 <a name="managing-an-extension"></a>
 ## Managing an Extension
 
-Extensions will be manage by Orchestra Platform Administrator Interface. Login as an administrator and go to **Extensions** on the top navigation.
+Extensions will be managed by Orchestra Platform Administrator Interface. Login as an administrator and go to **Extensions** on the main navigation.
 
 Few things to consider:
 
 * Only activated extensions will be run on runtime.
-* Orchestra Platform will start all service providers listed by the extension.
+* Orchestra Platform will register an boot every service providers listed by the extension.
 
 <a name="basic-of-an-extension"></a>
 ## Basic of an Extension
@@ -38,17 +38,31 @@ The manifest file will be stored in `{package-name}/orchestra.json` (same level 
 	"description": "Robots.txt",
 	"author": "Mior Muhammad Zaki",
 	"url": "https://github.com/crynobone/robotix",
+	"version": "1.0.0",
 	"config": {
 		"handles": "robotix"
 	},
-	"provide": [
+	"provides": [
 		"Robotix\\RobotixServiceProvider"
 	],
+	"plugin": "Robotix\\RobotixPlugin",
 	"autoload": [
 		"start.php"
 	]
 }
 ```
+
+| Key         | Type      | Required | Description
+|:------------|:----------|:--------:|:---------------------
+| name        | string    | Yes      | Unique name for the extension using `{vendor}/{package}` format.
+| description | string    | No       | Description for the extension, retrieve from `composer.lock` if installed through Composer.
+| author      | string    | Yes      | Name of the extension author.
+| url         | string    | Yes      | URL for the project repository, or website.
+| version     | string    | No       | Current installed version, retrieve from `composer.lock` if installed through Composer.
+| config      | object    | No       | List of default extension configuration.
+| provides    | array     | No       | List of service providers used by the extension.
+| plugin      | string    | No       | Plugin configuration class (if needed).
+| autoload    | string    | No       | List of autoload files for the extension.
 
 <a name="configuring-an-extension"></a>
 ## Configuring an Extension
@@ -60,7 +74,7 @@ To configure an extension, the extension need to be activated. Once this is done
 <a name="service-providers-for-extension"></a>
 ### Service Providers for Extension
 
-Manifest file also allow extension to dynamically register service providers without having to change `config/app.php`. To tell Orchestra Platform to automatically run your service provider, include the following:
+Manifest file also allow extension to dynamically register service providers without having to change `resources/config/app.php`. To tell Orchestra Platform to automatically run your service provider, include the following:
 
 ```json
 	"provides": [

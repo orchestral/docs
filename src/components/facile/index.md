@@ -4,7 +4,15 @@ badge: facile
 
 ---
 
-Facile Component simplify the need to create API based response in your Laravel application, with just the following code you are able to return multi format Response, either it be HTML (using `View`), json or etc.
+Facile Component simplify the need to create API based multi-format response in your Laravel application, with just the following code you are able to return multi format Response, either it be HTML (using `View`), json or etc.
+
+```php
+Route::get('users', function () {
+    $users = User::paginate();
+    
+    return Facile::view('users')->with(compact('users'));
+});
+```
 
 1. [Version Compatibility](#compatibility)
 2. [Installation](#installation)
@@ -81,8 +89,10 @@ Facile component works by composing the response using template, using the `Orch
 Route::get('users', function () {
     $users = User::all();
 
-    return Facile::view('users')->with(['users' => $users]);
+    return Facile::view('users')->with(compact('users'));
 });
 ```
 
-In above example, what actually happen is that the response was generated using `Orchestra\Facile\Template\Simple::composeHtml()` method when you hit `/users` and `Orchestra\Facile\Template\Simple::composeJson()` when you hit `/users` with `Accept: application/json` request header.
+Based on above example, the response will be generated via `Orchestra\Facile\Template\Simple::composeHtml()` method and use `resources/views/users.blade.php` when you hit `/users`. Otherwise it would use `Orchestra\Facile\Template\Simple::composeJson()` when you hit `/users` with `Accept: application/json` request header. 
+
+> Facile is also smart enough to handle content negotiation accept header.
