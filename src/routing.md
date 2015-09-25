@@ -54,7 +54,7 @@ class ModuleServiceProvider extends ModuleServiceProvider
     protected function loadRoutes()
     {
         $this->afterExtensionLoaded(function () {
-            $this->loadBackendRoutesFrom(app_path('Http/frontend.php'));
+            $this->loadFrontendRoutesFrom(app_path('Http/frontend.php'));
         });
     }
 }
@@ -105,6 +105,39 @@ Foundation::group(
 );
 ```
 
+#### Using ModuleServiceProvider
+
+You can simplify backend routing by utilizing `Orchestra\Foundation\Support\Providers\ModuleServiceProvider`.
+
+```php
+<?php namespace App\Providers;
+
+use Orchestra\Foundation\Support\Providers\ModuleServiceProvider;
+
+class ModuleServiceProvider extends ModuleServiceProvider
+{
+    protected $namespace = 'App\Http\Controller';
+    
+    protected $routeGroup = 'app';
+    
+    protected $routePrefix = '/';
+    
+    protected function loadRoutes()
+    {
+        $this->loadBackendRoutesFrom(app_path('Http/backend.php'), "{$this->namespace}\Admin");
+    }
+}
+```
+
+And under `app/Http/backend.php`:
+
+```php
+<?php
+
+use Illuminate\Routing\Router;
+
+$router->resources('photos', 'PhotoController');
+```
 
 <a name="generating-url"></a>
 ## Generating URL
