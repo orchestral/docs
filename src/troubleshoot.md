@@ -7,7 +7,6 @@ title: Troubleshooting
 2. [Missing installation](#missing-installation)
 3. [Maximum function nesting level of '100' reached, aborting!](#maximum-nesting)
 4. [Class 'orchestra.publisher.ftp' not found](#orchestra-publisher-ftp-class-not-found)
-5. [Error on SessionHandler::read()](#error-sessionhandler-read)
 
 <a name="safe-mode"></a>
 ## Using safe mode
@@ -57,9 +56,3 @@ In order to solve this you can either change the ownership of `public/packages` 
 
     composer require "orchestra/ftp-updater=~3.0"
 
-<a name="error-sessionhandler-read"></a>
-## Error on SessionHandler::read() {#error-sessionhandler-read}
-
-	SessionHandler::read(): The session id is too long or contains illegal characters, valid characters are a-z, A-Z, 0-9 and '-,'
-
-In any event where the application stop with the following exception. Please rename your `session.cookie` value under the `resources/config/session.php`.
