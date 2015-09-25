@@ -6,12 +6,12 @@ An extension is a basically a package or module (package with routes) except tha
 
 1. [Managing an Extension](#managing-an-extension)
 2. [Basic of an Extension](#basic-of-an-extension)
-  * [Manifest File](#manifest-file)
+   * [Manifest File](#manifest-file)
 3. [Configuring an Extension](#configuring-an-extension)
-  * [Service Providers for Extension](#service-providers-for-extension)
-    - [Autoloading Files](#autoloading-files)
-  * [Handling a Route](#handling-a-route)
-  * [Disabling Configuration](#disabling-configuration)
+   * [Service Providers for Extension](#service-providers-for-extension)
+      - [Autoloading Files](#autoloading-files)
+   * [Handling a Route](#handling-a-route)
+   * [Disabling Configuration](#disabling-configuration)
 4. [Adding Extension Location](#add-extension-location)
 
 <a name="managing-an-extension"></a>

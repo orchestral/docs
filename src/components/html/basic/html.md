@@ -7,7 +7,12 @@ title: Using HTML
 
 > Advise to use this only when manipulating HTML outside of view, otherwise it's better (and faster) to use html.
 
-## Create HTML {#create-html}
+1. [Create HTML](#create)
+2. [Raw HTML Entities](#raw)
+3. [Decorate HTML](#decorate)
+
+
+## Create HTML {#create}
 
 Create a HTML tag from within your libraries/extension using following code:
 
@@ -21,7 +26,7 @@ You can customize the HTML attibutes by adding third parameter.
 
     // will return <p id="foo">Another awesomeness</p>
 
-## Raw HTML Entities {#raw-html}
+## Raw HTML Entities {#raw}
 
 Mark a string to be excluded from being escaped.
 
@@ -29,7 +34,7 @@ Mark a string to be excluded from being escaped.
 
     // will return <a href="foo"><img src="foo.jpg"></a>
 
-## Decorate HTML {#decorate-html}
+## Decorate HTML {#decorate}
 
 Decorate method allow developer to define HTML attributes collection as `HTML::attributes` method, with the addition of including default attributes array as second parameter.
 

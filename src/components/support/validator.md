@@ -5,9 +5,9 @@ title: Validator Class
 
 `Orchestra\Support\Validator` is a class based on "Validation as a Service" concept. It is however enhanced to support scenarios where you can define different ruleset for different actions throughout your application.
 
-* [Define basic rules](#basic-rules)
-* [Scenario based rules](#scenario-rules)
-* [Parameter bindings on rules](#parameter-bindings-rules)
+1. [Define basic rules](#basic-rules)
+2. [Scenario based rules](#scenario-rules)
+3. [Parameter bindings on rules](#parameter-bindings-rules)
 
 <a name="basic-rules"></a>
 ## Define basic rules

@@ -12,10 +12,10 @@ In most other solutions, you are either restrict to file based configuration for
 2. [Installation](#installation)
 3. [Configuration](#configuration)
 4. [Usage](#usage)
-  - [Concept of RBAC](#concept-of-rbac)
-  - [Creating a New ACL Instance](#creating-a-new-acl-instance)
-  - [Verifying the ACL](#verifying-the-acl)
-  - [Integration with Memory Component](#memory-integration)
+   - [Concept of RBAC](#concept-of-rbac)
+   - [Creating a New ACL Instance](#creating-a-new-acl-instance)
+   - [Verifying the ACL](#verifying-the-acl)
+   - [Integration with Memory Component](#memory-integration)
 5. [Change Log]({doc-url}/components/auth/changes#v3-1)
 
 <a name="compatibility"></a>

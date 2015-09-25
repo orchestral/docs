@@ -10,9 +10,9 @@ Auth Component extends the functionality of `Illuminate\Auth` with the extra fun
 2. [Installation](#installation)
 3. [Configuration](#configuration)
 4. [Usage](#usage)
-  - [Retrieving Roles](#retrieving-roles)
-  - [Checking Roles](#checking-roles)
-  - [Setup Custom Roles Relationship](#setup-custom-roles)
+   - [Retrieving Roles](#retrieving-roles)
+   - [Checking Roles](#checking-roles)
+   - [Setup Custom Roles Relationship](#setup-custom-roles)
 5. [Change Log]({doc-url}/components/auth/changes#v3-1)
 
 <a name="Compatibility"></a>
