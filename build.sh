@@ -37,7 +37,7 @@ function build_theme_installer {
 function build_docs {
     echo "git checkout $BRANCH";
     git checkout $BRANCH;
-    copy_changes docs ../docs/src/components/$DIR;
+    copy_changes docs ../docs/src/$TYPE/$DIR;
     echo "Documentation copied";
 }
 
@@ -45,7 +45,20 @@ set_branch;
 build_platform;
 build_theme_installer;
 
+TYPE='components'
+
 for DIR in "${COMPONENTS[@]}"
+do
+    cd ../;
+    cd $DIR;
+    echo '-------';
+    pwd;
+    build_docs;
+done
+
+TYPE='extensions'
+
+for DIR in "${EXTENSIONS[@]}"
 do
     cd ../;
     cd $DIR;
