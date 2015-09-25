@@ -3,9 +3,14 @@ title: Upgrade Guide
 
 ---
 
-1. [Upgrading from 3.0 to 3.1](#v3-0-v3-1)
-1. [Upgrading from 2.1 to 2.2](#v2-1-v2-2)
-1. [Upgrading from 2.0 to 2.1](#v2-0-v2-1)
+* [Upgrading from 3.1 to 3.2](#v3-1-v3-2)
+* [Upgrading from 3.0 to 3.1](#v3-0-v3-1)
+* [Upgrading from 2.1 to 2.2](#v2-1-v2-2)
+* [Upgrading from 2.0 to 2.1](#v2-0-v2-1)
+
+<a name="v3-1-v3-2"></a>
+## Upgrading from 3.1 to 3.2
+
 
 <a name="v3-0-v3-1"></a>
 ## Upgrading from 3.0 to 3.1
