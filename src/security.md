@@ -33,7 +33,7 @@ You might also consider using `production` as the default environment name for p
 
 Orchestra Platform recommends using either Redis, Memcached or APC session driver (or at least database driver). This help making sure we can handle session request without any interruption especially when for handling CSRF or Login Throttling.
 
-You can edit the driver from `.env` file.
+> You can edit the driver from `.env` file.
 
 <a name="disable-access-to-theme"></a>
 ## Disallow access to `.blade.php` for themes
