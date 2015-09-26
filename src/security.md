@@ -22,7 +22,7 @@ Typically, this string should be 32 characters long. The key can be set in the `
 <a name="environment-configuration"></a>
 ## Environment Configuration
 
-First of all, ensure that `APP_DEBUG` is only set to `true` on local development machine, for production environment you should set this to `false`. This would avoid your user from seeing the full error stack trace if there any error in your application.
+First of all, ensure that `APP_DEBUG` is only set to `true` on local development machine, for production environment you should set this to `false`. This would avoid the application from displaying the full error stack trace if there any error to your end user.
 
 You might also consider using `production` as the default environment name for production code. This would allow Orchestra Platform to run some pre-define optimization during each deployment via:
 
