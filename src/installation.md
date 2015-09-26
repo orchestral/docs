@@ -6,15 +6,15 @@ title: Installation
 1. [Minimum Server Requirements](#server-requirement)
 2. [Install Composer](#install-composer)
 3. [Install Orchestra Platform](#install-orchestra-platform)
-  - [Download](#download)
-  - [Preparing Setup](#configuration)
-  - [Setup](#setup)
+   - [Download](#download)
+   - [Preparing Setup](#configuration)
+   - [Setup](#setup)
 4. [Pretty URLs](#pretty-urls)
 
 <a name="server-requirement"></a>
 ## Minimum Server Requirements
 
-Orchestra Plaftorm has a few system requirements:
+System requirements for Orchestra Platform:
 
 * PHP >= 5.5.9 (we highly recommend using PHP 5.6 for your projects).
 * PHP Extensions:
@@ -44,14 +44,14 @@ You can install Orchestra Platform using Composer:
 To running the setup to install Orchestra Platform on your local machine, it best to do the following:
 
 1. Set the [application key]({doc-url}/security#app-key) by running `php artisan key:generate`, this will be reflected as `APP_KEY` in `.env`.
-2. Setup `APP_ENV` values, the default `local` environment is commonly used for local environment.
+2. Setup `APP_ENV` values, the default `local` environment is commonly used for local (development) environment.
 3. Configure database connection via `.env`.
 4. Folders within `storage` and `bootstrap/cache` requires write access by the web server.
 
 <a name="setup"></a>
 ### Setup
 
-Once Orchestra Platform is properly configured, we need to run the installation and create the application basic schema (including administrator user).
+Once Orchestra Platform is properly configured, we need to run the installation and create the application basic schema (including the creation of administrator user).
 
 1. Run `php artisan serve` or use your prefered web server stack or Vagrant (Homestead etc).
 2. Browse to the installation page, for example `http://localhost:8000/admin` and follow the installation process.
