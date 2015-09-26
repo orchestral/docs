@@ -40,7 +40,7 @@ Pull requests for bugs may be sent without creating any proposal issue. If you b
 * **ALL** bug fixes should be made to the branch which they belong to.
 * Bug fixes should never be sent to the `master` branch unless they fix features that exist only in the upcoming release.
 * If a bug is found on a minor version `3.1` and it exists on the major version `3.0`, the bug fix should be sent to the `3.0` branch which will be afterwards merged into the `3.1` branch.
-* You may request to backport a bug fix to any previous version as long as it's still maintained (not `deprecated`).
+* You may request to backport a bug fix to any previous version as long as the working branch is still maintained (not `deprecated`).
 
 <a name="pr-for-new-features"></a>
 ### New Features
