@@ -1,5 +1,6 @@
 ---
 title: Helpers
+
 ---
 
 Orchestra Platform includes a set of helpers function to help solves some of the frequent problem while developing on Laravel.
@@ -9,7 +10,7 @@ Orchestra Platform includes a set of helpers function to help solves some of the
 4. [memorize](#memorize)
 5. [messages](#messages)
 6. [redirect_with_errors](#redirect_with_errors)
-7. [redirect_with_messages](#redirect_with_messages)
+7. [redirect_with_message](#redirect_with_message)
 8. [get_meta](#get_meta)
 9. [set_meta](#set_meta)
 
