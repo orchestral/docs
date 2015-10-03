@@ -1,6 +1,6 @@
 ---
 title: Facile Templating
-see: {doc-url}/components/facile#usage
+see: "{doc-url}/components/facile#usage"
 
 ---
 

@@ -1,5 +1,5 @@
 ---
 title: Using Auth
-see: {doc-url}/components/auth#usage
+see: "{doc-url}/components/auth#usage"
 
 ---

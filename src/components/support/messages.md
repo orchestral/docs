@@ -1,5 +1,5 @@
 ---
 title: Using Messages
-see: {doc-url}/components/messages
+see: "{doc-url}/components/messages"
 
 ---
