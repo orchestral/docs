@@ -4,6 +4,11 @@ title: Extension Change Log
 ---
 ## Version 3.1 {#v3-1}
 
+### v3.1.9 {#v3-1-9}
+
+* Add new extension service provider caching mechanism, which is similar to how Laravel cache the manifest via `services.json`.
+* Refactor extension dispatching process.
+
 ### v3.1.8 {#v3-1-8}
 
 * Simplified registering extension configuration via `Orchestra\Extension\Plugin`.
