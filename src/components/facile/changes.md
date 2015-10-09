@@ -5,6 +5,10 @@ title: Facile Change Log
 
 ## Version 3.1 {#v3-1}
 
+### v3.1.3 {#v3-1-3}
+
+* Allow `Orchestra\Facile\Template\Simple` to response with XML.
+
 ### v3.1.2 {#v3-1-2}
 
 * Allow to get proper response based on `Accept` header (via content-negotiation).
