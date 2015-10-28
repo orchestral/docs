@@ -4,6 +4,13 @@ title: Extension Change Log
 ---
 ## Version 3.1 {#v3-1}
 
+### v3.1.10 {#v3-1-10}
+
+* Use available `Illuminate\Foundation\Application::addDeferredServices()`.
+* Remove requirement to use `Orchestra\Contracts\Foundation\DeferrableServiceContainer`.
+* Register plugin before service providers.
+* Use early return when calling `Orchestra\Extension\Factory::after()` callback.
+
 ### v3.1.9 {#v3-1-9}
 
 * Add new extension service provider caching mechanism, which is similar to how Laravel cache the manifest via `services.json`.
