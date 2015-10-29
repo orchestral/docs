@@ -7,7 +7,6 @@ title: Extension Change Log
 ### v3.1.10 {#v3-1-10}
 
 * Use available `Illuminate\Foundation\Application::addDeferredServices()`.
-* Remove requirement to use `Orchestra\Contracts\Foundation\DeferrableServiceContainer`.
 * Register plugin before service providers.
 * Use early return when calling `Orchestra\Extension\Factory::after()` callback.
 
