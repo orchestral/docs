@@ -5,6 +5,20 @@ title: Facile Change Log
 
 ## Version 3.1 {#v3-1}
 
+### v3.1.4 {#v3-1-4}
+
+* Add composing traits:
+  - `Orchestra\Facile\Template\Composers\Csv`.
+  - `Orchestra\Facile\Template\Composers\Html`.
+  - `Orchestra\Facile\Template\Composers\Json`.
+  - `Orchestra\Facile\Template\Composers\Xml`.
+* Add `Orchestra\Facile\Factory::name()` method to register template aliases and deprecate `Orchestra\Facile\Factory::template()`.
+* Add new `Orchestra\Facile\Template\Api` and `Orchestra\Facile\Template\Export` template class.
+
+### v3.1.3 {#v3-1-3}
+
+* Allow `Orchestra\Facile\Template\Simple` to response with XML.
+
 ### v3.1.2 {#v3-1-2}
 
 * Allow to get proper response based on `Accept` header (via content-negotiation).
