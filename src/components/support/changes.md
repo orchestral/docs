@@ -12,6 +12,16 @@ title: Support Change Log
   
 ## Version 3.1 {#v3-1}
 
+### v3.1.7 {#v3-1-7}
+
+* Core:
+  - Fixes `Orchestra\Support\Traits\QueryFilterTrait::setupWildcardQueryFilter()` to group where clause when generating queries.
+
+### v3.1.6 {#v3-1-6}
+
+* Core:
+  - Allow `Orchestra\Support\Traits\QueryFilterTrait::setupWildcardQueryFilter()` to handle relationship fields.
+
 ### v3.1.5 {#v3-1-5}
 
 * Core:
