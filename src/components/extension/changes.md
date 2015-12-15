@@ -4,6 +4,10 @@ title: Extension Change Log
 ---
 ## Version 3.1 {#v3-1}
 
+### v3.1.11 {#v3-1-11}
+
+* Move plugin registration after service providers to allow config, language and views information to be available when booting the plugins.
+
 ### v3.1.10 {#v3-1-10}
 
 * Use available `Illuminate\Foundation\Application::addDeferredServices()`.
