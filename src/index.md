@@ -39,6 +39,7 @@ With the introduction of Composer, we are now free to organize the code into sma
 * [Asset]({doc-url}/components/asset)
 * [Auth]({doc-url}/components/auth)
 * [Extension]({doc-url}/components/extension)
+* Contracts
 * [Kernel]({doc-url}/components/kernel)
 * [Foundation]({doc-url}/components/foundation)
 * [Html]({doc-url}/components/html)
@@ -64,15 +65,16 @@ We also have some independence packages that would work well with Orchestra Plat
 * [Tenanti]({doc-url}/components/tenanti)
 * [Testbench]({doc-url}/components/testbench)
 * [Theme Installer]({doc-url}/components/theme-installer)
+* Transporter
 
 <a name="version-compatibility"></a>
 ## Version Compatibility
 
-Laravel    | Orchestra Platform  | Status
-:----------|:--------------------|:----------------
- 3.2.x     | 1.x                 | Deprecated
- 4.0.x     | 2.0.x               | Deprecated
- 4.1.x     | 2.1.x               | LTS
- 4.2.x     | 2.2.x               | Deprecated
- 5.0.x     | 3.0.x               | Supported
- 5.1.x     | 3.1.x               | LTS
+Laravel    | Orchestra Platform  | Status          | EOL
+:----------|:--------------------|:----------------|:-----------------
+ 3.2.x     | 1.x                 | Deprecated      | -
+ 4.0.x     | 2.0.x               | Deprecated      | 20 June 2014
+ 4.1.x     | 2.1.x               | LTS             | 12 January 2016
+ 4.2.x     | 2.2.x               | Deprecated      | 19 June 2015
+ 5.0.x     | 3.0.x               | Supported       | 11 February 2016
+ 5.1.x     | 3.1.x               | LTS             | 9 June 2017
