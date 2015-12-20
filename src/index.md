@@ -61,7 +61,6 @@ We also have some independence packages that would work well with Orchestra Plat
 * [Facile]({doc-url}/components/facile)
 * [Imagine]({doc-url}/components/imagine)
 * [Parser]({doc-url}/components/parser)
-* [Resources]({doc-url}/components/resources)
 * [Tenanti]({doc-url}/components/tenanti)
 * [Testbench]({doc-url}/components/testbench)
 * [Theme Installer]({doc-url}/components/theme-installer)

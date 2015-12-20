@@ -60,6 +60,5 @@ title: Table of Content
 * [Imagine]({doc-url}/components/imagine)
 * [Installer]({doc-url}/components/installer)
 * [Parser]({doc-url}/components/parser)
-* [Resources]({doc-url}/components/resources)
 * [Tenanti]({doc-url}/components/tenanti)
 * [Testbench]({doc-url}/components/testbench)
