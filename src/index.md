@@ -77,3 +77,5 @@ Laravel    | Orchestra Platform  | Status          | EOL
  5.0.x     | 3.0.x               | Supported       | 11 February 2016
  5.1.x     | 3.1.x               | LTS             | 9 June 2017
  5.2.x     | 3.2.x               | Development     | -
+
+You can review the detail of our development timeline at <http://timeline.orchestraplatform.com>.
