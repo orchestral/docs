@@ -228,7 +228,6 @@ This error would only occur if your test suite require actual usage of the encry
 </phpunit>
 ```
 
-
 <a name="troubleshoot-session-not-set-on-request"></a>
 ### Session not set on request 
 

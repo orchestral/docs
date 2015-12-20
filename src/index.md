@@ -39,6 +39,7 @@ With the introduction of Composer, we are now free to organize the code into sma
 * [Asset]({doc-url}/components/asset)
 * [Auth]({doc-url}/components/auth)
 * [Extension]({doc-url}/components/extension)
+* Contracts
 * [Kernel]({doc-url}/components/kernel)
 * [Foundation]({doc-url}/components/foundation)
 * [Html]({doc-url}/components/html)
@@ -64,6 +65,7 @@ We also have some independence packages that would work well with Orchestra Plat
 * [Tenanti]({doc-url}/components/tenanti)
 * [Testbench]({doc-url}/components/testbench)
 * [Theme Installer]({doc-url}/components/theme-installer)
+* Transporter
 
 <a name="version-compatibility"></a>
 ## Version Compatibility
