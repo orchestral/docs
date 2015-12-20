@@ -68,12 +68,12 @@ We also have some independence packages that would work well with Orchestra Plat
 <a name="version-compatibility"></a>
 ## Version Compatibility
 
-Laravel    | Orchestra Platform  | Status
-:----------|:--------------------|:----------------
- 3.2.x     | 1.x                 | Deprecated
- 4.0.x     | 2.0.x               | Deprecated
- 4.1.x     | 2.1.x               | LTS (until 12 January 2016)
- 4.2.x     | 2.2.x               | Deprecated
- 5.0.x     | 3.0.x               | Supported (until 11 February 2016)
- 5.1.x     | 3.1.x               | LTS
- 5.2.x     | 3.2.x               | Development
+Laravel    | Orchestra Platform  | Status          | EOL
+:----------|:--------------------|:----------------|:-----------------
+ 3.2.x     | 1.x                 | Deprecated      | -
+ 4.0.x     | 2.0.x               | Deprecated      | 20 June 2014
+ 4.1.x     | 2.1.x               | LTS             | 12 January 2016
+ 4.2.x     | 2.2.x               | Deprecated      | 19 June 2015
+ 5.0.x     | 3.0.x               | Supported       | 11 February 2016
+ 5.1.x     | 3.1.x               | LTS             | 9 June 2017
+ 5.2.x     | 3.2.x               | Development     | -
