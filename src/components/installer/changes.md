@@ -3,6 +3,15 @@ title: Installer Change Log
 
 ---
 
+## Version 3.2 {#v3-2}
+
+### v3.2.0 {#v3-2-0}
+
+* Update support for Orchestra Platform v3.2.
+* `Orchestra\Installation\InstallerServiceProvider` should utilize the new `Orchestra\Foundation\Support\Providers\ModuleServiceProvider`.
+* Improved performances by reducing call within `Illuminate\Container\Container`.
+* Enables routes caching.
+
 ## Version 3.1 {#v3-1}
 
 ### v3.1.2 {#v3-1-2}
