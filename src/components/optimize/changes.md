@@ -3,6 +3,15 @@ title: Optimize Change Log
 
 ---
 
+## Version 3.2 {#v3-2}
+
+### v3.2.0 {#v3-2-0}
+
+* Update support to Laravel Framework v5.2.
+* Update compiles list.
+* Remove `orchestra/resources`.
+* Remove `Orchestra\Routing\ControllerDispatcher`.
+
 ## Version 3.1 {#v3-1}
 
 ### v3.1.6 {#v3-1-6}
