@@ -2,7 +2,33 @@
 title: Extension Change Log
 
 ---
+
+## Version 3.2 {#v3-2}
+
+### v3.2.0 {#v3-2-0}
+
+* Update support to Laravel Framework v5.2.
+* Improved performances by reducing call within `Illuminate\Container\Container`.
+* Improved performances by merging list of deferred services once instead of on every loop.
+* Deprecate and remove `Orchestra\Extension\SafeModeChecker::check()`.
+* Rename `Orchestra\Extension\SafeModeChecker` to `Orchestra\Extension\StatusChecker`.
+* Add `Orchestra\Extension\StatusChecker::is()` method.
+* Add `Orchestra\Extension\StatusChecker::isNot()` method.
+* Add `Orchestra\Extension\StatusChecker::mode()` method.
+* Recache routes after activating and deactivating an extension via artisan.
+* Avoid storing irrelevant extension manifest data.
+* Simplified registering extension configuration via `Orchestra\Extension\Plugin`.
+* Allow to register extension service provider based on `when()` event.
+* Refactor console to use `$signature`.
+* Add new extension service provider caching mechanism, which is similar to how Laravel cache the manifest via `services.php`.
+* Use available `Illuminate\Foundation\Application::addDeferredServices()`.
+* Remove requirement to use `Orchestra\Contracts\Foundation\DeferrableServiceContainer`.
+
 ## Version 3.1 {#v3-1}
+
+### v3.1.11 {#v3-1-11}
+
+* Move plugin registration after service providers to allow config, language and views information to be available when booting the plugins.
 
 ### v3.1.10 {#v3-1-10}
 

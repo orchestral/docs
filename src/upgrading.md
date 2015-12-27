@@ -11,6 +11,86 @@ title: Upgrade Guide
 <a name="v3-1-v3-2"></a>
 ## Upgrading from 3.1 to 3.2
 
+### Update `app/Http/Kernel.php`
+
+Update `$middleware` properties:
+
+```php
+protected $middleware = [
+    \Illuminate\Foundation\Http\Middleware\CheckForMaintenanceMode::class,
+];
+```
+
+Add new `$middlewareGroup` properties:
+
+```php
+/**
+ * The application's route middleware groups.
+ *
+ * @var array
+ */
+protected $middlewareGroups = [
+    'web' => [
+        Middleware\EncryptCookies::class,
+        \Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse::class,
+        \Illuminate\Session\Middleware\StartSession::class,
+        \Illuminate\View\Middleware\ShareErrorsFromSession::class,
+        Middleware\VerifyCsrfToken::class,
+    ],
+
+    'orchestra' => [
+        'web',
+        \Orchestra\Foundation\Http\Middleware\LoginAs::class,
+        \Orchestra\Foundation\Http\Middleware\UseBackendTheme::class,
+    ],
+
+    'api' => [
+        'throttle:60,1',
+    ],
+];
+```
+
+Add `throttle` to route middleware:
+
+```php
+'throttle' => \Illuminate\Routing\Middleware\ThrottleRequests::class,
+```
+
+The updated value can be found in [this file](https://github.com/orchestral/platform/blob/v3.2.0/app/Http/Kernel.php) ([raw](https://raw.githubusercontent.com/orchestral/platform/v3.2.0/app/Http/Kernel.php)).
+
+### Upgrading Your Composer Dependency
+
+To upgrade to Orchestra Platform 3.2, change your `"orchestra/foundation"` version to `"3.2.*"` in your `composer.json` file.
+
+> As a pre-caution, run `php artisan clear-compiled` before executing `composer update`.
+
+### Adding Configuration Files & Options
+
+Update your aliases and providers arrays in your `resources/config/app.php` configuration file. The updated values for these arrays can be found in [this file](https://github.com/orchestral/platform/blob/v3.2.0/resources/config/app.php) ([raw](https://raw.githubusercontent.com/orchestral/platform/v3.2.0/resources/config/app.php)). Be sure to add your custom and package service providers / aliases back to the arrays.
+
+Provides                                                        | Action
+:---------------------------------------------------------------|:----------------------
+`Orchestra\Foundation\Providers\ArtisanServiceProvider`         | Remove
+`Orchestra\Routing\ControllerServiceProvider`                   | Remove
+
+Add `env` configuration key under `resources/config/app.php`. 
+
+```php
+'env' => env('APP_ENV', 'production'),
+```
+
+Replace `resources/config/auth.php` file [from the repository](https://github.com/orchestral/platform/blob/v3.2.0/resources/config/auth.php) ([raw](https://raw.githubusercontent.com/orchestral/platform/v3.2.0/resources/config/auth.php)).
+
+### HTML E-mail Templates
+
+By default, Orchestra Platform 3.2 now use HTML e-mail template as default. Your can replace the base text e-mail template with the updated version by replacing the following files:
+
+- `resources/views/emails/auth/password.blade.php` ([file](https://github.com/orchestral/platform/blob/v3.2.0/resources/views/emails/auth/password.blade.php)|[raw](https://raw.githubusercontent.com/orchestral/platform/v3.2.0/resources/views/emails/auth/password.blade.php))
+- `resources/views/emails/auth/register.blade.php` ([file](https://github.com/orchestral/platform/blob/v3.2.0/resources/views/emails/auth/register.blade.php)|[raw](https://raw.githubusercontent.com/orchestral/platform/v3.2.0/resources/views/emails/auth/register.blade.php)).
+
+### Laravel Changes
+
+You can also check out the full [Upgrading Guide for Laravel 5.2](http://laravel.com/docs/5.2/upgrade#upgrade-5.2.0) as well as [Laravel 5.1 Release Note](https://laravel.com/docs/5.2/releases#laravel-5.2).
 
 <a name="v3-0-v3-1"></a>
 ## Upgrading from 3.0 to 3.1
@@ -130,9 +210,11 @@ Add the new `expire_on_close` configuration option to your `app/config/session.p
 
 Add the new `failed` configuration section to your `app/config/queue.php` file. Here are the default values for the section:
 
-	'failed' => array(
-    	'database' => 'mysql', 'table' => 'failed_jobs',
-	),
+```php
+'failed' => array(
+    'database' => 'mysql', 'table' => 'failed_jobs',
+),
+```
 
 #### Optional
 

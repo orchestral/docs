@@ -9,7 +9,9 @@ HTML component extends the functionality of the deprecated `Illuminate\Html` wit
 1. [Version Compatibility](#compatibility)
 2. [Installation](#installation)
 3. [Configuration](#configuration)
-4. [Usage]({doc-url}/components/html/basic/html)
+4. Usage
+    - [Basic HTML]({doc-url}/components/html/basic/html)
+    - [Advanced Form]({doc-url}/components/html/advanced/form)
 5. [Change Log]({doc-url}/components/html/changes#v3-2)
 
 <a name="compatibility"></a>
@@ -22,7 +24,7 @@ Laravel    | Facile
  4.2.x     | 2.2.x
  5.0.x     | 3.0.x
  5.1.x     | 3.1.x
- 5.2.x     | 3.2.x@dev
+ 5.2.x     | 3.2.x
 
 <a name="installation"></a>
 ## Installation

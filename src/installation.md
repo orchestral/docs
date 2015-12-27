@@ -16,7 +16,7 @@ title: Installation
 
 System requirements for Orchestra Platform:
 
-* PHP >= 5.5.9 (we highly recommend using PHP 5.6 for your projects).
+* PHP >= 5.5.9 (we highly recommend using PHP 5.6 or newer for your projects).
 * PHP Extensions:
   - OpenSSL
   - Mbstring

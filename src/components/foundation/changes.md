@@ -3,8 +3,56 @@ title: Foundation Change Log
 
 ---
 
+## Version 3.2 {#v3-2}
+
+### v3.2.0 {#v3-2-0}
+
+* Update support to Laravel Framework v5.2.5+.
+* Defer orchestra/foundation routes registration after extension has been loaded.
+* Improved performances by reducing call within `Illuminate\Container\Container`.
+* Utilize `Orchestra\Authorization\Authorization::canIf()` helper.
+* Allow login key to be customize between application instead of a hardcoded default using "email".
+* Add support for menu nesting with `Orchestra\Foundation\Support\MenuHandler`.
+* Publish extension assets and migrations during `php artisan orchestra:assemble`.
+* Reworks on backend menu to support generating current active menu.
+* Improves views overall implementation, ensure readability is optimized.
+* Add `appendTableColumns()` and `prependTableColumns()` to `Orchestra\Foundation\Http\Presenters\User`.
+* Add `Orchestra\Foundation\Http\Presenters\User::getSortableFields()` to allow filtering which fields can be sorted when displaying users table.
+* Add `Orchestra\Foundation\Foundation::mode()` to fetch current request mode (e.g: safe or normal).
+* Allow safe mode to persist between request via `?_mode=safe` http query string.
+* Add `assetic()` helper as an alternative to `elixir()` helper.
+* Add `Orchestra\Foundation\Console\Commands\OptimizeCommand`.
+* Add `Orchestra\Foundation\Support\Providers\ModuleServiceProvider` to replace `Orchestra\Foundation\Support\Providers\ExtensionRouteServiceProvider`.
+* Add `Orchestra\Foundation\Listeners\UserAccess` so it can be shared with `orchestra/lumen`.
+* Add `Orchestra\Foundation\Processor\Authenticate::setAuthGuard()` method to override default auth guard.
+* Add `acl` language files.
+* Deprecate `Orchestra\Foundation\Http\Middleware\CanManage`.
+* Remove `Orchestra\Foundation\AdminMenuHandler` class.
+* Remove `Orchestra\Foundation\Application::getDeferredServices()` method.
+* Remove `orchestra/resources` support.
+* Remove registering additional facade aliases under `Orchestra` namespace.
+* Remove `it` language files.
+* Update assets:
+  - Vue v1.0.13.
+  - Javie v2.1.0.
+
 ## Version 3.1 {#v3-1}
 
+### v3.1.21 {#v3-1-21}
+
+* Add `Orchestra\Foundation\Processor\Authenticate::setAuthGuard()` method to override default auth guard.
+* Refactor user search filters.
+* Update assets:
+  - Vue v1.0.13.
+
+### v3.1.20 {#v3-1-20}
+
+* Utilise `Model::saveOrFail()` and `Model::transaction()` method when possible.
+* Deprecate `Orchestra\Foundation\Http\Middleware\RequireCsrfToken` and make it an alias to `Orchestra\Http\Middleware\RequireCsrfToken`.
+* Fix problems with rate limiter when receiving utf-8 characters. ([@taylorotwell](https://github.com/taylorotwell))
+* Update assets:
+  - Vue v1.0.12.
+  
 ### v3.1.19 {#v3-1-19}
 
 * Add `Orchestra\Foundation\Listeners\UserAccess` so it can be shared with `orchestra/lumen`.
@@ -161,6 +209,15 @@ title: Foundation Change Log
 * Remove deprecated `Orchestra\Foundation\MenuHandler::get{Name}()`, use `Orchestra\Foundation\MenuHandler::get{Name}Attribute()` helper instead.
 
 ## Version 3.0 {#v3-0}
+
+### v3.0.17 {#v3-0-17}
+
+* Add `Orchestra\Foundation\Support\Providers\ModuleServiceProvider`.
+* Simplify welcome message.
+* Update assets:
+  - Vue v0.12.16.
+  - Javie v2.0.3.
+  - Twitter Bootstrap v3.3.6.
 
 ### v3.0.16 {#v3-0-16}
 

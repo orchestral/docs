@@ -16,6 +16,7 @@ Testbench Component is a simple package that is supposed to help you write tests
     - [Overriding HTTP Kernel](#overriding-http-kernel)
     - [Overriding Application Timezone](#overriding-application-timezone)
     - [Using Migrations](#using-migrations)
+    - [Using Model Factories](#using-model-factories)
 4. [Alternative 3rd Party Testing](#alternative-testing)
 5. [Troubleshoot](#troubleshoot)
 6. [Change Log]({doc-url}/components/testbench/changes#v3-2)
@@ -198,6 +199,15 @@ $this->artisan('migrate', [
 ]);
 ```
 
+<a name="using-model-factories"></a>
+### Using Model Factories
+
+Testbench include `withFactories()` method to allow you to register custom model factory path for your test suite.
+
+```php
+$this->withFactories(__DIR__.'/factories');
+```
+
 <a name="alternative-testing"></a>
 ## Alternative 3rd Party Testing
 
@@ -226,4 +236,15 @@ This error would only occur if your test suite require actual usage of the encry
     </php>
 
 </phpunit>
+```
+
+<a name="troubleshoot-session-not-set-on-request"></a>
+### Session not set on request 
+
+The error might pop-up when testing routes with `Request::old()` or `old()` helper inside the requested view. This is due to Testbench not loading the default global middleware made available with Laravel. 
+
+To avoid breaking Backward Compatibility (BC) under 3.1 please add the following code under your `setUp` or `getEnvironmentSetUp` method.
+
+```php
+$app->make('Illuminate\Contracts\Http\Kernel')->pushMiddleware('Illuminate\Session\Middleware\StartSession');
 ```
