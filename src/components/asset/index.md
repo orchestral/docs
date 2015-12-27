@@ -35,9 +35,9 @@ To install through composer, simply put the following in your `composer.json` fi
 
 ```json
 {
-	"require": {
-		"orchestra/asset": "~3.0"
-	}
+    "require": {
+        "orchestra/asset": "~3.0"
+    }
 }
 ```
 
@@ -58,9 +58,9 @@ Next add the service provider in `config/app.php`.
 ```php
 'providers' => [
 
-	// ...
+    // ...
 
-	Orchestra\Asset\AssetServiceProvider::class,
+    Orchestra\Asset\AssetServiceProvider::class,
 ],
 ```
 
@@ -71,9 +71,9 @@ You might want to add `Orchestra\Support\Facades\Asset` to class aliases in `con
 ```php
 'aliases' => [
 
-	// ...
+    // ...
 
-	'Asset' => Orchestra\Support\Facades\Asset::class,
+    'Asset' => Orchestra\Support\Facades\Asset::class,
 ],
 ```
 
@@ -108,8 +108,8 @@ Dumping assets into a view:
 
 ```html
 <head>
-	{!! Asset::styles() !!}
-	{!! Asset::scripts() !!}
+    {!! Asset::styles() !!}
+    {!! Asset::scripts() !!}
 </head>
 ```
 
@@ -117,7 +117,7 @@ Above code can also be simplified as:
 
 ```html
 <head>
-	{!! Asset::show() !!}
+    {!! Asset::show() !!}
 </head>
 ```
 
