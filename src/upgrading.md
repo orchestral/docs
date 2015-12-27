@@ -85,8 +85,8 @@ Replace `resources/config/auth.php` file [from the repository](https://github.co
 
 By default, Orchestra Platform 3.2 now use HTML e-mail template as default. Your can replace the base text e-mail template with the updated version by replacing the following files:
 
-- `resources/views/emails/auth/password.blade.php` ([file](https://github.com/orchestral/platform/blob/v3.2.0/resources/views/emails/auth/password.blade.php)|(raw)[https://raw.githubusercontent.com/orchestral/platform/v3.2.0/resources/views/emails/auth/password.blade.php])
-- `resources/views/emails/auth/register.blade.php` ([file](https://github.com/orchestral/platform/blob/v3.2.0/resources/views/emails/auth/register.blade.php)|(raw)[https://raw.githubusercontent.com/orchestral/platform/v3.2.0/resources/views/emails/auth/register.blade.php])
+- `resources/views/emails/auth/password.blade.php` ([file](https://github.com/orchestral/platform/blob/v3.2.0/resources/views/emails/auth/password.blade.php)|[raw](https://raw.githubusercontent.com/orchestral/platform/v3.2.0/resources/views/emails/auth/password.blade.php))
+- `resources/views/emails/auth/register.blade.php` ([file](https://github.com/orchestral/platform/blob/v3.2.0/resources/views/emails/auth/register.blade.php)|[raw](https://raw.githubusercontent.com/orchestral/platform/v3.2.0/resources/views/emails/auth/register.blade.php)).
 
 ### Laravel Changes
 
