@@ -11,6 +11,64 @@ title: Upgrade Guide
 <a name="v3-1-v3-2"></a>
 ## Upgrading from 3.1 to 3.2
 
+### Updating Dependencies
+
+Update your `composer.json` file to point to `orchestra/foundation 3.2.*`.
+
+### Update `app/Http/Controllers/Controller.php`
+
+Add use `Illuminate\Foundation\Auth\Access\AuthorizesRequests` trait.
+
+### Update `app/Http/Kernel.php`
+
+Update `$middleware` properties:
+
+```php
+protected $middleware = [
+    \Illuminate\Foundation\Http\Middleware\CheckForMaintenanceMode::class,
+];
+```
+
+Add new `$middlewareGroup` properties:
+
+```php
+/**
+ * The application's route middleware groups.
+ *
+ * @var array
+ */
+protected $middlewareGroups = [
+    'web' => [
+        Middleware\EncryptCookies::class,
+        \Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse::class,
+        \Illuminate\Session\Middleware\StartSession::class,
+        \Illuminate\View\Middleware\ShareErrorsFromSession::class,
+        Middleware\VerifyCsrfToken::class,
+    ],
+
+    'orchestra' => [
+        'web',
+        \Orchestra\Foundation\Http\Middleware\LoginAs::class,
+        \Orchestra\Foundation\Http\Middleware\UseBackendTheme::class,
+    ],
+
+    'api' => [
+        'throttle:60,1',
+    ],
+];
+```
+
+Add `throttle` to route middleware:
+
+```php
+'throttle' => \Illuminate\Routing\Middleware\ThrottleRequests::class,
+```
+
+The updated value can be found in this [file](https://github.com/orchestral/platform/blob/v3.2.0/app/Http/Kernel.php).
+
+### Laravel Changes
+
+You can also check out the full [Upgrading Guide for Laravel 5.2](http://laravel.com/docs/5.2/upgrade#upgrade-5.2.0) as well as [Laravel 5.1 Release Note](https://laravel.com/docs/5.2/releases#laravel-5.2).
 
 <a name="v3-0-v3-1"></a>
 ## Upgrading from 3.0 to 3.1
