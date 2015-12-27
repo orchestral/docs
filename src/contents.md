@@ -33,12 +33,12 @@ title: Table of Content
 * [Asset]({doc-url}/components/asset)
 * [Auth]({doc-url}/components/auth)
   - [Authorization]({doc-url}/components/authorization)
+* [Contracts]({doc-url}/components/contracts) 
 * [Extension]({doc-url}/components/extension)
 * [Foundation]({doc-url}/components/foundation)
 * [HTML]({doc-url}/components/html)
 * [Kernel]({doc-url}/components/kernel)
   - [Config]({doc-url}/components/config)
-  - Contracts
   - [Database]({doc-url}/components/database)
   - HTTP
   - Routing
