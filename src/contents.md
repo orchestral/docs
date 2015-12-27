@@ -39,7 +39,7 @@ title: Table of Content
 * [HTML]({doc-url}/components/html)
 * [Kernel]({doc-url}/components/kernel)
   - [Config]({doc-url}/components/config)
-  - [Database]({doc-url}/components/database)
+  - Database
   - HTTP
   - Routing
 * [Memory]({doc-url}/components/memory)
