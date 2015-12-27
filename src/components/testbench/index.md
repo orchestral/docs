@@ -16,6 +16,7 @@ Testbench Component is a simple package that is supposed to help you write tests
     - [Overriding HTTP Kernel](#overriding-http-kernel)
     - [Overriding Application Timezone](#overriding-application-timezone)
     - [Using Migrations](#using-migrations)
+    - [Using Model Factories](#using-model-factories)
 4. [Alternative 3rd Party Testing](#alternative-testing)
 5. [Troubleshoot](#troubleshoot)
 6. [Change Log]({doc-url}/components/testbench/changes#v3-1)
@@ -195,6 +196,15 @@ $this->artisan('migrate', [
     '--database' => 'testbench',
     '--realpath' => realpath(__DIR__.'/../migrations'),
 ]);
+```
+
+<a name="using-model-factories"></a>
+### Using Model Factories
+
+Testbench include `withFactories()` method to allow you to register custom model factory path for your test suite.
+
+```php
+$this->withFactories(__DIR__.'/factories');
 ```
 
 <a name="alternative-testing"></a>
