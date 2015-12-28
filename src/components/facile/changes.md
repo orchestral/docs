@@ -3,22 +3,6 @@ title: Facile Change Log
 
 ---
 
-## Version 3.2 {#v3-2}
-
-### v3.2.0 {#v3-2-0}
-
-* Update support to Laravel Framework v5.2.
-* Improved performances by reducing call within `Illuminate\Container\Container`.
-* Utilize available errors view.
-* Allow to get proper response based on `Accept` header (via content-negotiation).
-* Allow `Orchestra\Facile\Template\Simple` to response with XML.
-* Add composing traits:
-  - `Orchestra\Facile\Template\Composers\Csv`.
-  - `Orchestra\Facile\Template\Composers\Html`.
-  - `Orchestra\Facile\Template\Composers\Json`.
-  - `Orchestra\Facile\Template\Composers\Xml`.
-* Add new `Orchestra\Facile\Template\Api` and `Orchestra\Facile\Template\Export` template class.
-
 ## Version 3.1 {#v3-1}
 
 ### v3.1.4 {#v3-1-4}
