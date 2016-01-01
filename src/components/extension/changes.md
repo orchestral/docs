@@ -5,6 +5,10 @@ title: Extension Change Log
 
 ## Version 3.2 {#v3-2}
 
+### v3.2.1 {#v3-2-1}
+
+* Execute `Orchestra\Extension\Factory::after()` callback immediately when request are under safe mode.
+
 ### v3.2.0 {#v3-2-0}
 
 * Update support to Laravel Framework v5.2.
@@ -25,6 +29,10 @@ title: Extension Change Log
 * Remove requirement to use `Orchestra\Contracts\Foundation\DeferrableServiceContainer`.
 
 ## Version 3.1 {#v3-1}
+
+### v3.1.12 {#v3-1-12}
+
+* Execute `Orchestra\Extension\Factory::after()` callback immediately when request are under safe mode.
 
 ### v3.1.11 {#v3-1-11}
 
