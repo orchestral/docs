@@ -150,6 +150,21 @@ class UserObserver extends Observer
 }
 ```
 
+<a name="console-support"></a>
+## Console Support
+
+Tenanti include additional command to help you run bulk migration when a new schema is created, the available command resemble the usage available from `php artisan migrate` namespace.
+
+Command                                    | Description
+:------------------------------------------|:---------------------
+ php artisan tenanti:install {driver}      | Setup migration table on each entry for a given driver.
+ php artisan tenanti:make {driver} {name}  | Make a new Schema generator for a given driver.
+ php artisan tenanti:migrate {driver}      | Run migration on each entry for a given driver.
+ php artisan tenanti:rollback {driver}     | Rollback migration on each entry for a given driver.
+ php artisan tenanti:reset {driver}        | Reset migration on each entry for a given driver.
+ php artisan tenanti:refresh {driver}      | Refresh migration (reset and migrate) on each entry for a given driver.
+ php artisan tenanti:queue {driver} {action} | Execute any of above action using separate queue to minimize impact on current process.
+
 <a name="multi-db-setup"></a>
 ## Multi Database Connection Setup
 
@@ -190,16 +205,17 @@ class AppServiceProvider extends ServiceProvider
 {
     public function boot()
     {
-        Tenanti::setupMultiDatabase('tenants', function (User $entity, array $template) {
-            $template['database'] = "acme_{$entity->getKey()}";
+        Tenanti::connection('tenants', function (User $entity, array $config) {
+            $config['database'] = "acme_{$entity->getKey()}";
+            // refer to config under `database.connections.tenants.*`.
 
-            return $template;
+            return $config;
         });
     }
 }
 ```
 
-Behind the scene, `$template` will contain the template database configuration fetch from `"database.connections.tenants"` (based on the first parameter `tenants`). We can dynamically modify the connection configuration and return the updated configuration for the tenant.
+Behind the scene, `$config` will contain the template database configuration fetch from `"database.connections.tenants"` (based on the first parameter `tenants`). We can dynamically modify the connection configuration and return the updated configuration for the tenant.
 
 <a name="multi-db-default-connection"></a>
 ### Default Database Connection
@@ -214,46 +230,7 @@ use Orchestra\Support\Facades\Tenanti;
 
 $user = User::find(5);
 
-Tenanti::driver('user')->asDefaultDatabase($user, 'tenants_{id}');
+Tenanti::driver('user')->asDefaultConnection($user, 'tenants_{id}');
 ```
 
 > Most of the time, this would be use in a Middleware Class when you resolve the tenant ID based on `Illuminate\Http\Request` object.
-
-<a name="multi-db-observer"></a>
-### Setup Model Observer
-
-Adding an override method for `getConnectionName()` would allow you to force the migration to be executed on the desired connection.
-
-```php
-<?php namespace App\Observers;
-
-use Orchestra\Tenanti\Observer;
-
-class UserObserver extends Observer
-{
-    public function getDriverName()
-    {
-        return 'user';
-    }
-
-    public function getConnectionName()
-    {
-        return 'tenant_{id}';
-    }
-}
-```
-
-<a name="console-support"></a>
-## Console Support
-
-Tenanti include additional command to help you run bulk migration when a new schema is created, the available command resemble the usage available from `php artisan migrate` namespace.
-
-Command                                    | Description
-:------------------------------------------|:---------------------
- php artisan tenanti:install {driver}      | Setup migration table on each entry for a given driver.
- php artisan tenanti:make {driver} {name}  | Make a new Schema generator for a given driver.
- php artisan tenanti:migrate {driver}      | Run migration on each entry for a given driver.
- php artisan tenanti:rollback {driver}     | Rollback migration on each entry for a given driver.
- php artisan tenanti:reset {driver}        | Reset migration on each entry for a given driver.
- php artisan tenanti:refresh {driver}      | Refresh migration (reset and migrate) on each entry for a given driver.
- php artisan tenanti:queue {driver} {action} | Execute any of above action using separate queue to minimize impact on current process.
