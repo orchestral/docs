@@ -5,6 +5,15 @@ title: Testbench Change Log
 
 ## Version 3.2 {#v3-2}
 
+### v3.2.2 {#v3-2-2}
+
+* Fixes `Orchestra\Testbench\ApplicationTestCase` filename typo. ([@rydurham](https://github.com/rydurham))
+
+### v3.2.1 {#v3-2-1}
+
+* Bump to Laravel Framework v5.2.7+.
+* Add `Orchestra\Testbench\ApplicationTestCase` and `Orchestra\Testbench\Exceptions\ApplicationHandler` for full Laravel integration testing support. ([@rydurham](https://github.com/rydurham))
+
 ### v3.2.0 {#v3-2-0}
 
 * Update support for Laravel Framework v5.2.
@@ -17,7 +26,7 @@ title: Testbench Change Log
 
 ### v3.1.7 {#v3-1-7}
 
-* Bump to Laravel Framework v5.1.27.
+* Bump to Laravel Framework v5.1.27+.
 * Add `Orchestra\Testbench\Traits\WithFactories` trait to allow packages to load model factories when running packages test suite.
 
 ### v3.1.6 {#v3-1-6}
