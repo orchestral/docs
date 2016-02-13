@@ -5,6 +5,11 @@ title: Foundation Change Log
 
 ## Version 3.1 {#v3-1}
 
+### v3.1.25 {#v3-1-25}
+
+* Encrypt private informations under Orchestra Platform Settings. 
+* Fixes `<select role="native">` filter. ([@quetzyg](https://github.com/quetzyg))
+
 ### v3.1.24 {#v3-1-24}
 
 * Fixes `ReferenceError: i is not defined` on pages with `<select>`.
