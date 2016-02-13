@@ -5,6 +5,25 @@ title: Foundation Change Log
 
 ## Version 3.2 {#v3-2}
 
+### v3.2.5 {#v3-2-5}
+
+* Encrypt private informations under Orchestra Platform Settings. 
+* Fixes `<select role="native">` filter. ([@quetzyg](https://github.com/quetzyg))
+* Add support for `Illuminate\Auth\Events\Lockout` event.
+
+### v3.2.4 {#v3-2-4}
+
+* Fixes `ReferenceError: i is not defined` on pages with `<select>`.
+* Update assets:
+  - Vue v1.0.16.
+
+### v3.2.3 {#v3-2-3}
+
+* Add `select[role="native"]` to preserve `<select>` output as native HTML Select instead of `Select2`.
+* Add useful CSS utilities for Vue.js cloaking. ([@adamwathan](https://github.com/adamwathan))
+* Update assets:
+  - Vue v1.0.15.
+
 ### v3.2.2 {#v3-2-2}
 
 * Fixes user roles does not display validation errors.
@@ -48,6 +67,24 @@ title: Foundation Change Log
   - Javie v2.1.0.
 
 ## Version 3.1 {#v3-1}
+
+### v3.1.25 {#v3-1-25}
+
+* Encrypt private informations under Orchestra Platform Settings. 
+* Fixes `<select role="native">` filter. ([@quetzyg](https://github.com/quetzyg))
+
+### v3.1.24 {#v3-1-24}
+
+* Fixes `ReferenceError: i is not defined` on pages with `<select>`.
+* Update assets:
+  - Vue v1.0.16.
+
+### v3.1.23 {#v3-1-23}
+
+* Add `select[role="native"]` to preserve `<select>` output as native HTML Select instead of `Select2`.
+* Add useful CSS utilities for Vue.js cloaking. ([@adamwathan](https://github.com/adamwathan))
+* Update assets:
+  - Vue v1.0.15.
 
 ### v3.1.22 {#v3-1-22}
 
@@ -224,6 +261,10 @@ title: Foundation Change Log
 * Remove deprecated `Orchestra\Foundation\MenuHandler::get{Name}()`, use `Orchestra\Foundation\MenuHandler::get{Name}Attribute()` helper instead.
 
 ## Version 3.0 {#v3-0}
+
+### v3.0.18 {#v3-0-18}
+
+* Encrypt private informations under Orchestra Platform Settings. 
 
 ### v3.0.17 {#v3-0-17}
 
