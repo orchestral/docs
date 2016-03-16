@@ -5,6 +5,15 @@ title: Installer Change Log
 
 ## Version 3.2 {#v3-2}
 
+### v3.2.1 {#v3-2-1}
+
+* Add `Orchestra\Installation\Installation::$isTest` flag.
+* Add `Orchestra\Installation\Installation::bootInstallerFilesForTesting()` helper.
+* Deprecate `Orchestra\Installation\Installation::createAdmin()` and suggest `Orchestra\Installation\Installation::make()` method.
+* Add `Orchestra\Installation\Installation::create()` method.
+* Add `Orchestra\Installation\Installation::validate()` method.
+* Change visibility of `Orchestra\Installation\Installation::createUser()` method from `protected` to `public`.
+
 ### v3.2.0 {#v3-2-0}
 
 * Update support for Orchestra Platform v3.2.
