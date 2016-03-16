@@ -14,6 +14,10 @@ title: Messages Change Log
 
 ## Version 3.1 {#v3-1}
 
+### v3.1.4 {#v3-1-4}
+
+* Set `Orchestra\Messages\MessageBag::$instance` to `null` when `save()` or `setSessionStore()` is called.
+
 ### v3.1.3 {#v3-1-3}
 
 * Allows to use closure with `messages()`.

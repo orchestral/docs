@@ -30,6 +30,10 @@ title: Extension Change Log
 
 ## Version 3.1 {#v3-1}
 
+### v3.1.13 {#v3-1-13}
+
+* Avoid registering extension config to database via `Orchestra\Extension\Plugin` when `$extension` or `$config` is empty.
+
 ### v3.1.12 {#v3-1-12}
 
 * Execute `Orchestra\Extension\Factory::after()` callback immediately when request are under safe mode.
