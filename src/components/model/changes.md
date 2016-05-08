@@ -5,6 +5,14 @@ title: Model Change Log
 
 ## Version 3.2 {#v3-2}
 
+### v3.2.3 {#v3-2-3}
+
+* Fixes missing default value on `Orchestra\Model\Traits\Metable::getMetaData()`.
+
+### v3.2.2 {#v3-2-2}
+
+* Add `getMetaData()` and `setMetaData()` to `Orchestra\Model\Traits\Metable`.
+
 ### v3.2.1 {#v3-2-1}
 
 * Remove `Trait` suffix and deprecate old traits.
