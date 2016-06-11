@@ -5,6 +5,14 @@ title: Notifier Change Log
 
 ## Version 3.2 {#v3-2}
 
+### v3.2.4 {#v3-2-4}
+
+* Add `Orchestra\Notifier\Notifiable` to replace deprecated `Orchestra\Notifier\NotifiableTrait`.
+
+### v3.2.3 {#v3-2-3}
+
+* Add support for SparkPost Mail Transport.
+
 ### v3.2.2 {#v3-2-2}
 
 * Add `Orchestra\Notifier\TransportManager::getConfig()` and `Orchestra\Notifier\TransportManager::getSecureConfig()`.

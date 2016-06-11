@@ -5,6 +5,16 @@ title: Extension Change Log
 
 ## Version 3.2 {#v3-2}
 
+### v3.2.3 {#v3-2-3}
+
+* Add `Orchestra\Extension\Traits\DomainAware` and deprecate `Orchestra\Extension\Traits\DomainAwareTrait`.
+* Remove `Trait` suffix for internal traits.
+* Avoid using `call_user_func()`.
+
+### v3.2.2 {#v3-2-2}
+
+* Avoid registering extension config to database via `Orchestra\Extension\Plugin` when `$extension` or `$config` is empty.
+
 ### v3.2.1 {#v3-2-1}
 
 * Execute `Orchestra\Extension\Factory::after()` callback immediately when request are under safe mode.
@@ -29,6 +39,10 @@ title: Extension Change Log
 * Remove requirement to use `Orchestra\Contracts\Foundation\DeferrableServiceContainer`.
 
 ## Version 3.1 {#v3-1}
+
+### v3.1.13 {#v3-1-13}
+
+* Avoid registering extension config to database via `Orchestra\Extension\Plugin` when `$extension` or `$config` is empty.
 
 ### v3.1.12 {#v3-1-12}
 

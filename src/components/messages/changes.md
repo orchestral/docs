@@ -3,7 +3,18 @@ title: Messages Change Log
 
 ---
 
+## Version 3.3 {#v3-3}
+
+### v3.3.0 {#v3-3-0}
+
+* Update support to Laravel Framework v5.3.
+* Set `Orchestra\Messages\MessageBag::$instance` to `null` when `save()` or `setSessionStore()` is called.
+
 ## Version 3.2 {#v3-2}
+
+### v3.2.1 {#v3-2-1}
+
+* Set `Orchestra\Messages\MessageBag::$instance` to `null` when `save()` or `setSessionStore()` is called.
 
 ### v3.2.0 {#v3-2-0}
 
@@ -13,6 +24,10 @@ title: Messages Change Log
 * Allows to use closure with `messages()`.
 
 ## Version 3.1 {#v3-1}
+
+### v3.1.4 {#v3-1-4}
+
+* Set `Orchestra\Messages\MessageBag::$instance` to `null` when `save()` or `setSessionStore()` is called.
 
 ### v3.1.3 {#v3-1-3}
 

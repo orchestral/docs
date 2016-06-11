@@ -5,6 +5,21 @@ title: Testbench Change Log
 
 ## Version 3.2 {#v3-2}
 
+### v3.2.5 {#v3-2-5}
+
+* Update `validation.php` language file for image dimensions validation rule.
+* Use `static::class` instead of `get_class($this)` under `Orchestra\Testbench\TestCase`.
+
+### v3.2.4 {#v3-2-4}
+
+* Bump to Laravel Framework v5.2.28+.
+
+### v3.2.3 {#v3-2-3}
+
+* Add new `Orchestra\Testbench\TestCase::setUpTraits()` method.
+* Add support to `Illuminate\Foundation\Testing\Concerns\InteractsWithAuthentication` by default.
+* Update named route look-up table when `$app` is bootstrapped.
+
 ### v3.2.2 {#v3-2-2}
 
 * Fixes `Orchestra\Testbench\ApplicationTestCase` filename typo. ([@rydurham](https://github.com/rydurham))

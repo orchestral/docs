@@ -5,6 +5,21 @@ title: Auth Change Log
 
 ## Version 3.2 {#v3-2}
 
+### v3.2.6 {#v3-2-6}
+
+* Authorization:
+  - Rename `Orchestra\Authorization\AuthorizationTrait` to `Orchestra\Authorization\Permission`.
+ 
+### v3.2.5 {#v3-2-5}
+
+* Auth:
+  - Cast `Orchestra\Auth\SessionGuard::$userRoles` value to `array` if set to `null` to avoid invalid use of `Illuminate\Support\Arr`.
+
+### v3.2.4 {#v3-2-4}
+
+* Authorization:
+  - Fixes authorization to support checking multiple roles.
+
 ### v3.2.3 {#v3-2-3}
 
 * Auth:
@@ -39,6 +54,16 @@ title: Auth Change Log
   - Add `Orchestra\Authorization\AuthorizationTrait::auth()` helper to get instance of `Orchestra\Contracts\Auth\Guard` from `$acl` instance.
 
 ## Version 3.1 {#v3-1}
+
+### v3.1.10 {#v3-1-10}
+
+* Auth:
+  - Cast `Orchestra\Auth\Guard::$userRoles` value to `array` if set to `null` to avoid invalid use of `Illuminate\Support\Arr`.
+
+### v3.1.9 {#v3-1-9}
+
+* Authorization:
+  - Fixes authorization to support checking multiple roles.
 
 ### v3.1.8 {#v3-1-8}
 
