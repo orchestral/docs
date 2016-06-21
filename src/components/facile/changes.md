@@ -5,6 +5,10 @@ title: Facile Change Log
 
 ## Version 3.2 {#v3-2}
 
+### v3.2.1 {#v3-2-1}
+
+* Allow to retarget root data when responding with XML and JSON.
+
 ### v3.2.0 {#v3-2-0}
 
 * Update support to Laravel Framework v5.2.
@@ -20,6 +24,10 @@ title: Facile Change Log
 * Add new `Orchestra\Facile\Template\Api` and `Orchestra\Facile\Template\Export` template class.
 
 ## Version 3.1 {#v3-1}
+
+### v3.1.5 {#v3-1-5}
+
+* Allow to retarget root data when responding with XML and JSON.
 
 ### v3.1.4 {#v3-1-4}
 
