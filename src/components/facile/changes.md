@@ -5,6 +5,10 @@ title: Facile Change Log
 
 ## Version 3.1 {#v3-1}
 
+### v3.1.5 {#v3-1-5}
+
+* Allow to retarget root data when responding with XML and JSON.
+
 ### v3.1.4 {#v3-1-4}
 
 * Add composing traits:

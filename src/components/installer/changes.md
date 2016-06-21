@@ -5,6 +5,10 @@ title: Installer Change Log
 
 ## Version 3.1 {#v3-1}
 
+### v3.1.3 {#v3-1-3}
+
+* Improves exception handling when given User model point to invalid class.
+
 ### v3.1.2 {#v3-1-2}
 
 * `Orchestra\Installation\InstallerServiceProvider` should utilize the new `Orchestra\Foundation\Support\Providers\ModuleServiceProvider`.
