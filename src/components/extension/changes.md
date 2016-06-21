@@ -3,6 +3,17 @@ title: Extension Change Log
 
 ---
 
+## Version 3.3 {#v3-3}
+
+### v3.3.0 {#v3-3-0}
+
+* Update support to Laravel Framework v5.3.
+* Execute `Orchestra\Extension\Factory::after()` callback immediately when request are under safe mode.
+* Avoid registering extension config to database via `Orchestra\Extension\Plugin` when `$extension` or `$config` is empty.
+* Add `Orchestra\Extension\Traits\DomainAware` and deprecate `Orchestra\Extension\Traits\DomainAwareTrait`.
+* Remove `Trait` suffix for internal traits.
+* Avoid using `call_user_func()`.
+
 ## Version 3.2 {#v3-2}
 
 ### v3.2.3 {#v3-2-3}
