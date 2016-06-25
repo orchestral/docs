@@ -5,6 +5,10 @@ title: HTML Change Log
 
 ## Version 3.2 {#v3-2}
 
+### v3.2.4 {#v3-2-4}
+
+* Deprecates passing `$control` to `Orchestra\Html\Form\Field::getField()`.
+
 ### v3.2.3 {#v3-2-3}
 
 * Allow data to be retrieved from Eloquent collections for type hinting on `Orchestra\Html\Table\Grid`. ([@stevebauman](https://github.com/stevebauman))
