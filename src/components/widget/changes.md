@@ -5,6 +5,11 @@ title: Widget Change Log
 
 ## Version 3.3 {#v3-3}
 
+### v3.3.2 {#v3-3-2}
+
+* Add `Orchestra\Widget\Handlers\Dash`.
+* Add `Orchestra\Widget\Handler::isEmpty()` method.
+
 ### v3.3.1 {#v3-3-1}
 
 * `Orchestra\Widget\Handler` implements `Illuminate\Contracts\Support\Jsonable`.
