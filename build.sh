@@ -28,14 +28,12 @@ function build_theme_installer {
     cd ../theme-installer
     echo '-------';
     pwd;
-    echo "git checkout master";
     git checkout master;
     copy_changes docs ../docs/src/components/theme-installer;
     echo "Documentation copied";
 }
 
 function build_docs {
-    echo "git checkout $BRANCH";
     git checkout $BRANCH;
     copy_changes docs ../docs/src/$TYPE/$DIR;
     echo "Documentation copied";
@@ -52,6 +50,8 @@ do
     cd ../;
     cd $DIR;
     echo '-------';
+    echo $DIR;
+    echo '-------';
     pwd;
     build_docs;
 done
@@ -63,7 +63,8 @@ do
     cd ../;
     cd $DIR;
     echo '-------';
-    pwd;
+    echo $DIR;
+    echo '-------';
     build_docs;
 done
 
