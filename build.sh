@@ -61,10 +61,9 @@ TYPE='extensions'
 for DIR in "${EXTENSIONS[@]}"
 do
     cd ../;
-    cd $DIR;
     echo '-------';
     echo $DIR;
     echo '-------';
+    cd $DIR;
     build_docs;
 done
-
